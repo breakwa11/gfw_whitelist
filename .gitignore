@@ -55,4 +55,5 @@ docs/_build/
 # Temporary file
 *.swp
 *.tmp
+*.bak
 

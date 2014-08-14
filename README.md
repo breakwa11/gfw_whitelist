@@ -15,7 +15,7 @@
 使用方法
 ---------
 
-下载 whitelist.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 whitelist.pac。
+下载 gfw_whitelist.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 gfw_whitelist.pac。
 
 
 ```
@@ -23,7 +23,7 @@ var ip_address = 'www.abc.com:443'; // 需要更换成有效的域名
 ```
 
 ```
-var proxy_type = 'HTTPS'; // or 'SOCKS5'
+var proxy_type = 'PROXY'; // or 'SOCKS5' or 'HTTPS'
 ```
 
 当 `proxy_type`  选为 `HTTPS` 时，此 pac 文件适合用于 [Google Chrome 的安全代理](http://www.chromium.org/developers/design-documents/secure-web-proxy)。
@@ -44,15 +44,8 @@ var proxy_type = 'HTTPS'; // or 'SOCKS5'
 'HTTP 127.0.0.1:8081';
 ```
 
-只需要将下面那个地址，直接贴入上图中 “Auto Config URL” 那个位置，,
+只需要将gfw_whitelist.pac那个地址，直接贴入上图中 “Auto Config URL” 那个位置，,
 就可以用上这个白名单了。
-
-```
-https://github.com/n0wa11/gfw_whitelist/raw/master/examples/whitelist_socks5_7070.pac
-```
-```
-https://github.com/n0wa11/gfw_whitelist/raw/master/examples/whitelist_http_8081.pac
-```
 
 
 
@@ -104,7 +97,4 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 
 ![Chrome 的扩展](img/chrome-extension.png)
 
-------
-
-© 2012-2013 n0gfwall0@gmail.com，MIT License。 本文档使用了 [Mou](//mouapp.com) 和 [Marked](http://markedapp.com) 进行编辑。
 
