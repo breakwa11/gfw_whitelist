@@ -6,7 +6,7 @@ def parse_args():
     parser = ArgumentParser()
     parser.add_argument('-i', '--input', dest='input', default='data\\whitelist.pac',
         help='path to gfwlist')
-    parser.add_argument('-f', '--file', dest='output', default='gfw_whitelist.pac',
+    parser.add_argument('-o', '--output', dest='output', default='whitelist.pac',
         help='path to output pac', metavar='PAC')
     parser.add_argument('-p', '--proxy', dest='proxy', default='"127.0.0.1:1080"',
         help='the proxy parameter in the pac file, for example,\

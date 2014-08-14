@@ -1,7 +1,7 @@
 # GFW 白名单
 
 
-概述 
+概述
 -----
 
 著名的 [autoproxy.pac](https://autoproxy.org) (GFW List)  是一个 GFW 黑名单，访问名单中网站需要通过代理，不在名单中的网站直接访问。有效使用黑名单，维护者和用户都需要时常更新此名单，否则可能不能访问最近被墙的网站。这些不便之处是推广翻墙运动的阻碍之一。
@@ -12,10 +12,10 @@
 
 ***作者收录的国内 CDN 和“云”相关的域名还非常有限。希望同学们能够帮助补充。感谢。***
 
-使用方法
+简单使用方法
 ---------
 
-下载 gfw_whitelist.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 gfw_whitelist.pac。
+下载 whitelist.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 whitelist.pac。
 
 
 ```
@@ -32,6 +32,21 @@ var PROXY_TYPE = 'PROXY'; // or 'SOCKS5' or 'HTTPS'
 
 ![使用 pac 文件](img/chrome-pac.png)
 
+代码生成使用方法
+---------
+
+执行
+
+main.py -o whitelist.pac -p "127.0.0.1:1080" -t "PROXY"
+
+选项可忽略，以上为默认值
+
+最后使用生成出来的 whitelist.pac 即可
+
+自定义列表可把你的域名加入到lists/custom.py里，然后重新执行生成操作
+
+严重建议你把你的加入列表项通过mmgac001[at]gmail.com或者issues告知我们
+
 
 ### SSH/Goagent/http 代理设置
 
@@ -46,7 +61,7 @@ var PROXY_TYPE = 'PROXY'; // or 'SOCKS5' or 'HTTPS'
 'PROXY 127.0.0.1:8087';
 ```
 
-只需要将gfw_whitelist.pac那个地址，直接贴入上图中 “Auto Config URL” 那个位置，就可以用上这个白名单了。
+只需要将whitelist.pac那个地址，直接贴入上图中 “Auto Config URL”那个位置，就可以用上这个白名单了。
 
 
 Firefox 代理
