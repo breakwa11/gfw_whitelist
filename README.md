@@ -19,14 +19,16 @@
 
 
 ```
-var ip_address = 'www.abc.com:443'; // 需要更换成有效的域名
+var IP_ADDRESS = 'www.abc.com:443'; // 需要更换成有效的域名
 ```
 
 ```
-var proxy_type = 'PROXY'; // or 'SOCKS5' or 'HTTPS'
+var PROXY_TYPE = 'PROXY'; // or 'SOCKS5' or 'HTTPS'
 ```
 
-当 `proxy_type`  选为 `HTTPS` 时，此 pac 文件适合用于 [Google Chrome 的安全代理](http://www.chromium.org/developers/design-documents/secure-web-proxy)。
+当 `PROXY_TYPE`  选为 `HTTPS` 时，此 pac 文件适合用于 [Google Chrome 的安全代理](http://www.chromium.org/developers/design-documents/secure-web-proxy)。
+
+本地代理使用 `PROXY` 最佳，可用于iOS自动代理配置
 
 ![使用 pac 文件](img/chrome-pac.png)
 
@@ -44,16 +46,27 @@ var proxy_type = 'PROXY'; // or 'SOCKS5' or 'HTTPS'
 'HTTP 127.0.0.1:8081';
 ```
 
-只需要将gfw_whitelist.pac那个地址，直接贴入上图中 “Auto Config URL” 那个位置，,
-就可以用上这个白名单了。
+只需要将gfw_whitelist.pac那个地址，直接贴入上图中 “Auto Config URL” 那个位置，就可以用上这个白名单了。
 
+
+Firefox 代理
+-----------
+
+安装插件[foxyproxy](https://addons.mozilla.org/zh-cn/firefox/addon/foxyproxy-standard/)
+
+![使用 pac 文件](img/firefox-foxyproxy.jpg)
+
+
+Google Chrome 代理
+-----------
+
+安装插件SwitchySharp
+
+![Chrome 的扩展](img/chrome-extension.png)
 
 
 Google Chrome 安全代理 （SSL Secure Proxy）
 -----------
-
-_Firefox 好像也有支持安全代理了。作者还没有测试过。_
-
 
 Google Chrome 已经支持基于 https 和 SPDY 的安全代理。其原理和效果与 SSH，shadowsocks 以及 goagent 类似：
 
@@ -82,7 +95,6 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 其它节省流量的方法
 ----------------
 
-
 由于白名单的流量消耗较黑名单要高一些，在浏览器中安装下面的扩展，在提高网页浏览速度的同时，也能节省不少流量。
 
 ##### 屏蔽广告： Adblock Plus ＋ Easylist ＋ Chinalist
@@ -94,7 +106,5 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 ##### 屏蔽Flash： FlashControl 或 FlashBlock
 
 在 Chrome 中安装 [FlashControl](https://chrome.google.com/webstore/detail/flashcontrol/mfidmkgnfgnkihnjeklbekckimkipmoe) 或在 Firefox 中安装 [FlashBlock](https://addons.mozilla.org/zh-cn/firefox/addon/flashblock/)，可以达到屏蔽 Flash 的效果。需要打开 Flash，比如视频，只要在被屏蔽的 Flash 上点击一次。
-
-![Chrome 的扩展](img/chrome-extension.png)
 
 
