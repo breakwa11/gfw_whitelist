@@ -28,7 +28,7 @@ var PROXY_TYPE = 'PROXY'; // or 'SOCKS5' or 'HTTPS'
 
 当 `PROXY_TYPE`  选为 `HTTPS` 时，此 pac 文件适合用于 [Google Chrome 的安全代理](http://www.chromium.org/developers/design-documents/secure-web-proxy)。
 
-本地代理使用 `PROXY` 最佳，可用于iOS自动代理配置
+本地代理使用 `PROXY` 即http代理最佳，兼容性最好，可用于IE或iOS自动代理配置，s5代理可使用privoxy转换为http代理。不过如果是远程代理可能被偷窥连接内容。
 
 ![使用 pac 文件](img/chrome-pac.png)
 
