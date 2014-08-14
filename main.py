@@ -45,7 +45,7 @@ def writefile(input_file, ip, proxy_type, output_file):
     proxy_content = proxy_content.replace('__IP__', ip)
     proxy_content = proxy_content.replace('__PROXY__', proxy_type)
     proxy_content = proxy_content.replace('__DOMAINS__', domains_content)
-    with open(output_file, 'wb') as file_obj:
+    with open(output_file, 'w') as file_obj:
         file_obj.write(proxy_content)
 
 def main():
