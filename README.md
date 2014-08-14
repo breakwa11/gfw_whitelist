@@ -107,6 +107,8 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 
 在 Chrome 中安装 [FlashControl](https://chrome.google.com/webstore/detail/flashcontrol/mfidmkgnfgnkihnjeklbekckimkipmoe) 或在 Firefox 中安装 [FlashBlock](https://addons.mozilla.org/zh-cn/firefox/addon/flashblock/)，可以达到屏蔽 Flash 的效果。需要打开 Flash，比如视频，只要在被屏蔽的 Flash 上点击一次。
 
+fork from [n0wa11](https://github.com/n0wa11/gfw_whitelist)
+
 ```
 任何意见或建议，请联系 mmgac001[at]gmail.com ，或提交issue到项目页面
 ```
