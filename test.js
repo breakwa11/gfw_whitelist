@@ -5,10 +5,13 @@ var test_cases = [
     0, "www.imqq.com",
     1, "qqq.com",
     1, "google.com",
-    1, "www.google.com"
+    1, "www.google.com",
+    0, "localhost"
 ];
 
 function isPlainHostName(host) {
+    if ( host.toLowerCase() == 'localhost' )
+        return true;
     return false;
 }
 function test(url, host) {
