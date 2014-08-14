@@ -14,6 +14,7 @@ function isPlainHostName(host) {
         return true;
     return false;
 }
+
 function test(url, host) {
     ret = FindProxyForURL(url, host);
     if ( ret === direct )
@@ -42,3 +43,12 @@ function begin_test() {
     output_result( output );
 }
 
+function test_one() {
+    var input = document.getElementById("input");
+    var result_obj = document.getElementById("result");
+    result = test(input.value, input.value);
+    if ( result === 1 )
+        result_obj.value = "Proxy";
+    else
+        result_obj.value = "Direct";
+}

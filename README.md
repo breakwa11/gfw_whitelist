@@ -43,7 +43,7 @@ var PROXY_TYPE = 'PROXY'; // or 'SOCKS5' or 'HTTPS'
 'SOCKS5 127.0.0.1:7070';
 ```
 ```
-'HTTP 127.0.0.1:8081';
+'PROXY 127.0.0.1:8087';
 ```
 
 只需要将gfw_whitelist.pac那个地址，直接贴入上图中 “Auto Config URL” 那个位置，就可以用上这个白名单了。
@@ -108,5 +108,5 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 在 Chrome 中安装 [FlashControl](https://chrome.google.com/webstore/detail/flashcontrol/mfidmkgnfgnkihnjeklbekckimkipmoe) 或在 Firefox 中安装 [FlashBlock](https://addons.mozilla.org/zh-cn/firefox/addon/flashblock/)，可以达到屏蔽 Flash 的效果。需要打开 Flash，比如视频，只要在被屏蔽的 Flash 上点击一次。
 
 ```
-任何意见或建议，请联系 mmgac001[at]gmail.com
+任何意见或建议，请联系 mmgac001[at]gmail.com ，或提交issue到项目页面
 ```
