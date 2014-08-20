@@ -690,8 +690,14 @@ function FindProxyForURL(url, host) {
         return direct;
     }
     var suffix;
-    var pos = host.lastIndexOf('.');
-    pos = host.lastIndexOf('.', pos - 1);
+    var pos1 = host.lastIndexOf('.');
+    var pos = host.lastIndexOf('.', pos1 - 1);
+
+    suffix = host.substring(pos1 + 1);
+    if (hasOwnProperty.call(domains, suffix)) {
+        return direct;
+    }
+
     while(1) {
         if (pos == -1) {
             if (hasOwnProperty.call(domains, host)) {
