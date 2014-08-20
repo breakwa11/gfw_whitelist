@@ -1,4 +1,4 @@
-# GFW 白名单
+﻿# GFW 白名单
 
 
 概述
@@ -125,5 +125,5 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 fork from [n0wa11](https://github.com/n0wa11/gfw_whitelist)
 
 ```
-任何意见或建议，请联系 mmgac001[at]gmail.com ，或提交issue到项目页面
+任何意见或建议，请联系 mmgac001[at]gmail.com ，或提交issue到项目页面 ლ(╹◡╹ლ)
 ```

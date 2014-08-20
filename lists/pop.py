@@ -96,5 +96,6 @@ legolas-media.com
 harrenmedianetwork.com
 google-analytics.com
 qiniucdn.com
+v2ex.com
 """
     return set(liststr.splitlines(False))

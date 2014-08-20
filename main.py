@@ -17,12 +17,16 @@ def parse_args():
 
 def get_all_list(lists):
     all_list = set()
-    result = set()
+    result = list()
     for item in lists:
         all_list = all_list | item.getlist()
     all_list.remove('')
+    sort_list = []
     for item in all_list:
-        result.add('\n  "' + item + '": 1,')
+        sort_list.append(item)
+    sort_list.sort()
+    for item in sort_list:
+        result.append('\n  "' + item + '": 1,')
     return result
 
 def get_file_data(filename):
@@ -50,7 +54,7 @@ def writefile(input_file, ip, proxy_type, output_file):
 
 def main():
     args = parse_args()
-    writefile(args.input, args.proxy, args.type, args.output)
+    writefile(args.input, '"' + args.proxy.strip('"') + '"', '"' + args.type.strip('"') + '"', args.output)
 
 if __name__ == '__main__':
     main()
