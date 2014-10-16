@@ -96,6 +96,7 @@ a135.net
 a963.com
 abang.com
 abchina.com
+acfun.com
 acfun.tv
 ad1111.com
 admin5.com
@@ -145,6 +146,7 @@ bendibao.com
 bestb2b.com
 betrad.com
 bilibili.tv
+bilibili.com
 bing.com
 bitauto.com
 bjbus.com

@@ -3,6 +3,5 @@
 
 def getlist():
     liststr = """
-github.com
 """
     return set(liststr.splitlines(False))
