@@ -1,4 +1,4 @@
-﻿# GFW 白名单
+# GFW 白名单
 
 
 概述
@@ -10,7 +10,7 @@
 
 现实上 GFW 已经开始白名单化，国外稍微有点意思的网站大都已经被墙，或者随时可能被墙。因此作者认为有必要开始维护一份白名单的 pac 文件。
 
-***作者收录的国内 CDN 和“云”相关的域名还非常有限。希望同学们能够帮助补充。感谢。***
+本列表的国内部分会由作者编写的Spider自动更新，如果需要其它格式的列表请联系作者。
 
 简单使用方法
 ---------
@@ -19,14 +19,10 @@
 
 
 ```
-var IP_ADDRESS = 'www.abc.com:443'; // 需要更换成有效的域名
+var proxy = 'PROXY www.abc.com:443'; // 需要更换成有效的代理地址，代理类型还可以为'SOCKS5'或'HTTPS'
 ```
 
-```
-var PROXY_TYPE = 'PROXY'; // or 'SOCKS5' or 'HTTPS'
-```
-
-当 `PROXY_TYPE`  选为 `HTTPS` 时，此 pac 文件适合用于 [Google Chrome 的安全代理](http://www.chromium.org/developers/design-documents/secure-web-proxy)。
+当 `proxy` 的代理类型为 `HTTPS` 时，此 pac 文件适合用于 [Google Chrome 的安全代理](http://www.chromium.org/developers/design-documents/secure-web-proxy)。
 
 本地代理使用 `PROXY` 即http代理最佳，兼容性最好，可用于IE或iOS自动代理配置，s5代理可使用privoxy转换为http代理。不过如果是远程代理可能被偷窥连接内容。
 
@@ -37,7 +33,7 @@ var PROXY_TYPE = 'PROXY'; // or 'SOCKS5' or 'HTTPS'
 
 执行
 
-main.py -o whitelist.pac -p "127.0.0.1:1080" -t "PROXY"
+main.py -o whitelist.pac -p "PROXY 127.0.0.1:1080;"
 
 选项可忽略，以上为默认值
 

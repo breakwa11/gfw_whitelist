@@ -7,5 +7,6 @@ def get_list_set():
     import pop
     import xream
     import alexa_cn_500
-    return [cn, custom, pop, xream, alexa_cn_500]
+    import auto
+    return [cn, custom, pop, xream, alexa_cn_500, auto]
 

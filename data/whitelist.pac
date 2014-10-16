@@ -1,14 +1,8 @@
 var domains = __DOMAINS__;
 
-var IP_ADDRESS = __IP__;
+var proxy = __PROXY__;
 
-var PROXY_TYPE = __PROXY__;
-
-var PROXY_METHOD = PROXY_TYPE + ' ' + IP_ADDRESS;
-
-var proxy = PROXY_TYPE + ' ' + IP_ADDRESS;
-
-var direct = 'DIRECT;';
+var direct = "DIRECT;";
 
 
 function FindProxyForURL(url, host) {

@@ -8,11 +8,9 @@ def parse_args():
         help='path to gfwlist')
     parser.add_argument('-o', '--output', dest='output', default='whitelist.pac',
         help='path to output pac', metavar='PAC')
-    parser.add_argument('-p', '--proxy', dest='proxy', default='"127.0.0.1:1080"',
+    parser.add_argument('-p', '--proxy', dest='proxy', default='"PROXY 127.0.0.1:1080;"',
         help='the proxy parameter in the pac file, for example,\
         "127.0.0.1:1080;"', metavar='PROXY')
-    parser.add_argument('-t', '--type', dest='type', default='"PROXY"',
-        help='the proxy type in the pac file, "PROXY" or "SOCKS5"', metavar='TYPE')
     return parser.parse_args()
 
 def get_all_list(lists):
@@ -43,18 +41,17 @@ def final_list():
     content = '{' + content[:-1] + "\n}"
     return content
 
-def writefile(input_file, ip, proxy_type, output_file):
+def writefile(input_file, proxy, output_file):
     domains_content = final_list()
     proxy_content = get_file_data(input_file)
-    proxy_content = proxy_content.replace('__IP__', ip)
-    proxy_content = proxy_content.replace('__PROXY__', proxy_type)
+    proxy_content = proxy_content.replace('__PROXY__', proxy)
     proxy_content = proxy_content.replace('__DOMAINS__', domains_content)
     with open(output_file, 'w') as file_obj:
         file_obj.write(proxy_content)
 
 def main():
     args = parse_args()
-    writefile(args.input, '"' + args.proxy.strip('"') + '"', '"' + args.type.strip('"') + '"', args.output)
+    writefile(args.input, '"' + args.proxy.strip('"') + '"', args.output)
 
 if __name__ == '__main__':
     main()

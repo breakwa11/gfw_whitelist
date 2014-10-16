@@ -588,11 +588,10 @@ whlongda.com
 wikipedia.org
 williamlong.info
 woniu.com
-wordpress.org
 wrating.com
 wsj.com
 wumii.com
-www.renren.com
+renren.com
 xi666.com
 xiachufang.com
 xiami.com
