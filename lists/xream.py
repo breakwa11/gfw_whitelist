@@ -165,7 +165,6 @@ caixin.com
 ccb.com
 ccidnet.com
 cctv.com
-cctvcom
 cdn20.com
 changyou.com
 chdbits.org
@@ -183,7 +182,6 @@ chiphell.com
 chuangelm.com
 ci123.com
 cmbchina.com
-cn
 cnbeta.com
 cnblogs.com
 cncn.com
@@ -384,8 +382,6 @@ lietou.com
 linezing.com
 linkedin.com
 live.com
-local
-localhost
 logmein.com
 lohas.ly
 loli.mg
