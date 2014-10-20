@@ -1,6 +1,7 @@
 var domains = __DOMAINS__;
 
-var proxy = __PROXY__;
+var wall_proxy = __PROXY__;
+var nowall_proxy = "DIRECT;";
 
 var direct = "DIRECT;";
 
@@ -16,8 +17,11 @@ function FindProxyForURL(url, host) {
             return true;
         }
     }
-    if ( isPlainHostName(host) === true ||  check_ipv4() === true ) {
+    if ( isPlainHostName(host) === true ) {
         return direct;
+    }
+    if ( check_ipv4() === true ) {
+        return nowall_proxy;
     }
     var suffix;
     var pos1 = host.lastIndexOf('.');
@@ -25,20 +29,20 @@ function FindProxyForURL(url, host) {
 
     suffix = host.substring(pos1 + 1);
     if (hasOwnProperty.call(domains, suffix)) {
-        return direct;
+        return nowall_proxy;
     }
 
     while(1) {
         if (pos == -1) {
             if (hasOwnProperty.call(domains, host)) {
-                return direct;
+                return nowall_proxy;
             } else {
-                return proxy;
+                return wall_proxy;
             }
         }
         suffix = host.substring(pos + 1);
         if (hasOwnProperty.call(domains, suffix)) {
-            return direct;
+            return nowall_proxy;
         }
         pos = host.lastIndexOf('.', pos - 1);
     }
