@@ -4864,8 +4864,8 @@ var cnIpRange = {
 };
 
 var subnetIpRange = {
-167772160:16777216, //10.0.0.0/8
-2886729728:1048576, //172.16.0.0/12
+167772160:16777216,	//10.0.0.0/8
+2886729728:1048576,	//172.16.0.0/12
 3232235520:65536,	//192.168.0.0/16
 2130706432:255		//127.0.0.0/24
 };
@@ -4874,6 +4874,8 @@ var wall_proxy = "PROXY 127.0.0.1:1080;";
 var nowall_proxy = "DIRECT;";
 
 var direct = "DIRECT;";
+
+var hasOwnProperty = Object.hasOwnProperty;
 
 function FindProxyForURL(url, host) {
 	function convertAddress(ipchars) {
@@ -4888,7 +4890,7 @@ function FindProxyForURL(url, host) {
 		for ( var range = 256; range <= 8388608; range*=2 ) {
 			var sub = intIp & (range-1);
 			var masterIp = intIp - sub;
-			if (ipRange[masterIp] == undefined)
+			if ( hasOwnProperty.call(ipRange, masterIp) )
 				continue;
 			if ( sub <= ipRange[masterIp] )
 				return 1;

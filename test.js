@@ -1,11 +1,11 @@
 var test_cases = [
+    1, "www.google.com",
     0, "127.0.0.1",
     0, "qq.com",
     0, "im.qq.com",
     0, "www.imqq.com",
     1, "qqq.com",
     1, "google.com",
-    1, "www.google.com",
     0, "localhost"
 ];
 

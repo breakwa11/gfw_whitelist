@@ -10107,6 +10107,7 @@ var nowall_proxy = "DIRECT;";
 
 var direct = "DIRECT;";
 
+var hasOwnProperty = Object.hasOwnProperty;
 
 function FindProxyForURL(url, host) {
     function check_ipv4() {
