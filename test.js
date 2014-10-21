@@ -15,9 +15,22 @@ function isPlainHostName(host) {
     return false;
 }
 
+function dnsResolve(host) {
+    return "0.0.0.0"
+}
+
+function isInNet(ip, ipstart, ipmask) {
+    return false;
+}
+
 function test(url, host) {
     ret = FindProxyForURL(url, host);
-    if ( ret === direct )
+    if ( typeof(direct) == "undefined" ) {
+        if ( ret.toLowerCase().indexOf("direct") >= 0 ) {
+            return 0;
+        }
+        return 1;
+    } else if ( ret === direct )
         return 0;
     else
         return 1;
@@ -36,6 +49,15 @@ function output_result(out_obj) {
         }
         out_obj.value = out_obj.value + out_line + "\n";
     }
+    var start = new Date();
+    if ( test_cases.length > 1 ) {
+        for (var j = 0; j < 10000; ++j) {
+            var test_case = test_cases[1];
+            test(test_case, test_case);
+        }
+    }
+    var end = new Date();
+    alert(String(end - start) + "ms in 10,000 tests");
 }
 
 function begin_test() {
