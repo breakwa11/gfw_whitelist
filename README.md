@@ -15,7 +15,7 @@
 简单使用方法
 ---------
 
-下载 whitelist.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 whitelist.pac。
+下载 whitelist.pac或whiteiplist.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 whitelist.pac或whiteiplist.pac。
 
 
 ```
@@ -35,9 +35,9 @@ var proxy = 'PROXY www.abc.com:443'; // 需要更换成有效的代理地址，�
 
 main.py -o whitelist.pac -p "PROXY 127.0.0.1:1080;"
 
-选项可忽略，以上为默认值
+选项可忽略，以上为默认值。至于whiteiplist.pac使用mainip.py生成。
 
-最后使用生成出来的 whitelist.pac 即可
+最后使用生成出来的 whitelist.pac或whiteiplist.pac 即可
 
 自定义列表可把你的域名加入到lists/custom.py里，然后重新执行生成操作
 
@@ -102,6 +102,9 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 				   [OPTIONS...] [<PRIVATE_KEY> <CERT>]
 ```
 
+注意事项
+----------------
+使用whiteiplist时，你需要确认你已经解决DNS污染的问题（否则你是在卖萌么？如在没有解决DNS污染的环境下请使用基于域名的whitelist），同时搭配带有dns缓存的服务器或浏览器。Chrome下使用whiteiplist能工作得很好，但Firefox下工作似乎不太理想，如使用foxproxy会经常卡住，而使用Firefox自身代理设置的时候，也时不时的长时间等待。Firefox下的问题尚待完善。
 
 其它节省流量的方法
 ----------------
