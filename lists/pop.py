@@ -25,7 +25,6 @@ douban.fm
 doubleclick.net
 fastcdn.com
 gamesville.com
-google-analytics.com
 gtimg.com
 harrenmedianetwork.com
 homeinns.com
