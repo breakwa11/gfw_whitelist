@@ -51,13 +51,13 @@ function output_result(out_obj) {
     }
     var start = new Date();
     if ( test_cases.length > 1 ) {
-        for (var j = 0; j < 10000; ++j) {
+        for (var j = 0; j < 100000; ++j) {
             var test_case = test_cases[1];
             test(test_case, test_case);
         }
     }
     var end = new Date();
-    alert(String(end - start) + "ms in 10,000 tests");
+    alert(String(end - start) + "ms in 100,000 tests");
 }
 
 function begin_test() {

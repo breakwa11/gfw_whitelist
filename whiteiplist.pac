@@ -1,4 +1,4 @@
-var ipRange = {
+var cnIpRange = {
 16777472:256,
 16777728:512,
 16779264:2048,
@@ -4863,11 +4863,17 @@ var ipRange = {
 3758095360:512,
 };
 
+var subnetIpRange = {
+167772160:16777216, //10.0.0.0/8
+2886729728:1048576, //172.16.0.0/12
+3232235520:65536,	//192.168.0.0/16
+2130706432:255		//127.0.0.0/24
+};
+
 var wall_proxy = "PROXY 127.0.0.1:1080;";
 var nowall_proxy = "DIRECT;";
 
 var direct = "DIRECT;";
-
 
 function FindProxyForURL(url, host) {
 	function convertAddress(ipchars) {
@@ -4878,6 +4884,25 @@ function FindProxyForURL(url, host) {
 		(bytes[3] & 0xff);
 		return result >>> 0;
 	};
+	function isInRange(ipRange, intIp) {
+		for ( var range = 256; range <= 8388608; range*=2 ) {
+			var sub = intIp & (range-1);
+			var masterIp = intIp - sub;
+			if (ipRange[masterIp] == undefined)
+				continue;
+			if ( sub <= ipRange[masterIp] )
+				return 1;
+			return 0;
+		}
+		return 0;
+	}
+	function isInRangeEnum(ipRange, intIp) {
+		for ( var beg in ipRange ) {
+			if ( intIp > beg && intIp < beg + ipRange[beg] )
+				return 1;
+		}
+		return 0;
+	}
 
 	if ( isPlainHostName(host) === true ) {
 		return direct;
@@ -4885,26 +4910,15 @@ function FindProxyForURL(url, host) {
 	{
 		var strIp = dnsResolve(host);
 		if (!strIp) {
-			return wall_proxy ; // arg out_gfw_proxy
+			return wall_proxy;
 		}
-		if (isInNet(strIp, "10.0.0.0", "255.0.0.0") ||
-			isInNet(strIp, "172.16.0.0", "255.240.0.0") ||
-			isInNet(strIp, "192.168.0.0", "255.255.0.0") ||
-			isInNet(strIp, "127.0.0.0", "255.255.255.0")) {
-			return direct;
-		}
-		
 		
 		var intIp = convertAddress(strIp);
-		var range = 256;
-		for ( ; range <= 8388608; range*=2 ) {
-			var sub = intIp & (range-1);
-			var masterIp = intIp - sub;
-			if (ipRange[masterIp] == undefined)
-				continue;
-			if ( sub <= ipRange[masterIp] )
-				return nowall_proxy;
-			return wall_proxy;
+		if ( isInRangeEnum(subnetIpRange, intIp) ) {
+			return direct;
+		}
+		if ( isInRange(cnIpRange, intIp) ) {
+			return nowall_proxy;
 		}
 		return wall_proxy;
 	}
