@@ -14,34 +14,28 @@ var direct = "DIRECT;";
 
 var hasOwnProperty = Object.hasOwnProperty;
 
+function convertAddress(ipchars) {
+	var bytes = ipchars.split('.');
+	var result = (bytes[0] << 24) |
+	(bytes[1] << 16) |
+	(bytes[2] << 8) |
+	(bytes[3]);
+	return result >>> 0;
+};
+function isInRange(ipRange, intIp) {
+	for ( var range = 256; range <= 8388608; range*=2 ) {
+		var sub = intIp & (range-1);
+		var masterIp = intIp - sub;
+		if ( hasOwnProperty.call(ipRange, masterIp) )
+			continue;
+		if ( sub <= ipRange[masterIp] )
+			return 1;
+		return 0;
+	}
+	return 0;
+}
+
 function FindProxyForURL(url, host) {
-	function convertAddress(ipchars) {
-		var bytes = ipchars.split('.');
-		var result = ((bytes[0] & 0xff) << 24) |
-		((bytes[1] & 0xff) << 16) |
-		((bytes[2] & 0xff) << 8) |
-		(bytes[3] & 0xff);
-		return result >>> 0;
-	};
-	function isInRange(ipRange, intIp) {
-		for ( var range = 256; range <= 8388608; range*=2 ) {
-			var sub = intIp & (range-1);
-			var masterIp = intIp - sub;
-			if ( hasOwnProperty.call(ipRange, masterIp) )
-				continue;
-			if ( sub <= ipRange[masterIp] )
-				return 1;
-			return 0;
-		}
-		return 0;
-	}
-	function isInRangeEnum(ipRange, intIp) {
-		for ( var beg in ipRange ) {
-			if ( intIp > beg && intIp < Number(beg) + ipRange[beg] )
-				return 1;
-		}
-		return 0;
-	}
 
 	if ( isPlainHostName(host) === true ) {
 		return direct;
@@ -53,7 +47,7 @@ function FindProxyForURL(url, host) {
 		}
 		
 		var intIp = convertAddress(strIp);
-		if ( isInRangeEnum(subnetIpRange, intIp) ) {
+		if ( isInRange(subnetIpRange, intIp) ) {
 			return direct;
 		}
 		if ( isInRange(cnIpRange, intIp) ) {
