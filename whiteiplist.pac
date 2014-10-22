@@ -4867,10 +4867,10 @@ var subnetIpRange = {
 167772160:16777216,	//10.0.0.0/8
 2886729728:1048576,	//172.16.0.0/12
 3232235520:65536,	//192.168.0.0/16
-2130706432:255		//127.0.0.0/24
+2130706432:256		//127.0.0.0/24
 };
 
-var wall_proxy = "PROXY 127.0.0.1:1080;";
+var wall_proxy = "PROXY 192.168.0.191:8199;";
 var nowall_proxy = "DIRECT;";
 
 var direct = "DIRECT;";
@@ -4900,7 +4900,7 @@ function FindProxyForURL(url, host) {
 	}
 	function isInRangeEnum(ipRange, intIp) {
 		for ( var beg in ipRange ) {
-			if ( intIp > beg && intIp < beg + ipRange[beg] )
+			if ( (intIp >= beg) && (intIp < Number(beg) + ipRange[beg]) )
 				return 1;
 		}
 		return 0;
