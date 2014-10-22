@@ -1,5 +1,7 @@
 var cnIpRange = __IP_LIST__;
 
+var fakeIpRange = __FAKE_IP_LIST__;
+
 var subnetIpRange = {
 167772160:16777216,	//10.0.0.0/8
 2886729728:1048576,	//172.16.0.0/12
@@ -47,6 +49,9 @@ function FindProxyForURL(url, host) {
 		}
 		
 		var intIp = convertAddress(strIp);
+		if ( isInRange(fakeIpRange, intIp) ) {
+			return wall_proxy;
+		}
 		if ( isInRange(subnetIpRange, intIp) ) {
 			return direct;
 		}

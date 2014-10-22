@@ -10099,7 +10099,7 @@ var domains = {
 	"zzxsjswkj.com": 1,
 	"zzyjs.com": 1,
 	"zzz4.com": 1,
-	"zzzj.com": 1
+	"zzzj.com": 1,
 };
 
 var wall_proxy = "PROXY 127.0.0.1:1080;";

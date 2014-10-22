@@ -4860,7 +4860,48 @@ var cnIpRange = {
 0xdffe0000:65536,
 0xdfff0000:32768,
 0xdfffec00:1024,
-0xdffffc00:512,
+0xdffffc00:512
+};
+
+var fakeIpRange = {
+0x4a7d7f66:1,
+0x4a7d9b66:1,
+0x4a7d2766:1,
+0x4a7d2771:1,
+0xd155e58a:1,
+0x80797e8b:1,
+0x9f6a794b:1,
+0xa9840d67:1,
+0xc043c606:1,
+0xca6a0102:1,
+0xcab50755:1,
+0xcba1e6ab:1,
+0xcb620741:1,
+0xcf0c5862:1,
+0xd0381f2b:1,
+0xd1913632:1,
+0xd1dc1eae:1,
+0xd1244921:1,
+0xd35e4293:1,
+0xd5a9fb23:1,
+0xd8ddbcb6:1,
+0xd8eab30d:1,
+0xf3b9bb27:1,
+0x253d369e:1,
+0x42442b2:1,
+0x2e52ae44:1,
+0x3b1803ad:1,
+0x402158a1:1,
+0x4021632f:1,
+0x4042a3fb:1,
+0x4168cafc:1,
+0x41a0db71:1,
+0x422dfced:1,
+0x480ecd68:1,
+0x480ecd63:1,
+0x4e10310f:1,
+0x807c62d:1,
+0x5d2e0859:1
 };
 
 var subnetIpRange = {
@@ -4910,6 +4951,9 @@ function FindProxyForURL(url, host) {
 		}
 		
 		var intIp = convertAddress(strIp);
+		if ( isInRange(fakeIpRange, intIp) ) {
+			return wall_proxy;
+		}
 		if ( isInRange(subnetIpRange, intIp) ) {
 			return direct;
 		}
