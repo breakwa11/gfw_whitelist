@@ -30,7 +30,7 @@ function FindProxyForURL(url, host) {
 	var pos = host.lastIndexOf('.', pos1 - 1);
 
 	suffix = host.substring(pos1 + 1);
-	if (hasOwnProperty.call(domains, suffix)) {
+	if (suffix == "cn") {
 		return nowall_proxy;
 	}
 

@@ -42,23 +42,22 @@ function FindProxyForURL(url, host) {
 	if ( isPlainHostName(host) === true ) {
 		return direct;
 	}
-	{
-		var strIp = dnsResolve(host);
-		if (!strIp) {
-			return wall_proxy;
-		}
-		
-		var intIp = convertAddress(strIp);
-		if ( isInRange(fakeIpRange, intIp) ) {
-			return wall_proxy;
-		}
-		if ( isInRange(subnetIpRange, intIp) ) {
-			return direct;
-		}
-		if ( isInRange(cnIpRange, intIp) ) {
-			return nowall_proxy;
-		}
+
+	var strIp = dnsResolve(host);
+	if (!strIp) {
 		return wall_proxy;
 	}
+	
+	var intIp = convertAddress(strIp);
+	if ( isInRange(fakeIpRange, intIp) ) {
+		return wall_proxy;
+	}
+	if ( isInRange(subnetIpRange, intIp) ) {
+		return direct;
+	}
+	if ( isInRange(cnIpRange, intIp) ) {
+		return nowall_proxy;
+	}
+	return wall_proxy;
 }
 
