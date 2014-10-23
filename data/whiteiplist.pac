@@ -28,7 +28,7 @@ function isInRange(ipRange, intIp) {
 	for ( var range = 256; range <= 8388608; range*=2 ) {
 		var sub = intIp & (range-1);
 		var masterIp = intIp - sub;
-		if ( hasOwnProperty.call(ipRange, masterIp) )
+		if ( !hasOwnProperty.call(ipRange, masterIp) )
 			continue;
 		if ( sub <= ipRange[masterIp] )
 			return 1;
@@ -38,7 +38,6 @@ function isInRange(ipRange, intIp) {
 }
 
 function FindProxyForURL(url, host) {
-
 	if ( isPlainHostName(host) === true ) {
 		return direct;
 	}
