@@ -85,8 +85,12 @@ def final_list():
 	fileobj = open("data/cn_ip_range.txt", "r")
 	content = ''
 	if fileobj:
+		list_result = []
 		lines_list = [line.rstrip('\n').split(' ') for line in fileobj]
 		list_result = [ "0x%x:%s," % (int(line[0]),int(line[1])) for line in lines_list ]
+		#for mask in [2**v for v in range(8, 23)]:
+		#	list_result_mask = [ "0x%x:%s," % (int(line[0]),int(line[1])) for line in lines_list if int(line[1]) == mask]
+		#	list_result += ["%d:{"%mask] + list_result_mask + ["},"]
 		content = '\n'.join(list_result)
 	content = '{\n' + content[:-1] + "\n}"
 	return content
