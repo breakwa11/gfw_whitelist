@@ -11,7 +11,6 @@ var subnetIpRange = {
 
 var wall_proxy = __PROXY__;
 var nowall_proxy = "DIRECT;";
-
 var direct = "DIRECT;";
 
 var hasOwnProperty = Object.hasOwnProperty;
@@ -28,11 +27,8 @@ function isInRange(ipRange, intIp) {
 	for ( var range = 256; range <= 8388608; range*=2 ) {
 		var sub = intIp & (range-1);
 		var masterIp = intIp - sub;
-		if ( !hasOwnProperty.call(ipRange, masterIp) )
-			continue;
-		if ( sub <= ipRange[masterIp] )
-			return 1;
-		return 0;
+		if ( hasOwnProperty.call(ipRange, masterIp) )
+			return sub < ipRange[masterIp];
 	}
 	return 0;
 }
@@ -48,7 +44,7 @@ function FindProxyForURL(url, host) {
 	}
 	
 	var intIp = convertAddress(strIp);
-	if ( isInRange(fakeIpRange, intIp) ) {
+	if ( hasOwnProperty.call(fakeIpRange, intIp) ) {
 		return wall_proxy;
 	}
 	if ( isInRange(subnetIpRange, intIp) ) {
