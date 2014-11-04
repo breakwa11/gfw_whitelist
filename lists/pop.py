@@ -96,5 +96,6 @@ ykimg.com
 youshang.com
 zdmimg.com
 zoopda.com
+zuoche.com
 """
     return set(liststr.splitlines(False))
