@@ -56,9 +56,9 @@ def parse_args():
 		help='path to gfwlist')
 	parser.add_argument('-o', '--output', dest='output', default='whiteiplist.pac',
 		help='path to output pac', metavar='PAC')
-	parser.add_argument('-p', '--proxy', dest='proxy', default='"PROXY 127.0.0.1:1080;"',
+	parser.add_argument('-p', '--proxy', dest='proxy', default='"SOCKS5 127.0.0.1:1080;"',
 		help='the proxy parameter in the pac file, for example,\
-		"127.0.0.1:1080;"', metavar='PROXY')
+		"127.0.0.1:1080;"', metavar='SOCKS5')
 	return parser.parse_args()
 
 def get_all_list(lists):

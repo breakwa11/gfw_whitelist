@@ -4911,7 +4911,7 @@ var subnetIpRange = {
 2130706432:256		//127.0.0.0/24
 };
 
-var wall_proxy = "PROXY 127.0.0.1:1080;";
+var wall_proxy = "SOCKS5 127.0.0.1:1080;";
 var nowall_proxy = "DIRECT;";
 var direct = "DIRECT;";
 
