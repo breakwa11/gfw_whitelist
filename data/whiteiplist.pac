@@ -24,7 +24,7 @@ function convertAddress(ipchars) {
 	return result >>> 0;
 };
 function isInRange(ipRange, intIp) {
-	for ( var range = 256; range <= 4194304; range*=2 ) {
+	for ( var range = 256; range <= 1048576; range*=4 ) {
 		var sub = intIp & (range-1);
 		var masterIp = intIp - sub;
 		if ( hasOwnProperty.call(ipRange[range], masterIp) )
@@ -33,7 +33,7 @@ function isInRange(ipRange, intIp) {
 	return 0;
 }
 function isInSingleRange(ipRange, intIp) {
-	for ( var range = 256; range <= 4194304; range*=2 ) {
+	for ( var range = 256; range <= 1048576; range*=4 ) {
 		var sub = intIp & (range-1);
 		var masterIp = intIp - sub;
 		if ( hasOwnProperty.call(ipRange, masterIp) )
