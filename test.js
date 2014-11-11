@@ -1,5 +1,5 @@
 var test_cases = [
-	1, "www.google.com",
+	1, "www.testgoogle.com",
 	0, "127.0.0.1",
 	0, "qq.com",
 	0, "im.qq.com",
@@ -16,7 +16,7 @@ function isPlainHostName(host) {
 }
 
 function dnsResolve(host) {
-	//*
+	/*
 	return "0.0.0.0";
 	/*/
 	return "27.40.0.0"
