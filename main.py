@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from argparse import ArgumentParser
+import list_white
 
 def parse_args():
 	parser = ArgumentParser()
@@ -13,35 +14,14 @@ def parse_args():
 		"127.0.0.1:1080;"', metavar='SOCKS5')
 	return parser.parse_args()
 
-def get_all_list(lists):
-	all_list = set()
-	result = list()
-	for item in lists:
-		all_list = all_list | item.getlist()
-	all_list.remove('')
-	sort_list = []
-	for item in all_list:
-		sort_list.append(item)
-	sort_list.sort()
-	for item in sort_list:
-		result.append('\n\t"' + item + '": 1,')
-	return result
-
 def get_file_data(filename):
 	content = ''
 	with open(filename, 'r') as file_obj:
 		content = file_obj.read()
 	return content
 
-def final_list():
-	import lists
-	list_result = get_all_list(lists.get_list_set())
-	content = ''.join(list_result)
-	content = '{' + content[:-1] + "\n}"
-	return content
-
 def writefile(input_file, proxy, output_file):
-	domains_content = final_list()
+	domains_content = list_white.final_list()
 	proxy_content = get_file_data(input_file)
 	proxy_content = proxy_content.replace('__PROXY__', proxy)
 	proxy_content = proxy_content.replace('__DOMAINS__', domains_content)
