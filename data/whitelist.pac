@@ -1,9 +1,8 @@
-var domains = __DOMAINS__;
-
 var wall_proxy = __PROXY__;
 var nowall_proxy = "DIRECT;";
-
 var direct = "DIRECT;";
+
+var domains = __DOMAINS__;
 
 var hasOwnProperty = Object.hasOwnProperty;
 

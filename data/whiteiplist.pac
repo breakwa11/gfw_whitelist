@@ -1,3 +1,7 @@
+var wall_proxy = __PROXY__;
+var nowall_proxy = "DIRECT;";
+var direct = "DIRECT;";
+
 var cnIpRange = __IP_LIST__;
 
 var fakeIpRange = __FAKE_IP_LIST__;
@@ -8,10 +12,6 @@ var subnetIpRange = {
 3232235520:65536,	//192.168.0.0/16
 2130706432:256		//127.0.0.0/24
 };
-
-var wall_proxy = __PROXY__;
-var nowall_proxy = "DIRECT;";
-var direct = "DIRECT;";
 
 var hasOwnProperty = Object.hasOwnProperty;
 
