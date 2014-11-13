@@ -33,13 +33,13 @@ function convertAddress(ipchars) {
 };
 function isInSingleRange(ipRange, intIp) {
 	if ( hasOwnProperty.call(cnIp16Range, intIp >>> 8) ) {
-		for ( var range = 1; range < 256; range*=4 ) {
+		for ( var range = 1; range < 64; range*=4 ) {
 			var master = intIp & ~(range-1);
 			if ( hasOwnProperty.call(ipRange, master) )
 				return intIp - master < ipRange[master];
 		}
 	} else {
-		for ( var range = 256; range <= 1024; range*=4 ) {
+		for ( var range = 64; range <= 1024; range*=4 ) {
 			var master = intIp & ~(range-1);
 			if ( hasOwnProperty.call(ipRange, master) )
 				return intIp - master < ipRange[master];

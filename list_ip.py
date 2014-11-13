@@ -65,7 +65,7 @@ def final_list():
 			list_result.append("0x%x:%s," % ( int(line[0])/256, int(line[1])/256 ))
 		list_result.append('}')
 		#'''
-		content = '\n'.join(list_result)
+		content = ''.join(list_result)
 	content = '[\n' + content[:] + "\n]"
 	return content
 
@@ -77,19 +77,19 @@ def center_list():
 		list_result = []
 		lines_list = [line.rstrip('\n').split(' ') for line in fileobj]
 		for line in lines_list:
-			if int(line[1]) < (1 << 16):
-				master_net.add( int(int(line[0]) >> 16) )
+			if int(line[1]) < (1 << 14):
+				master_net.add( int(int(line[0]) >> 14) )
 	master_net = list(master_net)
 	master_net.sort()
 	list_result = ['0x%x:1,' % s for s in master_net]
-	content = '\n'.join(list_result)
+	content = ''.join(list_result)
 	content = '{\n' + content + "\n}"
 	return content
 
 def fake_list():
 	content = ''
 	list_result = [ "0x%x:1," % int(ip2int(ip)) for ip in fakeIpList ]
-	content = '\n'.join(list_result)
+	content = ''.join(list_result)
 	content = '{\n' + content[:-1] + "\n}"
 	return content
 
