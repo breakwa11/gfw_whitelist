@@ -3,15 +3,16 @@ var nowall_proxy = "DIRECT;";
 var direct = "DIRECT;";
 
 var cnIpRange = __IP_LIST__;
+var cnIp16Range = __IP16_LIST__;
 
 var fakeIpRange = __FAKE_IP_LIST__;
 
-var subnetIpRange = {
-167772160:16777216,	//10.0.0.0/8
-2886729728:1048576,	//172.16.0.0/12
-3232235520:65536,	//192.168.0.0/16
-2130706432:256		//127.0.0.0/24
-};
+var subnetIpRangeList = [
+167772160,184549376,	//10.0.0.0/8
+2886729728,2887778304,	//172.16.0.0/12
+3232235520,3232301056,	//192.168.0.0/16
+2130706432,2130706688		//127.0.0.0/24
+];
 
 var hasOwnProperty = Object.hasOwnProperty;
 
@@ -30,25 +31,25 @@ function convertAddress(ipchars) {
 	(bytes[3]);
 	return result >>> 0;
 };
-function isInRange(ipRange, intIp) {
-	for ( var range = 256; range <= 1048576; range*=4 ) {
-		var master = intIp & ~(range-1);
-		if ( hasOwnProperty.call(ipRange[range], master) )
-			return intIp - master < range;
-	}
-}
 function isInSingleRange(ipRange, intIp) {
-	for ( var range = 256; range <= 1048576; range*=4 ) {
-		var master = intIp & ~(range-1);
-		if ( hasOwnProperty.call(ipRange, master) )
-			return intIp - master < ipRange[master];
+	if ( hasOwnProperty.call(cnIp16Range, intIp >>> 8) ) {
+		for ( var range = 1; range < 256; range*=4 ) {
+			var master = intIp & ~(range-1);
+			if ( hasOwnProperty.call(ipRange, master) )
+				return intIp - master < ipRange[master];
+		}
+	} else {
+		for ( var range = 256; range <= 1024; range*=4 ) {
+			var master = intIp & ~(range-1);
+			if ( hasOwnProperty.call(ipRange, master) )
+				return intIp - master < ipRange[master];
+		}
 	}
 }
 function isInSubnetRange(ipRange, intIp) {
-	for ( var range = 256; range <= 16777216; range*=16 ) {
-		var master = intIp & ~(range-1);
-		if ( hasOwnProperty.call(ipRange, master) )
-			return intIp - master < ipRange[master];
+	for ( var i = 0; i < 8; i += 2 ) {
+		if ( ipRange[i] <= intIp && intIp < ipRange[i+1] )
+			return true;
 	}
 }
 function getProxyFromIP(strIp) {
@@ -56,11 +57,11 @@ function getProxyFromIP(strIp) {
 	if ( hasOwnProperty.call(fakeIpRange, intIp) ) {
 		return wall_proxy;
 	}
-	if ( isInSubnetRange(subnetIpRange, intIp) ) {
+	if ( isInSubnetRange(subnetIpRangeList, intIp) ) {
 		return direct;
 	}
 	var index = (intIp >>> 24) & 0xff;
-	if ( isInSingleRange(cnIpRange[index], intIp) ) {
+	if ( isInSingleRange(cnIpRange[index], intIp >>> 8) ) {
 		return nowall_proxy;
 	}
 	return wall_proxy;

@@ -27,10 +27,12 @@ def get_file_data(filename):
 
 def writefile(input_file, proxy, auto_proxy, output_file):
 	ip_content = list_ip.final_list()
+	ip16_content = list_ip.center_list()
 	proxy_content = get_file_data(input_file)
 	proxy_content = proxy_content.replace('__PROXY__', proxy)
 	proxy_content = proxy_content.replace('__AUTO_PROXY__', auto_proxy)
 	proxy_content = proxy_content.replace('__IP_LIST__', ip_content)
+	proxy_content = proxy_content.replace('__IP16_LIST__', ip16_content)
 	proxy_content = proxy_content.replace('__FAKE_IP_LIST__', list_ip.fake_list())
 	proxy_content = proxy_content.replace('__WHITE_DOMAINS__', list_white.final_list())
 	proxy_content = proxy_content.replace('__BLACK_DOMAINS__', list_black.final_list())
