@@ -32,26 +32,23 @@ function convertAddress(ipchars) {
 };
 function isInRange(ipRange, intIp) {
 	for ( var range = 256; range <= 1048576; range*=4 ) {
-		var sub = intIp & (range-1);
-		var masterIp = intIp - sub;
-		if ( hasOwnProperty.call(ipRange[range], masterIp) )
-			return sub < range;
+		var master = intIp & ~(range-1);
+		if ( hasOwnProperty.call(ipRange[range], master) )
+			return intIp - master < range;
 	}
 }
 function isInSingleRange(ipRange, intIp) {
 	for ( var range = 256; range <= 1048576; range*=4 ) {
-		var sub = intIp & (range-1);
-		var masterIp = intIp - sub;
-		if ( hasOwnProperty.call(ipRange, masterIp) )
-			return sub < ipRange[masterIp];
+		var master = intIp & ~(range-1);
+		if ( hasOwnProperty.call(ipRange, master) )
+			return intIp - master < ipRange[master];
 	}
 }
 function isInSubnetRange(ipRange, intIp) {
 	for ( var range = 256; range <= 16777216; range*=16 ) {
-		var sub = intIp & (range-1);
-		var masterIp = intIp - sub;
-		if ( hasOwnProperty.call(ipRange, masterIp) )
-			return sub < ipRange[masterIp];
+		var master = intIp & ~(range-1);
+		if ( hasOwnProperty.call(ipRange, master) )
+			return intIp - master < ipRange[master];
 	}
 }
 function getProxyFromIP(strIp) {
@@ -62,10 +59,11 @@ function getProxyFromIP(strIp) {
 	if ( isInSubnetRange(subnetIpRange, intIp) ) {
 		return direct;
 	}
-	if ( isInSingleRange(cnIpRange, intIp) ) {
+	var index = (intIp >>> 24) & 0xff;
+	if ( isInSingleRange(cnIpRange[index], intIp) ) {
 		return nowall_proxy;
 	}
-	return auto_proxy;
+	return wall_proxy;
 }
 function FindProxyForURL(url, host) {
 	if ( isPlainHostName(host) === true ) {

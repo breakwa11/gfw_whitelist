@@ -48,15 +48,30 @@ def ip2int(ipstr):
 		ret = ret * 256 + int(intlist[i])
 	return ret
 
-def final_list():
+def final_list(output = False):
 	fileobj = open("data/cn_ip_range.txt", "r")
 	content = ''
+	master_net = set()
 	if fileobj:
 		list_result = []
 		lines_list = [line.rstrip('\n').split(' ') for line in fileobj]
-		list_result = [ "0x%x:%s," % (int(line[0]),int(line[1])) for line in lines_list ]
+		#list_result = [ "0x%x:%s," % (int(line[0]),int(line[1])) for line in lines_list ]
+		#'''
+		list_result.append('{')
+		start_num = 0
+		for line in lines_list:
+			while (int(line[0]) >> 24) > start_num:
+				start_num += 1
+				list_result.append('},{')
+			master_net.add( int(line[0]) >> 13 )
+			list_result.append("0x%x:%s," % (int(line[0]),int(line[1])))
+		list_result.append('}')
+		#'''
 		content = '\n'.join(list_result)
-	content = '{\n' + content[:-1] + "\n}"
+	content = '[\n' + content[:] + "\n]"
+	if output:
+		print len(master_net)
+		#print master_net
 	return content
 
 def fake_list():
@@ -65,4 +80,10 @@ def fake_list():
 	content = '\n'.join(list_result)
 	content = '{\n' + content[:-1] + "\n}"
 	return content
+
+def main():
+	final_list(True)
+
+if __name__ == '__main__':
+	main()
 
