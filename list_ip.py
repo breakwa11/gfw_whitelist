@@ -48,20 +48,6 @@ def ip2int(ipstr):
 		ret = ret * 256 + int(intlist[i])
 	return ret
 
-def get_all_list(lists):
-	all_list = set()
-	result = list()
-	for item in lists:
-		all_list = all_list | item.getlist()
-	all_list.remove('')
-	sort_list = []
-	for item in all_list:
-		sort_list.append(item)
-	sort_list.sort()
-	for item in sort_list:
-		result.append('\n  "' + item + '": 1,')
-	return result
-
 def final_list():
 	fileobj = open("data/cn_ip_range.txt", "r")
 	content = ''
@@ -69,9 +55,6 @@ def final_list():
 		list_result = []
 		lines_list = [line.rstrip('\n').split(' ') for line in fileobj]
 		list_result = [ "0x%x:%s," % (int(line[0]),int(line[1])) for line in lines_list ]
-		#for mask in [2**v for v in range(8, 23)]:
-		#	list_result_mask = [ "0x%x:%s," % (int(line[0]),int(line[1])) for line in lines_list if int(line[1]) == mask]
-		#	list_result += ["%d:{"%mask] + list_result_mask + ["},"]
 		content = '\n'.join(list_result)
 	content = '{\n' + content[:-1] + "\n}"
 	return content

@@ -21,12 +21,8 @@ var subnetIpRange = {
 var hasOwnProperty = Object.hasOwnProperty;
 
 function check_ipv4(host) {
-	// check if the ipv4 format (TODO: ipv6)
-	//   http://home.deds.nl/~aeron/regex/
 	var re_ipv4 = /^\d+\.\d+\.\d+\.\d+$/g;
 	if (re_ipv4.test(host)) {
-		// in theory, we can add chnroutes test here.
-		// but that is probably too much an overkill.
 		return true;
 	}
 }
@@ -46,7 +42,6 @@ function isInRange(ipRange, intIp) {
 		if ( hasOwnProperty.call(ipRange[range], masterIp) )
 			return sub < range;
 	}
-	return 0;
 }
 function isInSingleRange(ipRange, intIp) {
 	for ( var range = 256; range <= 1048576; range*=4 ) {
@@ -55,7 +50,6 @@ function isInSingleRange(ipRange, intIp) {
 		if ( hasOwnProperty.call(ipRange, masterIp) )
 			return sub < ipRange[masterIp];
 	}
-	return 0;
 }
 function isInSubnetRange(ipRange, intIp) {
 	for ( var range = 256; range <= 16777216; range*=16 ) {
@@ -64,15 +58,29 @@ function isInSubnetRange(ipRange, intIp) {
 		if ( hasOwnProperty.call(ipRange, masterIp) )
 			return sub < ipRange[masterIp];
 	}
-	return 0;
+}
+function getProxyFromIP(strIp) {
+	var intIp = convertAddress(strIp);
+	if ( hasOwnProperty.call(fakeIpRange, intIp) ) {
+		return wall_proxy;
+	}
+	if ( isInSubnetRange(subnetIpRange, intIp) ) {
+		return direct;
+	}
+	var index = (intIp >>> 24) & 0xff;
+	if ( isInSingleRange(cnIpRange[index], intIp) ) {
+		return nowall_proxy;
+	}
+	return auto_proxy;
 }
 function FindProxyForURL(url, host) {
 	if ( isPlainHostName(host) === true ) {
 		return direct;
 	}
 	if ( check_ipv4(host) === true ) {
-		return nowall_proxy;
+		return getProxyFromIP(host);
 	}
+
 	var suffix;
 	var pos1 = host.lastIndexOf('.');
 	var pos = host.lastIndexOf('.', pos1 - 1);
@@ -97,6 +105,9 @@ function FindProxyForURL(url, host) {
 		pos = host.lastIndexOf('.', pos - 1);
 	}
 
+	var pos1 = host.lastIndexOf('.');
+	var pos = host.lastIndexOf('.', pos1 - 1);
+
 	while(1) {
 		if (pos == -1) {
 			if (hasOwnProperty.call(black_domains, host)) {
@@ -116,17 +127,6 @@ function FindProxyForURL(url, host) {
 	if (!strIp) {
 		return wall_proxy;
 	}
-	
-	var intIp = convertAddress(strIp);
-	if ( hasOwnProperty.call(fakeIpRange, intIp) ) {
-		return wall_proxy;
-	}
-	if ( isInSubnetRange(subnetIpRange, intIp) ) {
-		return direct;
-	}
-	if ( isInSingleRange(cnIpRange, intIp) ) {
-		return nowall_proxy;
-	}
-	return auto_proxy;
+	return getProxyFromIP(strIp);
 }
 
