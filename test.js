@@ -1,5 +1,5 @@
 var test_cases = [
-	1, "www.testgoogle.com",
+	1, "a.b.c.d.com",
 	0, "127.0.0.1",
 	0, "qq.com",
 	0, "im.qq.com",
@@ -16,14 +16,16 @@ function isPlainHostName(host) {
 }
 
 function dnsResolve(host) {
-	/*
-	return "0.0.0.0";
-	/*/
-	return "27.40.0.0"
-	//*/
+	return "27.40.0.0";
+	return "27.50.96.0";
+	return "27.50.128.0";
 }
 
 function isInNet(ip, ipstart, ipmask) {
+	return false;
+}
+
+function shExpMatch(a, b) {
 	return false;
 }
 
