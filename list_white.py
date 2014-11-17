@@ -12,7 +12,7 @@ def get_all_list(lists):
 		sort_list.append(item)
 	sort_list.sort()
 	for item in sort_list:
-		result.append('\n\t"' + item + '": 1,')
+		result.append('\n"' + item + '":1,')
 	return result
 
 def final_list():

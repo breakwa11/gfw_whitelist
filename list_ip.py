@@ -88,9 +88,9 @@ def center_list():
 
 def fake_list():
 	content = ''
-	list_result = [ "0x%x:1," % int(ip2int(ip)) for ip in fakeIpList ]
+	list_result = [ "0x%x," % int(ip2int(ip)) for ip in fakeIpList ]
 	content = ''.join(list_result)
-	content = '{\n' + content[:-1] + "\n}"
+	content = '[\n' + content[:-1] + "\n]"
 	return content
 
 def main():

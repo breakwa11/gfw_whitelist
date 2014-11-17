@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from argparse import ArgumentParser
+import re
 import list_white
 import list_black
 import list_ip
@@ -37,6 +38,13 @@ def writefile(input_file, proxy, auto_proxy, output_file):
 	proxy_content = proxy_content.replace('__WHITE_DOMAINS__', list_white.final_list())
 	proxy_content = proxy_content.replace('__BLACK_DOMAINS__', list_black.final_list())
 	with open(output_file, 'w') as file_obj:
+		file_obj.write(proxy_content)
+
+	r = re.compile('//.*')
+	proxy_content = r.sub('', proxy_content)
+	proxy_content = proxy_content.replace('\n', '')
+	proxy_content = proxy_content.replace('\t', '')
+	with open('min_' + output_file, 'w') as file_obj:
 		file_obj.write(proxy_content)
 
 def main():

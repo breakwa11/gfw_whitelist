@@ -53,8 +53,12 @@ function isInSubnetRange(ipRange, intIp) {
 }
 function getProxyFromIP(strIp) {
 	var intIp = convertAddress(strIp);
-	if ( hasOwnProperty.call(fakeIpRange, intIp) ) {
-		return wall_proxy;
+	{
+		var len = fakeIpRange.length;
+		for ( var i = 0; i < len; ++i ) {
+			if ( intIp == fakeIpRange[i] )
+				return wall_proxy;
+		}
 	}
 	if ( isInSubnetRange(subnetIpRangeList, intIp) ) {
 		return direct;
