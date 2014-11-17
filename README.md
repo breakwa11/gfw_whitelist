@@ -17,21 +17,19 @@
 简单使用方法
 ---------
 
-下载 whitelist.pac或whiteiplist.pac或proxy.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 whitelist.pac或whiteiplist.pac。
+方法一：下载 whitelist.pac或whiteiplist.pac或proxy.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 whitelist.pac或whiteiplist.pac。
 
-```
-var wall_proxy = 'PROXY www.abc.com:443;'; 
-```
-```
-以上需要更换成有效的代理地址，代理类型还可以为'SOCKS5'或'HTTPS'
-```
-```
-多个代理之间使用分号分隔，如'PROXY a.com:80;SOCKS5 a.com:1080;'
-```
+	var wall_proxy = 'PROXY www.abc.com:443;'; 
+	以上需要更换成有效的代理地址，代理类型还可以为'SOCKS5'或'HTTPS'
+	多个代理之间使用分号分隔，如'PROXY a.com:80;SOCKS5 a.com:1080;'
 
 当 `proxy` 的代理类型为 `HTTPS` 时，此 pac 文件适合用于 [Google Chrome 的安全代理](http://www.chromium.org/developers/design-documents/secure-web-proxy)。
 
 对于不需要翻墙，但也需要代理的网站，可自行修改`nowall_proxy`，方式与`wall_proxy`相同。
+
+方法二：设置你的动态代理地址为：[http://proxy.breakwa11.ga/?proxy=PROXY 127.0.0.1:1080](http://proxy.breakwa11.ga/?proxy=PROXY%20127.0.0.1:1080)，注意proxy参数可修改为你自己本地的代理配置，这样即可下载一个适合你本地配置的pac文件。
+参数除了proxy，还支持：nowall, auto, direct，分别对应：非翻墙代理，自动代理（默认与proxy一致），直连代理（如果没有必要请不要修改）。
+本功能在测试中，地址随时可能发生变化，访问速度可能很慢或访问不正常，如不能访问请留意本项目的变更。
 
 本地代理使用 `PROXY` 即http代理最佳，兼容性最好，可用于IE或iOS自动代理配置，s5代理可使用privoxy转换为http代理。不过如果是远程代理可能被偷窥连接内容。
 
@@ -62,13 +60,11 @@ mainproxy.py -p "SOCKS5 127.0.0.1:1080;" -a "SOCKS5 127.0.0.1:1080;"
 
 假设 SSH 开的本地S5端口是 7070，goagent 的本地端口开在 8087，那么设置wall_proxy为：
 
-```
-'SOCKS5 127.0.0.1:7070';
-```
+
+	'SOCKS5 127.0.0.1:7070';
 或
-```
-'PROXY 127.0.0.1:8087';
-```
+
+	'PROXY 127.0.0.1:8087';
 
 然后只需要将whitelist.pac文件所在地址，直接复制到填写自动代理配置的地方（见下文图），就可以用上这个白名单了。如果是本地文件，填写路径类似于"file:///d:/whitelist.pac"。
 

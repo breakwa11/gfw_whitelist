@@ -58,15 +58,18 @@ def final_list():
 		#'''
 		list_result.append('{')
 		start_num = 0
+		comma = ''
 		for line in lines_list:
 			while (int(line[0]) >> 24) > start_num:
 				start_num += 1
 				list_result.append('},{')
-			list_result.append("0x%x:%s," % ( int(line[0])/256, int(line[1])/256 ))
+				comma = ''
+			list_result.append("%s0x%x:%s" % ( comma, int(line[0])/256, int(line[1])/256 ))
+			comma = ','
 		list_result.append('}')
 		#'''
 		content = ''.join(list_result)
-	content = '[\n' + content[:] + "\n]"
+	content = '[\n' + content + "\n]"
 	return content
 
 def center_list():
@@ -83,7 +86,7 @@ def center_list():
 	master_net.sort()
 	list_result = ['0x%x:1,' % s for s in master_net]
 	content = ''.join(list_result)
-	content = '{\n' + content + "\n}"
+	content = '{\n' + content[:-1] + "\n}"
 	return content
 
 def fake_list():
