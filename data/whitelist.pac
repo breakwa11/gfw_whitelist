@@ -16,7 +16,6 @@ function check_ipv4(host) {
 		return true;
 	}
 }
-
 function FindProxyForURL(url, host) {
 	if ( isPlainHostName(host) === true ) {
 		return direct;

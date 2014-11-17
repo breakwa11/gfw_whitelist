@@ -4,7 +4,6 @@ var auto_proxy = __AUTO_PROXY__; // if you have something like COW proxy
 var direct = "DIRECT;";
 
 var white_domains = __WHITE_DOMAINS__;
-
 var black_domains = __BLACK_DOMAINS__;
 
 var cnIpRange = __IP_LIST__;
@@ -16,7 +15,7 @@ var subnetIpRangeList = [
 167772160,184549376,	//10.0.0.0/8
 2886729728,2887778304,	//172.16.0.0/12
 3232235520,3232301056,	//192.168.0.0/16
-2130706432,2130706688		//127.0.0.0/24
+2130706432,2130706688	//127.0.0.0/24
 ];
 
 var hasOwnProperty = Object.hasOwnProperty;
@@ -27,7 +26,6 @@ function check_ipv4(host) {
 		return true;
 	}
 }
-
 function convertAddress(ipchars) {
 	var bytes = ipchars.split('.');
 	var result = (bytes[0] << 24) |
@@ -81,44 +79,47 @@ function FindProxyForURL(url, host) {
 
 	var suffix;
 	var pos1 = host.lastIndexOf('.');
-	var pos = host.lastIndexOf('.', pos1 - 1);
 
-	suffix = host.substring(pos1 + 1);
-	if (suffix == "cn") {
-		return nowall_proxy;
-	}
+	if ( pos1 > 0 ) {
+		var pos = host.lastIndexOf('.', pos1 - 1);
 
-	while(1) {
-		if (pos == -1) {
-			if (hasOwnProperty.call(white_domains, host)) {
-				return nowall_proxy;
-			} else {
-				break;
-			}
-		}
-		suffix = host.substring(pos + 1);
-		if (hasOwnProperty.call(white_domains, suffix)) {
+		suffix = host.substring(pos1 + 1);
+		if (suffix == "cn") {
 			return nowall_proxy;
 		}
-		pos = host.lastIndexOf('.', pos - 1);
-	}
 
-	var pos1 = host.lastIndexOf('.');
-	var pos = host.lastIndexOf('.', pos1 - 1);
-
-	while(1) {
-		if (pos == -1) {
-			if (hasOwnProperty.call(black_domains, host)) {
-				return wall_proxy;
-			} else {
-				break;
+		while(1) {
+			if (pos == -1) {
+				if (hasOwnProperty.call(white_domains, host)) {
+					return nowall_proxy;
+				} else {
+					break;
+				}
 			}
+			suffix = host.substring(pos + 1);
+			if (hasOwnProperty.call(white_domains, suffix)) {
+				return nowall_proxy;
+			}
+			pos = host.lastIndexOf('.', pos - 1);
 		}
-		suffix = host.substring(pos + 1);
-		if (hasOwnProperty.call(black_domains, suffix)) {
-			return wall_proxy;
-		}
+
+		pos = host.lastIndexOf('.');
 		pos = host.lastIndexOf('.', pos - 1);
+
+		while(1) {
+			if (pos == -1) {
+				if (hasOwnProperty.call(black_domains, host)) {
+					return wall_proxy;
+				} else {
+					break;
+				}
+			}
+			suffix = host.substring(pos + 1);
+			if (hasOwnProperty.call(black_domains, suffix)) {
+				return wall_proxy;
+			}
+			pos = host.lastIndexOf('.', pos - 1);
+		}
 	}
 
 	var strIp = dnsResolve(host);

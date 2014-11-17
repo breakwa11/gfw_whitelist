@@ -17,7 +17,7 @@ var subnetIpRangeList = [
 167772160,184549376,	//10.0.0.0/8
 2886729728,2887778304,	//172.16.0.0/12
 3232235520,3232301056,	//192.168.0.0/16
-2130706432,2130706688		//127.0.0.0/24
+2130706432,2130706688	//127.0.0.0/24
 ];
 
 var hasOwnProperty = Object.hasOwnProperty;
@@ -28,7 +28,6 @@ function check_ipv4(host) {
 		return true;
 	}
 }
-
 function convertAddress(ipchars) {
 	var bytes = ipchars.split('.');
 	var result = (bytes[0] << 24) |
