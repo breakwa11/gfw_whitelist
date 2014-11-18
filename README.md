@@ -27,9 +27,7 @@
 
 对于不需要翻墙，但也需要代理的网站，可自行修改`nowall_proxy`，方式与`wall_proxy`相同。
 
-方法二：打开[http://proxy.breakwa11.ga/ca.crt](http://proxy.breakwa11.ga/ca.crt)并安装证书（可参阅GoAgent的步骤），若为firefox浏览器则可跳过本步骤。  
-用浏览器访问[https://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080](https://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080)看能不能正常打开，若在firefox下要手工添加例外。能正常打开无警告后，进入下一步骤。  
-最后设置你的动态代理地址为：[https://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080](https://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080)，注意proxy参数可修改为你自己本地的代理配置，这样即可下载一个适合你本地配置的pac文件。
+方法二：设置你的动态代理地址为：[http://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080](http://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080)，注意proxy参数可修改为你自己本地的代理配置，这样即可下载一个适合你本地配置的pac文件。
 参数除了proxy，还支持：nowall, auto, direct，分别对应：非翻墙代理，自动代理（默认与proxy一致），直连代理（如果没有必要请不要修改）。
 本功能在测试中，地址随时可能发生变化，访问速度可能很慢或访问不正常，如不能访问请留意本项目的变更。
 
