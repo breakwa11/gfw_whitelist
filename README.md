@@ -27,7 +27,9 @@
 
 对于不需要翻墙，但也需要代理的网站，可自行修改`nowall_proxy`，方式与`wall_proxy`相同。
 
-方法二：设置你的动态代理地址为：[https://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080](https://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080)，注意proxy参数可修改为你自己本地的代理配置，这样即可下载一个适合你本地配置的pac文件。
+方法二：打开[http://proxy.breakwa11.ga/ca.crt](http://proxy.breakwa11.ga/ca.crt)并安装证书（可参阅GoAgent的步骤），若为firefox浏览器则可跳过本步骤。  
+用浏览器访问[https://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080](https://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080)看能不能正常打开，若在firefox下要手工添加例外。能正常打开无警告后，进入下一步骤。  
+最后设置你的动态代理地址为：[https://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080](https://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080)，注意proxy参数可修改为你自己本地的代理配置，这样即可下载一个适合你本地配置的pac文件。
 参数除了proxy，还支持：nowall, auto, direct，分别对应：非翻墙代理，自动代理（默认与proxy一致），直连代理（如果没有必要请不要修改）。
 本功能在测试中，地址随时可能发生变化，访问速度可能很慢或访问不正常，如不能访问请留意本项目的变更。
 
@@ -41,16 +43,12 @@
 
 main.py -o whitelist.pac -p "SOCKS5 127.0.0.1:1080;"
 
-所有选项均可忽略（直接不带参数执行也可），以上为默认值。至于whiteiplist.pac使用mainip.py生成。对于mainproxy.py执行：
-
+所有选项均可忽略（直接不带参数执行也可），以上为默认值。至于whiteiplist.pac使用mainip.py生成。对于mainproxy.py执行：  
 mainproxy.py -p "SOCKS5 127.0.0.1:1080;" -a "SOCKS5 127.0.0.1:1080;"
 
-参数 -a 指定的是不匹配黑白名单的时候所使用的代理，一般使用与 -p 相同的代理即可。
-
-最后使用生成出来的 whitelist.pac或whiteiplist.pac或proxy.pac 即可
-
-自定义列表可把你的域名加入到lists/custom.py里，然后重新执行生成操作
-
+参数 -a 指定的是不匹配黑白名单的时候所使用的代理，一般使用与 -p 相同的代理即可。  
+最后使用生成出来的 whitelist.pac或whiteiplist.pac或proxy.pac 即可  
+自定义列表可把你的域名加入到lists/custom.py里，然后重新执行生成操作  
 严重建议你把你的加入列表项通过mmgac001[at]gmail.com或者issues或者pull request告知我们
 
 
