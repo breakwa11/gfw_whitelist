@@ -11,5 +11,6 @@ translate-tab.com
 layervault.com
 list-manage.com
 goagent.co
+goo.gl
 """
     return set(liststr.splitlines(False))

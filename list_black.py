@@ -121,6 +121,23 @@ def get_all_list(lists):
 		result.append('\n"' + item + '":1,')
 	return result
 
+def obfs(url):
+	ret = ''
+	index = 0
+	for c in url:
+		if c == '.' or ((index & 3) == 0 and index > 0):
+			last = ord(ret[-1])
+			ret = "%s\\x%x" % (ret[:-1], last)
+		ret += c
+		index += 1
+	return ret
+
+def obfs_list(list_result):
+	ret = set()
+	for item in list_result:
+		ret.add( obfs(item) )
+	return ret
+
 def final_list():
 	with open('gfwlist.txt', 'r') as f:
 		content = f.read()
@@ -128,7 +145,7 @@ def final_list():
 	#with open('gfwlist_ogn.txt', 'w') as f:
 	#	f.write(content)
 	domains = parse_gfwlist(content)
-	list_result = get_all_list(reduce_domains(domains))
+	list_result = get_all_list(obfs_list(reduce_domains(domains)))
 	content = ''.join(list_result)
 	content = '{' + content[:-1] + "\n}"
 	return content

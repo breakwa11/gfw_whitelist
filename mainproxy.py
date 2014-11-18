@@ -26,6 +26,13 @@ def get_file_data(filename):
 		content = file_obj.read()
 	return content
 
+def js_shorter(content):
+	r = re.compile('//.*')
+	content = r.sub('', content)
+	content = content.replace('\n', '')
+	content = content.replace('\t', '')
+	return content
+
 def writefile(input_file, proxy, auto_proxy, output_file):
 	ip_content = list_ip.final_list()
 	ip16_content = list_ip.center_list()
@@ -36,7 +43,8 @@ def writefile(input_file, proxy, auto_proxy, output_file):
 	proxy_content = proxy_content.replace('__WHITE_DOMAINS__', list_white.final_list())
 	proxy_content = proxy_content.replace('__BLACK_DOMAINS__', list_black.final_list())
 	#with open('dyn_' + output_file, 'w') as file_obj:
-	#	file_obj.write(proxy_content)
+	#	#file_obj.write(proxy_content)
+	#	file_obj.write(js_shorter(proxy_content) )
 
 	proxy_content = proxy_content.replace('__PROXY__', proxy)
 	proxy_content = proxy_content.replace('__NOWALL_PROXY__', '"DIRECT;"')
@@ -45,12 +53,8 @@ def writefile(input_file, proxy, auto_proxy, output_file):
 	with open(output_file, 'w') as file_obj:
 		file_obj.write(proxy_content)
 
-	r = re.compile('//.*')
-	proxy_content = r.sub('', proxy_content)
-	proxy_content = proxy_content.replace('\n', '')
-	proxy_content = proxy_content.replace('\t', '')
 	with open('min_' + output_file, 'w') as file_obj:
-		file_obj.write(proxy_content)
+		file_obj.write(js_shorter(proxy_content))
 
 def main():
 	args = parse_args()
