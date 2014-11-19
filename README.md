@@ -27,7 +27,8 @@
 
 对于不需要翻墙，但也需要代理的网站，可自行修改`nowall_proxy`，方式与`wall_proxy`相同。
 
-方法二：设置你的动态代理地址为：[http://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080](http://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080)  
+方法二：设置你的动态代理地址为：[http://proxy.breakwa11.ga/?proxy=SOCKS5_127.0.0.1:1080](http://proxy.breakwa11.ga/?proxy=SOCKS5_127.0.0.1:1080)  
+如果你所在的地区使用IP匹配不合适，那么还可以使用这个地址：[http://proxy.breakwa11.ga/?style=noip&proxy=SOCKS5_127.0.0.1:1080](http://proxy.breakwa11.ga/?style=noip&proxy=SOCKS5_127.0.0.1:1080)  
 注意proxy参数可修改为你自己本地的代理配置，这样即可下载一个适合你本地配置的pac文件。  
 参数除了proxy，还支持：nowall, auto, direct，分别对应：非翻墙代理，自动代理（默认与proxy一致），直连代理（如果没有必要请不要修改）。参数之间需加入&分隔开。  
 本功能在测试中，地址随时可能发生变化，访问速度可能很慢或访问不正常，如不能访问请留意本项目的变更。
@@ -127,8 +128,6 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 
 ![Chrome 的扩展](img/chrome-extension.png)
 
-fork from [n0wa11](https://github.com/n0wa11/gfw_whitelist)
-
 PAC性能（100,000次重复执行）
 ----------------
 firefox  
@@ -150,6 +149,11 @@ safari
 whitelist.pac 196ms  
 whiteiplist.pac 155ms  
 proxy.pac 552ms
+
+base on  
+[n0wa11 gfw_whitelist](https://github.com/n0wa11/gfw_whitelist)  
+[clowwindy gfwlist2pac](https://github.com/clowwindy/gfwlist2pac)  
+[Leask Flora_Pac](https://github.com/Leask/Flora_Pac)
 
 ```
 任何意见或建议，请联系 mmgac001[at]gmail.com ，或提交issue到项目页面 ლ(╹◡╹ლ)

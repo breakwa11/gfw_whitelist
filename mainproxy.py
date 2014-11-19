@@ -18,6 +18,7 @@ def parse_args():
 	parser.add_argument('-a', '--auto_proxy', dest='auto_proxy', default='"SOCKS5 127.0.0.1:1080;"',
 		help='the auto proxy parameter in the pac file, for example,\
 		"127.0.0.1:1080;"', metavar='SOCKS5')
+	parser.add_argument('-d', '--dynamic', dest='dynamic', default='no')
 	return parser.parse_args()
 
 def get_file_data(filename):
@@ -33,7 +34,7 @@ def js_shorter(content):
 	content = content.replace('\t', '')
 	return content
 
-def writefile(input_file, proxy, auto_proxy, output_file):
+def writefile(input_file, proxy, auto_proxy, output_file, dynamic):
 	ip_content = list_ip.final_list()
 	ip16_content = list_ip.center_list()
 	proxy_content = get_file_data(input_file)
@@ -42,9 +43,9 @@ def writefile(input_file, proxy, auto_proxy, output_file):
 	proxy_content = proxy_content.replace('__FAKE_IP_LIST__', list_ip.fake_list())
 	proxy_content = proxy_content.replace('__WHITE_DOMAINS__', list_white.final_list())
 	proxy_content = proxy_content.replace('__BLACK_DOMAINS__', list_black.final_list())
-	#with open('dyn_' + output_file, 'w') as file_obj:
-	#	#file_obj.write(proxy_content)
-	#	file_obj.write(js_shorter(proxy_content) )
+	if dynamic != 'no':
+		with open(dynamic + output_file, 'w') as file_obj:
+			file_obj.write( js_shorter(proxy_content) )
 
 	proxy_content = proxy_content.replace('__PROXY__', proxy)
 	proxy_content = proxy_content.replace('__NOWALL_PROXY__', '"DIRECT;"')
@@ -58,7 +59,7 @@ def writefile(input_file, proxy, auto_proxy, output_file):
 
 def main():
 	args = parse_args()
-	writefile(args.input, '"' + args.proxy.strip('"') + '"', '"' + args.auto_proxy.strip('"') + '"', args.output)
+	writefile(args.input, '"' + args.proxy.strip('"') + '"', '"' + args.auto_proxy.strip('"') + '"', args.output, args.dynamic)
 
 if __name__ == '__main__':
 	main()
