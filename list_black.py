@@ -109,18 +109,6 @@ def reduce_domains(domains):
 				new_domains.add(last_root_domain)
 	return new_domains
 
-def get_all_list(lists):
-	all_list = lists
-	result = list()
-	all_list.remove('')
-	sort_list = []
-	for item in all_list:
-		sort_list.append(item)
-	sort_list.sort()
-	for item in sort_list:
-		result.append('\n"' + item + '":1,')
-	return result
-
 def obfs(url):
 	ret = ''
 	index = 0
@@ -138,6 +126,31 @@ def obfs_list(list_result):
 		ret.add( obfs(item) )
 	return ret
 
+def get_all_list(lists):
+	all_list = lists
+	result = list()
+	all_list.remove('')
+	url_dict = {}
+	for item in all_list:
+		parts = item.split('.')
+		if not url_dict.has_key(parts[-1]) :
+			url_dict[parts[-1]] = list()
+		url_dict[parts[-1]].append( obfs('.'.join(parts[:-1])) )
+
+	key_comma = ''
+	url_dict_keys = url_dict.keys()
+	url_dict_keys.sort()
+	for key in url_dict_keys:
+		url_dict[key].sort()
+		result.append('%s"%s":{' % (key_comma, key) )
+		comma = ''
+		for item in url_dict[key]:
+			result.append(comma + '\n"' + item + '":1')
+			comma = ','
+		result.append('\n}')
+		key_comma = ','
+	return result
+
 def final_list():
 	with open('gfwlist.txt', 'r') as f:
 		content = f.read()
@@ -145,8 +158,8 @@ def final_list():
 	#with open('gfwlist_ogn.txt', 'w') as f:
 	#	f.write(content)
 	domains = parse_gfwlist(content)
-	list_result = get_all_list(obfs_list(reduce_domains(domains)))
+	list_result = get_all_list(reduce_domains(domains))
 	content = ''.join(list_result)
-	content = '{' + content[:-1] + "\n}"
+	content = '{' + content + "\n}"
 	return content
 

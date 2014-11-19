@@ -29,7 +29,7 @@
 
 方法二：设置你的动态代理地址为：[http://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080](http://proxy.breakwa11.ga/?proxy=PROXY_127.0.0.1:1080)  
 注意proxy参数可修改为你自己本地的代理配置，这样即可下载一个适合你本地配置的pac文件。  
-参数除了proxy，还支持：nowall, auto, direct，分别对应：非翻墙代理，自动代理（默认与proxy一致），直连代理（如果没有必要请不要修改）。  
+参数除了proxy，还支持：nowall, auto, direct，分别对应：非翻墙代理，自动代理（默认与proxy一致），直连代理（如果没有必要请不要修改）。参数之间需加入&分隔开。  
 本功能在测试中，地址随时可能发生变化，访问速度可能很慢或访问不正常，如不能访问请留意本项目的变更。
 
 本地代理使用 `PROXY` 即http代理最佳，兼容性最好，可用于IE或iOS自动代理配置，s5代理可使用privoxy转换为http代理。不过如果是远程代理可能被偷窥连接内容。
@@ -128,6 +128,28 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 ![Chrome 的扩展](img/chrome-extension.png)
 
 fork from [n0wa11](https://github.com/n0wa11/gfw_whitelist)
+
+PAC性能（100,000次重复执行）
+----------------
+firefox  
+whitelist.pac 62ms  
+whiteiplist.pac 77ms  
+proxy.pac 160ms
+
+chrome  
+whitelist.pac 94ms  
+whiteiplist.pac 80ms  
+proxy.pac 308ms
+
+IE9  
+whitelist.pac 96ms  
+whiteiplist.pac 160ms  
+proxy.pac 349ms
+
+safari  
+whitelist.pac 196ms  
+whiteiplist.pac 155ms  
+proxy.pac 552ms
 
 ```
 任何意见或建议，请联系 mmgac001[at]gmail.com ，或提交issue到项目页面 ლ(╹◡╹ლ)

@@ -2,7 +2,7 @@ var wall_proxy = __PROXY__;
 var nowall_proxy = "DIRECT;";
 var direct = "DIRECT;";
 
-var domains = __DOMAINS__;
+var white_domains = __DOMAINS__;
 
 var hasOwnProperty = Object.hasOwnProperty;
 
@@ -16,6 +16,37 @@ function check_ipv4(host) {
 		return true;
 	}
 }
+function isInDomains(domain_dict, host) {
+	var suffix;
+	var pos1 = host.lastIndexOf('.');
+
+	suffix = host.substring(pos1 + 1);
+	if (suffix == "cn") {
+		return true;
+	}
+
+	var domains = domain_dict[suffix];
+	if ( domains === undefined ) {
+		return true;
+	}
+	host = host.substring(0, pos1);
+	var pos = host.lastIndexOf('.');
+
+	while(1) {
+		if (pos == -1) {
+			if (hasOwnProperty.call(domains, host)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		suffix = host.substring(pos + 1);
+		if (hasOwnProperty.call(domains, suffix)) {
+			return true;
+		}
+		pos = host.lastIndexOf('.', pos - 1);
+	}
+}
 function FindProxyForURL(url, host) {
 	if ( isPlainHostName(host) === true ) {
 		return direct;
@@ -23,28 +54,9 @@ function FindProxyForURL(url, host) {
 	if ( check_ipv4(host) === true ) {
 		return nowall_proxy;
 	}
-	var suffix;
-	var pos1 = host.lastIndexOf('.');
-	var pos = host.lastIndexOf('.', pos1 - 1);
-
-	suffix = host.substring(pos1 + 1);
-	if (suffix == "cn") {
+	if ( isInDomains(white_domains, host) === true ) {
 		return nowall_proxy;
 	}
-
-	while(1) {
-		if (pos == -1) {
-			if (hasOwnProperty.call(domains, host)) {
-				return nowall_proxy;
-			} else {
-				return wall_proxy;
-			}
-		}
-		suffix = host.substring(pos + 1);
-		if (hasOwnProperty.call(domains, suffix)) {
-			return nowall_proxy;
-		}
-		pos = host.lastIndexOf('.', pos - 1);
-	}
+	return wall_proxy;
 }
 

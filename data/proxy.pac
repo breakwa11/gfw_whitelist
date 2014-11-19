@@ -73,6 +73,37 @@ function getProxyFromIP(strIp) {
 	}
 	return auto_proxy;
 }
+function isInDomains(domain_dict, host) {
+	var suffix;
+	var pos1 = host.lastIndexOf('.');
+
+	suffix = host.substring(pos1 + 1);
+	if (suffix == "cn") {
+		return true;
+	}
+
+	var domains = domain_dict[suffix];
+	if ( domains === undefined ) {
+		return true;
+	}
+	host = host.substring(0, pos1);
+	var pos = host.lastIndexOf('.');
+
+	while(1) {
+		if (pos == -1) {
+			if (hasOwnProperty.call(domains, host)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		suffix = host.substring(pos + 1);
+		if (hasOwnProperty.call(domains, suffix)) {
+			return true;
+		}
+		pos = host.lastIndexOf('.', pos - 1);
+	}
+}
 function FindProxyForURL(url, host) {
 	if ( isPlainHostName(host) === true ) {
 		return direct;
@@ -80,50 +111,11 @@ function FindProxyForURL(url, host) {
 	if ( check_ipv4(host) === true ) {
 		return getProxyFromIP(host);
 	}
-
-	var suffix;
-	var pos1 = host.lastIndexOf('.');
-
-	if ( pos1 > 0 ) {
-		var pos = host.lastIndexOf('.', pos1 - 1);
-
-		suffix = host.substring(pos1 + 1);
-		if (suffix == "cn") {
-			return nowall_proxy;
-		}
-
-		while(1) {
-			if (pos == -1) {
-				if (hasOwnProperty.call(white_domains, host)) {
-					return nowall_proxy;
-				} else {
-					break;
-				}
-			}
-			suffix = host.substring(pos + 1);
-			if (hasOwnProperty.call(white_domains, suffix)) {
-				return nowall_proxy;
-			}
-			pos = host.lastIndexOf('.', pos - 1);
-		}
-
-		pos = host.lastIndexOf('.');
-		pos = host.lastIndexOf('.', pos - 1);
-
-		while(1) {
-			if (pos == -1) {
-				if (hasOwnProperty.call(black_domains, host)) {
-					return wall_proxy;
-				} else {
-					break;
-				}
-			}
-			suffix = host.substring(pos + 1);
-			if (hasOwnProperty.call(black_domains, suffix)) {
-				return wall_proxy;
-			}
-			pos = host.lastIndexOf('.', pos - 1);
-		}
+	if ( isInDomains(white_domains, host) === true ) {
+		return nowall_proxy;
+	}
+	if ( isInDomains(black_domains, host) === true ) {
+		return wall_proxy;
 	}
 
 	var strIp = dnsResolve(host);
