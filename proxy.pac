@@ -10530,7 +10530,7 @@ function isInDomains(domain_dict, host) {
 	var pos = host.lastIndexOf('.');
 
 	while(1) {
-		if (pos == -1) {
+		if (pos <= 0) {
 			if (hasOwnProperty.call(domains, host)) {
 				return true;
 			} else {
