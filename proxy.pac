@@ -3,6 +3,11 @@ var nowall_proxy = "DIRECT;";
 var auto_proxy = "SOCKS5 127.0.0.1:1080;"; // if you have something like COW proxy
 var direct = "DIRECT;";
 
+/*
+ * Copyright (C) 2014 breakwa11
+ * https://github.com/breakwa11/gfw_whitelist
+ */
+
 var white_domains = {"am":{
 "126":1,
 "51":1
@@ -16,11 +21,9 @@ var white_domains = {"am":{
 "0759":1,
 "1000kan":1,
 "1131":1,
-"123du":1,
 "163k":1,
 "1news":1,
 "2144":1,
-"21ce":1,
 "256":1,
 "2che":1,
 "509":1,
@@ -40,7 +43,6 @@ var white_domains = {"am":{
 "byr":1,
 "cctw":1,
 "cetc":1,
-"chaohu":1,
 "chashui":1,
 "chengche":1,
 "chinatimes":1,
@@ -52,6 +54,7 @@ var white_domains = {"am":{
 "denglu":1,
 "donglingying":1,
 "down":1,
+"dqccc":1,
 "dyj":1,
 "ejiaju":1,
 "fengfeng":1,
@@ -59,9 +62,7 @@ var white_domains = {"am":{
 "gczx":1,
 "globalbuy":1,
 "gmtv":1,
-"gongwuji":1,
 "gqw":1,
-"gusu":1,
 "haijingfang":1,
 "hao315":1,
 "hb114":1,
@@ -104,11 +105,9 @@ var white_domains = {"am":{
 "psw":1,
 "qcr":1,
 "qk":1,
-"qqmingzi":1,
 "qqzl":1,
 "qzone":1,
 "rc":1,
-"secu":1,
 "seeyoo":1,
 "sgnet":1,
 "sh021":1,
@@ -122,7 +121,6 @@ var white_domains = {"am":{
 "taiqian":1,
 "tcnews":1,
 "teambuy":1,
-"tonghang":1,
 "tuku":1,
 "txt99":1,
 "tyn":1,
@@ -140,24 +138,25 @@ var white_domains = {"am":{
 "wuqing":1,
 "wutongxiang":1,
 "xialingying":1,
+"xiaomei":1,
 "yahui":1,
 "yc":1,
 "yiyi":1,
 "yl114":1,
-"youlila":1,
 "yxi":1,
 "yzw":1,
 "zhibo8":1,
-"zhishengji":1,
 "zhjs":1,
 "zhuwang":1,
 "zmsc":1
 },"cm":{
 "4":1,
-"60":1
+"60":1,
+"bearing":1
 },"co":{
 "banzhu":1,
-"lixin":1
+"lixin":1,
+"ychdzx":1
 },"com":{
 "0-100s":1,
 "0-6":1,
@@ -166,9 +165,7 @@ var white_domains = {"am":{
 "001en":1,
 "001job":1,
 "001sxy":1,
-"003job":1,
 "007swz":1,
-"007yx":1,
 "010lf":1,
 "011job":1,
 "01dianzi":1,
@@ -181,6 +178,7 @@ var white_domains = {"am":{
 "021fyw":1,
 "022net":1,
 "022v":1,
+"0231230":1,
 "023zp":1,
 "024zxw":1,
 "025ct":1,
@@ -196,7 +194,6 @@ var white_domains = {"am":{
 "0371job":1,
 "0373job":1,
 "0377auto":1,
-"0378job":1,
 "0379city":1,
 "0393fcw":1,
 "0396e":1,
@@ -230,7 +227,6 @@ var white_domains = {"am":{
 "055178":1,
 "0551fangchan":1,
 "0552jie":1,
-"0554news":1,
 "0554zp":1,
 "0557100":1,
 "0558":1,
@@ -239,7 +235,6 @@ var white_domains = {"am":{
 "0561house":1,
 "0561life":1,
 "0563job":1,
-"0564job":1,
 "0564luan":1,
 "0566fc":1,
 "0566job":1,
@@ -259,28 +254,22 @@ var white_domains = {"am":{
 "05927":1,
 "0595rc":1,
 "0596fc":1,
-"0597ok":1,
 "0598rc":1,
 "0598yu":1,
 "059iu":1,
 "05sun":1,
 "0634":1,
 "0663job":1,
-"0701":1,
 "07073":1,
-"0710520":1,
 "0710go":1,
 "0710hf":1,
 "0712fang":1,
 "0714":1,
 "07177":1,
 "0719house":1,
-"0722che":1,
 "0722fc":1,
 "0722h":1,
 "0728f":1,
-"0731520":1,
-"0731fanyi":1,
 "0731fdc":1,
 "0731jiaju":1,
 "0731job":1,
@@ -292,15 +281,14 @@ var white_domains = {"am":{
 "0736fdc":1,
 "0736house":1,
 "0738ld":1,
-"073img":1,
 "0743063":1,
 "0750rc":1,
 "0752qc":1,
 "0755car":1,
 "0755rc":1,
+"0756home":1,
 "0757fc":1,
 "0757rc":1,
-"0757zhaopin":1,
 "0760":1,
 "0760dc":1,
 "0760rc":1,
@@ -318,27 +306,25 @@ var white_domains = {"am":{
 "07jm":1,
 "0817ch":1,
 "0818work":1,
-"0830e":1,
 "0831che":1,
 "0832mh":1,
+"0852diaoyu":1,
 "0852job":1,
 "0853rc":1,
 "0854job":1,
 "0855job":1,
 "0856job":1,
 "0859job":1,
+"0890":1,
 "0891zp":1,
 "0898dichan":1,
 "08px":1,
-"08zfw":1,
 "0902rc":1,
-"0909wan":1,
 "090job":1,
 "0912job":1,
 "0914cn":1,
 "0915home":1,
 "0915rc":1,
-"0916auto":1,
 "0916i":1,
 "0917":1,
 "0917888":1,
@@ -346,12 +332,11 @@ var white_domains = {"am":{
 "0951job":1,
 "09635":1,
 "0991dj":1,
-"0991fc":1,
-"0997job":1,
 "099sky":1,
 "0x110":1,
 "100":1,
 "10000job":1,
+"10000link":1,
 "10000xie":1,
 "10000yao":1,
 "10010":1,
@@ -371,7 +356,6 @@ var white_domains = {"am":{
 "10155":1,
 "101jiajiao":1,
 "10339":1,
-"1073":1,
 "10fang":1,
 "10s1":1,
 "10yan":1,
@@ -388,7 +372,6 @@ var white_domains = {"am":{
 "114ic":1,
 "114jcw":1,
 "114la":1,
-"114max":1,
 "114nba":1,
 "114piaowu":1,
 "114px":1,
@@ -399,7 +382,6 @@ var white_domains = {"am":{
 "115img":1,
 "11773":1,
 "117800":1,
-"1179house":1,
 "1188":1,
 "11919":1,
 "119g":1,
@@ -422,8 +404,9 @@ var white_domains = {"am":{
 "126":1,
 "128uu":1,
 "12yao":1,
+"131cc":1,
 "133jz":1,
-"136show":1,
+"1377":1,
 "138edu":1,
 "138jm":1,
 "138job":1,
@@ -446,7 +429,6 @@ var white_domains = {"am":{
 "15hr":1,
 "15sjw":1,
 "15w":1,
-"16-led":1,
 "160":1,
 "1617k":1,
 "161gg":1,
@@ -455,6 +437,7 @@ var white_domains = {"am":{
 "163disk":1,
 "163yu":1,
 "164580":1,
+"1666":1,
 "1688":1,
 "16888":1,
 "1688wan":1,
@@ -470,6 +453,7 @@ var white_domains = {"am":{
 "16kang":1,
 "16njl":1,
 "16sucai":1,
+"16tz":1,
 "17173":1,
 "1717388":1,
 "17173cdn":1,
@@ -490,6 +474,7 @@ var white_domains = {"am":{
 "17baba":1,
 "17cdn":1,
 "17dm":1,
+"17game":1,
 "17heli":1,
 "17house":1,
 "17k":1,
@@ -519,19 +504,17 @@ var white_domains = {"am":{
 "1bd1":1,
 "1diaocha":1,
 "1f11":1,
-"1fangchan":1,
-"1gjh":1,
 "1kejian":1,
-"1kkk":1,
 "1mall":1,
 "1mishu":1,
 "1n11":1,
 "1nongjing":1,
+"1nsou":1,
 "1o26":1,
-"1p1g":1,
 "1p365":1,
 "1peizai":1,
 "1ppt":1,
+"1stjc":1,
 "1ting":1,
 "1uuc":1,
 "1v1offcn":1,
@@ -561,6 +544,7 @@ var white_domains = {"am":{
 "21js":1,
 "21nowart":1,
 "21oldage":1,
+"21our":1,
 "21part":1,
 "21pw":1,
 "21rcw":1,
@@ -575,6 +559,7 @@ var white_domains = {"am":{
 "2200book":1,
 "221400job":1,
 "2258":1,
+"226500":1,
 "2280":1,
 "2298":1,
 "22edu":1,
@@ -588,14 +573,12 @@ var white_domains = {"am":{
 "24k99":1,
 "24quan":1,
 "2500sz":1,
-"25788":1,
 "258":1,
 "258en":1,
 "25pp":1,
 "25yz":1,
 "264g":1,
 "265":1,
-"265588":1,
 "26595":1,
 "265g":1,
 "2688":1,
@@ -606,7 +589,6 @@ var white_domains = {"am":{
 "28jmw":1,
 "28sn":1,
 "28tui":1,
-"2cto":1,
 "2ge8":1,
 "2hua":1,
 "2m2j":1,
@@ -614,6 +596,7 @@ var white_domains = {"am":{
 "2mould":1,
 "2pjob":1,
 "2shequ":1,
+"300p":1,
 "301688":1,
 "30556":1,
 "30edu":1,
@@ -625,6 +608,7 @@ var white_domains = {"am":{
 "3158":1,
 "315che":1,
 "315hyw":1,
+"315ok":1,
 "31alu":1,
 "31bear":1,
 "31boiler":1,
@@ -659,9 +643,8 @@ var white_domains = {"am":{
 "31shipin":1,
 "31spcar":1,
 "31spjx":1,
-"31tqw":1,
+"31toy":1,
 "31wj":1,
-"31xf":1,
 "31xjd":1,
 "31xm":1,
 "31yj":1,
@@ -669,6 +652,7 @@ var white_domains = {"am":{
 "3234":1,
 "323g":1,
 "3310":1,
+"332527":1,
 "33519":1,
 "3366":1,
 "337y":1,
@@ -688,7 +672,6 @@ var white_domains = {"am":{
 "360doc":1,
 "360doo":1,
 "360eol":1,
-"360js":1,
 "360kad":1,
 "360kxr":1,
 "360qc":1,
@@ -696,12 +679,12 @@ var white_domains = {"am":{
 "360tgws":1,
 "360tl":1,
 "360wyw":1,
-"360xh":1,
 "3618med":1,
 "361games":1,
 "365128":1,
 "36578":1,
 "365a8":1,
+"365ajw":1,
 "365art":1,
 "365auto":1,
 "365azw":1,
@@ -745,7 +728,6 @@ var white_domains = {"am":{
 "3etravel":1,
 "3ghuashang":1,
 "3h3":1,
-"3hrc":1,
 "3jrx":1,
 "3kk":1,
 "3lian":1,
@@ -753,6 +735,7 @@ var white_domains = {"am":{
 "3qhouse":1,
 "3r66":1,
 "3s001":1,
+"3see":1,
 "3xgd":1,
 "400516":1,
 "4006022222":1,
@@ -773,7 +756,6 @@ var white_domains = {"am":{
 "4399":1,
 "4399dmw":1,
 "4399j":1,
-"44957":1,
 "45575":1,
 "45fan":1,
 "464000":1,
@@ -785,9 +767,11 @@ var white_domains = {"am":{
 "4ggamer":1,
 "500":1,
 "5000pk":1,
+"50018":1,
 "500wan":1,
 "5068":1,
 "508job":1,
+"50bm":1,
 "51":1,
 "510560":1,
 "5117":1,
@@ -800,7 +784,6 @@ var white_domains = {"am":{
 "5173tuan":1,
 "51766":1,
 "517best":1,
-"517ee":1,
 "517huwai":1,
 "517tez":1,
 "519d":1,
@@ -821,7 +804,6 @@ var white_domains = {"am":{
 "51ditu":1,
 "51duoying":1,
 "51dzw":1,
-"51e-online":1,
 "51edu":1,
 "51etong":1,
 "51ey":1,
@@ -847,7 +829,6 @@ var white_domains = {"am":{
 "51jrjob":1,
 "51junshi":1,
 "51kids":1,
-"51kiosk":1,
 "51kqn":1,
 "51liucheng":1,
 "51lunwen":1,
@@ -857,6 +838,7 @@ var white_domains = {"am":{
 "51mingren":1,
 "51mobilejob":1,
 "51nuoqi":1,
+"51offer":1,
 "51pingzi":1,
 "51pla":1,
 "51qc":1,
@@ -874,7 +856,6 @@ var white_domains = {"am":{
 "51taonan":1,
 "51tie":1,
 "51tz":1,
-"51uuo":1,
 "51wan":1,
 "51wf":1,
 "51wp":1,
@@ -885,13 +866,13 @@ var white_domains = {"am":{
 "51you":1,
 "51youcai":1,
 "51yougo":1,
+"51zhantai":1,
 "51zhucai":1,
 "51zjob":1,
 "51zjxm":1,
 "51zsjc":1,
 "51ztzj":1,
 "51zupu":1,
-"520520520520520":1,
 "520apk":1,
 "520bn":1,
 "520wawa":1,
@@ -899,8 +880,6 @@ var white_domains = {"am":{
 "521che":1,
 "521g":1,
 "5253":1,
-"52article":1,
-"52bar":1,
 "52che":1,
 "52design":1,
 "52djq":1,
@@ -914,10 +893,8 @@ var white_domains = {"am":{
 "52njl":1,
 "52pk":1,
 "52solution":1,
-"52swine":1,
 "52tlbb":1,
 "52udl":1,
-"52waha":1,
 "52ykjob":1,
 "52z":1,
 "52zhushan":1,
@@ -941,7 +918,6 @@ var white_domains = {"am":{
 "55la":1,
 "55tuan":1,
 "55tuanimg":1,
-"55usedcar":1,
 "55weixiu":1,
 "55you":1,
 "56":1,
@@ -976,12 +952,12 @@ var white_domains = {"am":{
 "58house":1,
 "58pic":1,
 "58wan":1,
-"58zcw":1,
 "591hx":1,
 "591wed":1,
 "596fc":1,
 "597":1,
 "597rcw":1,
+"59wujin":1,
 "5acbd":1,
 "5ajob":1,
 "5d6d":1,
@@ -1009,7 +985,6 @@ var white_domains = {"am":{
 "6188":1,
 "61baobao":1,
 "61bbw":1,
-"61flash":1,
 "61k":1,
 "61mami":1,
 "628":1,
@@ -1022,7 +997,7 @@ var white_domains = {"am":{
 "6637":1,
 "6655":1,
 "6665":1,
-"6677bank":1,
+"6676":1,
 "6681":1,
 "66880":1,
 "66diqiu":1,
@@ -1071,7 +1046,6 @@ var white_domains = {"am":{
 "738car":1,
 "7399":1,
 "73994":1,
-"7474":1,
 "74cms":1,
 "762rc":1,
 "766":1,
@@ -1114,17 +1088,16 @@ var white_domains = {"am":{
 "7sgsoft":1,
 "7uyn":1,
 "7wenta":1,
+"7wsh":1,
 "7xz":1,
 "7y7":1,
 "7yueji":1,
 "800hr":1,
 "800pai":1,
-"800pharm":1,
 "8014":1,
 "8090":1,
 "8090yxs":1,
 "80tian":1,
-"81262728":1,
 "818":1,
 "818222":1,
 "81874":1,
@@ -1137,7 +1110,6 @@ var white_domains = {"am":{
 "862sc":1,
 "86516":1,
 "8684":1,
-"86fsp":1,
 "86jobs":1,
 "86jzjob":1,
 "86kx":1,
@@ -1193,15 +1165,14 @@ var white_domains = {"am":{
 "91jf":1,
 "91jiafang":1,
 "91jm":1,
+"91jmw":1,
 "91job":1,
 "91jsj":1,
-"91px":1,
 "91rb":1,
 "91student":1,
 "91town":1,
 "91vpnn":1,
 "91wan":1,
-"91zhongkao":1,
 "921rc":1,
 "92mp":1,
 "92wudao":1,
@@ -1227,7 +1198,6 @@ var white_domains = {"am":{
 "9724":1,
 "973":1,
 "9787":1,
-"97973":1,
 "9797ly":1,
 "97go":1,
 "97jz":1,
@@ -1235,7 +1205,6 @@ var white_domains = {"am":{
 "98523":1,
 "98654":1,
 "988yx":1,
-"98905":1,
 "98player":1,
 "98znz":1,
 "99":1,
@@ -1254,7 +1223,10 @@ var white_domains = {"am":{
 "99danji":1,
 "99inf":1,
 "99jianzhu":1,
+"99jzw":1,
 "99leba":1,
+"99nahuo":1,
+"99pet":1,
 "99qh":1,
 "99wed":1,
 "99xr":1,
@@ -1282,6 +1254,7 @@ var white_domains = {"am":{
 "a1166":1,
 "a22":1,
 "a67":1,
+"a688888":1,
 "a9188":1,
 "a963":1,
 "a9soft":1,
@@ -1313,6 +1286,7 @@ var white_domains = {"am":{
 "afjob88":1,
 "afzhan":1,
 "ag365":1,
+"age06":1,
 "agrihy":1,
 "agrisg":1,
 "agrodt":1,
@@ -1325,25 +1299,23 @@ var white_domains = {"am":{
 "ah3nong":1,
 "ah5166":1,
 "ahauto":1,
+"ahchanyi":1,
 "ahgame":1,
 "ahglj":1,
 "ahhouse":1,
 "ahjdq":1,
 "ahjtxx":1,
 "ahlife":1,
-"ahlsg":1,
 "ahnxs":1,
-"ahsouche":1,
 "ahssnews":1,
 "ahsyj":1,
 "ahtarena":1,
-"ahwtqx":1,
 "ai96":1,
 "aibang":1,
 "aibo123":1,
 "aicai":1,
+"aidiao":1,
 "aidigong":1,
-"aidonghai":1,
 "aifang":1,
 "aifcdn":1,
 "aifengjie":1,
@@ -1352,7 +1324,6 @@ var white_domains = {"am":{
 "aiimg":1,
 "aiketour":1,
 "aili":1,
-"ailinzhou":1,
 "ailuosheying":1,
 "ailushan":1,
 "aipai":1,
@@ -1390,6 +1361,7 @@ var white_domains = {"am":{
 "aliyiyao":1,
 "aliyun":1,
 "aliyuncs":1,
+"all4ship":1,
 "allbrightlaw":1,
 "allfang":1,
 "allyes":1,
@@ -1409,7 +1381,6 @@ var white_domains = {"am":{
 "anjirencai":1,
 "anjuke":1,
 "anjukestatic":1,
-"ankangche":1,
 "ankangs":1,
 "anqingonline":1,
 "anqu":1,
@@ -1422,7 +1393,6 @@ var white_domains = {"am":{
 "anxin":1,
 "anxinews":1,
 "anxinwh":1,
-"anxiw":1,
 "any2000":1,
 "anzhi":1,
 "anzow":1,
@@ -1445,18 +1415,17 @@ var white_domains = {"am":{
 "apple":1,
 "appvv":1,
 "appying":1,
-"aptchina":1,
 "aqapk":1,
 "aqbtv":1,
 "aqioo":1,
 "aqqiche":1,
 "aqzpw":1,
+"aqzyzx":1,
 "archina":1,
 "arpg2":1,
 "arpun":1,
 "art-child":1,
 "art456":1,
-"artebuy":1,
 "artgoin":1,
 "arting365":1,
 "artokok":1,
@@ -1470,6 +1439,7 @@ var white_domains = {"am":{
 "atdmt":1,
 "atpanel":1,
 "auak":1,
+"aunest":1,
 "auto008":1,
 "auto0754":1,
 "auto0768":1,
@@ -1497,9 +1467,7 @@ var white_domains = {"am":{
 "babytreeimg":1,
 "bag-hr":1,
 "bagsnet":1,
-"baguirc":1,
 "baicai":1,
-"baicaolu":1,
 "baicheng360":1,
 "baidajob":1,
 "baidu":1,
@@ -1516,6 +1484,7 @@ var white_domains = {"am":{
 "baimin":1,
 "baipaopao":1,
 "baipu365":1,
+"baisha2004":1,
 "baishan":1,
 "baishang5":1,
 "baishuiapple":1,
@@ -1541,16 +1510,13 @@ var white_domains = {"am":{
 "banma":1,
 "banwojia":1,
 "baobao88":1,
-"baobaobang":1,
 "baobei360":1,
-"baobeihr":1,
 "baobidai":1,
 "baofeng":1,
 "baogao":1,
 "baogaoku":1,
 "baojijob":1,
 "baojinews":1,
-"baojiphoto":1,
 "baomihua":1,
 "baoruan":1,
 "baoshanjie":1,
@@ -1575,6 +1541,7 @@ var white_domains = {"am":{
 "beianbeian":1,
 "beibaotu":1,
 "beidaxueshihou":1,
+"beifangfoshifen":1,
 "beiguorc":1,
 "beihai365":1,
 "beihaidc":1,
@@ -1594,8 +1561,6 @@ var white_domains = {"am":{
 "bfedu":1,
 "bfyx":1,
 "bgl88":1,
-"bgsdyz":1,
-"bgyks":1,
 "bh111":1,
 "biancui":1,
 "bianmincn":1,
@@ -1613,36 +1578,37 @@ var white_domains = {"am":{
 "bingchengwang":1,
 "binzhuang":1,
 "bio1000":1,
+"bioon":1,
+"bisenet":1,
 "bitauto":1,
 "bitautoimg":1,
 "bitautotech":1,
 "bitscn":1,
-"biyangwang":1,
 "biyong007":1,
 "biz178":1,
 "biz72":1,
 "bj-cl":1,
-"bj-xinhua":1,
 "bj597":1,
-"bjbkws":1,
 "bjbus":1,
 "bjcankao":1,
 "bjfair":1,
 "bjlmfq":1,
 "bjmama":1,
+"bjmanyuan":1,
 "bjmyjzs":1,
 "bjrc":1,
 "bjsly":1,
 "bjsoyo":1,
 "bjspw":1,
+"bjsqgy":1,
 "bjwmys":1,
-"bjxdf":1,
+"bjxatq":1,
 "bjxjqc":1,
 "bjyxl":1,
 "bkill":1,
 "blctwed":1,
-"bldqcx":1,
 "bleju":1,
+"blemall":1,
 "blgjxx":1,
 "blog.163":1,
 "blogbus":1,
@@ -1655,7 +1621,6 @@ var white_domains = {"am":{
 "bluehn":1,
 "blueidea":1,
 "bluekai":1,
-"blxqxx":1,
 "blyol":1,
 "bmlink":1,
 "bndaily":1,
@@ -1668,21 +1633,21 @@ var white_domains = {"am":{
 "boosj":1,
 "bootcss":1,
 "boqii":1,
-"boraid":1,
 "bosidata":1,
-"bosnn":1,
 "bossgoo":1,
 "bosshr":1,
 "boxuu":1,
 "bozhong":1,
 "bqqm":1,
 "brandcn":1,
+"brandjs":1,
 "brothersoft":1,
 "bs71":1,
+"bsjhhzs":1,
 "bsrczpw":1,
+"bssmm":1,
 "bsyjrb":1,
 "btc114":1,
-"btcha":1,
 "btrcsc":1,
 "bubukua":1,
 "bufan":1,
@@ -1690,22 +1655,22 @@ var white_domains = {"am":{
 "bukade":1,
 "burnscn":1,
 "bus84":1,
-"busyan":1,
 "busytrade":1,
 "buycarcn":1,
 "buyigang":1,
 "buyiju":1,
 "bx58":1,
 "bxd365":1,
+"bxdyt":1,
 "bxgtd":1,
 "bxycw":1,
+"bxynzz":1,
 "bxzxw":1,
 "byandon":1,
 "bycmw":1,
 "byecity":1,
 "byf":1,
 "bz169":1,
-"bzcars":1,
 "bzgd":1,
 "bzjw":1,
 "bzshw":1,
@@ -1739,10 +1704,10 @@ var white_domains = {"am":{
 "cake400":1,
 "cali-light":1,
 "candou":1,
-"canenglish":1,
 "cang":1,
 "canju114":1,
 "cankaoxiaoxi":1,
+"canyin88":1,
 "caomeipai":1,
 "caoyuanfeng":1,
 "car0575":1,
@@ -1750,6 +1715,7 @@ var white_domains = {"am":{
 "carnoc":1,
 "carschina":1,
 "carxoo":1,
+"casemeet":1,
 "casvm":1,
 "cat898":1,
 "catwaji":1,
@@ -1757,7 +1723,6 @@ var white_domains = {"am":{
 "cbiec":1,
 "cbinews":1,
 "cbminfo":1,
-"cbrx":1,
 "cbskc":1,
 "cbsrc":1,
 "ccaabb":1,
@@ -1768,6 +1733,7 @@ var white_domains = {"am":{
 "ccedpw":1,
 "ccedu24":1,
 "ccement":1,
+"ccic":1,
 "ccidcom":1,
 "ccidnet":1,
 "ccjoy":1,
@@ -1824,7 +1790,6 @@ var white_domains = {"am":{
 "chajie":1,
 "chamei":1,
 "changjiangtimes":1,
-"changsha-translation":1,
 "changshuhr":1,
 "changyou":1,
 "chaoxing":1,
@@ -1834,6 +1799,7 @@ var white_domains = {"am":{
 "chazidian":1,
 "chbcnet":1,
 "che12":1,
+"che127":1,
 "che168":1,
 "che2":1,
 "cheaa":1,
@@ -1870,7 +1836,6 @@ var white_domains = {"am":{
 "chexiu":1,
 "chexun":1,
 "cheyian":1,
-"cheyipai":1,
 "cheyisou":1,
 "cheyou123":1,
 "cheyun":1,
@@ -1895,8 +1860,10 @@ var white_domains = {"am":{
 "china-yangzhi":1,
 "china-zibo":1,
 "china001":1,
+"china114net":1,
 "china2car":1,
 "china3-d":1,
+"china5080":1,
 "china9986":1,
 "chinaacc":1,
 "chinaacw":1,
@@ -1924,25 +1891,23 @@ var white_domains = {"am":{
 "chinaedu":1,
 "chinaedunet":1,
 "chinaeinet":1,
-"chinaemo":1,
 "chinaenvironment":1,
 "chinafix":1,
-"chinafranchiseexpo":1,
 "chinafudaoban":1,
 "chinagayles":1,
 "chinagiftsfair":1,
 "chinagzn":1,
+"chinahazelnut":1,
 "chinahbnet":1,
 "chinahightech":1,
+"chinahighway":1,
 "chinahjbh":1,
 "chinahr":1,
 "chinahrt":1,
 "chinahvacr":1,
-"chinaigbt":1,
 "chinaiiss":1,
 "chinaiol":1,
 "chinairn":1,
-"chinairventure":1,
 "chinaitlab":1,
 "chinajnhb":1,
 "chinajob":1,
@@ -1950,6 +1915,7 @@ var white_domains = {"am":{
 "chinakaoyan":1,
 "chinakingo":1,
 "chinalao":1,
+"chinalaobao":1,
 "chinalawedu":1,
 "chinalawinfo":1,
 "chinalawyeryn":1,
@@ -1971,6 +1937,7 @@ var white_domains = {"am":{
 "chinapp":1,
 "chinaqw":1,
 "chinaren":1,
+"chinascsmh":1,
 "chinaso":1,
 "chinasspp":1,
 "chinaswitch":1,
@@ -1980,10 +1947,8 @@ var white_domains = {"am":{
 "chinatour-net":1,
 "chinatpm":1,
 "chinatsi":1,
-"chinatvv":1,
 "chinauma":1,
 "chinaunicom":1,
-"chinaups":1,
 "chinavisual":1,
 "chinavoa":1,
 "chinaw3":1,
@@ -1992,6 +1957,7 @@ var white_domains = {"am":{
 "chinawoodnet":1,
 "chinawutong":1,
 "chinaxiaokang":1,
+"chinaxq":1,
 "chinaxwcb":1,
 "chinayangrou":1,
 "chinayigui":1,
@@ -2012,12 +1978,12 @@ var white_domains = {"am":{
 "chnroad":1,
 "chnsuv":1,
 "chnweiyu":1,
-"chofn":1,
+"chssfish":1,
 "chuandong":1,
 "chuangelm":1,
 "chuangye":1,
-"chuanke":1,
 "chuanmeicn":1,
+"chufw":1,
 "chuguo78":1,
 "chuguohui":1,
 "chuguoqu":1,
@@ -2040,22 +2006,24 @@ var white_domains = {"am":{
 "ciweek":1,
 "cjol":1,
 "cjrcsc":1,
-"cjzww":1,
 "cl597":1,
 "class01":1,
 "classic023":1,
 "clcmw":1,
+"cljmmm123":1,
 "clotheshr":1,
 "clothjob":1,
 "clothr":1,
 "cloudapply":1,
 "cmbchina":1,
 "cmejob":1,
+"cmhk":1,
 "cmiyu":1,
 "cmol":1,
 "cmstop":1,
 "cmt178":1,
 "cmxrcw":1,
+"cn-diaoyu":1,
 "cn-truck":1,
 "cn0556":1,
 "cn0851":1,
@@ -2084,6 +2052,7 @@ var white_domains = {"am":{
 "cncproduct":1,
 "cncraftinfo":1,
 "cncrk":1,
+"cnd8":1,
 "cndae":1,
 "cndesign":1,
 "cndfilm":1,
@@ -2099,7 +2068,6 @@ var white_domains = {"am":{
 "cnep001":1,
 "cnepaper":1,
 "cnepub":1,
-"cnfda":1,
 "cnfeol":1,
 "cnffi":1,
 "cnfilternet":1,
@@ -2142,11 +2110,11 @@ var white_domains = {"am":{
 "cnluye":1,
 "cnmasike":1,
 "cnmeiw":1,
+"cnmmhh":1,
 "cnmo":1,
 "cnnaihuo":1,
 "cnnb":1,
 "cnnbpi":1,
-"cnnzxx":1,
 "cnoa360":1,
 "cnobol":1,
 "cnoee":1,
@@ -2182,8 +2150,6 @@ var white_domains = {"am":{
 "cntour365":1,
 "cntrades":1,
 "cntronics":1,
-"cntxw":1,
-"cnutg":1,
 "cnv168":1,
 "cnwdjj":1,
 "cnwear":1,
@@ -2193,13 +2159,13 @@ var white_domains = {"am":{
 "cnwinenews":1,
 "cnwpem":1,
 "cnwuyun":1,
-"cnwzcx":1,
 "cnxad":1,
 "cnxds":1,
 "cnxiantao":1,
 "cnxianzai":1,
 "cnys":1,
 "cnyu":1,
+"cnyugan":1,
 "cnzao":1,
 "cnzhantuan":1,
 "cnzhengmu":1,
@@ -2211,6 +2177,7 @@ var white_domains = {"am":{
 "co188":1,
 "coatingol":1,
 "coco90":1,
+"cocoachina":1,
 "cocoren":1,
 "cofco":1,
 "cofeed":1,
@@ -2218,10 +2185,10 @@ var white_domains = {"am":{
 "comicyu":1,
 "compete":1,
 "comsenz":1,
+"conshow":1,
 "coo8":1,
 "coodir":1,
 "cooldock":1,
-"coolool":1,
 "coolxap":1,
 "coolzan":1,
 "cosco":1,
@@ -2231,22 +2198,24 @@ var white_domains = {"am":{
 "cpbay":1,
 "cpdyj":1,
 "cpp114":1,
-"cppccnews":1,
 "cpplay":1,
 "cps800":1,
 "cptjob":1,
 "cpvjob":1,
 "cq6":1,
+"cqbys":1,
 "cqcb":1,
 "cqcoal":1,
 "cqcsrc":1,
 "cqdxy":1,
 "cqeec":1,
+"cqhaokou":1,
 "cqjiaz":1,
 "cqjjnet":1,
 "cqjjrcw":1,
 "cqjsxx":1,
 "cqkx":1,
+"cqlozz":1,
 "cqmmgo":1,
 "cqour":1,
 "cqskl":1,
@@ -2257,9 +2226,7 @@ var white_domains = {"am":{
 "cqvip":1,
 "cqwin":1,
 "cqwuxi":1,
-"cqxdfpr":1,
 "cqxyw":1,
-"cr-nielsen":1,
 "cr173":1,
 "crec4":1,
 "crecg":1,
@@ -2271,7 +2238,6 @@ var white_domains = {"am":{
 "crystaledu":1,
 "cs090":1,
 "cs53":1,
-"cs6s":1,
 "csadec":1,
 "csair":1,
 "csbew":1,
@@ -2279,14 +2245,15 @@ var white_domains = {"am":{
 "cscoal":1,
 "cscsf":1,
 "csgc365":1,
+"csgm168":1,
 "csjzxw":1,
+"csrcsc":1,
 "cssmoban":1,
-"csxdf":1,
 "csyamei":1,
-"csyestar":1,
 "ct10000":1,
 "ct165":1,
 "ct597":1,
+"ctaoci":1,
 "ctcecc":1,
 "cteaw":1,
 "cthy":1,
@@ -2300,7 +2267,6 @@ var white_domains = {"am":{
 "cug2313":1,
 "cunan":1,
 "cuncun8":1,
-"cunlie":1,
 "cuntuba":1,
 "cuplayer":1,
 "custeel":1,
@@ -2340,25 +2306,22 @@ var white_domains = {"am":{
 "dahangzhou":1,
 "dahecc":1,
 "dahecw":1,
-"dahei":1,
 "dahoutao":1,
 "dahuawang":1,
 "daikuane":1,
 "daimg":1,
-"dairy123":1,
 "daixiaomi":1,
 "dajiabao":1,
 "dajianet":1,
 "dajiawan":1,
 "dajiazhao":1,
 "dajie":1,
-"dajunshi":1,
+"dakedakedu":1,
 "damuzzz":1,
 "dance365":1,
 "dang3":1,
 "dangdang":1,
 "dangjian":1,
-"danji6":1,
 "danyang":1,
 "danyanghr":1,
 "danzhaowang":1,
@@ -2371,14 +2334,16 @@ var white_domains = {"am":{
 "darczpw":1,
 "darryring":1,
 "dashilike":1,
+"datang5":1,
 "davinfo":1,
 "daxi":1,
 "daxiangrc":1,
 "daxue52":1,
 "dayoo":1,
 "dayou123":1,
-"dayouwooden":1,
 "dazhe5":1,
+"dazhenzimiao":1,
+"dazhongemiao":1,
 "dazhonghr":1,
 "dazhoushan":1,
 "dazibo":1,
@@ -2389,6 +2354,7 @@ var white_domains = {"am":{
 "dcjol":1,
 "ddmap":1,
 "ddooo":1,
+"ddqcw":1,
 "ddvip":1,
 "decwhy":1,
 "dedecms":1,
@@ -2397,7 +2363,6 @@ var white_domains = {"am":{
 "derenbs":1,
 "desktx":1,
 "destoon":1,
-"deyang5":1,
 "deyetown":1,
 "deyi":1,
 "deyiso":1,
@@ -2407,12 +2372,15 @@ var white_domains = {"am":{
 "dfcfw":1,
 "dfdaily":1,
 "dfhon":1,
+"dflgnc":1,
 "dfsrcw":1,
 "dg121":1,
 "dgchangan":1,
+"dgfishing":1,
 "dginfo":1,
 "dgqjj":1,
-"dgszl":1,
+"dgs6":1,
+"dgzzm":1,
 "dh818":1,
 "dhgate":1,
 "diandian":1,
@@ -2425,10 +2393,15 @@ var white_domains = {"am":{
 "diantijob":1,
 "dianyuan":1,
 "dianzp":1,
-"dianzubuluo":1,
 "diaochapai":1,
 "diaoyanbao":1,
 "diaoyu":1,
+"diaoyu123":1,
+"diaoyu520":1,
+"diaoyujiqiao":1,
+"diaoyula":1,
+"diaoyuwang":1,
+"diaoyuweng":1,
 "dichan":1,
 "didatuan":1,
 "didipai":1,
@@ -2444,10 +2417,10 @@ var white_domains = {"am":{
 "diyiapp":1,
 "diyicai":1,
 "diypda":1,
+"diytrade":1,
 "dj020":1,
 "djkk":1,
 "djob":1,
-"djwma":1,
 "djxww":1,
 "djye":1,
 "dlaitc":1,
@@ -2456,10 +2429,12 @@ var white_domains = {"am":{
 "dlmonita":1,
 "dlsysy":1,
 "dlxww":1,
+"dlysgh":1,
 "dm456":1,
 "dmcbd":1,
 "dmzj":1,
 "dn1234":1,
+"dnc21":1,
 "dnwx":1,
 "doc88":1,
 "docin":1,
@@ -2471,6 +2446,7 @@ var white_domains = {"am":{
 "dongao":1,
 "dongbei8":1,
 "dongbeiol":1,
+"dongchengwang":1,
 "dongfang8":1,
 "dongfangnews":1,
 "dongjinyu":1,
@@ -2491,25 +2467,24 @@ var white_domains = {"am":{
 "dpin100":1,
 "dq247":1,
 "dqccc":1,
+"dqcccc":1,
 "dqdaily":1,
+"dqguo":1,
 "dqiong":1,
 "dqjob88":1,
-"dqw":1,
 "dreams-travel":1,
 "drivergenius":1,
-"drugadmin":1,
 "ds123456":1,
 "ds599":1,
 "dsbjq":1,
 "dsfdc":1,
+"dshigao":1,
 "dshrc":1,
-"dszpw":1,
 "dtcoalmine":1,
 "dtlsw":1,
 "duapp":1,
 "duba":1,
 "duidea":1,
-"duitang":1,
 "duizi":1,
 "dukuai":1,
 "duomai":1,
@@ -2517,7 +2492,6 @@ var white_domains = {"am":{
 "duomi":1,
 "duoshuo":1,
 "duote":1,
-"duotegame":1,
 "duowan":1,
 "duoyewu":1,
 "duoyi":1,
@@ -2536,7 +2510,6 @@ var white_domains = {"am":{
 "dycars":1,
 "dyfcw":1,
 "dyhjw":1,
-"dyp2p":1,
 "dyqc":1,
 "dz-z":1,
 "dz1982":1,
@@ -2558,17 +2531,18 @@ var white_domains = {"am":{
 "ea3w":1,
 "ea56":1,
 "eachnet":1,
+"eahui":1,
 "earthedu":1,
 "easeeyes":1,
 "easiu":1,
 "eastday":1,
-"eastdushi":1,
 "eastmoney":1,
 "eastsilver":1,
 "eastsoo":1,
 "eb80":1,
 "ebay":1,
 "ebdoor":1,
+"ebeikao":1,
 "ebiaoegou":1,
 "ebieshu":1,
 "ebnew":1,
@@ -2593,7 +2567,6 @@ var white_domains = {"am":{
 "edu24ol":1,
 "edu80":1,
 "edu84":1,
-"edudo":1,
 "eduease":1,
 "eduego":1,
 "eduei":1,
@@ -2613,7 +2586,6 @@ var white_domains = {"am":{
 "ef360":1,
 "ef75":1,
 "egou":1,
-"egouz":1,
 "ehaier":1,
 "ehometu":1,
 "ehr99":1,
@@ -2621,6 +2593,7 @@ var white_domains = {"am":{
 "ehvacr":1,
 "eiiq":1,
 "eit0571":1,
+"ejee":1,
 "eju":1,
 "elanw":1,
 "ele001":1,
@@ -2673,9 +2646,10 @@ var white_domains = {"am":{
 "exbulk":1,
 "excce":1,
 "expai":1,
-"expeak":1,
 "expo-china":1,
 "expoon":1,
+"expoooo":1,
+"expowindow":1,
 "ey99":1,
 "eyizhang":1,
 "eyoudi":1,
@@ -2685,7 +2659,6 @@ var white_domains = {"am":{
 "f139":1,
 "f1688":1,
 "f537":1,
-"fa-today":1,
 "fa597":1,
 "fabang":1,
 "fabao365":1,
@@ -2714,8 +2687,8 @@ var white_domains = {"am":{
 "fangyou":1,
 "fangyuan365":1,
 "fangzhanhui":1,
-"fangzhi-china":1,
 "fangzhur":1,
+"fanlihe":1,
 "fans35":1,
 "fantizi5":1,
 "fantong":1,
@@ -2736,10 +2709,10 @@ var white_domains = {"am":{
 "fcgyc":1,
 "fcjob88":1,
 "fcrc114":1,
+"fcw6":1,
 "fd597":1,
 "fdc0746":1,
 "fdc315":1,
-"fdcew":1,
 "fdgzw":1,
 "fdxww":1,
 "feedsky":1,
@@ -2751,14 +2724,12 @@ var white_domains = {"am":{
 "feiku":1,
 "feiliu":1,
 "feipin":1,
-"feiren":1,
 "feixingcidian":1,
 "feixingfanyi":1,
 "feizl":1,
 "fenfen":1,
 "feng":1,
 "fengbao":1,
-"fengdu100":1,
 "fengj":1,
 "fengjing":1,
 "fengniao":1,
@@ -2770,11 +2741,13 @@ var white_domains = {"am":{
 "fenleidao":1,
 "fenzhi":1,
 "ffpic":1,
+"fhlczy":1,
 "fhlyou":1,
 "fillseo":1,
 "financeun":1,
 "findzd":1,
 "fireflytrip":1,
+"fishing-sh":1,
 "fj007":1,
 "fj3091":1,
 "fjcha":1,
@@ -2783,13 +2756,14 @@ var white_domains = {"am":{
 "fjdh":1,
 "fjhrss":1,
 "fjii":1,
+"fjmwjx":1,
 "fjnet":1,
 "fjpta":1,
 "fjsen":1,
 "fjta":1,
-"fjteanews":1,
 "fjxdf":1,
 "fjydnews":1,
+"fjzlym":1,
 "fjzol":1,
 "fl001":1,
 "fl78":1,
@@ -2807,44 +2781,42 @@ var white_domains = {"am":{
 "for68":1,
 "fotile":1,
 "fotosay":1,
+"foundmat":1,
 "fpdisplay":1,
 "fpwap":1,
 "fq597":1,
 "freehead":1,
 "freekaoyan":1,
-"frkq":1,
 "fruitday":1,
 "fs31":1,
 "fsclzs":1,
+"fsjoy":1,
 "fsmama":1,
 "fsmeeting":1,
 "fstcb":1,
 "ft22":1,
 "ftchinese":1,
 "ftuan":1,
-"fuhaodq":1,
 "fujianec":1,
 "fuliao":1,
 "fuling":1,
+"fuliyuwang":1,
 "fumu":1,
 "fumubang":1,
 "fumuhui":1,
 "funing114":1,
 "funshion":1,
 "funxun":1,
+"fupiaopifa":1,
 "furniturebbs":1,
 "fututa":1,
 "fuyoubank":1,
-"fuzhoufanyi":1,
 "fwzjia":1,
 "fx168":1,
-"fx1718":1,
 "fx678":1,
 "fxingw":1,
-"fxsol-uk":1,
 "fxxz":1,
 "fxytzz":1,
-"fy22":1,
 "fybxw":1,
 "fysns":1,
 "fytcw":1,
@@ -2871,10 +2843,8 @@ var white_domains = {"am":{
 "gaizhui":1,
 "game3737":1,
 "game3896":1,
-"game798":1,
 "gamecomb":1,
 "gameres":1,
-"gamerlol":1,
 "gamersky":1,
 "gamestlbb":1,
 "gamesville":1,
@@ -2907,9 +2877,11 @@ var white_domains = {"am":{
 "gdcct":1,
 "gdcoop":1,
 "gdcrj":1,
+"gdedu123":1,
 "gdrc":1,
 "gdswine":1,
 "gdsxxw":1,
+"gduuu":1,
 "gdzj8":1,
 "geautos":1,
 "geely":1,
@@ -2927,6 +2899,7 @@ var white_domains = {"am":{
 "gfsns":1,
 "gfw0898":1,
 "gg-art":1,
+"gg-led":1,
 "ggmm777":1,
 "ghjie":1,
 "giabbs":1,
@@ -2935,7 +2908,6 @@ var white_domains = {"am":{
 "gjjnhb":1,
 "gjlybj":1,
 "gk-z":1,
-"gk505":1,
 "gk99":1,
 "gkcity":1,
 "gkong":1,
@@ -2946,6 +2918,7 @@ var white_domains = {"am":{
 "gldjc":1,
 "glinfo":1,
 "glmama":1,
+"globalhardwares":1,
 "globeimmi":1,
 "glrcw":1,
 "glyrc":1,
@@ -2999,11 +2972,12 @@ var white_domains = {"am":{
 "gridsumdissector":1,
 "gsdaquan":1,
 "gsftw":1,
+"gsheimeiren":1,
 "gsrcw":1,
 "gstarcad":1,
+"gsxpz":1,
 "gtgqw":1,
 "gtimg":1,
-"gtja":1,
 "gtobal":1,
 "gtuu":1,
 "gtxh":1,
@@ -3016,7 +2990,6 @@ var white_domains = {"am":{
 "guang":1,
 "guangdongnet":1,
 "guangdongrc":1,
-"guangjiela":1,
 "guanjiatu":1,
 "guanrencai":1,
 "guanzhongrc":1,
@@ -3037,14 +3010,14 @@ var white_domains = {"am":{
 "guimi":1,
 "guiqianrc":1,
 "guocar":1,
-"guofenchaxun":1,
 "guolairen":1,
 "guolv":1,
 "guolvol":1,
-"guomii":1,
 "guoshi":1,
+"guoxue":1,
 "gushibaike":1,
 "gushihui8":1,
+"gusufish":1,
 "gusuwang":1,
 "guuoo":1,
 "guzhiwang":1,
@@ -3052,7 +3025,6 @@ var white_domains = {"am":{
 "gwyou":1,
 "gx211":1,
 "gxccedu":1,
-"gxcity":1,
 "gxfdcw":1,
 "gxhouse":1,
 "gxielts":1,
@@ -3068,6 +3040,7 @@ var white_domains = {"am":{
 "gy365":1,
 "gy9y":1,
 "gymama":1,
+"gyscw":1,
 "gyxuan":1,
 "gzcol":1,
 "gzcpc":1,
@@ -3079,8 +3052,6 @@ var white_domains = {"am":{
 "gznet":1,
 "gzrczpw":1,
 "gzrencai":1,
-"gzstv":1,
-"gzszfgjj":1,
 "gztcdj":1,
 "gztv":1,
 "gzxxw":1,
@@ -3093,7 +3064,6 @@ var white_domains = {"am":{
 "habctv":1,
 "hackhome":1,
 "hackp":1,
-"hahaertong":1,
 "hahait":1,
 "hahazaojiao":1,
 "haianw":1,
@@ -3102,9 +3072,9 @@ var white_domains = {"am":{
 "haijun360":1,
 "haimanfeisi":1,
 "haimenhr":1,
+"hainanfishing8":1,
 "hainanfz":1,
 "haining":1,
-"haiqq":1,
 "haiwaily":1,
 "haixinnews":1,
 "haixuan12":1,
@@ -3120,7 +3090,6 @@ var white_domains = {"am":{
 "hangye8":1,
 "hangzhouol":1,
 "hanweb":1,
-"hanzhong123":1,
 "hao0469":1,
 "hao123":1,
 "hao123img":1,
@@ -3161,7 +3130,7 @@ var white_domains = {"am":{
 "hbsjz110":1,
 "hbsztv":1,
 "hbtcw":1,
-"hbtycp":1,
+"hbxfmp":1,
 "hbxfzs":1,
 "hbxmad":1,
 "hbzhan":1,
@@ -3180,17 +3149,17 @@ var white_domains = {"am":{
 "hebdx":1,
 "hebircw":1,
 "hebiw":1,
-"hebjxw":1,
 "hebtv":1,
 "hefeizuche8":1,
 "hehu":1,
 "heiguang":1,
 "heima010":1,
+"hejun":1,
 "hellozx":1,
 "help.apple":1,
-"henan-translation":1,
 "henan100":1,
 "henanci":1,
+"henanedu":1,
 "henanfucai":1,
 "henanrc":1,
 "henantiyu":1,
@@ -3203,7 +3172,6 @@ var white_domains = {"am":{
 "hepost":1,
 "hepuercha":1,
 "hercity":1,
-"hermes100":1,
 "herostart":1,
 "herschina":1,
 "heungkong":1,
@@ -3221,7 +3189,7 @@ var white_domains = {"am":{
 "hfhouse":1,
 "hfmama":1,
 "hftogo":1,
-"hg-kr":1,
+"hfwenshi":1,
 "hg-z":1,
 "hgjob":1,
 "hgrencai":1,
@@ -3234,7 +3202,6 @@ var white_domains = {"am":{
 "hi772":1,
 "hiao":1,
 "hiapk":1,
-"hicct":1,
 "hicdma":1,
 "hichina":1,
 "hijiangxi":1,
@@ -3251,9 +3218,8 @@ var white_domains = {"am":{
 "hktk118":1,
 "hlass":1,
 "hldbtv":1,
-"hldjob":1,
-"hlfdw":1,
 "hlgnet":1,
+"hljnw":1,
 "hljpost":1,
 "hljrtvu":1,
 "hljtcp":1,
@@ -3266,11 +3232,13 @@ var white_domains = {"am":{
 "hmw365":1,
 "hn-pc":1,
 "hn12333":1,
+"hnaee":1,
 "hnair":1,
 "hnbaihua":1,
 "hnchj":1,
 "hncoop":1,
 "hncsmjzs":1,
+"hnditu":1,
 "hnflcp":1,
 "hnhjw":1,
 "hnhm":1,
@@ -3278,18 +3246,21 @@ var white_domains = {"am":{
 "hnmama":1,
 "hnnypp":1,
 "hnpost":1,
+"hnradio":1,
 "hnrcsc":1,
 "hnrczpw":1,
 "hnrsks":1,
+"hnsncb":1,
 "hnticai":1,
-"hnwmw":1,
-"hnxdf":1,
 "hnxwcb":1,
+"hnxxw666":1,
+"hnxxwzz":1,
 "hnxysteel":1,
+"hnyo":1,
+"hogesoft":1,
 "holdhr":1,
 "home77":1,
 "home898":1,
-"homedf":1,
 "homeinns":1,
 "homekoo":1,
 "hometex114":1,
@@ -3297,6 +3268,7 @@ var white_domains = {"am":{
 "hometexnet":1,
 "hongjingedu":1,
 "hongmen":1,
+"hongniang":1,
 "hongshu":1,
 "hongtu":1,
 "hongxiu":1,
@@ -3326,8 +3298,10 @@ var white_domains = {"am":{
 "hqjhw":1,
 "hqlsw":1,
 "hqqrc":1,
+"hqthw":1,
 "hqxly":1,
 "hr-sd":1,
+"hr006":1,
 "hr025":1,
 "hr0571":1,
 "hr0660":1,
@@ -3357,9 +3331,9 @@ var white_domains = {"am":{
 "hsmhw":1,
 "hsrcw":1,
 "hsw365":1,
+"hsx99":1,
 "htcj888":1,
 "htexam":1,
-"htidc":1,
 "htkaoyan":1,
 "htsec":1,
 "httpcn":1,
@@ -3368,13 +3342,13 @@ var white_domains = {"am":{
 "huaban":1,
 "huabian":1,
 "huacolor":1,
+"huadaofengye":1,
 "huagu":1,
 "huaian":1,
 "huaibei163":1,
 "huaibin88":1,
 "huainet":1,
 "huaiyangnews":1,
-"huajin100":1,
 "huajx":1,
 "hualongxiang":1,
 "huamanche":1,
@@ -3404,7 +3378,6 @@ var white_domains = {"am":{
 "hubai":1,
 "hubeirc":1,
 "hudong":1,
-"hudou":1,
 "hugd":1,
 "hui800":1,
 "huibo":1,
@@ -3420,20 +3393,16 @@ var white_domains = {"am":{
 "huiyi8":1,
 "huizhuang":1,
 "hujiang":1,
-"huliankm":1,
-"hunanfanyi":1,
 "hunanheicha":1,
 "hunanpta":1,
 "hunantv":1,
 "hunlimama":1,
 "hunt007":1,
-"hunter5156":1,
 "hunuo":1,
 "huoche":1,
 "huochepiao":1,
 "huochepu":1,
 "huodongjia":1,
-"huolinhe":1,
 "huowan":1,
 "huoxue":1,
 "hupu":1,
@@ -3457,9 +3426,9 @@ var white_domains = {"am":{
 "hyeye":1,
 "hyjzw":1,
 "hyqcw":1,
+"hyrmw":1,
 "hywlm":1,
 "hyxww":1,
-"hyzfgjj":1,
 "hz321":1,
 "hz66":1,
 "hzagro":1,
@@ -3482,7 +3451,6 @@ var white_domains = {"am":{
 "hzti":1,
 "hzwmw":1,
 "hzwxq":1,
-"hzxdfpr":1,
 "i-jjj":1,
 "i7186":1,
 "i8i8i8":1,
@@ -3500,7 +3468,6 @@ var white_domains = {"am":{
 "ic98":1,
 "icaile":1,
 "iciba":1,
-"icis-china":1,
 "icjyw":1,
 "icpcw":1,
 "icpdf":1,
@@ -3515,7 +3482,6 @@ var white_domains = {"am":{
 "idting":1,
 "ieche":1,
 "iecity":1,
-"iecnews":1,
 "iefang":1,
 "ieforex":1,
 "ielts999":1,
@@ -3525,8 +3491,9 @@ var white_domains = {"am":{
 "ifengimg":1,
 "ifensi":1,
 "iflying":1,
-"ifumu":1,
+"ifsino":1,
 "ifunw":1,
+"igeak":1,
 "igome":1,
 "ihaidaoyou":1,
 "ihaiyan":1,
@@ -3557,7 +3524,6 @@ var white_domains = {"am":{
 "ilishi":1,
 "ilongre":1,
 "iloveyouxi":1,
-"ilvping":1,
 "im286":1,
 "imanhua":1,
 "imeimama":1,
@@ -3574,6 +3540,7 @@ var white_domains = {"am":{
 "in189":1,
 "inanle":1,
 "indexedu":1,
+"industrycome":1,
 "inewoffice":1,
 "infzm":1,
 "ing2ing":1,
@@ -3587,14 +3554,13 @@ var white_domains = {"am":{
 "inwayedu":1,
 "ip138":1,
 "ipadown":1,
-"ipincai":1,
+"ipetfair":1,
 "ipinyou":1,
 "iqilu":1,
 "iqingren":1,
 "iqiyi":1,
 "irs01":1,
 "is686":1,
-"isanmen":1,
 "ishaanxi":1,
 "ishangman":1,
 "ishowx":1,
@@ -3605,7 +3571,7 @@ var white_domains = {"am":{
 "itdcw":1,
 "iterduo":1,
 "iteye":1,
-"itfeed":1,
+"itheima":1,
 "ithome":1,
 "itjol":1,
 "itpar":1,
@@ -3616,6 +3582,7 @@ var white_domains = {"am":{
 "iwebchoice":1,
 "iwhr":1,
 "iwjia":1,
+"ixiaoma":1,
 "ixiawan":1,
 "ixinda":1,
 "ixinwei":1,
@@ -3635,6 +3602,7 @@ var white_domains = {"am":{
 "jarczpw":1,
 "jarhu":1,
 "jaz581":1,
+"jb1000":1,
 "jbdown":1,
 "jbzyw":1,
 "jc35":1,
@@ -3649,6 +3617,7 @@ var white_domains = {"am":{
 "jczxb":1,
 "jd":1,
 "jd-88":1,
+"jd-cg":1,
 "jd100":1,
 "jdbbx":1,
 "jdbpcb":1,
@@ -3660,35 +3629,35 @@ var white_domains = {"am":{
 "jdypsqw":1,
 "jdzj":1,
 "jdzol":1,
-"jennydiary":1,
 "jewelchina":1,
 "jfdaily":1,
-"jfgcw":1,
+"jfgphzs":1,
 "jfinfo":1,
 "jgaoxiao":1,
 "jgjob88":1,
 "jgsdaily":1,
 "jh597":1,
+"jhcxl":1,
 "jia":1,
 "jia360":1,
 "jia400":1,
 "jia99":1,
 "jiafang168":1,
 "jiafangyun":1,
+"jiahesj":1,
+"jiahesuji":1,
 "jiajiao114":1,
 "jiajiao400":1,
 "jiajiaoban":1,
 "jiaju":1,
 "jiajumi":1,
 "jiajuol":1,
-"jialiphoto":1,
 "jiameng":1,
 "jiameng001":1,
 "jiameng8":1,
 "jiancai":1,
 "jiandanwan":1,
 "jianfc":1,
-"jianfei":1,
 "jiangduoduo":1,
 "jiangdurencai":1,
 "jianghairc":1,
@@ -3701,8 +3670,6 @@ var white_domains = {"am":{
 "jianke":1,
 "jiankongbao":1,
 "jianli-sky":1,
-"jianlip":1,
-"jianlishi":1,
 "jianshe99":1,
 "jianso":1,
 "jianzhi8":1,
@@ -3714,7 +3681,6 @@ var white_domains = {"am":{
 "jiathis":1,
 "jiatx":1,
 "jiayuan":1,
-"jiazhangok":1,
 "jiazhao":1,
 "jiazhuang":1,
 "jiazhuang6":1,
@@ -3734,7 +3700,6 @@ var white_domains = {"am":{
 "jilinfc":1,
 "jilinzhaopin":1,
 "jiluai":1,
-"jin14":1,
 "jinbifun":1,
 "jinfuzi":1,
 "jingchurc":1,
@@ -3743,12 +3708,12 @@ var white_domains = {"am":{
 "jingpinke":1,
 "jingyanbus":1,
 "jingzhengu":1,
+"jinhejs":1,
 "jinkaoedu":1,
 "jinku":1,
 "jinmajia":1,
 "jinmenrc":1,
 "jinpu":1,
-"jinqijian":1,
 "jinshangrc":1,
 "jinti":1,
 "jinxiang114":1,
@@ -3761,32 +3726,35 @@ var white_domains = {"am":{
 "jiuyaoyouxi":1,
 "jiuyipai":1,
 "jiwu":1,
-"jiwucidian":1,
 "jixinet":1,
 "jiyifa":1,
 "jj20":1,
 "jj831":1,
+"jjdiaoyu":1,
 "jjjgame":1,
+"jjlxpz":1,
 "jjmmw":1,
-"jjrw":1,
 "jjsrcw":1,
 "jk51":1,
 "jlit365":1,
 "jljob88":1,
 "jljzs":1,
+"jllnzz":1,
 "jlmhk":1,
 "jlonline":1,
+"jlshumei":1,
+"jlsmm":1,
 "jlszyy":1,
 "jm-tour":1,
 "jmfcn":1,
 "jmrb":1,
 "jn001":1,
+"jndiaoyu":1,
 "jnesc":1,
 "jnlc":1,
 "jnmama":1,
 "jnnc":1,
 "job-sky":1,
-"job0519":1,
 "job0663":1,
 "job0768":1,
 "job0795":1,
@@ -3797,8 +3765,6 @@ var white_domains = {"am":{
 "job128":1,
 "job13580":1,
 "job168":1,
-"job17":1,
-"job222":1,
 "job2299":1,
 "job250":1,
 "job256":1,
@@ -3806,8 +3772,6 @@ var white_domains = {"am":{
 "job5156":1,
 "job592":1,
 "job598":1,
-"job616":1,
-"job8001":1,
 "job910":1,
 "job916":1,
 "job98":1,
@@ -3820,6 +3784,7 @@ var white_domains = {"am":{
 "jobgao":1,
 "jobgojob":1,
 "jobhb":1,
+"jobpin":1,
 "jobui":1,
 "jobuy":1,
 "jobzh":1,
@@ -3827,7 +3792,6 @@ var white_domains = {"am":{
 "joobbe":1,
 "joqoo":1,
 "joyme":1,
-"joytrav":1,
 "joyyang":1,
 "jq-school":1,
 "jqw":1,
@@ -3852,15 +3816,20 @@ var white_domains = {"am":{
 "jsly001":1,
 "jsnxs":1,
 "jsqw":1,
+"jsrc":1,
 "jsrsrc":1,
+"jsrxny":1,
 "jssjys":1,
+"jstour":1,
 "jstv":1,
 "jsw1234":1,
 "jswdj":1,
 "jswmw":1,
 "jsxdf":1,
 "jsxlmed":1,
+"jsxmws":1,
 "jsyks":1,
+"jsymyjs":1,
 "jszhaobiao":1,
 "jtbole":1,
 "jtdaw":1,
@@ -3891,7 +3860,6 @@ var white_domains = {"am":{
 "juyouxi":1,
 "jx09":1,
 "jx612345":1,
-"jxc-tea":1,
 "jxcnt":1,
 "jxdasz":1,
 "jxdcw":1,
@@ -3934,10 +3902,10 @@ var white_domains = {"am":{
 "k0851":1,
 "k18":1,
 "k366":1,
+"k369":1,
 "k73":1,
 "k76":1,
 "k8008":1,
-"kaifeng-translation":1,
 "kaifu":1,
 "kaiwind":1,
 "kaixin001":1,
@@ -3951,15 +3919,13 @@ var white_domains = {"am":{
 "kankan":1,
 "kankanews":1,
 "kanshu":1,
+"kanyiqi":1,
 "kanzhun":1,
-"kaofudan":1,
-"kaogo":1,
 "kaopu001":1,
 "kaoshi110":1,
 "kaoshidian":1,
 "kaoyan":1,
 "kaoyan001":1,
-"kaoyanw":1,
 "kaoyee":1,
 "kaozc":1,
 "kb-medical":1,
@@ -3985,7 +3951,6 @@ var white_domains = {"am":{
 "kmguolv":1,
 "kmmama":1,
 "kms88":1,
-"kmzp":1,
 "knowsky":1,
 "kongfz":1,
 "kongzhong":1,
@@ -3994,7 +3959,6 @@ var white_domains = {"am":{
 "korirl":1,
 "koubei":1,
 "koudai8":1,
-"koudaipe":1,
 "kpkpw":1,
 "kpzs":1,
 "kq81":1,
@@ -4026,7 +3990,6 @@ var white_domains = {"am":{
 "kujiale":1,
 "kukuplay":1,
 "kukuspeak":1,
-"kumanju":1,
 "kunjuke":1,
 "kunlun":1,
 "kunmingkanghui":1,
@@ -4045,7 +4008,6 @@ var white_domains = {"am":{
 "l-zzz":1,
 "l63gz":1,
 "l99":1,
-"lab-spectrum":1,
 "lady8844":1,
 "ladyyu":1,
 "lafaso":1,
@@ -4055,7 +4017,6 @@ var white_domains = {"am":{
 "laifudao":1,
 "laijiuye":1,
 "laiwang":1,
-"laiyang58":1,
 "lamabang":1,
 "lamahui":1,
 "lampdrive":1,
@@ -4072,6 +4033,7 @@ var white_domains = {"am":{
 "lanou3g":1,
 "lanpowang":1,
 "lanqi":1,
+"lanrenfang":1,
 "lanrentuku":1,
 "lanrenzhaofang":1,
 "lanshandichan":1,
@@ -4084,6 +4046,7 @@ var white_domains = {"am":{
 "laoqianzhuang":1,
 "laoren":1,
 "laoyangchenghu":1,
+"laserfair":1,
 "lashou":1,
 "lashouimg":1,
 "lavago":1,
@@ -4108,14 +4071,12 @@ var white_domains = {"am":{
 "ledth":1,
 "ledu":1,
 "ledwn":1,
-"ledzm360":1,
 "lefeng":1,
 "leftdays":1,
 "legolas-media":1,
 "legongchang":1,
 "lehecai":1,
 "leho":1,
-"leidian":1,
 "leiphone":1,
 "lejiaoyun":1,
 "lejj":1,
@@ -4123,6 +4084,7 @@ var white_domains = {"am":{
 "lejuju":1,
 "leleketang":1,
 "lenovo":1,
+"lenovoqm":1,
 "leqiyou":1,
 "letao":1,
 "letfind":1,
@@ -4155,6 +4117,7 @@ var white_domains = {"am":{
 "lietou":1,
 "lietou-static":1,
 "liexiaow":1,
+"lieyou":1,
 "life139":1,
 "lifegc":1,
 "lifeyoyo":1,
@@ -4174,7 +4137,6 @@ var white_domains = {"am":{
 "linyimama":1,
 "linyiren":1,
 "linzhourc":1,
-"liqu":1,
 "liqucn":1,
 "lisanxing":1,
 "lishi5":1,
@@ -4188,6 +4150,7 @@ var white_domains = {"am":{
 "livnj":1,
 "liwai":1,
 "liwuyou":1,
+"liyezhongzhi":1,
 "liyi99":1,
 "lizi":1,
 "lj597":1,
@@ -4201,6 +4164,8 @@ var white_domains = {"am":{
 "ln-rc":1,
 "ln2car":1,
 "ln632":1,
+"lndzz":1,
+"lnfisher":1,
 "lnrsks":1,
 "lnyiyao":1,
 "lofter":1,
@@ -4213,6 +4178,7 @@ var white_domains = {"am":{
 "longchengrc":1,
 "longdian":1,
 "longfeng":1,
+"longkangmiaomu":1,
 "longre":1,
 "longshangrc":1,
 "longtengcn":1,
@@ -4230,7 +4196,6 @@ var white_domains = {"am":{
 "lpb2b":1,
 "lprcw":1,
 "lpsrc":1,
-"lpzcw":1,
 "lqjob88":1,
 "lqrc028":1,
 "lqzcw":1,
@@ -4244,7 +4209,6 @@ var white_domains = {"am":{
 "lssen":1,
 "lstest":1,
 "lszhaopin":1,
-"lszjy":1,
 "lt37":1,
 "ltdts":1,
 "luan163":1,
@@ -4262,6 +4226,8 @@ var white_domains = {"am":{
 "luo8":1,
 "luosi":1,
 "luoyuan597":1,
+"lure123":1,
+"lurefans":1,
 "lusongsong":1,
 "luwenwang":1,
 "luxtarget":1,
@@ -4277,6 +4243,7 @@ var white_domains = {"am":{
 "lvye":1,
 "lvyou114":1,
 "lwcj":1,
+"lwhfishing":1,
 "lwhouse":1,
 "lwinfo":1,
 "lx0830":1,
@@ -4289,6 +4256,7 @@ var white_domains = {"am":{
 "lygmedia":1,
 "lygo":1,
 "lyielts":1,
+"lymffyjd":1,
 "lyqcw":1,
 "lywww":1,
 "lywxww":1,
@@ -4315,6 +4283,7 @@ var white_domains = {"am":{
 "makepolo":1,
 "malmam":1,
 "mamacn":1,
+"managershare":1,
 "mangocity":1,
 "manmankan":1,
 "manyart":1,
@@ -4332,7 +4301,6 @@ var white_domains = {"am":{
 "marry52":1,
 "maslyw":1,
 "mathtag":1,
-"maxpda":1,
 "mayi":1,
 "mayiw":1,
 "mayiyy":1,
@@ -4375,7 +4343,6 @@ var white_domains = {"am":{
 "meitanwang":1,
 "meitu":1,
 "meituan":1,
-"meiwei123":1,
 "meizhou":1,
 "meizu":1,
 "meizuhui":1,
@@ -4386,6 +4353,7 @@ var white_domains = {"am":{
 "menye":1,
 "mercachina":1,
 "messebbs":1,
+"metalchina":1,
 "meyol":1,
 "mf08s":1,
 "mfqyw":1,
@@ -4407,6 +4375,7 @@ var white_domains = {"am":{
 "miercn":1,
 "milanzx":1,
 "mimimama":1,
+"mingche":1,
 "mingjian":1,
 "mingluji":1,
 "mingong123":1,
@@ -4424,7 +4393,6 @@ var white_domains = {"am":{
 "mirautomation":1,
 "missku":1,
 "missyuan":1,
-"miui":1,
 "mizhe":1,
 "mjceo":1,
 "mjmjm":1,
@@ -4437,6 +4405,7 @@ var white_domains = {"am":{
 "mmrcw":1,
 "mmsfw":1,
 "mmstat":1,
+"mmstw":1,
 "mmyuer":1,
 "mmzh":1,
 "mnsfh":1,
@@ -4448,10 +4417,8 @@ var white_domains = {"am":{
 "mofang":1,
 "mofangge":1,
 "mogujie":1,
-"momachina":1,
 "momo35":1,
 "momolili":1,
-"monhr":1,
 "monteamor":1,
 "montesea":1,
 "mookie1":1,
@@ -4466,9 +4433,9 @@ var white_domains = {"am":{
 "mouldsnet":1,
 "mouldu":1,
 "mozillaonline":1,
+"mp189":1,
 "mplife":1,
 "mrgcw":1,
-"mrrencai":1,
 "mrzpw":1,
 "ms315":1,
 "mscbsc":1,
@@ -4503,7 +4470,6 @@ var white_domains = {"am":{
 "mycar168":1,
 "mychemjob":1,
 "mycimt":1,
-"myclub2":1,
 "mydrivers":1,
 "myepjob":1,
 "myhack58":1,
@@ -4513,12 +4479,10 @@ var white_domains = {"am":{
 "mypharma":1,
 "myshipjob":1,
 "myshuo":1,
-"mysjtu":1,
 "mysteel":1,
 "mysteelcdn":1,
 "mysteelcms":1,
 "mysteelweekly":1,
-"mytaofun":1,
 "mytophome":1,
 "myubbs":1,
 "myyouse":1,
@@ -4545,10 +4509,8 @@ var white_domains = {"am":{
 "nbbltv":1,
 "nbccts":1,
 "nbcoop":1,
-"nbcyy":1,
 "nbfce":1,
 "nbgjj":1,
-"nbgy":1,
 "nbjnzx":1,
 "nbqcrl":1,
 "nbradio":1,
@@ -4556,7 +4518,6 @@ var white_domains = {"am":{
 "nbwater":1,
 "nbweekly":1,
 "nbyouth":1,
-"ncfyw":1,
 "nd597":1,
 "nd999":1,
 "nddaily":1,
@@ -4580,9 +4541,7 @@ var white_domains = {"am":{
 "news18a":1,
 "newsccn":1,
 "newscv":1,
-"newsgd":1,
 "newshainan":1,
-"newshs":1,
 "newshuanan":1,
 "newsxc":1,
 "newsxy":1,
@@ -4617,10 +4576,12 @@ var white_domains = {"am":{
 "niwodai":1,
 "niwota":1,
 "njcw":1,
+"njltmp":1,
 "njmama":1,
 "njobt":1,
 "njrsrc":1,
 "njutcie":1,
+"njycyj":1,
 "nlxn":1,
 "nmglabs":1,
 "nmgrc":1,
@@ -4628,26 +4589,31 @@ var white_domains = {"am":{
 "nmrcw":1,
 "nn600":1,
 "nnddw":1,
+"nnhdqm":1,
 "nnjob":1,
 "nnmama":1,
 "nnn666":1,
 "nnsme":1,
-"nntlj":1,
 "nnzp":1,
 "no1w":1,
+"nongchengws":1,
 "nongji1688":1,
 "nongji360":1,
 "nongjx":1,
 "nongli":1,
 "nongmintv":1,
+"nongrisheng":1,
 "nongyao001":1,
 "nowec":1,
 "nowscore":1,
 "np5":1,
 "np597":1,
+"npcka":1,
+"npckk":1,
 "npicp":1,
 "nsw88":1,
 "nsxia":1,
+"nsy6":1,
 "ntalker":1,
 "ntjob88":1,
 "ntjoy":1,
@@ -4656,7 +4622,9 @@ var white_domains = {"am":{
 "ntwenming":1,
 "ntwto":1,
 "nubb":1,
+"nuohanwei":1,
 "nuomi":1,
+"nvrenfang":1,
 "nvsheng":1,
 "nvxing163":1,
 "nxass":1,
@@ -4669,6 +4637,7 @@ var white_domains = {"am":{
 "ny688":1,
 "nz165":1,
 "nz86":1,
+"nzczq":1,
 "nzjsw":1,
 "nzw-china":1,
 "oadz":1,
@@ -4713,7 +4682,6 @@ var white_domains = {"am":{
 "onlylady":1,
 "onlymr":1,
 "oodii":1,
-"ooomm":1,
 "ooopic":1,
 "operachina":1,
 "optaim":1,
@@ -4727,7 +4695,9 @@ var white_domains = {"am":{
 "outlets365":1,
 "ozhibao":1,
 "p-e-china":1,
+"p2p265":1,
 "p2pchina":1,
+"p2pxing":1,
 "packjob":1,
 "padsj":1,
 "pahaoche":1,
@@ -4743,6 +4713,7 @@ var white_domains = {"am":{
 "paochefang":1,
 "paopaoku":1,
 "paoxue":1,
+"paratong":1,
 "paypal":1,
 "pazx888":1,
 "pc3w":1,
@@ -4776,13 +4747,12 @@ var white_domains = {"am":{
 "php186":1,
 "phpchina":1,
 "phpwind":1,
-"phzfw":1,
 "piaodown":1,
 "piaoliang":1,
 "pimei":1,
 "pincai":1,
+"pinfengws":1,
 "pingan":1,
-"pingguo7":1,
 "pingguolv":1,
 "pingshu8":1,
 "pingtan597":1,
@@ -4801,6 +4771,7 @@ var white_domains = {"am":{
 "plasway":1,
 "plxww":1,
 "pnzpw":1,
+"pod100":1,
 "podinns":1,
 "pop-bags":1,
 "pop-fashion":1,
@@ -4843,13 +4814,12 @@ var white_domains = {"am":{
 "puepu":1,
 "puercn":1,
 "puertea8":1,
-"pump999":1,
 "pupuwang":1,
 "pusa123":1,
+"putaomiaomu":1,
 "putclub":1,
 "puworld":1,
 "pvc123":1,
-"pvcqihuo":1,
 "px010":1,
 "px020":1,
 "px021":1,
@@ -4873,7 +4843,6 @@ var white_domains = {"am":{
 "qcrencai":1,
 "qcw114":1,
 "qcwe":1,
-"qcwp":1,
 "qdbeian":1,
 "qdcaijing":1,
 "qdgjj":1,
@@ -4881,15 +4850,16 @@ var white_domains = {"am":{
 "qdmm":1,
 "qdnrc":1,
 "qdnrm":1,
+"qdoulu":1,
 "qdqiche":1,
-"qdtianzhen":1,
+"qdyjjh":1,
+"qdzkb":1,
 "qeecn":1,
 "qegee":1,
 "qeqeqe":1,
 "qfang":1,
 "qfzp":1,
 "qgrcsc":1,
-"qhd678":1,
 "qhdnews":1,
 "qhdxw":1,
 "qhgate":1,
@@ -4903,14 +4873,15 @@ var white_domains = {"am":{
 "qi-che":1,
 "qiancheng100":1,
 "qianggen":1,
-"qianinfo":1,
+"qiangpiao":1,
+"qianhuaweb":1,
 "qianjia":1,
-"qiankunlt":1,
 "qianlijob":1,
 "qianlima":1,
 "qianlong":1,
 "qianlongnews":1,
 "qianqian":1,
+"qianqiuren":1,
 "qianxs":1,
 "qianyan001":1,
 "qianyecao":1,
@@ -4920,6 +4891,7 @@ var white_domains = {"am":{
 "qiaxing":1,
 "qibosoft":1,
 "qicaispace":1,
+"qichecailiao":1,
 "qichetong":1,
 "qicou":1,
 "qidian":1,
@@ -4939,7 +4911,6 @@ var white_domains = {"am":{
 "qiniu":1,
 "qiniucdn":1,
 "qiniudn":1,
-"qinrun":1,
 "qiongzhourc":1,
 "qipaoxian":1,
 "qipei001":1,
@@ -4962,10 +4933,9 @@ var white_domains = {"am":{
 "qjherb":1,
 "qjrc":1,
 "qjy168":1,
-"qkfang":1,
-"qlccit":1,
 "qljr":1,
 "qlrc":1,
+"qlzpw":1,
 "qm120":1,
 "qmango":1,
 "qmyue":1,
@@ -4983,18 +4953,17 @@ var white_domains = {"am":{
 "qqbody":1,
 "qqcyl":1,
 "qqdcw":1,
+"qqddc":1,
 "qqershou":1,
 "qqfangke":1,
 "qqfenzu":1,
 "qqgexingqianming":1,
 "qqhot":1,
 "qqjay":1,
-"qqjia":1,
 "qqkqw":1,
 "qqma":1,
 "qqmail":1,
 "qqpifu":1,
-"qqrizhi":1,
 "qqswzx":1,
 "qqthj":1,
 "qqtn":1,
@@ -5004,10 +4973,10 @@ var white_domains = {"am":{
 "qqyou":1,
 "qqyy":1,
 "qqzssl":1,
-"qqzzhh":1,
 "qstatic":1,
 "qth8":1,
 "qtour":1,
+"qu-zhou":1,
 "qu114":1,
 "qu247":1,
 "qu97":1,
@@ -5033,6 +5002,7 @@ var white_domains = {"am":{
 "quweiwu":1,
 "quxiu":1,
 "qvbuy":1,
+"qvod":1,
 "qw168":1,
 "qwjian":1,
 "qx121":1,
@@ -5052,7 +5022,6 @@ var white_domains = {"am":{
 "qzfood":1,
 "qzgb":1,
 "qzhxw":1,
-"qzlcxww":1,
 "qzrcw":1,
 "qzrczpw":1,
 "qzwb":1,
@@ -5065,14 +5034,13 @@ var white_domains = {"am":{
 "ranwen":1,
 "raorao":1,
 "ratuo":1,
-"rc0817":1,
 "rc114":1,
 "rc3721":1,
 "rc536":1,
 "rcdio":1,
-"rcw0375":1,
 "rcxx":1,
 "readnovel":1,
+"real":1,
 "recycle366":1,
 "redidai":1,
 "redocn":1,
@@ -5092,14 +5060,12 @@ var white_domains = {"am":{
 "rgfcw":1,
 "rgrc365":1,
 "rhrcw":1,
-"rijigu":1,
 "risfond":1,
 "rm0510":1,
 "rmburl":1,
 "roadoor":1,
 "robam":1,
 "robot-china":1,
-"romanka":1,
 "romjd":1,
 "romzj":1,
 "rong360":1,
@@ -5120,11 +5086,15 @@ var white_domains = {"am":{
 "rugao35":1,
 "ruian":1,
 "ruiwen":1,
+"ruixinlong":1,
 "runsky":1,
 "rutisher":1,
 "rz0375":1,
 "rz520":1,
+"rzfishing":1,
 "s-msn":1,
+"s0593":1,
+"s1288":1,
 "s1979":1,
 "saayaa":1,
 "safe10000":1,
@@ -5137,9 +5107,10 @@ var white_domains = {"am":{
 "sanwenzx":1,
 "sanyatour":1,
 "sanygroup":1,
+"sanyujixie":1,
 "sasa123":1,
+"sbiao360":1,
 "sc115":1,
-"sc2car":1,
 "sc2p":1,
 "sc7":1,
 "scale-sh":1,
@@ -5147,6 +5118,7 @@ var white_domains = {"am":{
 "scanscout":1,
 "scanv":1,
 "scbsm":1,
+"sccnn":1,
 "scdms":1,
 "scgckj":1,
 "scgrain":1,
@@ -5159,7 +5131,7 @@ var white_domains = {"am":{
 "sctv":1,
 "scweixiao":1,
 "scxdf":1,
-"sczscd":1,
+"sczfcg":1,
 "sczssz":1,
 "sdcheshi":1,
 "sdchina":1,
@@ -5180,7 +5152,9 @@ var white_domains = {"am":{
 "see-say":1,
 "seedit":1,
 "segahome":1,
+"semyoo":1,
 "sendong":1,
+"sensafish":1,
 "sensorshome":1,
 "seowhy":1,
 "serving-sys":1,
@@ -5189,13 +5163,11 @@ var white_domains = {"am":{
 "sfacg":1,
 "sg560":1,
 "sgamer":1,
-"sgjuzi":1,
 "sgncn":1,
 "sgrcw":1,
 "sh-zhaopinhui":1,
 "sh112":1,
 "sh1188":1,
-"sh361":1,
 "sh51766":1,
 "sh7":1,
 "sh91":1,
@@ -5205,51 +5177,55 @@ var white_domains = {"am":{
 "shandalu":1,
 "shandongrc":1,
 "shang360":1,
+"shangdetuozhan":1,
 "shangdu":1,
-"shanghaidz":1,
 "shanghaining":1,
 "shanghairc":1,
+"shangjiahui":1,
 "shangpin":1,
 "shangpusou":1,
 "shangqiurencaiwang":1,
 "shangxiang":1,
 "shangxueba":1,
 "shantoumama":1,
-"shanxiit":1,
 "shaqing":1,
 "shbtob":1,
 "shcaoan":1,
 "shccig":1,
+"shcnws":1,
+"shdazao":1,
+"shedunews":1,
 "sheidao":1,
 "shejiben":1,
 "shejiqun":1,
 "shejis":1,
 "shenchuang":1,
 "shendu":1,
-"shengyibao":1,
 "shengyidi":1,
 "shengzhujiage":1,
 "shenyangbus":1,
 "shenzhenair":1,
-"shenzhenjiaoshi":1,
 "shexiannet":1,
 "sheying8":1,
 "shgao":1,
 "shgjj":1,
 "shhbm":1,
+"shhkws":1,
 "shhswed":1,
 "shhuo":1,
 "shichang":1,
 "shichengxian":1,
-"shigong114":1,
 "shihuahr":1,
 "shijiemil":1,
 "shijihr":1,
 "shilehui":1,
 "shiliunet":1,
+"shionry":1,
 "shippingchina":1,
 "shixi8":1,
 "shiyouhr":1,
+"shjmnc":1,
+"shmcws":1,
 "shmet":1,
 "shoeglobal":1,
 "shoeshr":1,
@@ -5264,23 +5240,20 @@ var white_domains = {"am":{
 "shouyoutv":1,
 "show160":1,
 "showji":1,
-"showself":1,
 "shsongjiang":1,
 "shsunedu":1,
-"shuaijiao":1,
 "shuajizhijia":1,
 "shuame":1,
 "shucai001":1,
 "shucar":1,
 "shufa":1,
-"shufa001":1,
 "shuguocn":1,
 "shuhai":1,
 "shuichan51":1,
 "shuigongye":1,
 "shuiguo":1,
 "shuimotv":1,
-"shulife":1,
+"shuiw114":1,
 "shuma7":1,
 "shumiimg":1,
 "shuobao":1,
@@ -5290,14 +5263,16 @@ var white_domains = {"am":{
 "shuyfdc":1,
 "shuzixiaoyuan":1,
 "shwkhq":1,
+"shwsdp":1,
 "shxcoal":1,
 "shxdx":1,
 "si114":1,
-"siandian":1,
 "sidelianghang":1,
 "sifa365":1,
+"sihaidiaoyu":1,
 "sihe":1,
 "sihongbbs":1,
+"siliaojixie":1,
 "simuwang":1,
 "sina":1,
 "sinaapp":1,
@@ -5326,6 +5301,7 @@ var white_domains = {"am":{
 "sj-tl":1,
 "sj998":1,
 "sjapk":1,
+"sjchinese":1,
 "sjdfgl":1,
 "sjfzxm":1,
 "sjjob88":1,
@@ -5342,10 +5318,13 @@ var white_domains = {"am":{
 "sky328":1,
 "skycn":1,
 "sljob88":1,
+"slstm":1,
 "sm597":1,
 "smartjx":1,
 "smejs":1,
 "smestar":1,
+"smforestry":1,
+"smhzs":1,
 "smzdm":1,
 "smzy":1,
 "sneac":1,
@@ -5365,6 +5344,7 @@ var white_domains = {"am":{
 "sofu580":1,
 "sogou":1,
 "sogoucdn":1,
+"sogua":1,
 "sohochina":1,
 "sohu":1,
 "sohusce":1,
@@ -5379,7 +5359,6 @@ var white_domains = {"am":{
 "sooshong":1,
 "sootoo":1,
 "sooxue":1,
-"sooyuu":1,
 "soozhu":1,
 "soperson":1,
 "sortdoor":1,
@@ -5387,7 +5366,6 @@ var white_domains = {"am":{
 "sososteel":1,
 "sosoyy":1,
 "soucai":1,
-"soudai360":1,
 "soufun":1,
 "soufunimg":1,
 "soulou365":1,
@@ -5397,6 +5375,7 @@ var white_domains = {"am":{
 "souqian":1,
 "southcn":1,
 "southmoney":1,
+"soutudi":1,
 "souxuexiao":1,
 "soxsok":1,
 "soyuli":1,
@@ -5415,7 +5394,6 @@ var white_domains = {"am":{
 "spzyw":1,
 "sq1996":1,
 "sqfcw":1,
-"sqs373":1,
 "sqzhaopin":1,
 "srrczpw":1,
 "srtong":1,
@@ -5424,6 +5402,7 @@ var white_domains = {"am":{
 "ssfun":1,
 "ssgcwang":1,
 "ssjzw":1,
+"sslibrary":1,
 "ssqzj":1,
 "ssrcsc":1,
 "ssswh":1,
@@ -5436,6 +5415,7 @@ var white_domains = {"am":{
 "stcn":1,
 "stdaily":1,
 "steelphone":1,
+"stelong":1,
 "stockstar":1,
 "stone365":1,
 "stonemsn":1,
@@ -5454,7 +5434,6 @@ var white_domains = {"am":{
 "sucaifengbao":1,
 "sucaitianxia":1,
 "sudasuta":1,
-"suiningwang":1,
 "suiyiju":1,
 "sun0758":1,
 "sun0769":1,
@@ -5472,12 +5451,15 @@ var white_domains = {"am":{
 "svisa":1,
 "swarow":1,
 "swjoy":1,
+"swkong":1,
+"swwenshi":1,
 "sx597":1,
 "sxac":1,
 "sxatc":1,
 "sxcntv":1,
 "sxcoal":1,
 "sxdygbjy":1,
+"sxfsw":1,
 "sxhiway":1,
 "sxkp":1,
 "sxncb":1,
@@ -5487,10 +5469,10 @@ var white_domains = {"am":{
 "sxrb":1,
 "sxshealth":1,
 "sxtcm":1,
+"sxtdrn":1,
 "sxtour":1,
 "sxtvs":1,
 "sxtvu":1,
-"sxxdf":1,
 "sxycrb":1,
 "sxyhq":1,
 "sy3688":1,
@@ -5501,8 +5483,11 @@ var white_domains = {"am":{
 "sykong":1,
 "symama":1,
 "synacast":1,
+"syqnr":1,
 "syrczpw":1,
+"sytlw":1,
 "syxwnet":1,
+"sz1w":1,
 "szedu":1,
 "szfa":1,
 "szfcol":1,
@@ -5510,13 +5495,11 @@ var white_domains = {"am":{
 "szhk":1,
 "szhome":1,
 "szhufu":1,
-"szldg":1,
 "szlyw12306":1,
 "szmall":1,
 "szmama":1,
 "szmj":1,
 "sznews":1,
-"sznmd":1,
 "szooo":1,
 "szprovence":1,
 "szpxe":1,
@@ -5528,6 +5511,7 @@ var white_domains = {"am":{
 "szyc":1,
 "t0001":1,
 "t0888":1,
+"t1980":1,
 "t262":1,
 "t55":1,
 "t960":1,
@@ -5552,6 +5536,7 @@ var white_domains = {"am":{
 "taoche100":1,
 "taoci":1,
 "taocijob":1,
+"taodake":1,
 "taofang":1,
 "taofen8":1,
 "taohuren":1,
@@ -5570,7 +5555,6 @@ var white_domains = {"am":{
 "taskcn":1,
 "tatamr":1,
 "tatazx":1,
-"tayasaf":1,
 "tbcache":1,
 "tbscache":1,
 "tc167":1,
@@ -5589,7 +5573,6 @@ var white_domains = {"am":{
 "teauo":1,
 "tech-food":1,
 "techan":1,
-"teeqee":1,
 "telecomhr":1,
 "temaiku":1,
 "tencent":1,
@@ -5608,7 +5591,6 @@ var white_domains = {"am":{
 "theplanet":1,
 "thethirdmedia":1,
 "thmz":1,
-"thyoo":1,
 "tianan-cyber":1,
 "tiancity":1,
 "tiandaoedu":1,
@@ -5622,7 +5604,9 @@ var white_domains = {"am":{
 "tianshanrc":1,
 "tiantian":1,
 "tianwuwang":1,
+"tianxing99":1,
 "tianyaui":1,
+"tianyuanfishing":1,
 "tibetcn":1,
 "tibetinfor":1,
 "tiekuangshi":1,
@@ -5631,7 +5615,6 @@ var white_domains = {"am":{
 "timedg":1,
 "tingbook":1,
 "tingroom":1,
-"tingshuge":1,
 "titan24":1,
 "tjkx":1,
 "tjmama":1,
@@ -5645,8 +5628,8 @@ var white_domains = {"am":{
 "tmbbs":1,
 "tmjob88":1,
 "tmsf":1,
-"tmtpost":1,
 "to8to":1,
+"tobaccochina":1,
 "toberp":1,
 "tobosu":1,
 "todayonhistory":1,
@@ -5654,7 +5637,6 @@ var white_domains = {"am":{
 "tom":1,
 "tomdurrie":1,
 "tompda":1,
-"tong12":1,
 "tongbu":1,
 "tongliaowang":1,
 "tongrenshi":1,
@@ -5677,6 +5659,7 @@ var white_domains = {"am":{
 "totob":1,
 "touclick":1,
 "toutiao":1,
+"toybaba":1,
 "toysgu":1,
 "tpooo":1,
 "tprtc":1,
@@ -5692,15 +5675,15 @@ var white_domains = {"am":{
 "trjcn":1,
 "trustexporter":1,
 "trylist":1,
+"tsingming":1,
 "tsqyxxw":1,
 "tsrcw":1,
 "tt-ly":1,
 "tt0760":1,
 "ttche":1,
 "tteb":1,
-"ttgood":1,
+"ttmn":1,
 "ttpet":1,
-"ttqmw":1,
 "ttyl5":1,
 "ttys5":1,
 "ttzcw":1,
@@ -5734,18 +5717,20 @@ var white_domains = {"am":{
 "tv189":1,
 "tvhf":1,
 "tvmao":1,
+"tvptv":1,
 "tvscn":1,
 "tvsou":1,
 "twcczhu":1,
 "twwtn":1,
 "txdai":1,
 "txooo":1,
-"txsec":1,
 "txssw":1,
+"txwb":1,
 "txwm":1,
 "txxxb":1,
 "ty360":1,
 "tybaba":1,
+"tyjib":1,
 "tyncar":1,
 "tz0852":1,
 "tz911":1,
@@ -5764,8 +5749,8 @@ var white_domains = {"am":{
 "u17":1,
 "u69cn":1,
 "u88":1,
+"u9time":1,
 "uc129":1,
-"ucai123":1,
 "ucbug":1,
 "ucjoy":1,
 "uctrac":1,
@@ -5776,7 +5761,6 @@ var white_domains = {"am":{
 "ufenghuang":1,
 "uggd":1,
 "uhaidao":1,
-"uhenan":1,
 "uibao":1,
 "uimaker":1,
 "uisdc":1,
@@ -5829,6 +5813,7 @@ var white_domains = {"am":{
 "vip":1,
 "vip800":1,
 "vipcn":1,
+"vipmtb":1,
 "vipshop":1,
 "viptijian":1,
 "vipyl":1,
@@ -5846,9 +5831,9 @@ var white_domains = {"am":{
 "vrbeing":1,
 "vsharing":1,
 "vsuch":1,
+"vvjk":1,
 "vvjob":1,
 "vvvdj":1,
-"vx":1,
 "w707":1,
 "wadongxi":1,
 "waihuifanyongwang":1,
@@ -5859,6 +5844,8 @@ var white_domains = {"am":{
 "wandaihao":1,
 "wandodo":1,
 "wandoujia":1,
+"wangdai3":1,
+"wangdaibaike":1,
 "wangdaibang":1,
 "wangdaibangshou":1,
 "wangdaicaifu":1,
@@ -5866,18 +5853,17 @@ var white_domains = {"am":{
 "wangdaiguancha":1,
 "wangdaiqianyan":1,
 "wangdaitiandi":1,
+"wangdaiwuyou":1,
 "wangdaizhijia":1,
 "wangdaizhinan":1,
 "wangjiu":1,
 "wangqi":1,
 "wangtu":1,
 "wanguan":1,
-"wangxiaowang":1,
-"wanhu888":1,
 "wanhupo":1,
 "wanjidao":1,
+"wanlitong":1,
 "wanmei":1,
-"wanshuba":1,
 "wanxia":1,
 "wanyouxi7":1,
 "wanyx":1,
@@ -5885,34 +5871,37 @@ var white_domains = {"am":{
 "warchina":1,
 "warting":1,
 "watchstor":1,
+"wbshsc":1,
 "wcnimg":1,
 "wcoat":1,
 "wcsrcw":1,
 "wcwang":1,
+"wdj168":1,
 "wdjimg":1,
-"wdodo":1,
 "wdsjz":1,
+"wdzx":1,
 "wealink":1,
+"weathercn":1,
 "web3389":1,
 "web4008":1,
 "web887":1,
 "webjx":1,
+"webkaka":1,
 "webkindu":1,
 "webpowerchina":1,
 "webterren":1,
 "webxgame":1,
 "wechatnet":1,
 "wed0512":1,
-"wed2008":1,
 "wedohome":1,
 "wehefei":1,
 "weibo":1,
-"weicaifu":1,
 "weiea":1,
 "weilanhaian":1,
 "weilanliuxue":1,
 "weimeicun":1,
 "weimeixi":1,
+"weimob":1,
 "weiningnews":1,
 "weiphone":1,
 "weizhangwang":1,
@@ -5928,6 +5917,7 @@ var white_domains = {"am":{
 "wenxue24":1,
 "wenyoutai":1,
 "wenzifanyi":1,
+"wesmp":1,
 "west263":1,
 "weyou360":1,
 "wf777":1,
@@ -5941,12 +5931,13 @@ var white_domains = {"am":{
 "whjm":1,
 "whjuren":1,
 "whlongda":1,
+"whlsgzn":1,
 "whmama":1,
+"whmlew":1,
 "whrhkj":1,
 "whsdgx":1,
 "whshangceng":1,
 "win007":1,
-"win4000":1,
 "win7china":1,
 "win8china":1,
 "wincn":1,
@@ -5960,8 +5951,10 @@ var white_domains = {"am":{
 "winwindai":1,
 "wishdown":1,
 "wj001":1,
+"wjnin":1,
 "wjshw":1,
 "wkimg":1,
+"wlgyy":1,
 "wlmq":1,
 "wlmqgjj":1,
 "wlmqwb":1,
@@ -5969,6 +5962,7 @@ var white_domains = {"am":{
 "wm927":1,
 "wmzhe":1,
 "wnrczpw":1,
+"wnwb":1,
 "woaipu":1,
 "wodingche":1,
 "wofang":1,
@@ -5976,6 +5970,7 @@ var white_domains = {"am":{
 "woiyu":1,
 "wojubl":1,
 "wokanfang":1,
+"wokeji":1,
 "wolai":1,
 "womai":1,
 "woman91":1,
@@ -5986,7 +5981,6 @@ var white_domains = {"am":{
 "world-metal":1,
 "world-stone":1,
 "worldscrap":1,
-"woshipm":1,
 "woyaogexing":1,
 "woyewan":1,
 "woying":1,
@@ -6019,22 +6013,27 @@ var white_domains = {"am":{
 "wxrb":1,
 "wxthw":1,
 "wxwu":1,
+"wyjiuyuanheiji":1,
 "wysjob":1,
 "wz121":1,
 "wz12333":1,
 "wz2sc":1,
 "wzcbd":1,
-"wzdlyw":1,
 "wzjob":1,
+"wzms":1,
+"wzrc":1,
 "wzsee":1,
+"wzsz":1,
 "wzszp":1,
 "wztvu":1,
 "wzzbtb":1,
 "x0750":1,
 "xa999":1,
 "xabbs":1,
+"xabxgw":1,
 "xafc":1,
 "xahhw":1,
+"xajob":1,
 "xanet110":1,
 "xaonline":1,
 "xapcn":1,
@@ -6045,7 +6044,6 @@ var white_domains = {"am":{
 "xbaixing":1,
 "xbiao":1,
 "xbxxb":1,
-"xbzgold":1,
 "xc0769":1,
 "xcarimg":1,
 "xcetv":1,
@@ -6082,22 +6080,22 @@ var white_domains = {"am":{
 "xiangcunyou":1,
 "xiangguohe":1,
 "xianghunet":1,
+"xiangjiangyw":1,
 "xiangmu":1,
 "xiangrikui":1,
 "xiangshu":1,
 "xianguo":1,
-"xianhuo186":1,
-"xianyuwang":1,
+"xianoy":1,
 "xiao84":1,
 "xiaobaixitong":1,
 "xiaohei":1,
+"xiaojiangguo123":1,
 "xiaojiulou":1,
 "xiaoliangkou":1,
 "xiaoma":1,
 "xiaomi":1,
 "xiaomi001":1,
 "xiaomishu":1,
-"xiaomizha":1,
 "xiaonaodai":1,
 "xiaonei":1,
 "xiaopi":1,
@@ -6114,18 +6112,18 @@ var white_domains = {"am":{
 "xibakou":1,
 "xiche168":1,
 "xichengrc":1,
-"xieemanman":1,
 "xiezilou":1,
 "xihairc":1,
 "xilu":1,
 "ximalaya":1,
-"ximij":1,
 "xinbishan":1,
 "xincheping":1,
+"xindaibao":1,
 "xinddy":1,
 "xinfafloor":1,
 "xinfenlei":1,
 "xingcishan":1,
+"xingmucaoye":1,
 "xingshu":1,
 "xingzuo123":1,
 "xingzuodashi":1,
@@ -6152,16 +6150,15 @@ var white_domains = {"am":{
 "xintaizhou":1,
 "xinwangjing":1,
 "xinxiyi":1,
+"xinxunwang":1,
 "xinyanju":1,
 "xinyurc":1,
-"xishasha":1,
 "xitek":1,
 "xitongcheng":1,
 "xituan":1,
 "xiu":1,
 "xiuai":1,
 "xiugei":1,
-"xiushuang":1,
 "xiwenquan":1,
 "xixiarc":1,
 "xixik":1,
@@ -6196,6 +6193,7 @@ var white_domains = {"am":{
 "xnjjob":1,
 "xnmtd":1,
 "xns315":1,
+"xnslydjq":1,
 "xnynews":1,
 "xoyo":1,
 "xp14":1,
@@ -6209,12 +6207,14 @@ var white_domains = {"am":{
 "xs9999":1,
 "xsjob":1,
 "xskhome":1,
+"xsmsjz":1,
 "xsool":1,
 "xszrcw":1,
 "xt866":1,
 "xtjc":1,
 "xtltt":1,
 "xtuan":1,
+"xtwctz":1,
 "xuanran001":1,
 "xuanruanjian":1,
 "xuanwww":1,
@@ -6223,17 +6223,16 @@ var white_domains = {"am":{
 "xue163":1,
 "xue2you":1,
 "xue5156":1,
-"xuechela":1,
 "xueda":1,
 "xueersi":1,
 "xueeu":1,
 "xuefu5":1,
 "xueid":1,
-"xuejutea":1,
 "xuekeedu":1,
 "xueshanrc":1,
 "xuexi111":1,
 "xuexifangfa":1,
+"xuexigang":1,
 "xuexila":1,
 "xuexun":1,
 "xueyiyun":1,
@@ -6247,11 +6246,9 @@ var white_domains = {"am":{
 "xunzai":1,
 "xuzhoujob":1,
 "xw365":1,
-"xwcsj":1,
 "xwie":1,
 "xx028":1,
 "xx351":1,
-"xxcmw":1,
 "xxdm":1,
 "xxtlw":1,
 "xy":1,
@@ -6269,24 +6266,26 @@ var white_domains = {"am":{
 "xywy":1,
 "xyzs":1,
 "xyzwin":1,
-"xz323":1,
+"xzdiaoyu":1,
 "xzjyh":1,
 "xzrbw":1,
 "xzuan":1,
 "xzwyu":1,
 "xzxx":1,
 "xzyuhui":1,
+"y13255262618":1,
 "y2002":1,
-"y261":1,
 "ya247":1,
 "ya597":1,
 "yacol":1,
 "yakolux":1,
+"yandongjixie":1,
 "yangguangxinye":1,
 "yangji":1,
 "yangjiajiao":1,
 "yangshitianqi":1,
 "yangtse":1,
+"yangzhi":1,
 "yanmoxuan":1,
 "yantuchina":1,
 "yanzhaorc":1,
@@ -6311,7 +6310,6 @@ var white_domains = {"am":{
 "yccdn":1,
 "ycdsrc":1,
 "ycfczc":1,
-"ycgjj":1,
 "ychr":1,
 "ycpai":1,
 "ycrczpw":1,
@@ -6336,6 +6334,7 @@ var white_domains = {"am":{
 "ygits":1,
 "ygjj":1,
 "yhd":1,
+"yhjj":1,
 "yhkgjt":1,
 "yhnw":1,
 "yi7":1,
@@ -6345,17 +6344,16 @@ var white_domains = {"am":{
 "yichemall":1,
 "yicheshi":1,
 "yidaba":1,
-"yidao5":1,
 "yieldmanager":1,
-"yifu":1,
+"yiforex":1,
 "yihaodian":1,
 "yihaodianimg":1,
 "yiihuu":1,
 "yijiaqin":1,
 "yili":1,
 "yilianit":1,
+"yilule":1,
 "yimianmian":1,
-"yinghuaedu":1,
 "yinghuangzs":1,
 "yingjia360":1,
 "yingjiesheng":1,
@@ -6366,6 +6364,7 @@ var white_domains = {"am":{
 "yingxiao360":1,
 "yingyu":1,
 "yingyu360":1,
+"yinhang":1,
 "yinjucn":1,
 "yinlianbang":1,
 "yinlingyounao":1,
@@ -6378,13 +6377,13 @@ var white_domains = {"am":{
 "yiqin":1,
 "yiqirong":1,
 "yirendai":1,
-"yirentong":1,
 "yishizige":1,
 "yishu":1,
 "yisoche":1,
 "yisou":1,
 "yisou5":1,
 "yisusoft":1,
+"yiwubuy":1,
 "yiwufair":1,
 "yiwugou":1,
 "yixieshi":1,
@@ -6396,7 +6395,6 @@ var white_domains = {"am":{
 "yizimg":1,
 "yjbys":1,
 "yjldp":1,
-"yk0579":1,
 "ykimg":1,
 "yktchina":1,
 "yktworld":1,
@@ -6406,26 +6404,31 @@ var white_domains = {"am":{
 "ylw0813":1,
 "ylw168":1,
 "ylxxg":1,
+"ylzmhzs":1,
 "ymt360":1,
+"ymxfishing":1,
 "yn16":1,
-"yncie":1,
 "yndaily":1,
 "yndtjj":1,
 "ynet":1,
 "ynfjw":1,
+"yngkseed":1,
 "ynhouse":1,
 "ynhr":1,
 "yninfo":1,
 "ynit580":1,
+"ynjgy":1,
 "ynjtt":1,
 "ynju":1,
 "ynpost":1,
 "ynpxrz":1,
 "ynshangji":1,
+"yntour88":1,
 "ynxdfpr":1,
 "ynzp":1,
 "yodao":1,
 "yodbank":1,
+"yododo":1,
 "yofond":1,
 "yofus":1,
 "yoher":1,
@@ -6448,6 +6451,7 @@ var white_domains = {"am":{
 "youdao":1,
 "youfangw":1,
 "yougou":1,
+"youhua":1,
 "youjiao":1,
 "youjindi":1,
 "youkee":1,
@@ -6460,7 +6464,6 @@ var white_domains = {"am":{
 "youxi":1,
 "youxiake":1,
 "youxiduo":1,
-"youxigonglue8":1,
 "youxigt":1,
 "youxile":1,
 "youxiniao":1,
@@ -6468,18 +6471,17 @@ var white_domains = {"am":{
 "youxiqun":1,
 "youxiuhui":1,
 "youyuan":1,
-"youziye":1,
 "youzu":1,
 "yoyojie":1,
 "yoyou":1,
 "yp900":1,
 "ypgair":1,
-"ypian":1,
 "yqdown":1,
 "yqrc":1,
-"yqyb114":1,
 "yr1818":1,
 "ysbaojia":1,
+"yshsports":1,
+"ysxyyt":1,
 "yt160":1,
 "ytbbs":1,
 "ytbxw":1,
@@ -6515,6 +6517,7 @@ var white_domains = {"am":{
 "yunyangrc":1,
 "yupoo":1,
 "yuqihuang":1,
+"yurenwan":1,
 "yusuan":1,
 "yutong":1,
 "yuzhicl":1,
@@ -6534,16 +6537,15 @@ var white_domains = {"am":{
 "yy138":1,
 "yy960":1,
 "yycqc":1,
-"yydm":1,
 "yyets":1,
 "yypxcn":1,
-"yyqcw":1,
+"yzdiaoyu":1,
+"yzdjbh":1,
 "yzforex":1,
 "yzrc":1,
 "yzxw":1,
 "yzyczp":1,
 "yzydt":1,
-"zaixian-fanyi":1,
 "zaixs":1,
 "zangao":1,
 "zanzw":1,
@@ -6560,7 +6562,6 @@ var white_domains = {"am":{
 "zcbxw":1,
 "zcheer":1,
 "zcjob88":1,
-"zckszx":1,
 "zcom":1,
 "zcqiche":1,
 "zcrcw":1,
@@ -6568,7 +6569,6 @@ var white_domains = {"am":{
 "zcwz":1,
 "zcyy8":1,
 "zdface":1,
-"zdhnjd":1,
 "zdmimg":1,
 "zenque":1,
 "zf875":1,
@@ -6577,13 +6577,16 @@ var white_domains = {"am":{
 "zgbm":1,
 "zgchangfang":1,
 "zgcmlm":1,
+"zgcylymh":1,
 "zgdhy":1,
 "zgdjyj":1,
 "zgdqjy":1,
 "zgdrive":1,
+"zgftjg":1,
 "zgfznews":1,
 "zggwyw":1,
 "zghmsc":1,
+"zgjczzw":1,
 "zgjf168":1,
 "zgjhjy":1,
 "zgjia":1,
@@ -6599,6 +6602,7 @@ var white_domains = {"am":{
 "zgpinche":1,
 "zgpingshu":1,
 "zgqczj":1,
+"zgqjmh":1,
 "zgqmjyw":1,
 "zgqpc":1,
 "zgrcjyw":1,
@@ -6613,6 +6617,7 @@ var white_domains = {"am":{
 "zgsydw":1,
 "zgyey":1,
 "zgyushiwang":1,
+"zgza":1,
 "zgzcw":1,
 "zgznh":1,
 "zgzx114":1,
@@ -6621,11 +6626,11 @@ var white_domains = {"am":{
 "zh51home":1,
 "zh853":1,
 "zhan900":1,
-"zhangjk":1,
 "zhangpu597":1,
 "zhaochafa":1,
 "zhaodanji":1,
 "zhaodao123":1,
+"zhaogew":1,
 "zhaojiaxiao":1,
 "zhaopin":1,
 "zhaopinxitong":1,
@@ -6671,10 +6676,10 @@ var white_domains = {"am":{
 "zhimantian":1,
 "zhitechan":1,
 "zhituad":1,
+"zhiweiwenshi":1,
 "zhixuan":1,
 "zhiye":1,
 "zhiyeyaoshi":1,
-"zhiyeyishi":1,
 "zhiyinmanhua":1,
 "zhiyoula":1,
 "zhiyuanyun":1,
@@ -6688,20 +6693,18 @@ var white_domains = {"am":{
 "zhongsou":1,
 "zhongyuanauto":1,
 "zhongzhourc":1,
-"zhongzhu114":1,
 "zhsho":1,
 "zhtmw":1,
 "zhtool":1,
 "zhuangjiba":1,
 "zhuangku":1,
 "zhuangpin":1,
-"zhuangxiu315":1,
 "zhuannet":1,
 "zhuantiku":1,
+"zhuaxia":1,
 "zhubaijia":1,
 "zhubajie":1,
 "zhujia360":1,
-"zhujiaba":1,
 "zhujiangrc":1,
 "zhuke":1,
 "zhulang":1,
@@ -6720,8 +6723,6 @@ var white_domains = {"am":{
 "zidianwang":1,
 "zikao365":1,
 "ziling":1,
-"ziroom":1,
-"zisaimama":1,
 "zisha":1,
 "zisha8090":1,
 "zisuyouw":1,
@@ -6733,6 +6734,7 @@ var white_domains = {"am":{
 "zj123":1,
 "zjbar":1,
 "zjcheshi":1,
+"zjcoop":1,
 "zjghfw":1,
 "zjghot":1,
 "zjhnedu":1,
@@ -6746,6 +6748,7 @@ var white_domains = {"am":{
 "zjlottery":1,
 "zjlscourt":1,
 "zjolcdn":1,
+"zjphis":1,
 "zjpse":1,
 "zjrc":1,
 "zjrxz":1,
@@ -6781,7 +6784,6 @@ var white_domains = {"am":{
 "zph-sh":1,
 "zplm":1,
 "zpzj":1,
-"zq6":1,
 "zqgame":1,
 "zqrsrc":1,
 "zr597":1,
@@ -6801,6 +6803,8 @@ var white_domains = {"am":{
 "zsputuo":1,
 "zssou":1,
 "zst365":1,
+"zstx88":1,
+"zswseo":1,
 "zszgh":1,
 "zt5":1,
 "ztcadx":1,
@@ -6810,12 +6814,11 @@ var white_domains = {"am":{
 "zudong":1,
 "zufang":1,
 "zugame":1,
+"zugou":1,
 "zujuan":1,
 "zuoche":1,
 "zuojiang":1,
-"zuoniu":1,
 "zuowen":1,
-"zuowenzhang":1,
 "zupuk":1,
 "zupulu":1,
 "zuzhirenshi":1,
@@ -6826,6 +6829,7 @@ var white_domains = {"am":{
 "zx915":1,
 "zx98":1,
 "zxdyw":1,
+"zxfishing":1,
 "zxhsd":1,
 "zxip":1,
 "zxiubbs":1,
@@ -6841,7 +6845,6 @@ var white_domains = {"am":{
 "zyloushi":1,
 "zynews":1,
 "zynw":1,
-"zysj360":1,
 "zytxs":1,
 "zyue":1,
 "zyuexc":1,
@@ -6851,15 +6854,16 @@ var white_domains = {"am":{
 "zz91":1,
 "zzbaike":1,
 "zzbbs":1,
+"zzcysw":1,
 "zzdjw":1,
 "zzgjj":1,
 "zzhpkj":1,
 "zzidc":1,
 "zzjob88":1,
 "zzol360":1,
+"zzpgm":1,
 "zzsr":1,
 "zzstep":1,
-"zztengda":1,
 "zzwljc":1,
 "zzwtqx":1,
 "zzyjs":1,
@@ -6873,17 +6877,15 @@ var white_domains = {"am":{
 "douban":1,
 "jing":1,
 "lvxing":1
-},"fr":{
-"amb-chine":1
 },"gs":{
 "inc":1
 },"hk":{
-"bluestacks":1,
 "ctrip.com":1,
 "takungpao.com":1
 },"hu":{
 "zhi":1
 },"im":{
+"angler":1,
 "cli":1,
 "iapps":1,
 "iyy":1,
@@ -6911,22 +6913,18 @@ var white_domains = {"am":{
 "51":1,
 "55":1,
 "900":1,
-"qzone":1,
-"yky":1
+"qzone":1
 },"ly":{
 "iweek":1,
 "lohas":1,
 "my.cl":1
 },"me":{
 "dzj":1,
-"lovewith":1,
 "shijue":1,
 "tvb":1,
 "wmpic":1
 },"mg":{
 "loli":1
-},"mobi":{
-"zonglai":1
 },"net":{
 "001sj":1,
 "00615":1,
@@ -6948,17 +6946,17 @@ var white_domains = {"am":{
 "123juzi":1,
 "126":1,
 "126job":1,
+"127":1,
 "12900":1,
 "157300":1,
 "1616":1,
+"163":1,
 "177dj":1,
 "17u":1,
 "21cp":1,
-"21ks":1,
 "21page":1,
 "230la":1,
 "232100":1,
-"24pay":1,
 "263":1,
 "269":1,
 "293":1,
@@ -6967,10 +6965,12 @@ var white_domains = {"am":{
 "2mdn":1,
 "3265":1,
 "360guakao":1,
+"360tz":1,
 "365kl":1,
 "37wan":1,
 "39":1,
 "39jhw":1,
+"3ddl":1,
 "3sjob":1,
 "3snews":1,
 "41717":1,
@@ -7000,10 +7000,8 @@ var white_domains = {"am":{
 "5d6d":1,
 "5haoxue":1,
 "5ixuexi":1,
-"64guwen":1,
 "66one":1,
 "68design":1,
-"71p":1,
 "78dm":1,
 "7do":1,
 "800400":1,
@@ -7019,7 +7017,6 @@ var white_domains = {"am":{
 "999120":1,
 "a135":1,
 "acftu":1,
-"actoys":1,
 "admin5":1,
 "ah163":1,
 "aladd":1,
@@ -7036,29 +7033,31 @@ var white_domains = {"am":{
 "baoye":1,
 "bashang":1,
 "bd365":1,
+"beianchaxun":1,
 "beifang":1,
 "bejoin":1,
 "bfxx":1,
 "bianjibu":1,
+"bjhytc":1,
 "bjmama":1,
 "bldqxx":1,
 "blldzx":1,
 "blsy":1,
-"bmjob":1,
 "bokee":1,
 "bokon":1,
 "buildjob":1,
-"bwie":1,
 "byqsc":1,
 "bzcm":1,
 "c-ps":1,
 "c114":1,
 "caihao":1,
+"catv":1,
 "cbi360":1,
 "ccedin":1,
 "ccen":1,
 "cctb":1,
 "ccughc":1,
+"cdgtw":1,
 "cdyou":1,
 "ce02":1,
 "cfanclub":1,
@@ -7078,6 +7077,8 @@ var white_domains = {"am":{
 "chinagb":1,
 "chinahrd":1,
 "chinajoy":1,
+"chinalps":1,
+"chinamr":1,
 "chinapaper":1,
 "chinapipe":1,
 "chinashishi":1,
@@ -7095,18 +7096,17 @@ var white_domains = {"am":{
 "cixiedu":1,
 "cjdby":1,
 "cjk3d":1,
-"cloud56":1,
 "cn":1,
 "cn2car":1,
 "cnbaowen":1,
 "cnchache":1,
 "cncn":1,
+"cncsj":1,
 "cndianlu":1,
 "cneol":1,
 "cngsda":1,
 "cnhbsb":1,
 "cninfo":1,
-"cnjskc":1,
 "cnki":1,
 "cnkssb":1,
 "cnlinfo":1,
@@ -7115,6 +7115,7 @@ var white_domains = {"am":{
 "cnnb":1,
 "cnnyjx":1,
 "cnool":1,
+"cnpension":1,
 "cnpsy":1,
 "cnqipei":1,
 "cnshicai":1,
@@ -7127,6 +7128,7 @@ var white_domains = {"am":{
 "codefans":1,
 "copperhome":1,
 "cpecc":1,
+"cqfishing":1,
 "cqmama":1,
 "cqnews":1,
 "cqqnb":1,
@@ -7152,6 +7154,7 @@ var white_domains = {"am":{
 "dfysw":1,
 "dgjy":1,
 "dgmama":1,
+"dgrc":1,
 "dhabc":1,
 "dianzhanggui":1,
 "diaochapai":1,
@@ -7160,24 +7163,29 @@ var white_domains = {"am":{
 "discuz":1,
 "diwei":1,
 "dj-dj":1,
-"djlsoft":1,
 "dlzj":1,
 "docin":1,
 "dongdao":1,
 "doubleclick":1,
 "doule":1,
 "doyoo":1,
+"doyouhike":1,
+"dqccc":1,
 "dt123":1,
 "duba":1,
+"dudiao":1,
 "dushe":1,
 "dv37":1,
+"dvbbs":1,
 "dytt8":1,
 "dytvu":1,
 "dz169":1,
 "dzwork":1,
 "dzxw":1,
+"edudh":1,
 "edudown":1,
 "eeeqi":1,
+"efisher":1,
 "emushroom":1,
 "ename":1,
 "esilk":1,
@@ -7190,7 +7198,6 @@ var white_domains = {"am":{
 "fjmb":1,
 "fjtv":1,
 "flash8":1,
-"fmq10":1,
 "foodmate":1,
 "fsjy":1,
 "ftutj":1,
@@ -7234,6 +7241,7 @@ var white_domains = {"am":{
 "hbycw":1,
 "hdzc":1,
 "hhsq":1,
+"hifidiy":1,
 "hkwb":1,
 "hledu":1,
 "hlj":1,
@@ -7246,17 +7254,14 @@ var white_domains = {"am":{
 "hngjj":1,
 "hnjkw":1,
 "hnkjonline":1,
-"hnltw":1,
 "hnlzw":1,
+"hnnw":1,
 "hnol":1,
-"hnpi":1,
 "hnskl":1,
 "hnsxfj":1,
-"hntianya":1,
 "homomo":1,
 "hongze":1,
 "hotsales":1,
-"hrbtv":1,
 "htbenet":1,
 "hteacher":1,
 "htexam":1,
@@ -7273,9 +7278,9 @@ var white_domains = {"am":{
 "hzlib":1,
 "hzmama":1,
 "hzpzs":1,
-"icgoo":1,
 "ichacha":1,
 "ilinyi":1,
+"imp3":1,
 "indexedu":1,
 "inhe":1,
 "irs01":1,
@@ -7294,7 +7299,6 @@ var white_domains = {"am":{
 "jdedu":1,
 "jfxx":1,
 "jhjy":1,
-"jhtong":1,
 "jiadinglife":1,
 "jiajushichang":1,
 "jiaodong":1,
@@ -7307,26 +7311,23 @@ var white_domains = {"am":{
 "jius":1,
 "jiusi":1,
 "jixie":1,
-"jiyili":1,
 "jjwxc":1,
+"jlqf":1,
 "jlstnet":1,
 "jnzxw":1,
 "job234":1,
 "jobinhe":1,
 "jsinfo":1,
-"juexing":1,
 "jupai":1,
 "jxjjw":1,
 "jxqx":1,
-"jyrcw":1,
+"jy1898":1,
 "jysq":1,
 "jzdd":1,
 "kandian":1,
 "kantao":1,
-"kaoshijie":1,
 "kdnet":1,
-"ksldesign":1,
-"kuaijishi":1,
+"ksgs":1,
 "kuakao":1,
 "kugz":1,
 "la-bbs":1,
@@ -7343,7 +7344,6 @@ var white_domains = {"am":{
 "liuxue51":1,
 "liveuc":1,
 "ljia":1,
-"lkong":1,
 "lmjx":1,
 "logo123":1,
 "longhoo":1,
@@ -7356,6 +7356,7 @@ var white_domains = {"am":{
 "lxj168":1,
 "lygrc":1,
 "lyjob":1,
+"lywj":1,
 "lz-photo":1,
 "lzsq":1,
 "lzzy":1,
@@ -7365,10 +7366,10 @@ var white_domains = {"am":{
 "meishij":1,
 "meituan":1,
 "missyuan":1,
-"mllj":1,
 "mshw":1,
 "msxx":1,
 "mushroommarket":1,
+"mvxz":1,
 "mwrf":1,
 "mycar168":1,
 "mycollect":1,
@@ -7380,7 +7381,6 @@ var white_domains = {"am":{
 "nbgj":1,
 "nbks":1,
 "nbol":1,
-"nbow":1,
 "nbptweb":1,
 "nbzhaopin":1,
 "ncvt":1,
@@ -7389,6 +7389,7 @@ var white_domains = {"am":{
 "netover":1,
 "newasp":1,
 "newsmth":1,
+"newssc":1,
 "newyx":1,
 "ng114":1,
 "ninghai":1,
@@ -7397,6 +7398,7 @@ var white_domains = {"am":{
 "ntjy":1,
 "ntxx":1,
 "nxnews":1,
+"nxng":1,
 "nyedu":1,
 "oilchem":1,
 "onegreen":1,
@@ -7408,12 +7410,12 @@ var white_domains = {"am":{
 "paixie":1,
 "paopaoche":1,
 "pchome":1,
+"phedu":1,
 "phpwind":1,
 "picol":1,
 "pjob":1,
 "post183":1,
 "powereasy":1,
-"ps123":1,
 "pugong":1,
 "pyrc":1,
 "pzzc":1,
@@ -7431,24 +7433,24 @@ var white_domains = {"am":{
 "raoke":1,
 "rencai":1,
 "replays":1,
-"roadexam":1,
 "romzhijia":1,
 "rongchang":1,
 "rtbidder":1,
 "sandai":1,
 "sanwen":1,
-"sanyalove":1,
 "sc-overseasinfo":1,
 "scedu":1,
 "scetc":1,
 "scrtvu":1,
 "sdinfo":1,
+"sdtyjixie":1,
 "seosrx":1,
 "sepu":1,
 "sg91":1,
 "shangc":1,
 "shanghaitour":1,
 "shaoyangnews":1,
+"sherc":1,
 "shmama":1,
 "shouyouzhijia":1,
 "shuaji":1,
@@ -7457,10 +7459,12 @@ var white_domains = {"am":{
 "shuiwushi":1,
 "shuoshuodaquan":1,
 "shxb":1,
+"shynws":1,
+"shzfzz":1,
 "simiao":1,
 "sinahk":1,
-"sinofarm":1,
 "siteloop":1,
+"sjyzc":1,
 "smxrcw":1,
 "sohu":1,
 "solarf":1,
@@ -7477,23 +7481,22 @@ var white_domains = {"am":{
 "sxsedu":1,
 "sxxw":1,
 "syhouse":1,
-"syqcw":1,
 "syrcw":1,
+"sz1w":1,
 "szeat":1,
 "szedu":1,
 "szmama":1,
 "szol":1,
 "szonline":1,
+"szsti":1,
+"szykj":1,
 "t56":1,
 "tainfo":1,
 "tax-edu":1,
-"tczp":1,
 "tczx":1,
 "tech110":1,
 "tengfang":1,
-"texjob":1,
 "texrc":1,
-"tfrl":1,
 "tianya168":1,
 "tibetculture":1,
 "tiexue":1,
@@ -7501,17 +7504,18 @@ var white_domains = {"am":{
 "tmcdn":1,
 "tobosu":1,
 "tongxiehui":1,
-"toppk":1,
 "tourjob":1,
 "tripc":1,
+"tripsz":1,
 "tsinghua-sz":1,
 "tuifu":1,
+"tulaomao":1,
+"tuoliji":1,
 "tuoxian":1,
 "txzpw":1,
 "tzinfo":1,
 "u148":1,
 "u520":1,
-"ujiao":1,
 "uker":1,
 "usaedu":1,
 "uutrip":1,
@@ -7522,7 +7526,9 @@ var white_domains = {"am":{
 "wdqh":1,
 "weiot":1,
 "weizhang":1,
+"wems":1,
 "weste":1,
+"wgszq":1,
 "whedu":1,
 "whir":1,
 "whjy":1,
@@ -7533,7 +7539,6 @@ var white_domains = {"am":{
 "wrsa":1,
 "wto168":1,
 "wuca":1,
-"wufun":1,
 "wz16":1,
 "wzdsb":1,
 "wzer":1,
@@ -7552,29 +7557,31 @@ var white_domains = {"am":{
 "xiziwang":1,
 "xjauto":1,
 "xpsy":1,
+"xs163":1,
 "xsjk":1,
+"xsmp":1,
 "xtjob":1,
 "xue":1,
 "xuefo":1,
+"xuqinghua":1,
 "xwcm":1,
 "xxsy":1,
 "xyrc":1,
 "xyxy":1,
 "xzzp":1,
+"ycdyw":1,
 "yeah":1,
+"ygfishing":1,
 "yhjy":1,
-"yhqh":1,
-"yinhang123":1,
 "yirong":1,
-"ykedu":1,
 "ylsw":1,
 "ynhl":1,
 "yocc":1,
 "yodak":1,
 "youdaili":1,
-"youlu":1,
 "youquba":1,
 "youxi5":1,
+"youxiake":1,
 "yoyone":1,
 "yyly":1,
 "yzrsrc":1,
@@ -7582,9 +7589,10 @@ var white_domains = {"am":{
 "z888":1,
 "zbinfo":1,
 "zdic":1,
+"zfjj":1,
 "zgnt":1,
 "zhangli":1,
-"zhaobiaoshi":1,
+"zhaokao":1,
 "zhaoshang":1,
 "zhige":1,
 "zhjy":1,
@@ -7593,9 +7601,11 @@ var white_domains = {"am":{
 "zhong-yao":1,
 "zhongjiao":1,
 "zhongsou":1,
+"zhsti":1,
 "zhuhoo":1,
 "zhxww":1,
 "zhyw":1,
+"zjfishing":1,
 "zjk169":1,
 "zjnw":1,
 "zjtcm":1,
@@ -7607,6 +7617,7 @@ var white_domains = {"am":{
 "zq8":1,
 "zsedu":1,
 "zswoman":1,
+"ztnews":1,
 "ztsfc":1,
 "zuijh":1,
 "zxjsq":1,
@@ -7631,9 +7642,7 @@ var white_domains = {"am":{
 "banyuetan":1,
 "bj148":1,
 "bjcdc":1,
-"bjfyw":1,
 "bjjubao":1,
-"bnuexpress":1,
 "booksky":1,
 "btv":1,
 "btvu":1,
@@ -7643,6 +7652,7 @@ var white_domains = {"am":{
 "caiep":1,
 "campingchina":1,
 "ccpit":1,
+"ccpitbj":1,
 "ccpitnb":1,
 "cfachina":1,
 "chahua":1,
@@ -7671,7 +7681,6 @@ var white_domains = {"am":{
 "chinatruck":1,
 "chineseconsulate":1,
 "chineseembassy":1,
-"cms1924":1,
 "cn-ny":1,
 "cnenergy":1,
 "cnfxj":1,
@@ -7680,13 +7689,14 @@ var white_domains = {"am":{
 "cnqr":1,
 "cnsb":1,
 "cocos2d-x":1,
-"cpaedu":1,
 "cq315":1,
 "cqhc":1,
 "cqzx":1,
 "crgk":1,
+"csgpc":1,
 "cxwz":1,
 "cyedu":1,
+"donglin":1,
 "dream4ever":1,
 "et8":1,
 "fjkx":1,
@@ -7700,6 +7710,7 @@ var white_domains = {"am":{
 "gming":1,
 "guigu":1,
 "gxjubao":1,
+"gzlib":1,
 "gzredcross":1,
 "hainanredcross":1,
 "hainei":1,
@@ -7715,6 +7726,7 @@ var white_domains = {"am":{
 "hljys":1,
 "hncourt":1,
 "hndpf":1,
+"hngh":1,
 "hnswtzb":1,
 "hqfb":1,
 "htzx":1,
@@ -7723,15 +7735,12 @@ var white_domains = {"am":{
 "hynews":1,
 "hzgh":1,
 "it-home":1,
-"ixdc":1,
+"jcedu":1,
 "jiangshi":1,
 "jiansuji":1,
-"jiaoshizige":1,
-"jiaotou":1,
 "jingjia":1,
 "jjkk":1,
 "jjsedu":1,
-"jljgdj":1,
 "jsgh":1,
 "jszsf":1,
 "jxtyzx":1,
@@ -7758,6 +7767,7 @@ var white_domains = {"am":{
 "patachina":1,
 "pinggu":1,
 "qqwangming":1,
+"qusu":1,
 "redcross-sha":1,
 "rfidchina":1,
 "scgh":1,
@@ -7765,6 +7775,7 @@ var white_domains = {"am":{
 "shidi":1,
 "showchina":1,
 "shtour":1,
+"shufa":1,
 "shuzixiaoyuan":1,
 "shzgh":1,
 "sodu":1,
@@ -7783,13 +7794,11 @@ var white_domains = {"am":{
 "wikipedia":1,
 "wwfchina":1,
 "xccy":1,
-"xfzx":1,
 "xinhua":1,
 "xjcourt":1,
 "yaolu":1,
 "yeluedu":1,
 "ygym":1,
-"ysyyw":1,
 "zaoyang":1,
 "zbyz":1,
 "zgjm":1,
@@ -7808,11 +7817,11 @@ var white_domains = {"am":{
 "zqgongyi":1,
 "zwbk":1,
 "zx110":1,
-"zyxuan":1
+"zyxuan":1,
+"zzbm":1
 },"rs":{
 "eye":1
 },"so":{
-"cmo":1,
 "soutudi":1,
 "wangxiao":1
 },"tm":{
@@ -7821,7 +7830,6 @@ var white_domains = {"am":{
 "005":1,
 "0438":1,
 "0916":1,
-"1588":1,
 "1819":1,
 "1866":1,
 "1988":1,
@@ -7843,10 +7851,8 @@ var white_domains = {"am":{
 "cnnl":1,
 "cnsb":1,
 "dengzhou":1,
-"dssh":1,
 "dydh":1,
 "dztv":1,
-"efang":1,
 "gamehome":1,
 "hao315":1,
 "hejia":1,
@@ -7859,6 +7865,7 @@ var white_domains = {"am":{
 "pengzhou":1,
 "pps":1,
 "qbj":1,
+"qingyang":1,
 "shiqian":1,
 "weihai":1,
 "zb580":1,
@@ -7871,2574 +7878,3832 @@ var white_domains = {"am":{
 "":1
 }
 };
-var black_domains = {"am":{
-"kl":1
-},"ar":{
-"365\x73ing\x6ce\x73.\x63om":1,
-"fre\x654\x75.\x63om":1
-},"asia":{
-"can\x74one\x73e":1,
-"ide\x6docr\x61cy":1
-},"at":{
-"the\x64ail\x79wh":1
-},"au":{
-"act\x69me\x73\x2ecom":1,
-"aob\x6f.com":1,
-"n\x66.\x69d":1,
-"new\x6cand\x6daga\x7ain\x65\x2ecom":1,
-"our\x73tep\x73.com":1,
-"rad\x69oau\x73tra\x6ci\x61.\x6eet":1,
-"sur\x66eas\x79.com":1,
-"xxx\x78.com":1
-},"be":{
-"ilo\x76e80":1,
-"mar\x75ta":1,
-"you\x74u":1
-},"biz":{
-"4bl\x75est\x6fnes":1,
-"goa\x67ent":1,
-"gre\x61tfi\x72ewa\x6cl":1,
-"twe\x65tbo\x6eer":1
-},"br":{
-"i\x67.\x63om":1
-},"bz":{
-"iask":1
-},"ca":{
-"51":1,
-"aol":1,
-"ccue":1,
-"gotw":1,
-"iask":1,
-"ide\x6eti":1,
-"met\x72oli\x66e":1,
-"naol":1,
-"ntd\x74v":1,
-"nyd\x75s":1,
-"psi\x70hon":1,
-"rci\x6eet":1,
-"sin\x67tao":1,
-"sin\x6fmon\x74real":1,
-"sin\x6fnet":1,
-"yor\x6bbbs":1
-},"cc":{
-"cz":1,
-"disp":1,
-"gay\x6dap":1,
-"hac\x6ben":1,
-"jbt\x61lks":1,
-"m-t\x65am":1,
-"net\x6de":1,
-"new\x73peak":1,
-"on":1,
-"ptt":1,
-"sex8":1,
-"twi\x73tar":1,
-"ub0":1,
-"uni":1,
-"usus":1,
-"wre\x74ch":1,
-"xjp":1
-},"ch":{
-"mad\x2dar":1,
-"wen\x68ui":1,
-"wik\x69lea\x6bs":1
-},"cm":{
-"fw":1
-},"cn":{
-"blo\x6fmbe\x72g":1,
-"bus\x69nes\x73tim\x65\x73.c\x6fm":1,
-"daxa":1,
-"gmbd":1,
-"keso":1,
-"kis\x73bbao":1,
-"mem\x65dia":1,
-"neo\x6cee":1,
-"onl\x79lady":1,
-"qix\x69ang\x6cu":1,
-"qpic":1,
-"sjum":1,
-"syx\x386":1,
-"van\x65mu":1,
-"xh4n":1,
-"zmw":1
-},"co":{
-"goa\x67ent":1,
-"ntd\x74v":1,
-"t":1,
-"the\x67uar\x64ian":1
-},"com":{
-"0to\x3255":1,
-"10m\x75sume":1,
-"123\x72f":1,
-"12b\x65t":1,
-"12v\x70n":1,
-"141\x68ong\x6bong":1,
-"173\x6eg":1,
-"198\x34bbs":1,
-"1eew":1,
-"200\x30fun":1,
-"21a\x6edy":1,
-"2sh\x61red":1,
-"315\x6cz":1,
-"36r\x61in":1,
-"4sq":1,
-"50w\x65bs":1,
-"5i01":1,
-"5ma\x6fdang":1,
-"64t\x69anw\x61ng":1,
-"64w\x69ki":1,
-"666\x6bb":1,
-"6pa\x72k":1,
-"6v6\x64ota":1,
-"7ca\x70ture":1,
-"881\x3903":1,
-"888":1,
-"900\x31700":1,
-"92c\x63av":1,
-"9bis":1,
-"a-n\x6frma\x6c-day":1,
-"abo\x6cuow\x61ng":1,
-"abo\x75tgfw":1,
-"acg\x6bj":1,
-"adu\x6ctfr\x69end\x66ind\x65r":1,
-"adv\x61nsc\x65ne":1,
-"adv\x65rtf\x61n":1,
-"aen\x68anc\x65rs":1,
-"ais\x65x":1,
-"aiw\x65iwe\x69blog":1,
-"ajs\x61nds":1,
-"aki\x62a-o\x6eline":1,
-"ala\x62out":1,
-"ale\x78dong":1,
-"ali\x65ngu":1,
-"alk\x61sir":1,
-"all\x2dtha\x74-is\x2dint\x65res\x74ing":1,
-"all\x61bou\x74alp\x68a":1,
-"all\x69nfa":1,
-"all\x69nfo":1,
-"all\x6dovie":1,
-"alt\x65rna\x74e-t\x6fols":1,
-"alv\x69nal\x65xan\x64er":1,
-"alw\x61ysd\x61ta":1,
-"ama\x7aon":1,
-"ame\x72ica\x6egre\x65nca\x72d":1,
-"ami\x62loc\x6bedo\x72not":1,
-"amo\x69ist":1,
-"ana\x6cyze\x2dv":1,
-"anc\x68orf\x72ee":1,
-"ano\x62ii":1,
-"ano\x6etext":1,
-"ano\x6eymi\x7aer":1,
-"ant\x68ony\x63alz\x61dil\x6ca":1,
-"aol":1,
-"aol\x6eews":1,
-"ape\x74ube":1,
-"api\x67ee":1,
-"app\x6ceda\x69ly":1,
-"app\x73pot":1,
-"arc\x74osia":1,
-"art\x2dor-\x70orn":1,
-"asa\x68ich\x69nese":1,
-"ask\x73tud\x65nt":1,
-"ass\x65mbla":1,
-"ast\x6fnma\x72tin\x6eews":1,
-"atc\x68ine\x73e":1,
-"ate\x62its":1,
-"atl\x61spo\x73t":1,
-"atn\x65xt":1,
-"avo\x69sion":1,
-"awa\x72dwi\x6enin\x67fjo\x72ds":1,
-"awf\x6cash\x65r":1,
-"axu\x72efo\x72mac":1,
-"bab\x79-ki\x6egdom":1,
-"bac\x6bchi\x6ea":1,
-"bad\x61ssjs":1,
-"bad\x6fo":1,
-"bas\x65tim\x65she\x69ght\x64ivi\x64edb\x792":1,
-"bay\x77ords":1,
-"bbc\x63hin\x65se":1,
-"bbs\x66eed":1,
-"bbs\x6cand":1,
-"bebo":1,
-"bei\x6aing\x31989":1,
-"bei\x6aing\x73pri\x6eg":1,
-"ber\x6cint\x77itt\x65rwa\x6cl":1,
-"bes\x74vpn\x73erv\x69ce":1,
-"bet\x3365":1,
-"bet\x66air":1,
-"bet\x74ween":1,
-"bia\x6etai\x6caji\x61o":1,
-"big\x66ools":1,
-"bil\x6c2-s\x6fftw\x61re":1,
-"bil\x6cypan":1,
-"bil\x6cywr":1,
-"bir\x64hou\x73eapp":1,
-"bit\x6cy":1,
-"bit\x73hare":1,
-"bli\x6ekx":1,
-"bli\x6ew":1,
-"blo\x63kcn":1,
-"blo\x67cat\x61log":1,
-"blo\x67ger":1,
-"blo\x67lin\x65s":1,
-"blo\x67lov\x69n":1,
-"blo\x67s":1,
-"blo\x67spot":1,
-"blo\x6fmbe\x72g":1,
-"blo\x6fmfo\x72tune":1,
-"bnr\x6detal":1,
-"boa\x72dre\x61der":1,
-"bob\x75late":1,
-"bon\x62onme":1,
-"bon\x6aour\x6cesg\x65eks":1,
-"boo\x6bshe\x6cfpo\x72n":1,
-"bot\x61nwa\x6eg":1,
-"bow\x65npr\x65ss":1,
-"box\x75n":1,
-"box\x75nbl\x6fg":1,
-"bra\x6cio":1,
-"bra\x6ech":1,
-"bra\x6edon\x68utc\x68ins\x6fn":1,
-"bre\x61k":1,
-"bre\x61kin\x67twe\x65ts":1,
-"bri\x65fdr\x65am":1,
-"bri\x67htk\x69te":1,
-"bri\x7azly":1,
-"bro\x61dbo\x6fk":1,
-"bt95":1,
-"bul\x6cogg\x65r":1,
-"bus\x69nes\x73week":1,
-"buu\x67aa":1,
-"bye\x74hos\x748":1,
-"c-e\x73t-s\x69mple":1,
-"cac\x74usv\x70n":1,
-"caf\x65pre\x73s":1,
-"cal\x61meo":1,
-"cal\x65bel\x73ton":1,
-"cams":1,
-"can\x61dam\x65et":1,
-"cao\x63han\x67qing":1,
-"cat\x63atb\x6fx":1,
-"cbs\x6eews":1,
-"cca\x76top\x310":1,
-"cct\x68ere":1,
-"cct\x6fngb\x61o":1,
-"ccue":1,
-"cen\x74ral\x6eati\x6fn":1,
-"cha\x6egp":1,
-"cha\x70m25":1,
-"cha\x74urb\x61te":1,
-"che\x6egmi\x6egmag":1,
-"che\x6egua\x6egch\x65ng":1,
-"che\x6epok\x6fng":1,
-"che\x72rys\x61ve":1,
-"che\x76ron\x77p7":1,
-"chi\x6ea-w\x65ek":1,
-"chi\x6ea101":1,
-"chi\x6ea21":1,
-"chi\x6eaew\x65ekly":1,
-"chi\x6eahu\x73h":1,
-"chi\x6eain\x70ers\x70ect\x69ve":1,
-"chi\x6eala\x77and\x70oli\x63y":1,
-"chi\x6eala\x77tra\x6esla\x74e":1,
-"chi\x6eamu\x6ce":1,
-"chi\x6easo\x63ial\x64emo\x63rat\x69cpa\x72ty":1,
-"chi\x6eati\x6des":1,
-"chi\x6eatw\x65eps":1,
-"chi\x6eaxc\x68ina":1,
-"chi\x6eese\x64ail\x79news":1,
-"chi\x6eese\x6eews\x6eet":1,
-"chi\x6egch\x65ong":1,
-"cho\x73un":1,
-"chr\x69spe\x64eri\x63k":1,
-"chr\x69sti\x61nst\x75dy":1,
-"chr\x6fmea\x64blo\x63k":1,
-"chu\x62un":1,
-"cit\x799x":1,
-"ck1\x301":1,
-"cmu\x6ce":1,
-"cni\x74ter":1,
-"cnn":1,
-"cny\x65s":1,
-"cod\x651984":1,
-"cod\x65box\x61pp":1,
-"col\x6cate\x72alm\x75rder":1,
-"com\x65dyc\x65ntr\x61l":1,
-"com\x65fro\x6dchi\x6ea":1,
-"com\x70ile\x68eart":1,
-"con\x6fyo":1,
-"coo\x6bing\x74oth\x65goo\x64life":1,
-"coo\x6caler":1,
-"coo\x6cder":1,
-"cor\x75mco\x6clege":1,
-"cot\x77eet":1,
-"cou\x63hdb\x77iki":1,
-"cov\x65rin\x67web":1,
-"cra\x63kle":1,
-"csd\x70arty":1,
-"cub\x69cle\x317":1,
-"cur\x76efi\x73h":1,
-"cyb\x65rctm":1,
-"cyb\x65rgh\x6fstv\x70n":1,
-"cyn\x73cri\x62e":1,
-"dad\x61zim":1,
-"dad\x69360":1,
-"daf\x61good":1,
-"daf\x61hao":1,
-"dai\x6cida\x69li":1,
-"dai\x6cyme":1,
-"dai\x6cymo\x74ion":1,
-"daj\x69yuan":1,
-"dal\x61ila\x6da":1,
-"dal\x61ila\x6dawo\x72ld":1,
-"dav\x69dsl\x6fg":1,
-"day\x61book":1,
-"day\x6cife":1,
-"day\x6fnea\x70p":1,
-"del\x69cio\x75s":1,
-"des\x69gne\x72ol":1,
-"dev\x3102":1,
-"dfa\x6ening":1,
-"dii\x67o":1,
-"dir\x65ctc\x72eat\x69ve":1,
-"diz\x68idi\x7ahi":1,
-"dls\x69te":1,
-"doj\x69n":1,
-"dol\x6cf":1,
-"don\x67de":1,
-"don\x67tai\x77ang":1,
-"don\x67yan\x67jing":1,
-"don\x74mov\x65toc\x68ina":1,
-"dot\x68eyf\x6fllo\x77eac\x68oth\x65r":1,
-"dot\x70lane":1,
-"dot\x73ub":1,
-"dou\x62leaf":1,
-"dou\x67scr\x69pts":1,
-"dre\x77ola\x6eoff":1,
-"dri\x62bble":1,
-"dro\x70box":1,
-"dro\x70box\x75ser\x63ont\x65nt":1,
-"drt\x75ber":1,
-"dti\x62log":1,
-"dti\x73erv2":1,
-"duc\x6bduc\x6bgo":1,
-"duc\x6bload":1,
-"duc\x6bmyl\x69fe":1,
-"duo\x77eit\x69mes":1,
-"dup\x6cica\x74i":1,
-"dup\x6fla":1,
-"dw-\x77orld":1,
-"dwh\x65eler":1,
-"dwn\x65ws":1,
-"dxi\x6fng":1,
-"dyn\x61web\x69nc":1,
-"dzze":1,
-"e-g\x6fld":1,
-"e-s\x70acy":1,
-"eam\x6fnnb\x72enn\x61n":1,
-"ebo\x6fkbr\x6fwse":1,
-"ebo\x6fkee":1,
-"ech\x6ffon":1,
-"ecs\x74art":1,
-"edi\x63ypa\x67es":1,
-"edo\x6frs":1,
-"edu\x62rid\x67e":1,
-"eev\x70n":1,
-"efk\x73oft":1,
-"eic\x2dav":1,
-"ele\x63tio\x6esme\x74er":1,
-"elt\x6fndi\x73ney":1,
-"emu\x6ce-e\x642k":1,
-"eng\x61dget":1,
-"ent\x65rmap":1,
-"epo\x63hti\x6des":1,
-"epo\x63hti\x6des-\x62g":1,
-"epo\x63hti\x6des-\x72oma\x6eia":1,
-"epo\x63hti\x6destr":1,
-"epo\x63hwe\x65kly":1,
-"ere\x70ubl\x69k":1,
-"eri\x76ers\x6fft":1,
-"eta\x69wan\x6eews":1,
-"eul\x61m":1,
-"eve\x6etful":1,
-"eve\x72yda\x79-ca\x72ry":1,
-"exp\x61tsh\x69eld":1,
-"exp\x6ffut\x75res":1,
-"ext\x72eme\x74ube":1,
-"ezp\x65er":1,
-"fac\x65book":1,
-"fac\x65sof\x6eyfw":1,
-"fal\x73efi\x72e":1,
-"fam\x75nion":1,
-"fan\x2dqia\x6eg":1,
-"fan\x67bin\x78ing":1,
-"fan\x67emi\x6eg":1,
-"fan\x67ong\x68eike":1,
-"fan\x71ian\x67hou":1,
-"fan\x73wong":1,
-"fap\x64u":1,
-"far\x77est\x63hina":1,
-"fav\x6frio\x75s":1,
-"fay\x64ao":1,
-"fb":1,
-"fbs\x62x":1,
-"fc2":1,
-"fc2\x63hina":1,
-"fdb\x6fx":1,
-"fee\x64bur\x6eer":1,
-"fee\x64zsh\x61re":1,
-"fee\x6cssh":1,
-"feer":1,
-"fem\x69nis\x74tea\x63her":1,
-"fen\x67zhe\x6eghu":1,
-"ffl\x69ck":1,
-"fil\x65fac\x74ory":1,
-"fil\x65s2me":1,
-"fil\x65ser\x76e":1,
-"fir\x73tfi\x76efo\x6clow\x65rs":1,
-"fiz\x7aik":1,
-"fle\x73hbot":1,
-"fli\x63kr":1,
-"fli\x67htc\x61ster":1,
-"fmn\x6eow":1,
-"foc\x75svpn":1,
-"foo\x6csmo\x75nta\x69n":1,
-"foo\x6foo":1,
-"foo\x74wib\x61ll":1,
-"for\x75m4hk":1,
-"for\x75ms-\x66ree":1,
-"fox\x62usi\x6eess":1,
-"fox\x73ub":1,
-"fox\x74ang":1,
-"fqr\x6futer":1,
-"fra\x6eklc":1,
-"fre\x61ksh\x61re":1,
-"fre\x65-ssh":1,
-"fre\x65alim":1,
-"fre\x65chal":1,
-"fre\x65gao":1,
-"fre\x65lot\x74o":1,
-"fre\x65man2":1,
-"fre\x65mor\x65n":1,
-"fre\x65mor\x65news":1,
-"fre\x65new\x73cn":1,
-"fre\x65ope\x6evpn":1,
-"fre\x65rk":1,
-"fre\x65webs":1,
-"fre\x65wei\x62o":1,
-"fre\x65xin\x77en":1,
-"fri\x65ndf\x65ed":1,
-"fri\x65ndf\x65ed-\x6dedia":1,
-"fri\x6eg":1,
-"fri\x6egen\x65two\x72k":1,
-"fsu\x72f":1,
-"fuc\x6bgfw":1,
-"ful\x75e":1,
-"funp":1,
-"fur\x69nkan":1,
-"fxn\x65two\x72ks":1,
-"fzh\x3999":1,
-"gab\x6fcorp":1,
-"gal\x65nwu":1,
-"gam\x65735":1,
-"gan\x67es":1,
-"gar\x64enn\x65two\x72ks":1,
-"gar\x74live":1,
-"gat\x68er":1,
-"gaz\x6ftube":1,
-"gcl\x6foney":1,
-"gcp\x6eews":1,
-"gee\x6berh\x6fme":1,
-"gee\x6bman\x75als":1,
-"gen\x65res\x69s":1,
-"gen\x75itec":1,
-"geo\x63iti\x65s":1,
-"geo\x68ot":1,
-"geo\x6detr\x69cto\x6fls":1,
-"get\x2ddig\x69tal\x2dhelp":1,
-"get\x63hu":1,
-"get\x63lou\x64app":1,
-"get\x66ree\x64ur":1,
-"get\x69ton":1,
-"get\x6aetso":1,
-"get\x73mar\x74lin\x6bs":1,
-"get\x73oci\x61lsc\x6fpe":1,
-"get\x79our\x61m":1,
-"ggs\x73l":1,
-"gho\x73tery":1,
-"gig\x61news":1,
-"gim\x70shop":1,
-"gir\x6cban\x6ber":1,
-"git\x2dscm":1,
-"giv\x65mes\x6fmet\x68ing\x74ore\x61d":1,
-"gle\x6enhi\x6cton":1,
-"goa\x67ent\x70lus":1,
-"gol\x64wave":1,
-"gon\x67min\x6cili\x61ng":1,
-"gon\x67wt":1,
-"goo\x64rea\x64ers":1,
-"goo\x64rea\x64s":1,
-"goo\x66ind":1,
-"goo\x67le":1,
-"goo\x67lea\x70is":1,
-"goo\x67lec\x6fde":1,
-"goo\x67led\x72ive":1,
-"goo\x67lep\x61ges":1,
-"goo\x67les\x69le":1,
-"goo\x67leu\x73erc\x6fnte\x6et":1,
-"goo\x67lev\x69deo":1,
-"gop\x65tit\x69on":1,
-"gos\x70elh\x65rald":1,
-"gow\x61lla":1,
-"gpa\x73s1":1,
-"gra\x64con\x6eect\x69on":1,
-"gre\x61t-f\x69rew\x61ll":1,
-"gs-\x64isc\x75ss":1,
-"gst\x61tic":1,
-"gtr\x69cks":1,
-"gun\x73ame\x72ica":1,
-"gut\x74eru\x6ecen\x73ored":1,
-"gya\x6cwar\x69npo\x63he":1,
-"hah\x6co":1,
-"han\x75nyi":1,
-"har\x64sex\x74ube":1,
-"has\x61owa\x6cl":1,
-"hav\x658":1,
-"hea\x72tyit":1,
-"hec\x68aji":1,
-"hel\x6coan\x64roid":1,
-"hel\x6coqu\x65er":1,
-"hel\x6cotxt":1,
-"hel\x70eac\x68peo\x70le":1,
-"her\x654ne\x77s":1,
-"heu\x6egko\x6egdi\x73cuss":1,
-"hey\x77ire":1,
-"hgs\x65av":1,
-"hid\x65clo\x75d":1,
-"hid\x65ipv\x70n":1,
-"hid\x65mya\x73s":1,
-"hig\x66w":1,
-"hig\x68roc\x6bmed\x69a":1,
-"hih\x69for\x75m":1,
-"hii\x74ch":1,
-"him\x65mix":1,
-"hk-\x70ub":1,
-"hk3\x32168":1,
-"hka\x74vne\x77s":1,
-"hke\x70c":1,
-"hkej":1,
-"hkg\x6flden":1,
-"hkh\x65adl\x69ne":1,
-"hkh\x6bhk":1,
-"hkjc":1,
-"hkr\x65por\x74er":1,
-"hnj\x68j":1,
-"hom\x65ser\x76ers\x68ow":1,
-"hon\x67mei\x6dei":1,
-"hoo\x74sui\x74e":1,
-"hot\x66ile":1,
-"hot\x70ota\x74o":1,
-"hot\x73pot\x73hie\x6cd":1,
-"hou\x67aige":1,
-"how\x74ofo\x72ge":1,
-"hrc\x69r":1,
-"htm\x6cdog":1,
-"hua\x67lad":1,
-"hua\x78ia-\x6eews":1,
-"huh\x61itai":1,
-"hul\x75im":1,
-"hulu":1,
-"hwi\x6efo":1,
-"hyp\x65rra\x74e":1,
-"hyp\x65she\x6cl":1,
-"i2r\x75nner":1,
-"ial\x6dost\x6caugh":1,
-"ibt\x69mes":1,
-"ice\x72ock\x65t":1,
-"ida\x69wan":1,
-"idi\x6fmco\x6enec\x74ion":1,
-"idl\x63oyo\x74e":1,
-"ido\x75ga":1,
-"ids\x61m":1,
-"ifa\x6eqia\x6eg":1,
-"ifa\x6er":1,
-"ift\x74t":1,
-"igv\x69ta":1,
-"iic\x6es":1,
-"ill\x75sio\x6efac\x74ory":1,
-"ima\x67efl\x65a":1,
-"ima\x67eve\x6eue":1,
-"imdb":1,
-"imk\x65v":1,
-"iml\x69ve":1,
-"in":1,
-"ins\x74agr\x61m":1,
-"ins\x74apa\x70er":1,
-"int\x65res\x74ing\x6caugh":1,
-"int\x65rfa\x63ead\x64ict\x69on":1,
-"int\x65rne\x74pop\x63ult\x75re":1,
-"inx\x69an":1,
-"iph\x6fneh\x61cks":1,
-"ipo\x62ar":1,
-"ipp\x6ftv":1,
-"ipv\x61nish":1,
-"iro\x6eics\x6fftw\x61re":1,
-"isa\x61cmao":1,
-"iso\x68unt":1,
-"isr\x61box":1,
-"ist\x6fckp\x68oto":1,
-"isu\x6eaff\x61irs":1,
-"isu\x6etv":1,
-"its\x68idd\x65n":1,
-"iu45":1,
-"ixq\x75ick":1,
-"jac\x6bjia":1,
-"jay\x70ark\x69nso\x6emd":1,
-"jbt\x61lks":1,
-"jea\x6eyim":1,
-"jgo\x6fdies":1,
-"jia\x6fyou8":1,
-"jie\x70ang":1,
-"jie\x73hib\x61obao":1,
-"jim\x6fpar\x74y":1,
-"jit\x6fuch":1,
-"joe\x65del\x6dan":1,
-"jqu\x65ryui":1,
-"jul\x69ere\x79c":1,
-"jun\x61uza":1,
-"jus\x74fre\x65vpn":1,
-"jus\x74tri\x73tan":1,
-"juz\x69yue":1,
-"ka-\x77ai":1,
-"kak\x61o":1,
-"kan\x7ahon\x67guo":1,
-"kar\x61you":1,
-"kcs\x6fftw\x61res":1,
-"kec\x68ara":1,
-"kee\x70and\x73hare":1,
-"ken\x65ngba":1,
-"kic\x6bsta\x72ter":1,
-"kil\x6cwall":1,
-"kin\x67host":1,
-"kno\x77led\x67eru\x73h":1,
-"kod\x69ngen":1,
-"koo\x6csol\x75tio\x6es":1,
-"koo\x72nk":1,
-"kur\x74mun\x67er":1,
-"kus\x6fcity":1,
-"lad\x62rok\x65s":1,
-"lag\x72ane\x70oca":1,
-"lal\x75lalu":1,
-"lao\x6diu":1,
-"lap\x74opl\x6fckd\x6fwn":1,
-"lar\x73geo\x72ge":1,
-"lat\x65lin\x65news":1,
-"lat\x69mes":1,
-"law":1,
-"lay\x65rva\x75lt":1,
-"laz\x61rse\x61rly\x6dusic":1,
-"len\x77hite":1,
-"lid\x65che\x6eg":1,
-"lig\x68tbox":1,
-"lin\x67lin\x67fa":1,
-"lin\x6bideo":1,
-"lin\x6bsal\x70ha":1,
-"lin\x70ie":1,
-"lip\x75man":1,
-"lis\x74-ma\x6eage":1,
-"lis\x74ent\x6fyou\x74ube":1,
-"lis\x74ori\x6fus":1,
-"lit\x74leb\x69gde\x74ails":1,
-"liu\x64ejun":1,
-"liu\x68anyu":1,
-"liu\x6aian\x73hu":1,
-"liu\x78iao\x74ong":1,
-"liv\x65leak":1,
-"liv\x65sta\x74ion":1,
-"liv\x65str\x65am":1,
-"liv\x65vid\x65o":1,
-"liv\x69ngs\x74ream":1,
-"liz\x68izh\x75ang\x62i":1,
-"loc\x6bdown":1,
-"loc\x6best\x65k":1,
-"log\x69qx":1,
-"log\x6dike":1,
-"loi\x63lem\x65ur":1,
-"loo\x6batg\x61me":1,
-"loo\x6bpic":1,
-"lov\x65qui\x63ksi\x6cver":1,
-"lrfz":1,
-"lyr\x69csq\x75ote":1,
-"mac\x72ovpn":1,
-"mad\x6denu\x6ebut\x74oned":1,
-"mai\x6c-ar\x63hive":1,
-"mak\x65mym\x6fod":1,
-"mal\x61ysi\x61kini":1,
-"mar\x6bmil\x69an":1,
-"mar\x74au":1,
-"mar\x74inc\x61rto\x6fns":1,
-"mar\x78ist":1,
-"mas\x68able":1,
-"mat\x61inja":1,
-"mat\x68iew\x2dbad\x69mon":1,
-"mat\x73ush\x69mak\x61ede":1,
-"max\x67if":1,
-"may\x69mayi":1,
-"mca\x64for\x75ms":1,
-"mcf\x6fg":1,
-"med\x69afi\x72e":1,
-"mee\x74up":1,
-"mef\x65edia":1,
-"meg\x61porn":1,
-"meg\x61rot\x69c":1,
-"meg\x61vid\x65o":1,
-"meg\x75rin\x65luka":1,
-"mei\x72ixi\x61och\x61o":1,
-"mel\x6fn-p\x65ach":1,
-"mes\x6ftw":1,
-"met\x61cafe":1,
-"met\x65ors\x68owe\x72son\x6cine":1,
-"mgo\x6fn":1,
-"mgs\x74age":1,
-"mic\x68ael\x61nti":1,
-"mic\x68ael\x6dark\x65tl":1,
-"mim\x69vip":1,
-"min\x67jin\x67lis\x68i":1,
-"min\x67jin\x67news":1,
-"min\x67pao":1,
-"min\x67pao\x6dont\x68ly":1,
-"min\x67pao\x6eews":1,
-"min\x67pao\x6ey":1,
-"min\x67pao\x73f":1,
-"min\x67pao\x74or":1,
-"min\x67pao\x76an":1,
-"min\x69mal\x6dac":1,
-"mir\x6fgui\x64e":1,
-"mir\x72orb\x6foks":1,
-"mit\x62bs":1,
-"mix\x65dme\x64ial\x61bs":1,
-"mix\x65ro":1,
-"mix\x70od":1,
-"mixx":1,
-"miz\x7amona":1,
-"mk5\x3000":1,
-"mlc\x6fol":1,
-"mma\x61xx":1,
-"mmd\x61ys":1,
-"mmm\x63a":1,
-"mob\x69le01":1,
-"mob\x79pic\x74ure":1,
-"mod\x66eti\x73h":1,
-"mog":1,
-"mooo":1,
-"mor\x62ell":1,
-"mov\x61ble\x74ype":1,
-"mov\x69efap":1,
-"mpe\x74tis":1,
-"mpf\x69nan\x63e":1,
-"mpi\x6eews":1,
-"mrt\x77eet":1,
-"msg\x75anc\x68a":1,
-"mth\x72uf":1,
-"mul\x74iply":1,
-"mul\x74iup\x6coad":1,
-"muo\x75ju":1,
-"muzi":1,
-"mx9\x381":1,
-"my-\x70roxy":1,
-"my9\x303":1,
-"mya\x63tim\x65s":1,
-"mya\x75dio\x63ast":1,
-"myc\x68ina\x6dyho\x6de":1,
-"myc\x6fuld":1,
-"mye\x63lip\x73eide":1,
-"myf\x72esh\x6eet":1,
-"mym\x61ji":1,
-"myo\x70enid":1,
-"myp\x61rag\x6cidi\x6eg":1,
-"myp\x6fpes\x63u":1,
-"mys\x69nab\x6cog":1,
-"mys\x70ace":1,
-"nab\x62le":1,
-"nak\x69do":1,
-"nam\x73isi":1,
-"nan\x79ang":1,
-"nan\x79ang\x70ost":1,
-"nan\x7aao":1,
-"nat\x61do":1,
-"nav\x69cat":1,
-"nav\x69gea\x74ers":1,
-"ncol":1,
-"nei\x67hbo\x72hoo\x64r":1,
-"net\x63olo\x6ey":1,
-"net\x66irms":1,
-"net\x66lix":1,
-"net\x6cog":1,
-"net\x77ork\x65dbl\x6fgs":1,
-"new\x2daki\x62a":1,
-"new\x63ent\x75rymc":1,
-"new\x63ent\x75ryn\x65ws":1,
-"new\x63hen":1,
-"new\x67rou\x6eds":1,
-"new\x73anc\x61i":1,
-"new\x73min\x65r":1,
-"new\x79ork\x74imes":1,
-"nex\x74med\x69a":1,
-"nge\x6esis":1,
-"nin\x74end\x69um":1,
-"ning":1,
-"nju\x69ce":1,
-"nlf\x72eev\x70n":1,
-"nod\x65sno\x6fp":1,
-"nok\x6fla":1,
-"noo\x62box":1,
-"nov\x65las\x69a":1,
-"now\x6eews":1,
-"now\x74orr\x65nts":1,
-"noy\x70f":1,
-"nue\x78po":1,
-"nur\x67o-s\x6fftw\x61re":1,
-"nuv\x69d":1,
-"nuz\x63om":1,
-"nys\x69ngt\x61o":1,
-"nyt":1,
-"nyt\x63o":1,
-"nyt\x69mes":1,
-"nyt\x69mg":1,
-"off\x62eat\x63hina":1,
-"oik\x74v":1,
-"oiz\x6fblog":1,
-"oka\x79fre\x65dom":1,
-"olu\x6dpo":1,
-"omg\x69li":1,
-"omn\x69talk":1,
-"onm\x6fon":1,
-"oop\x73for\x75m":1,
-"ope\x6eweb\x73ter":1,
-"ope\x72a":1,
-"opn\x69r":1,
-"orc\x68idb\x62s":1,
-"ori\x65nt-\x64oll":1,
-"orz\x64ream":1,
-"osf\x6fora":1,
-"our\x64ear\x61my":1,
-"our\x73ogo":1,
-"ove\x72-bl\x6fg":1,
-"ove\x72lapr":1,
-"ovi":1,
-"owi\x6ed":1,
-"oyax":1,
-"ozc\x68ine\x73e":1,
-"ozy\x6fyo":1,
-"pac\x69fic\x70oker":1,
-"pag\x652rss":1,
-"pag\x6fdab\x6fx":1,
-"pal\x61cem\x6fon":1,
-"pal\x6disl\x69fe":1,
-"palm":1,
-"pan\x64ora":1,
-"pan\x6fram\x69o":1,
-"pap\x65r-r\x65pli\x6ba":1,
-"par\x61de":1,
-"par\x69sle\x6don":1,
-"pas\x74ebin":1,
-"pat\x68tos\x68are\x70oint":1,
-"path":1,
-"pbw\x69ki":1,
-"pbw\x6frks":1,
-"pbx\x65s":1,
-"pcd\x69scu\x73s":1,
-"pde\x74ails":1,
-"pdp\x72oxy":1,
-"pea\x63eha\x6cl":1,
-"pee\x61sian":1,
-"pee\x72pong":1,
-"pen\x63hin\x65se":1,
-"pen\x67yul\x6fng":1,
-"pen\x74hou\x73e":1,
-"per\x66spot":1,
-"per\x6chow\x74o":1,
-"phi\x6cly":1,
-"pho\x6eegap":1,
-"pho\x74ofo\x63us":1,
-"phu\x71uoc\x73erv\x69ces":1,
-"pic\x74ure\x73oci\x61l":1,
-"pid\x6fwn":1,
-"pik\x63hur":1,
-"pil\x6ftmo\x6fn":1,
-"pin6":1,
-"pin\x6fy-n":1,
-"pir\x69ng":1,
-"pix\x65lqi":1,
-"pk":1,
-"pla\x63emix":1,
-"pla\x79boy":1,
-"pli\x78i":1,
-"plu\x6eder":1,
-"plu\x7328":1,
-"plu\x73bb":1,
-"pma\x74es":1,
-"po2b":1,
-"pod\x69cti\x6fnary":1,
-"pok\x65rst\x61rs":1,
-"pok\x65rst\x72ate\x67y":1,
-"pop\x79ard":1,
-"por\x6e2":1,
-"por\x6ehub":1,
-"por\x6eoxo":1,
-"por\x6erap\x69dsh\x61re":1,
-"por\x6esta\x72club":1,
-"por\x6etube":1,
-"por\x6evis\x69t":1,
-"porn":1,
-"pos\x74adu\x6ct":1,
-"pos\x74ero\x75s":1,
-"pose":1,
-"pow\x65r":1,
-"pow\x65rap\x70le":1,
-"pow\x65rcx":1,
-"pow\x65rpo\x69ntn\x69nja":1,
-"pre\x6defo\x72win\x64ows7":1,
-"pre\x73ent\x61tio\x6ezen":1,
-"pre\x73tig\x65-av":1,
-"pri\x76ate\x69nte\x72net\x61cce\x73s":1,
-"pri\x76ate\x70aste":1,
-"pri\x76ate\x74unn\x65l":1,
-"pro\x63opy\x74ips":1,
-"pro\x76ide\x6fcoa\x6citi\x6fn":1,
-"pro\x78ifi\x65r":1,
-"pro\x78let":1,
-"pro\x78yro\x61d":1,
-"puf\x66inb\x72ows\x65r":1,
-"puf\x66sto\x72e":1,
-"pul\x6cfol\x69o":1,
-"pur\x6518":1,
-"pur\x65pdf":1,
-"pur\x65vpn":1,
-"put\x6cock\x65r":1,
-"pwn\x65d":1,
-"pyt\x68on":1,
-"qan\x6fte":1,
-"qks\x68are":1,
-"qmz\x64d":1,
-"qoos":1,
-"qst\x61tus":1,
-"qtw\x65eter":1,
-"qua\x64edge":1,
-"rad\x69oti\x6de":1,
-"ran\x79unf\x65i":1,
-"rap\x69dsh\x61re8":1,
-"rap\x69dsh\x61red\x61ta":1,
-"rea\x64100":1,
-"rea\x6crap\x74alk":1,
-"red\x74ube":1,
-"ref\x6cect\x69vec\x6fde":1,
-"rel\x61xbbs":1,
-"ren\x6dinb\x61o":1,
-"ret\x77eet\x65ffe\x63t":1,
-"ret\x77eet\x69st":1,
-"ret\x77eet\x72ank":1,
-"reu\x74ers":1,
-"rev\x6ceft":1,
-"rev\x76er":1,
-"rfa\x63hina":1,
-"rhc\x6coud":1,
-"ril\x65ygu\x69de":1,
-"rlw\x6cw":1,
-"rob\x74ex":1,
-"rob\x75stn\x65ssi\x73key":1,
-"roc\x6bmelt":1,
-"rojo":1,
-"rom\x61nan\x64reg":1,
-"ron\x6aone\x73wri\x74er":1,
-"roo\x64o":1,
-"rss\x6deme":1,
-"rua\x6eyif\x65ng":1,
-"rus\x68bee":1,
-"ruy\x69seek":1,
-"s135":1,
-"s1h\x65ng":1,
-"s8f\x6frum":1,
-"san\x64nob\x6ce":1,
-"san\x6baiz\x6fk":1,
-"sav\x65med\x69a":1,
-"sav\x65vid":1,
-"scm\x70chi\x6eese":1,
-"scmp":1,
-"scr\x69bd":1,
-"scr\x69pts\x70ot":1,
-"sea\x70uff":1,
-"sea\x72ch":1,
-"sec\x72etc\x68ina":1,
-"sec\x75rit\x79kiss":1,
-"see\x73mic":1,
-"see\x76pn":1,
-"sej\x69e":1,
-"sen\x64oid":1,
-"sen\x64spa\x63e":1,
-"sev\x65nlo\x61d":1,
-"sex":1,
-"sex\x2d11":1,
-"sex\x61nds\x75bmi\x73sion":1,
-"sex\x68u":1,
-"sex\x68uang":1,
-"sfi\x6ceydy":1,
-"sha\x68ama\x74-en\x67lish":1,
-"sha\x70ese\x72vic\x65s":1,
-"sha\x72ebee":1,
-"sha\x72kdo\x6cphin":1,
-"sha\x75nth\x65she\x65p":1,
-"she\x69kye\x72mami":1,
-"she\x6clmix":1,
-"she\x6ezho\x75film":1,
-"shi\x6eych\x61n":1,
-"sho\x64anhq":1,
-"sho\x70ping":1,
-"shv\x6fong":1,
-"shw\x63hur\x63h3":1,
-"sim\x70lep\x72odu\x63tiv\x69tyb\x6cog":1,
-"sin\x67tao":1,
-"sin\x6f-mo\x6ethly":1,
-"sin\x6fants":1,
-"sin\x6fcast":1,
-"sin\x6fcism":1,
-"sin\x6fque\x62ec":1,
-"sina":1,
-"sis\x3001":1,
-"ski\x6dtube":1,
-"sky\x62et":1,
-"sky\x68igh\x70rem\x69um":1,
-"sky\x6biwi":1,
-"sky\x70e":1,
-"sla\x76aso\x66t":1,
-"slh\x65ng":1,
-"sli\x63kvpn":1,
-"sli\x6ekset":1,
-"slu\x74load":1,
-"sna\x70tu":1,
-"so-\x6eews":1,
-"sob\x65es":1,
-"soc\x69alw\x68ale":1,
-"sof\x74eth\x65r-d\x6fwnl\x6fad":1,
-"sof\x74war\x65byc\x68uck":1,
-"sog\x63lub":1,
-"soh\x63rad\x69o":1,
-"soi\x66ind":1,
-"sok\x61mon\x6cine":1,
-"som\x65e":1,
-"son\x67jia\x6ejun":1,
-"sop\x63ast":1,
-"sor\x74ing\x2dalg\x6frit\x68ms":1,
-"sou\x6edcl\x6fud":1,
-"sou\x70ofm\x65dia":1,
-"spa\x63e-s\x63ape":1,
-"spa\x6ekwi\x72e":1,
-"spa\x72row\x6dail\x61pp":1,
-"spb":1,
-"spe\x63kle\x61pp":1,
-"spe\x6ecer\x74ipp\x69ng":1,
-"spi\x6eejs":1,
-"spo\x74ify":1,
-"spr\x6futc\x6fre":1,
-"squ\x61res\x70ace":1,
-"ssh\x391":1,
-"sta\x63kfi\x6ce":1,
-"sta\x72p2p":1,
-"sta\x72tpa\x67e":1,
-"sta\x74e168":1,
-"sta\x74icf\x6cickr":1,
-"ste\x65l-s\x74orm":1,
-"sth\x6fo":1,
-"sti\x63kam":1,
-"sti\x63ker\x61cti\x6fn":1,
-"sto\x72age\x6eews\x6cett\x65r":1,
-"sto\x77ebo\x79d":1,
-"str\x65etv\x6fice":1,
-"str\x6fngv\x70n":1,
-"stu\x66fim\x72ead\x69ng":1,
-"stu\x70idv\x69deos":1,
-"sug\x61rsy\x6ec":1,
-"sum\x6dify":1,
-"svw\x69nd":1,
-"swe\x75x":1,
-"syd\x6eeyt\x6fday":1,
-"syn\x63back":1,
-"syx\x386":1,
-"t35":1,
-"t66y":1,
-"taf\x61ward":1,
-"tag\x77alk":1,
-"tai\x77an-\x73ex":1,
-"tai\x77ank\x69ss":1,
-"tai\x77ann\x61tion":1,
-"tai\x77any\x65s":1,
-"tam\x70abay":1,
-"tan\x67ben":1,
-"tap\x311":1,
-"tar\x61gana":1,
-"tar\x67et":1,
-"taw\x65et":1,
-"tea\x6dsee\x73mic":1,
-"tea\x73hark":1,
-"tec\x68lif\x65web":1,
-"tec\x68par\x61iso":1,
-"tel\x65com\x73pace":1,
-"ten\x61cy":1,
-"the\x61mpf\x61cto\x72y":1,
-"the\x61ppl\x65blog":1,
-"the\x61tru\x6d-be\x6cli":1,
-"the\x62com\x70lex":1,
-"the\x62lem\x69sh":1,
-"the\x62ody\x73hop\x2dusa":1,
-"the\x64iel\x69ne":1,
-"the\x67ate\x73not\x65s":1,
-"the\x68ous\x65news":1,
-"the\x68ung\x72ydu\x64es":1,
-"the\x69nte\x72net\x77ish\x6cist":1,
-"the\x6cife\x79ouc\x61nsa\x76e":1,
-"the\x73art\x6fria\x6cist":1,
-"the\x73pee\x64er":1,
-"the\x74ibe\x74post":1,
-"the\x74rot\x73kym\x6fvie":1,
-"the\x76ive\x6bspot":1,
-"thi\x73av":1,
-"thi\x73isw\x68yyo\x75are\x66at":1,
-"thk\x70hoto":1,
-"thr\x65atc\x68aos":1,
-"thr\x6fugh\x6eigh\x74sfi\x72e":1,
-"thu\x6dbzi\x6cla":1,
-"tia\x6eanm\x65nun\x69v":1,
-"tia\x6ehua\x79uan":1,
-"tib\x65t":1,
-"tib\x65talk":1,
-"tib\x65ton\x6cine":1,
-"tid\x79read":1,
-"tif\x66any\x61rme\x6et":1,
-"time":1,
-"tin\x65y":1,
-"tin\x79chat":1,
-"tin\x79pas\x74e":1,
-"tis\x74ory":1,
-"tjh\x6flow\x61ych\x75k":1,
-"tkc\x73-co\x6clins":1,
-"tma\x67azi\x6ee":1,
-"tna\x66lix":1,
-"tog\x65tter":1,
-"tok\x79o-2\x347":1,
-"tok\x79o-h\x6ft":1,
-"tok\x79ocn":1,
-"tom\x61yko":1,
-"tom\x73c":1,
-"too\x64oc":1,
-"top\x69fy":1,
-"top\x73har\x65ware":1,
-"top\x73tyl\x654":1,
-"top\x73y":1,
-"tor\x72ent\x63razy":1,
-"tor\x76pn":1,
-"tou\x63h99":1,
-"tou\x74fr":1,
-"tra\x6esla\x74e-t\x61b":1,
-"tra\x76eli\x6eloc\x61l":1,
-"tre\x6edsm\x61p":1,
-"tri\x70od":1,
-"tru\x6cyer\x67ono\x6dic":1,
-"tru\x73ted\x62i":1,
-"tru\x74hcn":1,
-"tru\x76eo":1,
-"tse\x6dtul\x6bu":1,
-"tsu\x6eaga\x72umon":1,
-"tt1\x3069":1,
-"ttt\x61n":1,
-"tua\x6ezt":1,
-"tub\x658":1,
-"tub\x65cao":1,
-"tub\x65wolf":1,
-"tube":1,
-"tum\x75tan\x7ai":1,
-"tun\x65in":1,
-"tun\x6eelb\x65ar":1,
-"tur\x62otw\x69tter":1,
-"tur\x6eing\x74orso":1,
-"tux\x74rai\x6eing":1,
-"tv":1,
-"tv-\x69ntr\x6fs":1,
-"tva\x6ets":1,
-"tvb":1,
-"tvb\x6fxnow":1,
-"tvi\x64er":1,
-"tvu\x6eetw\x6frks":1,
-"twa\x70per\x6beep\x65r":1,
-"twb\x6cogg\x65r":1,
-"twe\x65pgu\x69de":1,
-"twe\x65pmag":1,
-"twe\x65tba\x63kup":1,
-"twe\x65tbo\x61rd":1,
-"twe\x65tde\x63k":1,
-"twe\x65ted\x74imes":1,
-"twe\x65tme\x6de":1,
-"twe\x65tph\x6fto":1,
-"twe\x65tra\x6es":1,
-"twe\x65tree":1,
-"twe\x65twa\x6cly":1,
-"twe\x65tym\x61il":1,
-"twi\x62ase":1,
-"twi\x62bon":1,
-"twi\x62s":1,
-"twi\x63sy":1,
-"twi\x66an":1,
-"twi\x66fo":1,
-"twi\x6cio":1,
-"twi\x6dbow":1,
-"twi\x6dg":1,
-"twi\x6edexx":1,
-"twi\x73ter\x6eow":1,
-"twi\x742d":1,
-"twi\x74cau\x73e":1,
-"twi\x74get\x68er":1,
-"twi\x74goo":1,
-"twi\x74iq":1,
-"twi\x74lon\x67er":1,
-"twi\x74oas\x74er":1,
-"twi\x74onm\x73n":1,
-"twi\x74pic":1,
-"twi\x74ref\x65rral":1,
-"twi\x74stat":1,
-"twi\x74ter":1,
-"twi\x74ter\x63oun\x74er":1,
-"twi\x74ter\x66eed":1,
-"twi\x74ter\x67adg\x65t":1,
-"twi\x74ter\x6br":1,
-"twi\x74ter\x6dail":1,
-"twi\x74that":1,
-"twi\x74tur\x6cy":1,
-"twi\x74vid":1,
-"twi\x74zap":1,
-"twi\x79ia":1,
-"twt\x6br":1,
-"twt\x72land":1,
-"twt\x74r":1,
-"tyc\x6fol":1,
-"typ\x65pad":1,
-"tza\x6egms":1,
-"udn":1,
-"ufr\x65evpn":1,
-"ugo":1,
-"ukc\x68ine\x73e":1,
-"ult\x72axs":1,
-"unb\x6coc\x6b\x2ecn":1,
-"unh\x6flyk\x6eight":1,
-"uni\x78100":1,
-"upd\x61tes\x74ar":1,
-"upl\x6fads\x74ati\x6fn":1,
-"urb\x61nou\x74fit\x74ers":1,
-"url\x62org":1,
-"url\x70ars\x65r":1,
-"usa\x63n":1,
-"use\x6aump":1,
-"uus\x68are":1,
-"uwa\x6ets":1,
-"vaa\x79oo":1,
-"val\x75e-d\x6fmain":1,
-"van\x3698":1,
-"van\x69lla\x2djp":1,
-"van\x73ky":1,
-"vap\x75rl":1,
-"vee\x6dpii\x72e":1,
-"veg\x6frpe\x64ers\x65n":1,
-"ven\x74ure\x73well":1,
-"veoh":1,
-"ver\x69sign":1,
-"ver\x79bs":1,
-"vevo":1,
-"vid\x65obam":1,
-"vid\x65omo":1,
-"vid\x6femo":1,
-"viki":1,
-"vim\x65o":1,
-"vim\x67olf":1,
-"vin\x63nd":1,
-"vin\x6eiev":1,
-"vmi\x78core":1,
-"voa\x63ant\x6fnese":1,
-"voa\x63hin\x65se":1,
-"voa\x63hin\x65seb\x6cog":1,
-"voa\x67d":1,
-"voa\x6eews":1,
-"voa\x74ibe\x74an":1,
-"voy":1,
-"vpn\x62ook":1,
-"vpn\x63up":1,
-"vpn\x66ire":1,
-"vpn\x70op":1,
-"vpn\x70ron\x65t":1,
-"vtu\x6enel":1,
-"waf\x66le1\x3999":1,
-"wah\x61s":1,
-"wai\x67aobu":1,
-"wai\x77aier":1,
-"wal\x6cpap\x65rca\x73a":1,
-"wan\x67lix\x69ong":1,
-"wan\x74-da\x69ly":1,
-"waqn":1,
-"war\x65hou\x73e333":1,
-"wat\x74pad":1,
-"wea\x72n":1,
-"web\x6cagu":1,
-"web\x73hots":1,
-"web\x73ite\x70ulse":1,
-"web\x77ork\x65rda\x69ly":1,
-"wef\x6fng":1,
-"wei\x62ole\x61k":1,
-"wei\x67ege\x62y\x63.\x64rea\x6dhos\x74ers":1,
-"wel\x6cpla\x63edp\x69xels":1,
-"wen\x67ewa\x6eg":1,
-"wen\x6bu":1,
-"wen\x78uec\x69ty":1,
-"wen\x79unc\x68ao":1,
-"wes\x74ca":1,
-"wes\x74ern\x77olv\x65s":1,
-"wet\x3123":1,
-"wet\x70uss\x79gam\x65s":1,
-"wfo\x72um":1,
-"wha\x74blo\x63ked":1,
-"whe\x72eis\x77ern\x65r":1,
-"whi\x70ped\x61ss":1,
-"why\x64idy\x6fubu\x79met\x68at":1,
-"why\x6cover":1,
-"wik\x69a":1,
-"wil\x6ciam\x68ill":1,
-"win\x64ows\x70hon\x65me":1,
-"wir\x65dby\x74es":1,
-"wir\x65dpen":1,
-"wis\x65vid":1,
-"woe\x73er":1,
-"wol\x66ax":1,
-"wor\x64bon\x65r":1,
-"wor\x64pre\x73s":1,
-"wor\x64san\x64tur\x64s":1,
-"wor\x6batr\x75na":1,
-"wor\x6cdjo\x75rnal":1,
-"wor\x73tth\x69ngi\x65ver\x61te":1,
-"wox\x69ngh\x75iguo":1,
-"wpo\x66orum":1,
-"wql\x68w":1,
-"wsj":1,
-"wtf\x70eop\x6ce":1,
-"wua\x6ca":1,
-"wue\x72kai\x78i":1,
-"wuj\x69eli\x75lan":1,
-"wwi\x74v":1,
-"x-a\x72t":1,
-"x-b\x65rry":1,
-"x19\x349x":1,
-"x36\x35x":1,
-"xan\x67a":1,
-"xbo\x6fkcn":1,
-"xcr\x69tic":1,
-"xgm\x79d":1,
-"xha\x6dster":1,
-"xia\x6fchu\x6ecnjp":1,
-"xia\x6fhex\x69e":1,
-"xie\x7ahua":1,
-"xin\x73hij\x75e":1,
-"xing":1,
-"xml\x2dtra\x69nin\x67-gu\x69de":1,
-"xmo\x76ies":1,
-"xnxx":1,
-"xrea":1,
-"xsk\x79wal\x6ber":1,
-"xtu\x62e":1,
-"xuz\x68uoer":1,
-"xve\x64ios":1,
-"xvi\x64eos":1,
-"xxb\x62x":1,
-"xyy\x369":1,
-"yah\x6fo":1,
-"yam":1,
-"ydy":1,
-"yee\x6cou":1,
-"yee\x79i":1,
-"yfr\x6fg":1,
-"yid\x69o":1,
-"yil\x75bbs":1,
-"yimg":1,
-"yip\x75b":1,
-"you\x6aizz":1,
-"you\x6daker":1,
-"you\x70orn":1,
-"you\x73end\x69t":1,
-"you\x74hbao":1,
-"you\x74ube":1,
-"you\x74ube\x2dnoc\x6fokie":1,
-"you\x74ube\x63n":1,
-"you\x76ers\x69on":1,
-"yti\x6dg":1,
-"yve\x73gel\x65yn":1,
-"yym\x61ya":1,
-"yzzk":1,
-"zac\x65book":1,
-"zan\x6eel":1,
-"zao\x62ao":1,
-"zao\x7aon":1,
-"zar\x69as":1,
-"zat\x74oo":1,
-"zeu\x74ch":1,
-"zfr\x65et":1,
-"zhi\x6eeng\x6cuyou":1,
-"zhr\x65ader":1,
-"zid\x64u":1,
-"zil\x6cionk":1,
-"zin\x69o":1,
-"zip\x6cib":1,
-"zka\x69p":1,
-"zoho":1,
-"zon\x61eur\x6fpa":1,
-"zoo\x74ool":1,
-"zoz\x6ftown":1,
-"zsr\x68ao":1,
-"zuo\x6ca":1,
-"zve\x72eff":1,
-"zyz\x639":1
-},"cz":{
-"jie\x68ua":1
-},"de":{
-"add\x69cte\x64toc\x6fffee":1,
-"asi\x61nwo\x6dens\x66ilm":1,
-"blo\x67spot":1,
-"blo\x6fmbe\x72g":1,
-"blog":1,
-"chi\x6eesen":1,
-"cli\x70fish":1,
-"csu\x63hen":1,
-"deu\x74sch\x65-we\x6cle":1,
-"dolc":1,
-"dw":1,
-"dw-\x77orld":1,
-"epo\x63hti\x6des":1,
-"i2p2":1,
-"jin\x68ai":1,
-"kai\x79uan":1,
-"mob\x69lew\x61ys":1,
-"pri\x76acy\x62ox":1,
-"pro\x73iben":1,
-"twi\x62ble":1,
-"wik\x69lea\x6bs":1
-},"edu":{
-"emo\x72y":1
-},"es":{
-"las\x74fm":1,
-"sam\x73off":1,
-"twi\x74ter\x74im":1
-},"eu":{
-"cen\x65ws":1,
-"daj\x69yuan":1,
-"hug\x6froy":1,
-"kan\x7ahon\x67guo":1,
-"mp3\x79e":1,
-"qtr\x61c":1,
-"wik\x69lea\x6bs":1
-},"fm":{
-"date":1,
-"fav\x73tar":1,
-"ping":1,
-"tur\x6etab\x6ce":1,
-"twe\x65tmy\x6cast":1,
-"twt":1,
-"vie\x77s":1,
-"xmu\x73ic":1
-},"fr":{
-"blo\x67spot":1,
-"epo\x63hti\x6des":1,
-"fle\x63hei\x6ethe\x70eche":1,
-"free":1,
-"inc\x72edi\x62ox":1,
-"iph\x6fnix":1,
-"rfi":1,
-"ult\x72avpn":1
-},"gd":{
-"tl":1
-},"gl":{
-"goo":1
-},"google":{
-"":1
-},"gov":{
-"bbg":1,
-"cecc":1,
-"cms":1,
-"nps":1,
-"sta\x74e":1,
-"usa":1,
-"usgs":1
-},"hk":{
-"all\x69anc\x65.org":1,
-"am7\x33\x30.c\x6fm":1,
-"bab\x79ne\x74\x2ecom":1,
-"bfsh":1,
-"blo\x67spot":1,
-"bwsj":1,
-"cat\x68oli\x63.org":1,
-"chi\x6each\x61nnel":1,
-"chi\x6eayo\x75t\x68.\x6frg":1,
-"chr\x6cawy\x65rs":1,
-"civ\x69cpa\x72ty":1,
-"cl\x62\x2eorg":1,
-"co":1,
-"dis\x63us\x73\x2ecom":1,
-"eas\x79web":1,
-"efc\x63.org":1,
-"fail":1,
-"goo\x67l\x65.\x63om":1,
-"hkd\x61ily\x6eew\x73\x2ecom":1,
-"hku":1,
-"hot\x70ot":1,
-"i1":1,
-"isl\x61\x6d.o\x72g":1,
-"lib\x65ra\x6c\x2eorg":1,
-"lon\x67hair":1,
-"lov\x65d":1,
-"ls\x64\x2eorg":1,
-"mihk":1,
-"myf\x6fru\x6d\x2ecom":1,
-"oclp":1,
-"ope\x6e.com":1,
-"pl\x6d\x2eorg":1,
-"qoo\x7aa":1,
-"rth\x6b.org":1,
-"rthk":1,
-"sac\x6fm":1,
-"sal\x76ati\x6f\x6e.o\x72g":1,
-"sha\x72pda\x69l\x79.\x63om":1,
-"sha\x72pda\x69ly":1,
-"sin\x61.com":1,
-"sow\x65r\x73.\x6frg":1,
-"sze\x74owa\x68.org":1,
-"xin\x6dia\x6f\x2ecom":1,
-"yah\x6f\x6f.c\x6fm":1
-},"hu":{
-"yong":1
-},"id":{
-"hud\x61tor\x69\x71.w\x65b":1
-},"ie":{
-"epo\x63hti\x6des":1
-},"il":{
-"co":1
-},"im":{
-"cao":1,
-"ff":1,
-"kun":1,
-"wzy\x62oy":1
-},"in":{
-"avdb":1,
-"bbc":1,
-"ben\x6aami\x6este":1,
-"blo\x67spot":1,
-"embr":1,
-"gon\x67m":1,
-"per\x63y":1,
-"pix\x6eet":1,
-"teck":1,
-"top\x6eews":1,
-"wozy":1,
-"xia\x6fd":1
-},"info":{
-"2-h\x61nd":1,
-"200\x38xia\x6ezha\x6eg":1,
-"aja\x78plo\x72er":1,
-"cao\x62ian":1,
-"cdig":1,
-"cel\x6culo":1,
-"chi\x6eawo\x72ker":1,
-"dy2\x34k":1,
-"eye\x73pir\x69t":1,
-"fai\x74hth\x65dog":1,
-"fan\x67liz\x68i":1,
-"fan\x79ue":1,
-"gon\x67meng":1,
-"gzo\x6ee-a\x6eime":1,
-"hei\x79o":1,
-"hjc\x6cub":1,
-"ist\x65f":1,
-"ita\x62oo":1,
-"kze\x6eg":1,
-"lao\x79ang":1,
-"les\x74er8\x350":1,
-"marc":1,
-"pro\x78omi\x74ron":1,
-"say2":1,
-"sin\x6fpitt":1,
-"sou\x6do":1,
-"sto\x6eeip":1,
-"tao\x6cun":1,
-"tbp\x69c":1,
-"the\x71ii":1,
-"tui\x74ui":1,
-"twr\x65g":1,
-"unc\x79clo\x70edia":1,
-"upl\x6fad4u":1,
-"wee\x6bmag":1,
-"wei\x6ding":1,
-"wepn":1,
-"wik\x69liv\x72es":1,
-"win\x77his\x70ers":1,
-"xth\x6fst":1,
-"xyy\x369":1,
-"you\x78u":1,
-"zhe\x6elibu":1
-},"io":{
-"api\x61ry":1,
-"box\x63ar":1,
-"cod\x65sha\x72e":1,
-"soup":1,
-"twa\x75d":1
-},"is":{
-"arc\x68ive":1
-},"it":{
-"asi\x61news":1,
-"htxt":1,
-"oxid":1,
-"tis\x63ali":1,
-"ude\x72zo":1
-},"jp":{
-"ame\x62lo":1,
-"asd\x66g":1,
-"bai\x64u":1,
-"blo\x67img":1,
-"blo\x67spot":1,
-"buz\x7aurl":1,
-"dl-\x6caby":1,
-"epo\x63hti\x6des":1,
-"exb\x6co\x67.\x63o":1,
-"exb\x6cog":1,
-"eye\x76io":1,
-"fdc\x389":1,
-"fin\x61lion":1,
-"geo\x63iti\x65\x73.co":1,
-"geo\x63iti\x65s":1,
-"gig\x61-web":1,
-"goo\x67l\x65.\x63o":1,
-"gra\x70hi\x73\x2ene":1,
-"mus\x65lin\x6b\x73.co":1,
-"nav\x65r":1,
-"nex\x74on-\x6eet":1,
-"nic\x6fvid\x65o":1,
-"np\x61\x2ego":1,
-"orn":1,
-"sho\x77time":1,
-"so\x64\x2eco":1,
-"sof\x74eth\x65\x72.co":1,
-"tab\x74ter":1,
-"twi\x70ple":1,
-"twi\x74ter":1,
-"vpn\x67ate":1,
-"wik\x69wiki":1,
-"woo\x70ie":1,
-"xci\x74y":1,
-"yah\x6f\x6f.co":1,
-"yas\x75kun\x69.or":1
-},"kr":{
-"epo\x63hti\x6de\x73.\x63o":1,
-"the\x72eal\x6cove":1
-},"la":{
-"zhe":1,
-"zuo":1
-},"li":{
-"bao":1,
-"hon\x67zhi":1,
-"htl":1,
-"owl":1,
-"pap\x65r":1
-},"lu":{
-"liu":1,
-"wik\x69lea\x6bs":1
-},"ly":{
-"bit":1,
-"cl":1,
-"deck":1,
-"ht":1,
-"img":1,
-"list":1,
-"ow":1,
-"post":1
-},"ma":{
-"sha\x64ow":1
-},"me":{
-"amzs":1,
-"bai\x78ing":1,
-"chi\x6eaaid":1,
-"dabr":1,
-"fb":1,
-"fly\x34ever":1,
-"fre\x65wal\x6cpap\x65r4":1,
-"klip":1,
-"line":1,
-"qi-\x67ong":1,
-"riku":1,
-"saiq":1,
-"ser\x61ph":1,
-"sog\x72ady":1,
-"tmi":1,
-"twe\x65pli\x6be":1,
-"twip":1
-},"mil":{
-"af":1,
-"army":1,
-"dar\x70a":1,
-"dfas":1,
-"dtic":1,
-"mar\x69nes":1,
-"navy":1,
-"nga":1,
-"soc":1,
-"usfk":1,
-"usmc":1
-},"mo":{
-"wik\x69med\x69\x61.o\x72g":1
-},"mobi":{
-"dabr":1,
-"fee\x64boo\x6bs":1,
-"shk\x73pr":1,
-"voa":1,
-"wap\x65dia":1
-},"mp":{
-"":1
-},"my":{
-"car\x69.com":1,
-"jbt\x61lks":1,
-"kwo\x6egwa\x68.com":1,
-"ori\x65nta\x6cdai\x6c\x79.c\x6fm":1,
-"rfi":1,
-"uni\x74edd\x61il\x79\x2ecom":1
-},"name":{
-"kui":1,
-"psb\x6cog":1
-},"net":{
-"6-4":1,
-"9bis":1,
-"adu\x6ctke\x65p":1,
-"aiph":1,
-"al-\x71imm\x61h":1,
-"alw\x61ysd\x61ta":1,
-"and\x66ara\x77ay":1,
-"ani\x6decr\x61zy":1,
-"ant\x69wave":1,
-"art\x73y":1,
-"ask\x79nz":1,
-"bay\x76oice":1,
-"bcc\x68ine\x73e":1,
-"bew\x77w":1,
-"bip\x69c":1,
-"bli\x6egbl\x69ngs\x71uad":1,
-"blo\x67td":1,
-"blo\x6fdsh\x65d":1,
-"box":1,
-"bru\x63ewa\x6eg":1,
-"cat\x63h22":1,
-"cen\x74urys":1,
-"chi\x6eaaid":1,
-"chi\x6eadi\x67ita\x6ctim\x65s":1,
-"chi\x6eain\x70ers\x70ect\x69ve":1,
-"chi\x6eese\x2dher\x6dit":1,
-"chi\x6eese\x74alks":1,
-"chr\x69spe\x64eri\x63k":1,
-"chu\x69zi":1,
-"cjb":1,
-"cla\x73sic\x61lgu\x69tar\x62log":1,
-"cli\x65nts\x66rom\x68ell":1,
-"clo\x75dfr\x6fnt":1,
-"com\x70yth\x6fn":1,
-"cre\x61ders":1,
-"cro\x73sth\x65wall":1,
-"cui\x77eip\x69ng":1,
-"d0z":1,
-"dan\x6be4c\x68ina":1,
-"dao\x6can":1,
-"dav\x69dzi\x65gler":1,
-"del\x63amp":1,
-"der\x65khs\x75.ho\x6deip":1,
-"dok\x2dfor\x75m":1,
-"don\x67tai\x77ang":1,
-"drg\x61n":1,
-"dup\x69ng":1,
-"dup\x6fla":1,
-"e-t\x72ade\x72land":1,
-"ecm\x69nis\x74ry":1,
-"era\x62aru":1,
-"eri\x67hts":1,
-"exp\x6coad\x65r":1,
-"fac\x65book":1,
-"fak\x6bu":1,
-"fan\x71ian\x67yak\x65xi":1,
-"fas\x74ly":1,
-"fav\x6ftter":1,
-"fbc\x64n":1,
-"fc2\x62log":1,
-"fel\x69xcat":1,
-"fgm\x74v":1,
-"fin\x6cer":1,
-"fli\x63krh\x69vem\x69nd":1,
-"fot\x6fp":1,
-"fro\x6dmel":1,
-"fuc\x6bcnn\x69c":1,
-"furl":1,
-"fzh\x3999":1,
-"gao\x6ding":1,
-"gao\x70i":1,
-"gdbt":1,
-"gee\x6b-art":1,
-"glo\x62alj\x69had":1,
-"glo\x62alr\x65scue":1,
-"gre\x61tfi\x72ewa\x6clof\x63hina":1,
-"gre\x65nvpn":1,
-"gun\x2dwor\x6cd":1,
-"hac\x6btha\x74pho\x6ee":1,
-"hdt\x76b":1,
-"hec\x61itou":1,
-"heq\x69ngl\x69an":1,
-"hih\x69sto\x72y":1,
-"hin\x65t":1,
-"hkbc":1,
-"hkd\x61y":1,
-"hlo\x6ci":1,
-"hsjp":1,
-"hua\x2dyue":1,
-"hup\x69ng":1,
-"hut\x69anyi":1,
-"hut\x6fng9":1,
-"ibl\x6fgse\x72v-f":1,
-"iea\x73yne\x77s":1,
-"ied\x32k":1,
-"igfw":1,
-"ign\x69ted\x65tro\x69t":1,
-"iha\x6bka":1,
-"ima\x67ezi\x6cla":1,
-"inm\x65dia\x68k":1,
-"iro\x6epyt\x68on":1,
-"ism\x70rof\x65ssi\x6fnal":1,
-"itw\x65et":1,
-"izl\x65s":1,
-"jir\x75an":1,
-"jkf\x6frum":1,
-"jpo\x70for\x75m":1,
-"jun\x65fou\x72th-\x320":1,
-"jyxf":1,
-"ken\x64inc\x6fs":1,
-"kom\x70ozer":1,
-"kyo\x68k":1,
-"laq\x69ngd\x61n":1,
-"let\x73corp":1,
-"lia\x6eyue":1,
-"lia\x6fwan\x67xiz\x61ng":1,
-"lim\x69ao":1,
-"lin\x75x-e\x6egin\x65er":1,
-"lkcn":1,
-"log\x62ot":1,
-"lon\x67ter\x6dly":1,
-"lsf\x6frum":1,
-"mai\x69o":1,
-"mar\x78ist":1,
-"meg\x61byet":1,
-"mid\x64le-\x77ay":1,
-"min\x7ahuh\x75a":1,
-"mob\x61tek":1,
-"muzi":1,
-"nai\x74ik":1,
-"nek\x6fslo\x76akia":1,
-"new\x2d3lu\x6ech":1,
-"oau\x74h":1,
-"obs\x65rve\x63hina":1,
-"old\x2dcat":1,
-"onm\x6fon":1,
-"ope\x6edem\x6fcra\x63y":1,
-"ope\x6eid":1,
-"ope\x6evpn":1,
-"ope\x72a-m\x69ni":1,
-"pac\x6betix":1,
-"pai\x6et":1,
-"pan\x6cuan":1,
-"pen\x63hin\x65se":1,
-"pen\x74alo\x67ic":1,
-"per\x66ect\x76pn":1,
-"pic\x69dae":1,
-"pign":1,
-"pix\x6eet":1,
-"pop\x75lar\x70ages":1,
-"por\x6emm":1,
-"pra\x79for\x63hina":1,
-"pro\x78ypy":1,
-"pro\x7az":1,
-"pur\x65con\x63epts":1,
-"qus\x698":1,
-"qx":1,
-"rap\x62ull":1,
-"rxhj":1,
-"sap\x69kac\x68u":1,
-"sec\x75res\x65rver":1,
-"see\x7aone":1,
-"ses\x61we":1,
-"set\x68wkl\x65in":1,
-"sex\x69nsex":1,
-"sit\x6590":1,
-"sla\x6edr":1,
-"sli\x64esh\x61re":1,
-"sne\x61kme":1,
-"so-\x67a":1,
-"soc\x6bsli\x73t":1,
-"sou\x72cef\x6frge":1,
-"sow\x69ki":1,
-"sst\x61tic":1,
-"sto\x6eega\x6des":1,
-"sto\x70tib\x65tcr\x69sis":1,
-"str\x65ami\x6egthe":1,
-"stu\x66fim\x72ead\x69ng":1,
-"sup\x65rtw\x65et":1,
-"swi\x66t-t\x6fols":1,
-"sys\x61dmi\x6e1138":1,
-"syt\x65s":1,
-"szb\x62s":1,
-"tai\x77and\x61ily":1,
-"tai\x77anus":1,
-"tcno":1,
-"the\x68un":1,
-"tia\x6eanm\x65nun\x69v":1,
-"tib\x65t":1,
-"ton\x79yan":1,
-"too\x6eel":1,
-"tsc\x74v":1,
-"tui\x64ang":1,
-"tur\x62obit":1,
-"twe\x65te":1,
-"twi\x73tory":1,
-"twi\x74bro\x77ser":1,
-"twi\x74tbot":1,
-"tws\x74ar":1,
-"uig\x68urb\x69z":1,
-"uli\x6be":1,
-"uwa\x6ets":1,
-"ver\x69zon":1,
-"vpn\x67ate":1,
-"wan\x64eri\x6egho\x72se":1,
-"wan\x67afu":1,
-"wan\x67ruo\x73hui":1,
-"was\x68eng":1,
-"web\x32pro\x6aect":1,
-"web\x62ang":1,
-"web\x73-tv":1,
-"wee\x65wooo":1,
-"wes\x74kit":1,
-"wez\x6fne":1,
-"wil\x6cw":1,
-"wit\x6fpia":1,
-"wow\x2dlife":1,
-"wuj\x69e":1,
-"wuk\x61ngr\x75i":1,
-"xin\x73heng":1,
-"xpdo":1,
-"xuc\x68ao":1,
-"xui\x74e":1,
-"xuz\x68iyo\x6eg":1,
-"yeg\x6ce":1,
-"yhcw":1,
-"you\x72-fr\x65edom":1,
-"ytht":1,
-"yua\x6eming":1,
-"yun\x63hao":1,
-"yx51":1,
-"zgz\x63jj":1,
-"zha\x6ebin":1,
-"zho\x6eggu\x6ftese":1,
-"zlib":1,
-"zom\x6fbo":1,
-"zon\x62le":1,
-"zoo\x7ale":1,
-"zsh\x61re":1
-},"nl":{
-"fre\x65vpn":1,
-"rnw":1,
-"twu\x72l":1
-},"no":{
-"nrk":1,
-"sec\x72etg\x61rden":1
-},"nu":{
-"bot":1
-},"nz":{
-"nzc\x68ine\x73\x65.n\x65t":1
-},"org":{
-"198\x34bbs":1,
-"1bao":1,
-"24s\x6dile":1,
-"301\x77orks":1,
-"4ch\x61n":1,
-"89-\x364":1,
-"908\x74aiw\x61n":1,
-"ala\x73bar\x72ica\x64as":1,
-"ale\x78lur":1,
-"all\x67irl\x73all\x6fwed":1,
-"amn\x65sty":1,
-"amn\x65sty\x75sa":1,
-"anyu":1,
-"ap":1,
-"arc\x68ive":1,
-"are\x63a-b\x61ckup":1,
-"asi\x61har\x76est":1,
-"atg\x66w":1,
-"ava\x61z":1,
-"avi\x64emux":1,
-"ban\x6eedb\x6fok":1,
-"bes\x74for\x63hina":1,
-"bfnn":1,
-"big\x6eews":1,
-"big\x73ound":1,
-"bjzc":1,
-"blo\x67td":1,
-"bra\x75mei\x73ter":1,
-"bud\x61edu":1,
-"bug\x63lub":1,
-"bul\x6cog":1,
-"c-s\x70anv\x69deo":1,
-"can\x79u":1,
-"ccd\x74r":1,
-"ccl\x69fe":1,
-"cdjp":1,
-"cdp\x31998":1,
-"cdp\x32006":1,
-"cdp\x75sa":1,
-"cdp\x77eb":1,
-"cdp\x77u":1,
-"cha\x6edoo":1,
-"cha\x6ege":1,
-"chi\x6ea21":1,
-"chi\x6eaaf\x66airs":1,
-"chi\x6eaaid":1,
-"chi\x6eaco\x6dmen\x74s":1,
-"chi\x6eafr\x65epr\x65ss":1,
-"chi\x6eage\x65ks":1,
-"chi\x6eagfw":1,
-"chi\x6eagr\x65enp\x61rty":1,
-"chi\x6eain\x70ers\x70ect\x69ve":1,
-"chi\x6eain\x74eri\x6dgov":1,
-"chi\x6eamz":1,
-"chi\x6eari\x67hts\x69a":1,
-"chi\x6easo\x75l":1,
-"chi\x6eaway":1,
-"chi\x6eayu\x61nmin":1,
-"chi\x6eese\x2dmem\x6frial":1,
-"chi\x6eese\x70en":1,
-"chr\x69stu\x73rex":1,
-"chr\x6ccg-\x68k":1,
-"cit\x69zen\x6cab":1,
-"cit\x69zen\x73rad\x69o":1,
-"civ\x69lhr\x66ront":1,
-"civ\x69sec":1,
-"cnd":1,
-"coc\x68ina":1,
-"col\x6cate\x72alm\x75rder":1,
-"cpj":1,
-"crd\x2dnet":1,
-"cuh\x6bacs":1,
-"cui\x68ua":1,
-"dal\x69anm\x65ng":1,
-"dan\x77ei":1,
-"de-\x73ci":1,
-"deb\x69an":1,
-"dem\x6fcra\x74s":1,
-"dia\x6fyui\x73lan\x64s":1,
-"dig\x69tal\x6eoma\x64spr\x6fject":1,
-"dja\x6egos\x6eipp\x65ts":1,
-"dns\x63rypt":1,
-"dow\x65i":1,
-"dox\x79gen":1,
-"dphk":1,
-"dui\x68ua":1,
-"dvo\x72ak":1,
-"dyn\x64ns":1,
-"e-h\x65ntai":1,
-"ema\x63sbl\x6fg":1,
-"ern\x65stm\x61ndel":1,
-"eti\x7aer":1,
-"fal\x75nart":1,
-"fal\x75nda\x66a":1,
-"fal\x75nda\x66amu\x73eum":1,
-"fal\x75nhr":1,
-"fan\x67ong":1,
-"fas\x74sto\x6ee":1,
-"faw\x61ngh\x75ihui":1,
-"fgm\x74v":1,
-"fil\x6cthe\x73qua\x72e":1,
-"fir\x65ofl\x69ber\x74y":1,
-"fln\x65t":1,
-"fofg":1,
-"fou\x72thi\x6eter\x6eati\x6fnal":1,
-"fre\x65-ga\x74e":1,
-"fre\x65bea\x72blog":1,
-"fre\x65dom\x68ouse":1,
-"fre\x65net\x2dchi\x6ea":1,
-"fre\x65net\x70roj\x65ct":1,
-"fre\x65oz":1,
-"fre\x65tib\x65t":1,
-"fro\x6etli\x6eede\x66end\x65rs":1,
-"fsc\x6bed":1,
-"fuc\x6bgfw":1,
-"fut\x75rec\x68ina\x66orum":1,
-"fut\x75rem\x65ssa\x67e":1,
-"fut\x75reme":1,
-"gap\x70p":1,
-"gar\x64enn\x65two\x72ks":1,
-"gdzf":1,
-"get\x66oxy\x70roxy":1,
-"get\x6cant\x65rn":1,
-"gho\x73t":1,
-"glo\x62alm\x75seu\x6donc\x6fmmu\x6eism":1,
-"glo\x62alv\x6fice\x73onl\x69ne":1,
-"gmhz":1,
-"god\x66oot\x73teps":1,
-"gol\x61ng":1,
-"gra\x6edtr\x69al":1,
-"gra\x79log2":1,
-"gre\x61t-r\x6fc":1,
-"gre\x61tfi\x72e":1,
-"gre\x61tfi\x72ewa\x6clof\x63hina":1,
-"gre\x61troc":1,
-"gre\x61tzh\x6fngh\x75a":1,
-"gua\x6echa":1,
-"gui\x73han":1,
-"h-c\x68ina":1,
-"h1n\x31chi\x6ea":1,
-"hel\x6couk":1,
-"hel\x70zhu\x6cing":1,
-"hid\x64en-\x61dve\x6et":1,
-"hik\x69ngg\x66w":1,
-"hkbf":1,
-"hkf\x72ont":1,
-"hkg\x72een\x72adio":1,
-"hkjp":1,
-"hkp\x74u":1,
-"hkz\x6fne":1,
-"hol\x79spi\x72its\x70eaks":1,
-"hqc\x64p":1,
-"hri\x63hina":1,
-"hrw":1,
-"hua\x6eghu\x61gang":1,
-"hun\x67ers\x74rik\x65for\x61ids":1,
-"ibi\x62lio":1,
-"ibr\x6fs":1,
-"icij":1,
-"icl\x2dfi":1,
-"ico\x6epap\x65r":1,
-"ifc\x73s":1,
-"ifjc":1,
-"inn\x65rmo\x6egol\x69a":1,
-"int\x65rna\x74ion\x61lri\x76ers":1,
-"int\x65rne\x74def\x65nse\x6ceag\x75e":1,
-"int\x65rne\x74fre\x65dom":1,
-"int\x65rnet":1,
-"iph\x6fne-\x64ev":1,
-"ire\x64mail":1,
-"isg\x72eat":1,
-"izi\x68ost":1,
-"jin\x62ushe":1,
-"jin\x67pin":1,
-"joa\x63hims":1,
-"joe\x79rob\x65rt":1,
-"jou\x72nal\x6ffde\x6docr\x61cy":1,
-"jwm\x75sic":1,
-"kan\x67ye":1,
-"kco\x6de":1,
-"kin\x67dom\x73alv\x61tion":1,
-"la-\x66orum":1,
-"lab\x69enn\x61le":1,
-"lao\x67ai":1,
-"lee\x63heu\x6byan":1,
-"ler\x6fsua":1,
-"les\x73css":1,
-"lia\x6esi":1,
-"lin\x75xco\x6efig":1,
-"lin\x75xre\x76iews":1,
-"lin\x75xtoy":1,
-"loo\x6bing\x67las\x73the\x61tre":1,
-"lsm":1,
-"lsm\x63hin\x65se":1,
-"lsm\x6bore\x61n":1,
-"lupm":1,
-"lvh\x61i":1,
-"mar\x63o":1,
-"mar\x6bmail":1,
-"mar\x78ists":1,
-"md-t":1,
-"mem\x72ijt\x74m":1,
-"mh4u":1,
-"mhr\x61dio":1,
-"mih\x75a":1,
-"min\x67hui":1,
-"min\x67hui\x2dsch\x6fol":1,
-"min\x69nova":1,
-"min\x7ahuz\x68ong\x67uo":1,
-"moe\x67irl":1,
-"mol\x69hua":1,
-"mon\x64ex":1,
-"mon\x67odb":1,
-"mon\x69tor\x63hina":1,
-"mon\x6camit":1,
-"mor\x6eing\x73un":1,
-"moz\x74w":1,
-"mul\x74ipr\x6fxy":1,
-"naa\x63oal\x69tion":1,
-"ncn":1,
-"ned":1,
-"nev\x65rfo\x72get\x38964":1,
-"new\x73cn":1,
-"nig\x68ost":1,
-"nja\x63tb":1,
-"nob\x65lpr\x69ze":1,
-"nok\x6fgiri":1,
-"ntd\x74v":1,
-"oct\x6fber\x2drev\x69ew":1,
-"oga\x6fga":1,
-"oly\x6dpic\x77atch":1,
-"ope\x6eink\x70ot":1,
-"ope\x6elea\x6bs":1,
-"orz\x69stic":1,
-"oul\x6fve":1,
-"pas\x74ie":1,
-"pbs":1,
-"pbx\x65s":1,
-"pea\x63efi\x72e":1,
-"pek\x69ngd\x75ck":1,
-"peo\x70o":1,
-"pla\x6eets\x75zy":1,
-"pol\x69tic\x61lch\x69na":1,
-"pop\x79ard":1,
-"por\x6ebase":1,
-"pro\x78y":1,
-"qie\x6ekuen":1,
-"qvo\x64zy":1,
-"qxb\x62s":1,
-"rad\x69ova\x74ica\x6ea":1,
-"ran\x67zen":1,
-"rec\x6frdh\x69sto\x72y":1,
-"ren\x79ure\x6equan":1,
-"rer\x6futed":1,
-"rfa":1,
-"rfa\x6dobi\x6ce":1,
-"rfe\x72l":1,
-"roc\x6dp":1,
-"rsf":1,
-"rsf\x2dchi\x6eese":1,
-"sam\x6dyjs":1,
-"sav\x65tib\x65t":1,
-"ses\x61we":1,
-"sha\x64ows\x6fcks":1,
-"sha\x6egfa\x6eg":1,
-"sha\x72eco\x6fl":1,
-"she\x6eshou":1,
-"she\x6eyun\x70erf\x6frmi\x6egar\x74s":1,
-"shi\x74aotv":1,
-"shi\x78iao":1,
-"shi\x7ahao":1,
-"sim\x70lecd":1,
-"sit\x65maps":1,
-"smh\x72ic":1,
-"sof\x74eth\x65r":1,
-"sog\x6fo":1,
-"soh\x66ran\x63e":1,
-"sop\x63ast":1,
-"sou\x6edof\x68ope":1,
-"spe\x65dpl\x75ss":1,
-"suf\x65ng":1,
-"suo\x6cuo":1,
-"sys\x72esc\x63d":1,
-"taa\x2dusa":1,
-"tac\x65m":1,
-"tai\x70eis\x6fcie\x74y":1,
-"tanc":1,
-"tch\x72d":1,
-"the\x63hin\x61beat":1,
-"the\x6cius":1,
-"the\x70ira\x74ebay":1,
-"tho\x6dasb\x65rnh\x61rd":1,
-"tia\x6eanm\x65nmo\x74her":1,
-"tia\x6edix\x69ng":1,
-"tia\x6etib\x6foks":1,
-"tia\x6ezhu":1,
-"tib\x65tan\x79out\x68con\x67ress":1,
-"tib\x65tfu\x6ed":1,
-"tib\x65twr\x69tes":1,
-"tor\x70roj\x65ct":1,
-"tra\x6esgr\x65ssi\x6fnism":1,
-"tri\x61lof\x63cp":1,
-"tui\x64ang":1,
-"tum\x62lwe\x65d":1,
-"twb\x62s":1,
-"twe\x65pml":1,
-"twf\x74p":1,
-"twh\x69rl":1,
-"twi\x67git":1,
-"twi\x6cog":1,
-"twi\x74ter\x34j":1,
-"twy\x61c":1,
-"tyn\x73oe":1,
-"ucam":1,
-"ucd\x631998":1,
-"uhrp":1,
-"unc\x79clo\x6dedia":1,
-"uni\x63ode":1,
-"unk\x6eown\x73pace":1,
-"unpo":1,
-"uocn":1,
-"uyg\x68urc\x6fngr\x65ss":1,
-"uyg\x75r":1,
-"v-s\x74ate":1,
-"vatn":1,
-"vcf\x2donl\x69ne":1,
-"vcf\x62uil\x64er":1,
-"vim\x70era\x74or":1,
-"vot":1,
-"w3":1,
-"wai\x6beung":1,
-"wal\x6corn\x6ft":1,
-"wan\x2dpre\x73s":1,
-"wan\x67jin\x62o":1,
-"wan\x67ruo\x77ang":1,
-"wei\x6aing\x73heng":1,
-"wei\x71uan\x77ang":1,
-"wen\x67ewa\x6eg":1,
-"wex\x69aobo":1,
-"wez\x68iyo\x6eg":1,
-"whyx":1,
-"wik\x69boo\x6bs":1,
-"wik\x69lea\x6bs":1,
-"wik\x69map\x69a":1,
-"wik\x69med\x69a":1,
-"wik\x69news":1,
-"wik\x69ped\x69a":1,
-"wik\x69sou\x72ce":1,
-"wom\x65nsr\x69ght\x73ofc\x68ina":1,
-"wor\x6cdcat":1,
-"wqyd":1,
-"x-w\x61ll":1,
-"xia\x6fma":1,
-"xin\x68uan\x65t":1,
-"xiz\x61ng-\x7ahiye":1,
-"xpud":1,
-"xuc\x68ao":1,
-"xys":1,
-"xys\x62logs":1,
-"yi":1,
-"yog\x69chen":1,
-"you\x70ai":1,
-"you\x74hne\x74rad\x69o":1,
-"yyii":1,
-"zen\x67jin\x79an":1,
-"zhe\x6eghui":1,
-"zho\x6egme\x6eg":1,
-"zhu\x69cha\x67uoji":1
-},"ph":{
-"hua\x78in":1
-},"pl":{
-"wik\x69lea\x6bs":1
-},"ru":{
-"a\x35.\x63om":1,
-"ab\x63\x2epp":1,
-"dal\x61ila\x6da":1,
-"epo\x63hti\x6des":1,
-"gig\x70orno":1,
-"hei\x78.pp":1,
-"ipi\x63ture":1,
-"ntd\x74v":1,
-"rut\x75be":1,
-"sam\x61ir":1,
-"xf\x6d\x2epp":1,
-"zho\x6e\x67.pp":1
-},"se":{
-"desc":1,
-"epo\x63hti\x6des":1,
-"the\x70ira\x74ebay":1
-},"sg":{
-"omy":1,
-"zao\x62a\x6f.\x63om":1
-},"sh":{
-"twa":1
-},"sk":{
-"vel\x6baep\x6fcha":1
-},"st":{
-"br":1
-},"su":{
-"mar\x67uer\x69te":1
-},"support":{
-"":1
-},"tc":{
-"wo":1
-},"tk":{
-"cen\x63i":1,
-"ezpc":1,
-"sol\x6fzor\x72o":1,
-"tam\x69aode":1,
-"tkf\x6frum":1,
-"web\x66ee":1
-},"tl":{
-"mtw":1,
-"twt":1
-},"to":{
-"mash":1,
-"moby":1,
-"myc\x68at":1,
-"tora":1,
-"uk":1,
-"upl\x6faded":1,
-"us":1,
-"xfi\x6ces":1
-},"tv":{
-"1po\x6edo":1,
-"blip":1,
-"box\x75n":1,
-"co":1,
-"gzm":1,
-"im":1,
-"job\x73o":1,
-"jus\x74in":1,
-"muzu":1,
-"pan\x64ora":1,
-"tib\x65ton\x6cine":1,
-"tsq\x75are":1,
-"ust\x72eam":1,
-"vocn":1,
-"woo\x70ie":1
-},"tw":{
-"0rz":1,
-"1-a\x70pl\x65\x2ecom":1,
-"ai\x74\x2eorg":1,
-"at\x6a\x2eorg":1,
-"bac\x6bpac\x6ber\x73\x2ecom":1,
-"bc\x63\x2ecom":1,
-"boo\x6b\x73.c\x6fm":1,
-"cat\x68oli\x63.org":1,
-"cdn\x65w\x73.\x63om":1,
-"cn\x61\x2ecom":1,
-"cna\x76ist\x61.com":1,
-"coo\x6clou\x64.org":1,
-"ct\x73\x2ecom":1,
-"cul\x74ure":1,
-"dd\x63\x2ecom":1,
-"dom\x61i\x6e.\x63lub":1,
-"dp\x70\x2eorg":1,
-"e-i\x6ef\x6f.\x6frg":1,
-"fin\x64book":1,
-"funf":1,
-"gam\x65\x72.c\x6fm":1,
-"gam\x65\x7a.c\x6fm":1,
-"gam\x65bas\x65.com":1,
-"gol\x64enm\x65lod\x79.com":1,
-"gov":1,
-"gre\x61troc":1,
-"gre\x65npa\x72t\x79.\x6frg":1,
-"gv\x6d\x2ecom":1,
-"hak\x6bat\x76\x2eorg":1,
-"idv":1,
-"im88":1,
-"ise\x74.com":1,
-"ith\x6fm\x65.\x63om":1,
-"kag\x79uof\x66ic\x65\x2eorg":1,
-"khm\x75si\x63\x2ecom":1,
-"kim\x79.com":1,
-"kin\x67sto\x6e\x65.c\x6fm":1,
-"lib\x65rty\x74ime\x73.com":1,
-"mer\x69t-t\x69me\x73\x2ecom":1,
-"ms\x6e\x2ecom":1,
-"mya\x76.com":1,
-"nc\x68\x2ecom":1,
-"ncc\x77atc\x68.org":1,
-"new\x7310\x30\x2ecom":1,
-"new\x74aiw\x61\x6e.c\x6fm":1,
-"new\x74alk":1,
-"nex\x74t\x76.\x63om":1,
-"nt\x75\x2eedu":1,
-"oik\x6f\x73.c\x6fm":1,
-"pc\x74\x2eorg":1,
-"pcd\x76\x64.c\x6fm":1,
-"pch\x6fm\x65.\x63om":1,
-"pla\x79\x73.c\x6fm":1,
-"pt\x73\x2eorg":1,
-"pub\x75.com":1,
-"pyt\x68o\x6e.\x63om":1,
-"rai\x64cal\x6c.com":1,
-"rea\x64ing\x74ime\x73.com":1,
-"rt\x69\x2eorg":1,
-"san\x6di\x6e.\x63om":1,
-"set\x74\x79.c\x6fm":1,
-"sin\x61.com":1,
-"sin\x69c\x61.\x65du":1,
-"sit\x65bro":1,
-"sli\x6d\x65.c\x6fm":1,
-"so-\x6ee\x74.\x6eet":1,
-"soh":1,
-"sou\x74hne\x77\x73.c\x6fm":1,
-"stu\x64ent":1,
-"tai\x77ann\x61tio\x6e.com":1,
-"tai\x77ann\x65w\x73.\x63om":1,
-"tai\x77ant\x74.org":1,
-"tib\x65\x74.o\x72g":1,
-"tp\x69\x2eorg":1,
-"trt\x63.com":1,
-"tt\x76\x2ecom":1,
-"twb\x62\x73.n\x65t":1,
-"twb\x62s":1,
-"ur\x6c\x2ecom":1,
-"vf\x74\x2ecom":1,
-"wuf\x69.org":1,
-"yah\x6f\x6f.c\x6fm":1,
-"you\x74hwa\x6e\x74.c\x6fm":1,
-"zdn\x65\x74.c\x6fm":1
-},"ua":{
-"gf\x77\x2eorg":1
-},"uk":{
-"ao\x6c\x2eco":1,
-"bar\x6eab\x75\x2eco":1,
-"bb\x63\x2eco":1,
-"blo\x67spo\x74.co":1,
-"com":1,
-"dab\x72.co":1,
-"eng\x6cish\x66rom\x65ngl\x61n\x64.\x63o":1,
-"fre\x65ser\x76\x65.co":1,
-"gee\x6bmad\x65.co":1,
-"sno\x6fpe\x72\x2eco":1,
-"tel\x65gra\x70\x68.co":1,
-"ukl\x69fer\x61di\x6f\x2eco":1,
-"yas\x6e\x69.co":1,
-"zau\x72u\x73.\x6frg":1
-},"us":{
-"acu\x6co":1,
-"chi\x6eaaid":1,
-"cyt\x6fde":1,
-"dev\x69o":1,
-"dit\x2dinc":1,
-"don\x74fil\x74er":1,
-"fox\x64ie":1,
-"fre\x65ssh":1,
-"guo\x6din":1,
-"hel\x6cone\x77york":1,
-"hua\x72en":1,
-"ima\x67esh\x61ck":1,
-"iza\x6fbao":1,
-"liv\x69ngo\x6eline":1,
-"nob\x6fdyc\x61nst\x6fp":1,
-"pap\x65rb":1,
-"ref\x65rer":1,
-"sad\x70anda":1,
-"sis\x3001":1,
-"sit\x65tag":1,
-"the\x64w":1,
-"top\x73hare":1,
-"utom":1,
-"v70":1
-},"vc":{
-"fre\x64wil\x73on":1
-},"xxx":{
-"cat\x66igh\x74pay\x70erv\x69ew":1,
-"sis":1
-},"za":{
-"co":1
-}
-};
+var black_domains = ["||\x64arp\x61.m\x69l"
+,"||\x66xnetwo\x72k\x73.com"
+,"hu\x6c\x75.com"
+,"hu\x6cui\x6d.com"
+,"||\x6duz\x75.tv"
+,"||\x6eetfli\x78\x2ecom"
+,"||\x70andor\x61\x2ecom"
+,".p\x61ndor\x61.\x74v"
+,"||\x70ure1\x38.\x63om"
+,"||\x73potif\x79\x2ecom"
+,"||\x74arge\x74.\x63om"
+,"||\x74urntab\x6c\x65.fm"
+,"||\x76ev\x6f.com"
+,"||\x7aatto\x6f.\x63om"
+,"||\x71\x71.c\x6f.za"
+,"||\x7aozotow\x6e.com"
+,".0\x72\x7a.tw"
+,"|h\x74tp://0\x72\x7a.tw"
+,"||\x30to25\x35.\x63om"
+,"1-\x61ppl\x65.c\x6f\x6d.tw"
+,"||\x31-appl\x65\x2eco\x6d.tw"
+,"||\x310musum\x65.com"
+,"12\x33r\x66.com"
+,".1\x32be\x74.com"
+,"||\x312be\x74.c\x6fm"
+,".1\x32vp\x6e.com"
+,"||\x312vp\x6e.c\x6fm"
+,"14\x31hongko\x6e\x67.com/\x66orum"
+,".1\x373n\x67.com"
+,"||\x3173n\x67.c\x6fm"
+,"19\x384bb\x73.c\x6fm"
+,"||\x31984bb\x73\x2ecom"
+,".1\x3984bb\x73.\x6frg"
+,"||\x31984bb\x73\x2eorg"
+,".1\x62a\x6f.org"
+,"|h\x74tp://1\x62a\x6f.org"
+,"||\x31pond\x6f.\x74v"
+,".1\x65e\x77.com"
+,".2\x2dhan\x64.i\x6efo"
+,".2\x3000fu\x6e.\x63om/bbs"
+,".2\x3008xian\x7ahan\x67.i\x6efo"
+,"||\x32008xia\x6ezhan\x67.\x69nfo"
+,"21\x61nd\x79.co\x6d/blog"
+,"24\x73mil\x65.o\x72g"
+,".2\x73hare\x64.\x63om"
+,".3\x315l\x7a.com"
+,"||\x336rai\x6e.\x63om"
+,"||\x34bluest\x6fne\x73.biz"
+,"||\x34cha\x6e.o\x72g"
+,"5i\x30\x31.com"
+,"ta\x69wannat\x69o\x6e.50w\x65b\x73.com"
+,"||\x35\x31.ca"
+,".5\x6daodan\x67\x2ecom"
+,"||\x36-\x34.net/"
+,"64\x6demo"
+,"64\x74ianwan\x67.com"
+,"64\x77ik\x69.com"
+,"66\x36k\x62.com"
+,"6p\x61r\x6b.com"
+,"||\x36par\x6b.c\x6fm"
+,"||\x77w\x77.6v6\x64ot\x61.com"
+,"||\x37captur\x65.com"
+,".8\x38190\x33.c\x6fm/page\x2fzh-tw/"
+,".8\x38\x38.com"
+,"||\x388190\x33.\x63om"
+,"89\x2d6\x34.org"
+,"||\x389-6\x34.o\x72g"
+,".9\x300170\x30.\x63om"
+,"|h\x74tp://9\x308taiwa\x6e.org/"
+,".9\x32cca\x76.c\x6fm"
+,"||\x39bi\x73.com"
+,"||\x39bi\x73.net"
+,"||\x61-norma\x6c-da\x79.c\x6fm"
+,"a\x35\x2eco\x6d.ru"
+,".a\x62oluowa\x6e\x67.com"
+,"||\x61boluow\x61n\x67.com"
+,".a\x62outgf\x77\x2ecom"
+,"||\x61cgk\x6a.c\x6fm"
+,"ac\x74ime\x73.c\x6f\x6d.au"
+,"||\x61cul\x6f.us"
+,"||\x61ddicte\x64tocoff\x65\x65.de"
+,"ad\x75ltfrie\x6edfinde\x72.com"
+,"ad\x75ltkee\x70\x2enet/pe\x65pshow/\x6dembers\x2fmai\x6e.h\x74m"
+,"||\x61dvansc\x65n\x65.com"
+,"||\x61dvertf\x61\x6e.com"
+,"||\x61enhanc\x65r\x73.com"
+,"||\x61\x66.mil"
+,"ai\x70\x68.net"
+,"||\x61ip\x68.net"
+,".a\x69se\x78.com"
+,"||\x61i\x74.or\x67\x2etw"
+,".a\x69weiwei\x62lo\x67.com"
+,"||\x61iweiwe\x69blo\x67.c\x6fm"
+,"||\x61jaxplo\x72e\x72.info"
+,"||\x77w\x77.ajs\x61nd\x73.com"
+,"||\x61kiba-o\x6elin\x65.c\x6fm"
+,"||\x61l-qimm\x61\x68.net"
+,"||\x61labou\x74\x2ecom"
+,"||\x61lasbar\x72icada\x73\x2eorg"
+,"||\x6eote\x73.a\x6cexdon\x67\x2ecom"
+,"al\x65xlu\x72.o\x72g"
+,"al\x69eng\x75.c\x6fm"
+,"||\x61lkasi\x72\x2ecom"
+,"al\x6cgirlsa\x6clowe\x64.\x6frg"
+,"al\x6cianc\x65.\x6fr\x67.hk"
+,".a\x6clinf\x61.\x63om"
+,"|h\x74tp://a\x6clinf\x61.\x63om"
+,"||\x61llinf\x6f\x2ecom"
+,"||\x61llmovi\x65.com"
+,"||\x61lterna\x74e-tool\x73.com"
+,"al\x76inalex\x61nde\x72.c\x6fm"
+,"al\x77aysdat\x61.com"
+,"||\x61lwaysd\x61t\x61.com"
+,"||\x61lwaysd\x61t\x61.net"
+,"||\x61m73\x30.c\x6f\x6d.hk"
+,"am\x61zo\x6e.co\x6d/Priso\x6eer-Sta\x74e-Secr\x65t-Jour\x6eal-Pre\x6dier"
+,"am\x65bl\x6f.jp"
+,"||\x61mebl\x6f.\x6ap"
+,"||\x61merica\x6egreenc\x61r\x64.com"
+,"||\x61mibloc\x6bedorno\x74.com"
+,".a\x6dnest\x79.\x6frg"
+,"||\x61mnest\x79\x2eorg"
+,".a\x6dnestyu\x73\x61.org"
+,"||\x61mnesty\x75s\x61.org"
+,".a\x6doiis\x74.\x63om"
+,"am\x7a\x73.me"
+,"an\x61lyze-\x76\x2ecom"
+,"||\x61nchorf\x72e\x65.com"
+,"||\x61ndfara\x77a\x79.net"
+,"an\x69mecraz\x79.net"
+,"||\x61nobi\x69.\x63om"
+,".a\x6eonymiz\x65\x72.com"
+,"an\x6fntex\x74.\x63om"
+,"||\x61nthony\x63alzadi\x6cl\x61.com"
+,".a\x6etiwav\x65\x2enet"
+,"|h\x74tp://a\x6etiwav\x65\x2enet"
+,"||\x61ob\x6f.co\x6d.au"
+,"||\x61olchan\x6eel\x73.ao\x6c.com"
+,"vi\x64e\x6f.ao\x6c\x2eca/vid\x65o-deta\x69l"
+,"vi\x64e\x6f.ao\x6c\x2ec\x6f.uk/\x76ideo-d\x65tail"
+,"vi\x64e\x6f.ao\x6c\x2ecom"
+,"||\x76ide\x6f.a\x6f\x6c.com"
+,"ww\x77.aolne\x77\x73.com"
+,"vi\x64e\x6f.a\x70.\x6frg"
+,".a\x70etub\x65.\x63om"
+,"||\x61piar\x79.\x69o"
+,".a\x70ige\x65.c\x6fm"
+,"||\x61pige\x65.\x63om"
+,"ap\x70ledail\x79.com"
+,"ar\x63hiv\x65.is"
+,"||\x61rchiv\x65\x2eorg"
+,".a\x72ctosi\x61\x2ecom"
+,"|h\x74tp://a\x72ctosi\x61\x2ecom"
+,"||\x61reca-b\x61cku\x70.o\x72g"
+,"||\x61rm\x79.mil"
+,"ar\x74s\x79.net"
+,".a\x73ahichi\x6ees\x65.com"
+,"||\x61sahich\x69nes\x65.c\x6fm"
+,"as\x64f\x67.jp/\x64abr"
+,".a\x73iaharv\x65s\x74.org"
+,"||\x61siahar\x76es\x74.org"
+,"as\x69anew\x73.\x69t"
+,"||\x61sianwo\x6densfil\x6d.de"
+,"||\x61skstud\x65n\x74.com"
+,".a\x73kyn\x7a.n\x65t"
+,"||\x61skyn\x7a.\x6eet"
+,"||\x61ssembl\x61.com"
+,"||\x61stonma\x72tinnew\x73.com"
+,".a\x74chines\x65.com"
+,"|h\x74tp://a\x74chines\x65.com"
+,"at\x67f\x77.org"
+,"||\x61t\x6a.or\x67\x2etw"
+,".a\x74laspos\x74.com"
+,"||\x61tlaspo\x73\x74.com"
+,".a\x74nex\x74.c\x6fm"
+,"||\x61tnex\x74.\x63om"
+,"av\x61a\x7a.org"
+,"||\x61vaa\x7a.o\x72g"
+,"av\x64\x62.in"
+,"||\x61videmu\x78.org"
+,"||\x61voisio\x6e.com"
+,"||\x61xurefo\x72ma\x63.com"
+,"fo\x72u\x6d.bab\x79-kingd\x6f\x6d.com"
+,"ba\x62yne\x74.c\x6f\x6d.hk"
+,"ba\x63kchin\x61\x2ecom"
+,"||\x62ackchi\x6e\x61.com"
+,".b\x61ckpack\x65r\x73.co\x6d\x2etw/for\x75m"
+,"ba\x64o\x6f.com"
+,"||\x62aid\x75.jp"
+,"||\x62aixin\x67\x2eme"
+,"he\x6e.ba\x6f.li"
+,"ba\x6enedboo\x6b.org"
+,"||\x62annedb\x6fo\x6b.org"
+,"||\x62arnab\x75\x2ec\x6f.uk"
+,"ba\x79voic\x65.\x6eet"
+,"||\x62ayvoic\x65.net"
+,"da\x6aush\x61.b\x61yword\x73\x2ecom"
+,".b\x62\x63.c\x6f.u\x6b*chine\x73e"
+,".b\x62\x63.c\x6f.u\x6b/tv"
+,".b\x62\x63.c\x6f.u\x6b*zhong\x77en"
+,"ne\x77\x73.bb\x63.\x63\x6f.uk/o\x6ethisda\x79*newsi\x64_24960\x300/2496\x3277"
+,"ne\x77sforum\x73.bb\x63.c\x6f.uk"
+,".b\x62cchine\x73\x65.com"
+,"||\x62bcchin\x65s\x65.com"
+,"|h\x74tp://b\x62\x63.in"
+,".b\x62\x67.gov"
+,"||\x62bsfee\x64\x2ecom"
+,"bb\x73lan\x64.c\x6fm"
+,".b\x63\x63.co\x6d.\x74w/board"
+,".b\x63chines\x65.net"
+,".b\x65b\x6f.com"
+,"||\x62eb\x6f.com"
+,"||\x62eijing\x3198\x39.com"
+,"be\x69jingsp\x72in\x67.com"
+,"||\x62eijing\x73prin\x67.\x63om"
+,".b\x65rlintw\x69tterwa\x6c\x6c.com"
+,"||\x62erlint\x77itterw\x61l\x6c.com"
+,".b\x65stforc\x68in\x61.org"
+,"||\x62estfor\x63hin\x61.o\x72g"
+,".b\x65stvpns\x65rvic\x65.\x63om"
+,"||\x62et36\x35.\x63om"
+,".b\x65tfai\x72.\x63om"
+,".b\x65ttwee\x6e\x2ecom"
+,"||\x62ettwee\x6e.com"
+,".b\x65ww\x77.net"
+,"||\x62fn\x6e.org"
+,"||\x62fs\x68.hk/"
+,"bi\x61ntaila\x6aia\x6f.com"
+,"bi\x67fool\x73.\x63om"
+,".b\x69gnew\x73.\x6frg"
+,"||\x62ignew\x73\x2eorg"
+,".b\x69gsoun\x64\x2eorg/po\x72tnoy"
+,"||\x62ill2-s\x6fftwar\x65\x2ecom"
+,"bi\x6clypa\x6e.\x63om/wik\x69/%E9%A\x36%96%E9\x25A0%81"
+,"||\x62illyw\x72\x2ecom"
+,"bi\x70i\x63.net"
+,".b\x69\x74.ly"
+,"|h\x74tp://b\x69\x74.ly"
+,".b\x69tshar\x65\x2ecom/fi\x6ces"
+,"ht\x74p://bi\x74shar\x65.\x63om/fil\x65s"
+,"bj\x7a\x63.org"
+,"||\x62jz\x63.or\x67/"
+,"to\x72.bling\x62lingsq\x75a\x64.net"
+,".b\x6cink\x78.c\x6fm"
+,"||\x62link\x78.\x63om"
+,"bl\x69n\x77.com"
+,".b\x6ci\x70.tv"
+,"||\x62li\x70.tv/"
+,".b\x6cockc\x6e.\x63om"
+,"||\x62lockc\x6e\x2ecom"
+,"||\x62lo\x67.de"
+,".b\x6cogcata\x6co\x67.com"
+,"||\x62logcat\x61lo\x67.com"
+,".b\x6cogge\x72.\x63om"
+,"||\x62logge\x72\x2ecom"
+,"bl\x6fgim\x67.jp"
+,"||\x62lo\x67.ka\x6egy\x65.org"
+,".b\x6cogline\x73.com"
+,"||\x62loglin\x65\x73.com"
+,".b\x6coglovi\x6e.com"
+,"rc\x6fnversa\x74io\x6e.bl\x6fg\x73.com"
+,"bl\x6fgspo\x74.\x63\x6f.uk"
+,"bl\x6fgspo\x74.\x63om"
+,"bl\x6fgspo\x74.\x64e"
+,"bl\x6fgspo\x74.\x66r"
+,"||\x62logspo\x74.hk"
+,"bl\x6fgspo\x74.\x69n"
+,"bl\x6fgspo\x74.\x6ap"
+,"bl\x6fgt\x64.net"
+,".b\x6cogt\x64.o\x72g"
+,"|h\x74tp://b\x6cogt\x64.o\x72g"
+,"||\x62loodsh\x65\x64.net"
+,".b\x6coomber\x67.cn"
+,"||\x62loombe\x72\x67.cn"
+,".b\x6coomber\x67.com"
+,"||\x62loombe\x72\x67.com"
+,"bl\x6fomber\x67\x2ede"
+,"||\x62loombe\x72\x67.de"
+,"||\x62loomfo\x72tun\x65.c\x6fm"
+,"||\x62nrmeta\x6c.com"
+,"bo\x61rdread\x65\x72.com/\x74hread"
+,"||\x62oardre\x61de\x72.com"
+,"bo\x6ebonm\x65.\x63om"
+,"||\x62ook\x73.c\x6f\x6d.tw"
+,".b\x6ftanwan\x67.com"
+,".b\x6f\x74.nu"
+,".b\x6fwenpre\x73\x73.com"
+,"||\x62owenpr\x65s\x73.com"
+,"d\x6c\x2ebo\x78.net"
+,"||\x64\x6c.bo\x78.\x6eet"
+,"bo\x78u\x6e.com"
+,"||\x62oxu\x6e.c\x6fm"
+,".b\x6fxu\x6e.tv"
+,"||\x62oxu\x6e.tv"
+,"bo\x78unblo\x67\x2ecom"
+,"||\x62oxunbl\x6f\x67.com"
+,"||\x62\x72.st"
+,"||\x62randon\x68utchin\x73o\x6e.com"
+,"||\x62raumei\x73te\x72.org"
+,".b\x72ea\x6b.com"
+,"||\x62rea\x6b.c\x6fm"
+,".b\x72eaking\x74weet\x73.\x63om"
+,"||\x62reakin\x67tweet\x73\x2ecom"
+,".b\x72iefdre\x61\x6d.com/\x25E7%B4%\x410%E6%A\x33%BA"
+,"br\x69ghtkit\x65.com"
+,"||\x62rightk\x69t\x65.com"
+,"br\x69zzl\x79.c\x6fm"
+,"||\x62rizzl\x79\x2ecom"
+,"br\x6fadboo\x6b\x2ecom"
+,"ib\x72o\x73.org"
+,"br\x75cewan\x67\x2enet"
+,"||\x62t9\x35.com"
+,".b\x75daed\x75.\x6frg"
+,"||\x62udaed\x75\x2eorg"
+,".b\x75llo\x67.o\x72g"
+,"||\x62ullo\x67.\x6frg"
+,".b\x75llogge\x72.com"
+,"||\x62ullogg\x65\x72.com"
+,".b\x75siness\x77ee\x6b.com"
+,".b\x75siness\x74ime\x73.c\x6f\x6d.cn"
+,"|h\x74tp://b\x75siness\x74ime\x73.c\x6f\x6d.cn"
+,"||\x62ugclu\x62\x2eorg"
+,"||\x62uuga\x61.\x63om"
+,"bu\x7azur\x6c.jp"
+,"bw\x73\x6a.hk"
+,"ho\x6c\x7a.byet\x68ost\x38.c\x6fm"
+,".c\x2dspanvi\x64e\x6f.org"
+,"||\x63-spanv\x69de\x6f.org"
+,"||\x63-est-s\x69mpl\x65.c\x6fm"
+,".c\x61ctusvp\x6e.com"
+,"||\x63actusv\x70\x6e.com"
+,".c\x61fepres\x73.com"
+,".c\x61lame\x6f.\x63om/boo\x6bs"
+,"c\x6e\x2ecalame\x6f.com"
+,"|h\x74tp://c\x6e.calam\x65\x6f.com"
+,"||\x63am\x73.com"
+,"ca\x6eadamee\x74.com"
+,"|h\x74tp://b\x62\x73.cant\x6fnes\x65.a\x73ia/"
+,"ht\x74p://ww\x77.canto\x6ees\x65.as\x69a/acti\x6fn-bb\x73.\x68tml"
+,".c\x61ny\x75.org"
+,".c\x61\x6f.im"
+,".c\x61obia\x6e.\x69nfo"
+,"||\x63aobia\x6e\x2einfo"
+,"|h\x74tp://c\x61tcatbo\x78.com/f\x6fru\x6d.ph\x70*"
+,"ca\x6fchangq\x69n\x67.com"
+,"||\x63aochan\x67qin\x67.c\x6fm"
+,"ca\x72\x69.co\x6d.\x6dy"
+,"||\x63atch2\x32\x2enet"
+,"||\x63atfigh\x74payper\x76ie\x77.xxx"
+,".c\x61tholi\x63\x2eor\x67.hk"
+,"||\x63atholi\x63.or\x67.hk"
+,"ca\x74holi\x63.\x6fr\x67.tw"
+,"||\x63atholi\x63.or\x67.tw"
+,".c\x62snew\x73.\x63om/vid\x65o"
+,"||\x63cavtop\x31\x30.com"
+,".c\x63dt\x72.org"
+,"||\x63cdt\x72.o\x72g"
+,"cc\x6cif\x65.org"
+,".c\x63ther\x65.\x63om"
+,".c\x63tongba\x6f.com/a\x72ticle/\x32078732"
+,"cc\x75\x65.ca"
+,"cc\x75\x65.com"
+,"||\x63di\x67.in\x66o"
+,"cd\x6a\x70.org"
+,"||\x63dj\x70.or\x67/"
+,".c\x64new\x73.c\x6f\x6d.tw"
+,"cd\x70199\x38.o\x72g"
+,"||\x63dp199\x38\x2eorg"
+,"cd\x70200\x36.o\x72g"
+,"||\x63dp200\x36\x2eorg"
+,"cd\x70us\x61.org"
+,"cd\x70we\x62.org"
+,"||\x63dpwe\x62.\x6frg"
+,"cd\x70w\x75.org"
+,"||\x63dpw\x75.o\x72g"
+,".c\x65c\x63.gov"
+,"||\x63ec\x63.gov"
+,"||\x63ellul\x6f\x2einfo"
+,"||\x63enc\x69.tk"
+,"||\x63enew\x73.\x65u"
+,"||\x63entral\x6eatio\x6e.\x63om"
+,".c\x65ntury\x73\x2enet"
+,"|h\x74tp://c\x65ntury\x73\x2enet"
+,"||\x63hando\x6f\x2eorg"
+,".c\x68ang\x65.o\x72g"
+,"|h\x74tp://c\x68ang\x65.o\x72g"
+,".c\x68ang\x70.c\x6fm"
+,"||\x63hang\x70.\x63om"
+,".c\x68apm2\x35.\x63om"
+,".c\x68aturba\x74\x65.com"
+,"ch\x65ngming\x6da\x67.com"
+,".c\x68enguan\x67chen\x67.\x63om"
+,"||\x63hengua\x6egchen\x67\x2ecom"
+,"ch\x65npokon\x67.com"
+,"||\x63herrys\x61v\x65.com"
+,".c\x68ina-we\x65\x6b.com"
+,"ch\x69na10\x31.\x63om"
+,"||\x63hina10\x31.com"
+,"||\x63hina2\x31\x2ecom"
+,"ch\x69na2\x31.o\x72g"
+,"||\x63hina2\x31\x2eorg"
+,"ch\x69naaffa\x69r\x73.org"
+,"||\x63hinaaf\x66air\x73.o\x72g"
+,"||\x63hinaai\x64.me"
+,"ch\x69naai\x64.\x75s"
+,"ch\x69naai\x64.\x6frg"
+,"ch\x69naai\x64.\x6eet"
+,"ch\x69nacomm\x65nt\x73.org"
+,"||\x63hinaco\x6dment\x73.\x6frg"
+,"ch\x69nachan\x6ee\x6c.hk"
+,"||\x63hinach\x61nne\x6c.hk"
+,".c\x68inadig\x69taltim\x65\x73.net"
+,"|h\x74tp://c\x68inadig\x69taltim\x65\x73.net"
+,".c\x68inaewe\x65kl\x79.com"
+,"||\x63hinaew\x65ekl\x79.c\x6fm"
+,"||\x63hinafr\x65epres\x73\x2eorg"
+,"ch\x69nageek\x73.org"
+,"ch\x69nagf\x77.\x6frg"
+,"||\x63hinagf\x77.org"
+,".c\x68inagre\x65npart\x79\x2eorg"
+,"||\x63hinagr\x65enpart\x79.org"
+,".c\x68inahus\x68.com"
+,"ch\x69nalawt\x72anslat\x65.com"
+,"ch\x69naxchi\x6e\x61.com/\x68owto"
+,".c\x68inainp\x65rspect\x69v\x65.com"
+,"ch\x69nainpe\x72specti\x76\x65.net/\x41rtSho\x77\x2easpx?"
+,"||\x63hinain\x70erspec\x74iv\x65.net"
+,".c\x68inainp\x65rspect\x69v\x65.org"
+,"||\x63hinain\x70erspec\x74iv\x65.org"
+,"||\x63hinain\x74erimgo\x76.org"
+,"ch\x69nalawa\x6edpolic\x79.com"
+,".c\x68inamul\x65.com"
+,"||\x63hinamu\x6c\x65.com"
+,"ch\x69nam\x7a.o\x72g"
+,".c\x68inarig\x68tsi\x61.o\x72g"
+,"ch\x69nasoci\x61ldemoc\x72aticpa\x72t\x79.com"
+,"||\x63hinaso\x63ialdem\x6fcratic\x70art\x79.c\x6fm"
+,"ch\x69nasou\x6c\x2eorg"
+,"||\x63hinaso\x75\x6c.org"
+,"ch\x69natime\x73.com"
+,"ch\x69natwee\x70\x73.com"
+,"ch\x69nawa\x79.\x6frg"
+,".c\x68inawor\x6be\x72.info"
+,"||\x63hinawo\x72ke\x72.in\x66o"
+,"ch\x69nayout\x68.or\x67.hk"
+,"ch\x69nayuan\x6di\x6e.org"
+,"||\x63hinayu\x61nmi\x6e.o\x72g"
+,".c\x68inese-\x68ermi\x74.\x6eet"
+,"ch\x69nese-m\x65moria\x6c\x2eorg"
+,"||\x63hinese\x64ailyne\x77\x73.com"
+,".c\x68inese\x6e\x2ede"
+,"||\x63hinese\x6e.de"
+,"ch\x69nesene\x77sne\x74.c\x6fm"
+,".c\x68inesep\x65\x6e.org"
+,".c\x68ineset\x61lk\x73.ne\x74/ch"
+,".c\x68ingche\x6fn\x67.com"
+,"||\x63hingch\x65on\x67.com"
+,"ch\x6e.chosu\x6e.com"
+,"ch\x72istian\x73tud\x79.c\x6fm"
+,"||\x63hristi\x61nstud\x79\x2ecom"
+,"ch\x72istusr\x65\x78.org/\x77ww1/sdc"
+,"||\x63hrlcg-\x68\x6b.org"
+,"||\x63hromea\x64bloc\x6b.\x63om"
+,"ch\x75bu\x6e.com"
+,"ch\x75iz\x69.net"
+,"||\x63huiz\x69.\x6eet"
+,"||\x63hrispe\x64eric\x6b.\x63om"
+,"||\x63hrispe\x64eric\x6b.\x6eet"
+,".c\x68rlawye\x72\x73.hk"
+,"||\x61llabou\x74alph\x61.\x63om"
+,".c\x69tizenl\x61\x62.org"
+,"ci\x74izensr\x61di\x6f.org"
+,"ci\x74y9\x78.com"
+,".c\x69vicpar\x74\x79.hk"
+,"||\x63ivicpa\x72t\x79.hk"
+,"ci\x76ilhrfr\x6fn\x74.org"
+,"||\x63ivilhr\x66ron\x74.o\x72g"
+,"ps\x69pho\x6e.c\x69vise\x63.\x6frg"
+,"||\x63j\x62.net"
+,".c\x6b10\x31.com"
+,"||\x63k10\x31.c\x6fm"
+,"||\x63lassic\x61lguita\x72blo\x67.n\x65t"
+,".c\x6c\x62.or\x67.\x68k"
+,".c\x6cipfis\x68\x2ede"
+,".c\x6dul\x65.com"
+,"||\x63mul\x65.c\x6fm"
+,"||\x63m\x73.gov"
+,"||\x63n\x61.co\x6d\x2etw"
+,".c\x6eavist\x61\x2eco\x6d.tw\x2fshop/s\x74ores_a\x70p"
+,".c\x6e\x64.org"
+,"||\x63n\x64.org/"
+,"wi\x6b\x69.cnit\x74e\x72.com"
+,".c\x6e\x6e.com/\x76ideo"
+,"ne\x77\x73.cnye\x73.com"
+,"||\x63ochin\x61\x2eorg"
+,".c\x6fde198\x34\x2ecom/64"
+,"||\x63odesha\x72\x65.io"
+,"|h\x74tp://t\x6fs\x68.com\x65dycent\x72a\x6c.com"
+,"co\x6defromc\x68in\x61.com"
+,"||\x63omefro\x6dchin\x61.\x63om"
+,"||\x63ompile\x68ear\x74.c\x6fm"
+,"||\x63onoy\x6f.\x63om"
+,".c\x6folale\x72\x2ecom"
+,"||\x63oolale\x72.com"
+,"co\x6flde\x72.c\x6fm"
+,"||\x63oolde\x72\x2ecom"
+,"||\x63oollou\x64.or\x67.tw"
+,"co\x72umcoll\x65g\x65.com"
+,"||\x63ouchdb\x77ik\x69.com"
+,"||\x63otwee\x74\x2ecom"
+,"cp\x6a.org"
+,"||\x63p\x6a.org/"
+,"cr\x61ckl\x65.c\x6fm"
+,"||\x63rackl\x65\x2ecom"
+,"cr\x64-ne\x74.o\x72g"
+,"cr\x65ader\x73.\x6eet"
+,"||\x63reader\x73.net"
+,".c\x72ossthe\x77al\x6c.net"
+,"||\x63rossth\x65wal\x6c.n\x65t"
+,"cs\x64part\x79.\x63om"
+,"||\x63sdpart\x79.com"
+,"||\x63suche\x6e\x2ede"
+,"ct\x73.co\x6d.tw"
+,".c\x75hkac\x73.\x6frg/~be\x6eng"
+,".c\x75ihu\x61.o\x72g"
+,"||\x63uihu\x61.\x6frg"
+,".c\x75iweipi\x6e\x67.net"
+,"||\x63uiweip\x69n\x67.net"
+,"||\x63urvefi\x73\x68.com"
+,".c\x75ltur\x65.\x74w"
+,"||\x63ultur\x65\x2etw"
+,"fo\x72u\x6d.cyb\x65rct\x6d.c\x6fm/forum"
+,"||\x63ybergh\x6fstvp\x6e.\x63om"
+,"||\x63ynscri\x62\x65.com"
+,"cy\x74od\x65.us"
+,"||\x69fa\x6e.c\x7a\x2ecc"
+,"||\x6dik\x65.c\x7a\x2ecc"
+,"||\x6ei\x63.c\x7a.\x63c"
+,"c\x6c\x2ed0\x7a.net"
+,".d\x61b\x72.c\x6f.\x75k"
+,"||\x64ab\x72.c\x6f\x2euk"
+,"da\x62\x72.mobi"
+,"||\x64ab\x72.mo\x62i"
+,"||\x64ab\x72.me"
+,"da\x64azi\x6d.c\x6fm"
+,"||\x64adazi\x6d\x2ecom"
+,".d\x61di36\x30.\x63om"
+,"da\x66agoo\x64.\x63om"
+,"da\x66aha\x6f.c\x6fm"
+,"||\x64alaila\x6d\x61.ru"
+,".d\x61ilidai\x6c\x69.com"
+,"||\x64ailida\x69l\x69.com"
+,".d\x61ilymot\x69o\x6e.com"
+,".d\x61jiyua\x6e\x2ecom"
+,".d\x61jiyua\x6e\x2eeu"
+,"da\x6cailam\x61\x2ecom"
+,".d\x61lailam\x61worl\x64.\x63om"
+,"||\x64alaila\x6daworl\x64\x2ecom"
+,"da\x6cianmen\x67.org"
+,"||\x64alianm\x65n\x67.org"
+,".d\x61nke4ch\x69n\x61.net"
+,"||\x64anke4c\x68in\x61.net"
+,".d\x61nwe\x69.o\x72g"
+,".d\x61ola\x6e.n\x65t"
+,"da\x78\x61.cn"
+,"||\x64ax\x61.cn/"
+,"c\x6e\x2edayabo\x6f\x6b.com"
+,".d\x61ylif\x65.\x63om/top\x69c/dala\x69_lama"
+,".d\x64\x63.co\x6d.\x74w"
+,"||\x64e-sc\x69.\x6frg"
+,".d\x65-sc\x69.o\x72g"
+,"li\x73t\x73.deb\x69a\x6e.org"
+,"pa\x63kage\x73.\x64ebia\x6e.\x6frg/zh-\x63n/lenn\x79/gpass"
+,"||\x64elcam\x70\x2enet"
+,"de\x6ciciou\x73\x2ecom/GF\x57bookma\x72k"
+,".d\x65mocrat\x73.org"
+,"||\x64emocra\x74\x73.org"
+,"||\x64es\x63.se/"
+,"||\x64eutsch\x65-well\x65\x2ede"
+,"||\x64ev10\x32.\x63om"
+,"||\x64evi\x6f.us"
+,"|h\x74tp://w\x77\x77.dfan\x6ein\x67.com"
+,"||\x64fa\x73.mil"
+,".d\x69aoyuis\x6cand\x73.o\x72g"
+,"||\x64iaoyui\x73land\x73.\x6frg"
+,"||\x64igital\x6eomadsp\x72ojec\x74.\x6frg"
+,".d\x69ig\x6f.com"
+,"||\x64iig\x6f.c\x6fm"
+,"||\x66ur\x6c.net"
+,"||\x64irectc\x72eativ\x65\x2ecom"
+,".d\x69scus\x73.\x63o\x6d.hk"
+,"||\x64iscus\x73\x2eco\x6d.hk"
+,"di\x73\x70.cc"
+,".d\x69t-in\x63.\x75s"
+,"||\x64it-in\x63\x2eus"
+,".d\x69zhidiz\x68\x69.com"
+,"dj\x61ngosni\x70pet\x73.o\x72g"
+,"||\x64l-lab\x79\x2ejp"
+,"||\x64lsit\x65.\x63om"
+,"||\x64nscryp\x74.org"
+,".d\x6fji\x6e.com"
+,".d\x6fk-foru\x6d.net"
+,"||\x64ol\x63.de"
+,"||\x64oll\x66.c\x6fm"
+,".d\x6fmai\x6e.c\x6cu\x62.tw"
+,"do\x6egd\x65.com"
+,"do\x6egtaiwa\x6e\x67.com"
+,"||\x64ongtai\x77an\x67.com"
+,".d\x6fngtaiw\x61n\x67.net"
+,"||\x64ongtai\x77an\x67.net"
+,".d\x6fngyang\x6ain\x67.com"
+,".d\x6fntfilt\x65\x72.us"
+,"||\x64ontmov\x65tochin\x61.com"
+,".d\x6ftplan\x65\x2ecom"
+,"||\x64otplan\x65.com"
+,"||\x64otsu\x62.\x63om"
+,"do\x75blea\x66.\x63om"
+,"||\x64ougscr\x69pt\x73.com"
+,"do\x77e\x69.org"
+,"||\x64oxyge\x6e\x2eorg"
+,"dp\x68\x6b.org"
+,"dp\x70.or\x67.tw"
+,"||\x64p\x70.or\x67\x2etw"
+,"||\x77eigege\x62y\x63.dre\x61mhoste\x72\x73.com"
+,"||\x64rga\x6e.n\x65t"
+,"||\x64ropbo\x78\x2ecom"
+,"||\x64ropbox\x75sercon\x74en\x74.com"
+,".d\x72tube\x72.\x63om"
+,"||\x64tiblo\x67\x2ecom"
+,"||\x64ti\x63.mil"
+,"dt\x69serv\x32.\x63om"
+,"||\x64uckduc\x6bg\x6f.com"
+,".d\x75ckloa\x64\x2ecom/do\x77nload"
+,"||\x64uckmyl\x69f\x65.com"
+,".d\x75ihu\x61.o\x72g"
+,"||\x64uihu\x61.\x6frg"
+,".d\x75oweiti\x6de\x73.com"
+,"||\x64uoweit\x69me\x73.com"
+,"du\x70in\x67.net"
+,"||\x64uplica\x74\x69.com"
+,"du\x70ol\x61.com"
+,"du\x70ol\x61.net"
+,"||\x64vora\x6b.\x6frg"
+,".d\x77.de"
+,"|h\x74tp://d\x77.de"
+,".d\x77-worl\x64\x2ecom"
+,"||\x64w-worl\x64.com"
+,".d\x77-worl\x64\x2ede"
+,"ht\x74p://dw\x2dworl\x64.\x64e"
+,"ww\x77.dwhee\x6ce\x72.com"
+,"dw\x6eew\x73.com"
+,"||\x64wnew\x73.\x63om"
+,"xy\x73.dxion\x67.com"
+,"dy\x324\x6b.info"
+,"||\x64ynaweb\x69n\x63.com"
+,".d\x79ndn\x73.o\x72g"
+,".d\x7az\x65.com"
+,"||\x65-gol\x64.\x63om"
+,".e\x2dgol\x64.c\x6fm"
+,"|h\x74tp://\x67\x2ee-hent\x61\x69.org/"
+,"e-\x69nf\x6f.or\x67.tw"
+,".e\x2dtrader\x6can\x64.ne\x74/board"
+,"hk\x6a\x70.easy\x77e\x62.hk"
+,"eb\x6fokbrow\x73\x65.com"
+,"eb\x6foke\x65.c\x6fm"
+,"ec\x6dinistr\x79.net"
+,"bb\x73.ecsta\x72\x74.com"
+,"ed\x69cypage\x73.com"
+,"ed\x6for\x73.com"
+,".e\x64ubridg\x65.com"
+,"||\x65dubrid\x67\x65.com"
+,"||\x65evp\x6e.c\x6fm"
+,"ef\x63\x63.or\x67.\x68k"
+,"||\x65ic-a\x76.\x63om"
+,"el\x65ctions\x6dete\x72.c\x6fm"
+,".e\x6ctondis\x6ee\x79.com"
+,"||\x65macsbl\x6f\x67.org"
+,".e\x6dor\x79.edu"
+,".e\x6dule-ed\x32\x6b.com"
+,"|h\x74tp://e\x6dule-ed\x32\x6b.com"
+,"ch\x69nes\x65.e\x6egadge\x74\x2ecom"
+,"||\x65nglish\x66romeng\x6can\x64.c\x6f\x2euk"
+,"||\x65nterma\x70.com"
+,"ep\x6fchtime\x73-b\x67.com"
+,"||\x65pochti\x6des-b\x67.\x63om"
+,"ep\x6fchtime\x73-roman\x69\x61.com"
+,"||\x65pochti\x6des-rom\x61ni\x61.com"
+,"ep\x6fchtime\x73.c\x6f.il"
+,"||\x65pochti\x6de\x73.c\x6f.\x69l"
+,"ep\x6fchtime\x73.c\x6f.kr"
+,"||\x65pochti\x6de\x73.c\x6f.\x6br"
+,"ep\x6fchtime\x73.com"
+,"||\x65pochti\x6de\x73.com"
+,"ep\x6fchtime\x73.de"
+,"ep\x6fchtime\x73.fr"
+,".e\x70ochtim\x65\x73.ie"
+,"ep\x6fchtime\x73.jp"
+,"ep\x6fchtime\x73.ru"
+,"ep\x6fchtime\x73.se"
+,"ep\x6fchtime\x73t\x72.com"
+,"||\x65pochwe\x65kl\x79.com"
+,"er\x61bar\x75.n\x65t"
+,".e\x72epubli\x6b.com"
+,"||\x65rnestm\x61nde\x6c.o\x72g"
+,"||\x65right\x73\x2enet"
+,"et\x61iwanne\x77\x73.com"
+,"||\x65tize\x72.\x6frg"
+,"ww\x77.eula\x6d\x2ecom"
+,"ev\x65ntfu\x6c.\x63om"
+,"||\x65xblo\x67.\x6ap"
+,"||\x62lo\x67.ex\x62lo\x67.c\x6f\x2ejp"
+,"@@\x7c|ww\x77.e\x78blo\x67.jp"
+,"||\x65xpatsh\x69el\x64.com"
+,"||\x65xpload\x65\x72.net"
+,".e\x78tremet\x75b\x65.com"
+,"ey\x65vi\x6f.jp"
+,"||\x65yevi\x6f.\x6ap"
+,".e\x7ap\x63.tk/\x63ategor\x79/soft"
+,".e\x7apee\x72.c\x6fm"
+,".f\x61ceboo\x6b\x2ecom"
+,"||\x66aceboo\x6b.com"
+,"/^\x68ttps?:\x5c/\/[^\\x2f]+face\x62ook\x5c.c\x6fm/"
+,"@@\x7c|*v\x36.f\x61ceboo\x6b\x2ecom"
+,"||\x63onnec\x74\x2efacebo\x6f\x6b.net"
+,"||\x66acesof\x6eyf\x77.com"
+,"||\x66aithth\x65do\x67.in\x66o"
+,".f\x61kk\x75.net"
+,"fa\x6cunar\x74.\x6frg"
+,"fa\x6cundaf\x61\x2eorg"
+,"fa\x6cundafa\x6duseu\x6d.\x6frg"
+,"||\x66alunh\x72\x2eorg"
+,"||\x66angliz\x68\x69.info"
+,"||\x66angon\x67\x2eorg"
+,"fa\x6egonghe\x69k\x65.com"
+,"fa\x6eqiangh\x6f\x75.com"
+,"fa\x70d\x75.com"
+,".f\x61wanghu\x69hu\x69.org"
+,"||\x66bcd\x6e.n\x65t"
+,"fa\x6eqiangy\x61kex\x69.n\x65t"
+,"fa\x69\x6c.hk"
+,"||\x66amunio\x6e.com"
+,".f\x61n-qian\x67.com"
+,".f\x61ngbinx\x69n\x67.com"
+,"||\x66angbin\x78in\x67.com"
+,"fa\x6egemin\x67\x2ecom"
+,"||\x66answon\x67.com"
+,".f\x61nyu\x65.i\x6efo"
+,".f\x61rwestc\x68in\x61.com"
+,"||\x66astl\x79.\x6eet"
+,"fa\x76oriou\x73\x2ecom"
+,"||\x66avorio\x75\x73.com"
+,"e\x6e\x2efavott\x65\x72.net"
+,"||\x66aststo\x6e\x65.org"
+,"fa\x76sta\x72.fm"
+,"||\x66avsta\x72\x2efm"
+,"fa\x79da\x6f.co\x6d/weblog"
+,"||\x66\x62.com"
+,"f\x62\x2eme"
+,"||\x66\x62.me"
+,"||\x66bsb\x78.c\x6fm"
+,"fc\x32.com"
+,".f\x632chin\x61\x2ecom"
+,"sh\x69feik\x65.\x62log12\x35\x2efc2blo\x67.net"
+,"vi\x64e\x6f.fdb\x6f\x78.com"
+,".f\x64c8\x39.jp"
+,"||\x66ourfac\x65.nodes\x6eoo\x70.com"
+,"fe\x65dbook\x73\x2emobi"
+,"fe\x65d\x73.fee\x64burne\x72\x2ecom"
+,"fe\x65ds\x32.fe\x65dburne\x72.com/c\x68inagfw\x62log"
+,"||\x66eedzsh\x61r\x65.com"
+,"||\x66eelss\x68\x2ecom"
+,"fe\x65\x72.com"
+,"fe\x6cixca\x74.\x6eet"
+,"||\x66elixca\x74.net"
+,"||\x66eminis\x74teache\x72.com"
+,".f\x65ngzhen\x67h\x75.com"
+,"||\x66engzhe\x6egh\x75.com"
+,"ff\x6cic\x6b.com"
+,"fg\x6dt\x76.net"
+,".f\x67mt\x76.org"
+,".f\x69lefact\x6fr\x79.com\x2ffile"
+,".f\x69les2m\x65\x2ecom"
+,"|h\x74tp://f\x69les2m\x65\x2ecom"
+,".f\x69leserv\x65.com/f\x69le"
+,"fi\x6clthesq\x75ar\x65.org"
+,"||\x66inalio\x6e.jp"
+,"fi\x6edboo\x6b.\x74w"
+,"fi\x6ele\x72.net"
+,".f\x69reofli\x62ert\x79.o\x72g"
+,"||\x66ireofl\x69bert\x79.\x6frg"
+,".f\x61lsefir\x65.com"
+,"||\x66alsefi\x72\x65.com"
+,"fl\x65shbo\x74.\x63om"
+,"||\x66lick\x72.\x63om"
+,"||\x73taticf\x6cick\x72.c\x6fm"
+,"fl\x69ckrhiv\x65min\x64.n\x65t"
+,"yu\x6din\x67.fl\x6ee\x74.org"
+,"|h\x74tp://c\x6e.fmnno\x77.com"
+,"bl\x6f\x67.fool\x73mounta\x69\x6e.com"
+,"ww\x77.forum\x34h\x6b.com"
+,"pi\x6fneer-w\x6frke\x72.f\x6frums-f\x72e\x65.com"
+,"|h\x74tp://4\x73\x71.com"
+,"||\x66oto\x70.n\x65t"
+,"vi\x64e\x6f.fox\x62usines\x73.com"
+,"||\x66ringen\x65twor\x6b.\x63om"
+,"||\x66lechei\x6ethepec\x68\x65.fr"
+,".f\x6fcusvp\x6e\x2ecom"
+,"||\x66of\x67.org"
+,".f\x6fooo\x6f.c\x6fm"
+,"||\x66oooo\x6f.\x63om"
+,"fo\x6ftwibal\x6c.com"
+,"||\x66ourthi\x6eternat\x69ona\x6c.o\x72g"
+,"||\x66oxdi\x65.\x75s"
+,"||\x66oxsu\x62.\x63om"
+,"fo\x78tan\x67.c\x6fm"
+,"||\x66qroute\x72.com"
+,"||\x66rankl\x63\x2ecom"
+,".f\x72eaksha\x72\x65.com"
+,"|h\x74tp://f\x72eaksha\x72\x65.com"
+,"||\x66ree4\x75.\x63o\x6d.ar"
+,"fr\x65e-gat\x65\x2eorg"
+,".f\x72e\x65.fr/\x61dsl"
+,"||\x61llonli\x6eu\x78.fre\x65.fr"
+,"||\x64imitri\x6b.fre\x65.\x66r"
+,"ki\x6eeo\x78.fr\x65\x65.fr"
+,"||\x70uttyc\x6d\x2efre\x65.fr"
+,"||\x66reeali\x6d.com"
+,"wh\x69tebea\x72\x2efreebe\x61rblo\x67.\x6frg"
+,".f\x72eecha\x6c\x2ecom"
+,".f\x72eedomh\x6fus\x65.org"
+,"||\x66reedom\x68ous\x65.o\x72g"
+,".f\x72eega\x6f.\x63om"
+,"||\x66reega\x6f\x2ecom"
+,".f\x72eelott\x6f.com"
+,"||\x66reelot\x74\x6f.com"
+,"fr\x65eman\x32.\x63om"
+,".f\x72eeopen\x76p\x6e.com"
+,"fr\x65emore\x6e\x2ecom"
+,"fr\x65emoren\x65w\x73.com"
+,"fr\x65enet-c\x68in\x61.org"
+,"fr\x65enewsc\x6e.com"
+,".f\x72eeo\x7a.o\x72g/bbs"
+,"||\x66reeo\x7a.\x6frg"
+,"||\x77w\x77.bul\x62ou\x73.fr\x65eserv\x65\x2ec\x6f.uk"
+,"||\x66reess\x68\x2eus"
+,".f\x72ee-ss\x68\x2ecom"
+,"||\x66ree-ss\x68.com"
+,"||\x66reenet\x70rojec\x74\x2eorg"
+,".f\x72eeo\x7a.o\x72g"
+,"ww\x77.freet\x69be\x74.org"
+,"||\x66reewal\x6cpaper\x34\x2eme"
+,".f\x72eeweb\x73\x2ecom"
+,"||\x66reewei\x62\x6f.com"
+,".f\x72eexinw\x65\x6e.com"
+,"fr\x69endfee\x64.com"
+,"fr\x69endfee\x64-medi\x61\x2ecom/e9\x39a4ebe2\x66b4c198\x35c2a587\x375eb442\x32961aa5\x612e"
+,"|h\x74tp://f\x66.im"
+,"|h\x74tp://w\x77\x77.zens\x75\x72.free\x72\x6b.com/"
+,"fr\x65evp\x6e.nl"
+,".f\x72in\x67.com"
+,"||\x66rin\x67.c\x6fm"
+,"||\x66romme\x6c\x2enet"
+,".f\x72ontlin\x65defend\x65r\x73.org"
+,"||\x66scke\x64.\x6frg"
+,".f\x73ur\x66.com"
+,".f\x75ckcnni\x63.net"
+,"||\x66uckcnn\x69\x63.net"
+,"fu\x63kgf\x77.o\x72g"
+,"fu\x6cu\x65.com"
+,".f\x75n\x66.tw"
+,"fu\x6e\x70.com"
+,"||\x66urinka\x6e.com"
+,".f\x75turech\x69naforu\x6d.org"
+,"||\x66uturem\x65ssag\x65.\x6frg"
+,"||\x66\x77.cm"
+,"fz\x6899\x39.com"
+,"fz\x6899\x39.net"
+,"||\x67abocor\x70.com"
+,"||\x67alenw\x75\x2ecom"
+,"||\x67ame73\x35\x2ecom"
+,"ga\x6debas\x65.\x63o\x6d.tw"
+,"||\x67ame\x72.c\x6f\x6d.tw"
+,".g\x61me\x72.co\x6d.tw"
+,".g\x61me\x7a.co\x6d.tw"
+,"||\x67ame\x7a.c\x6f\x6d.tw"
+,".g\x61omin\x67.\x6eet"
+,"||\x67aomin\x67\x2enet"
+,"ga\x6ege\x73.com"
+,".g\x61op\x69.net"
+,"|h\x74tp://g\x61op\x69.net"
+,"||\x67app\x70.o\x72g"
+,"ga\x72dennet\x77ork\x73.c\x6fm"
+,"||\x67ardenn\x65twork\x73\x2eorg"
+,"7\x32\x2e5\x32.8\x31.\x322"
+,"||\x67artliv\x65.com"
+,"||\x67athe\x72.\x63om"
+,"||\x67ayma\x70.\x63c"
+,".g\x61zotub\x65\x2ecom"
+,"||\x67azotub\x65.com"
+,"||\x67cloone\x79.com"
+,".g\x63pnew\x73.\x63om"
+,".g\x64b\x74.net\x2fforum"
+,"gd\x7a\x66.org"
+,"||\x67eek-ar\x74.net"
+,"ge\x65kerhom\x65.com/2\x3010/03/\x78ixiang\x2dprojec\x74-cross\x2dgfw"
+,"||\x67eekman\x75al\x73.com"
+,"||\x67enuite\x63.com"
+,".g\x65ocitie\x73.c\x6f.jp"
+,".g\x65ocitie\x73.com/S\x69liconV\x61lley/C\x69rcuit/\x35683/do\x77nloa\x64.\x68tml"
+,"h\x6b\x2egeocit\x69e\x73.com"
+,"ge\x6fcitie\x73\x2ejp"
+,"||\x67eoho\x74.\x63om"
+,"||\x67eometr\x69ctool\x73\x2ecom"
+,"||\x67et-dig\x69tal-he\x6c\x70.com"
+,".g\x65tch\x75.c\x6fm"
+,"||\x67etfoxy\x70rox\x79.o\x72g"
+,".g\x65tfreed\x75\x72.com"
+,".g\x65tlante\x72\x6e.org"
+,"||\x67etlant\x65r\x6e.org"
+,".g\x65tjets\x6f\x2ecom/fo\x72um"
+,"ge\x74ito\x6e.c\x6fm"
+,".g\x65tsocia\x6cscop\x65.\x63om"
+,"gf\x77.or\x67.ua"
+,".g\x67ss\x6c.com"
+,"||\x67gss\x6c.c\x6fm"
+,"||\x67hos\x74.o\x72g"
+,"||\x67iga-we\x62.jp"
+,"|h\x74tp://c\x6e.gigan\x65w\x73.com/"
+,"gi\x67porn\x6f.\x72u"
+,"||\x67impsho\x70.com"
+,"||\x67irlban\x6be\x72.com"
+,"||\x67lennhi\x6cto\x6e.com"
+,"gl\x6fbaljih\x61\x64.net"
+,"gl\x6fbalmus\x65umonco\x6dmunis\x6d\x2eorg"
+,"||\x67lobalr\x65scu\x65.n\x65t"
+,".g\x6cobalvo\x69cesonl\x69n\x65.org"
+,"||\x67lobalv\x6ficeson\x6cin\x65.org"
+,"gm\x62\x64.cn"
+,"||\x67mh\x7a.org"
+,"||\x67oagen\x74\x2ebiz"
+,"||\x67oagent\x70lu\x73.com"
+,"go\x64footst\x65p\x73.org"
+,"||\x67odfoot\x73tep\x73.o\x72g"
+,"|h\x74tp://w\x77\x77.gold\x65nmelod\x79.co\x6d.tw"
+,"||\x67oldwav\x65.com"
+,"go\x6egmen\x67.\x69nfo"
+,"go\x6eg\x6d.in"
+,"go\x6egminli\x6cian\x67.c\x6fm"
+,".g\x6fngw\x74.c\x6fm"
+,".g\x6fodread\x73.com"
+,"||\x67oodrea\x64\x73.com"
+,".g\x6fodread\x65r\x73.com"
+,"||\x67oodrea\x64er\x73.com"
+,"||\x67oofin\x64\x2ecom"
+,"||\x67oogleu\x73ercont\x65n\x74.com"
+,"||\x67oogled\x72iv\x65.com"
+,".g\x6foglesi\x6c\x65.com"
+,".g\x6fpetiti\x6f\x6e.com"
+,"||\x67ooglev\x69de\x6f.com"
+,"||\x67opetit\x69o\x6e.com"
+,"||\x67ot\x77.ca/"
+,"gr\x61ndtria\x6c.org"
+,"||\x67raphi\x73\x2en\x65.jp"
+,"gr\x65atfire\x77al\x6c.biz"
+,"||\x67reatfi\x72ewallo\x66chin\x61.\x6eet"
+,".g\x72eatfir\x65wallof\x63hin\x61.o\x72g"
+,"||\x67reatfi\x72ewallo\x66chin\x61.\x6frg"
+,".g\x72eenpar\x74\x79.or\x67.\x74w"
+,"gp\x61ss\x31.com"
+,"gr\x65at-fir\x65wal\x6c.c\x6fm"
+,"gr\x65at-ro\x63\x2eorg"
+,"gr\x65atro\x63.\x6frg"
+,"gr\x65atzhon\x67hu\x61.org"
+,".g\x72eenvp\x6e\x2enet"
+,"||\x67reenvp\x6e.net"
+,"gs\x2ddiscus\x73.com"
+,"||\x67trick\x73\x2ecom"
+,"gu\x61nch\x61.o\x72g"
+,".g\x75n-worl\x64.net"
+,"||\x67utteru\x6ecensor\x65\x64.com"
+,"||\x67v\x6d.co\x6d\x2etw"
+,".g\x7a\x6d.tv"
+,"||\x67zone-a\x6eim\x65.in\x66o"
+,"||\x61pi\x73.go\x6fgl\x65.com"
+,".a\x70pspo\x74.\x63om"
+,"||\x61ppspo\x74\x2ecom"
+,"/^\x68ttps?:\x5c/\/[^\\x2f]+apps\x70ot\x5c.co\x6d/"
+,"co\x64\x65.goog\x6c\x65.com/\x70/gappp\x72oxy"
+,"co\x64\x65.goog\x6c\x65.com/\x70/gaepr\x6fxy"
+,"co\x64\x65.goog\x6c\x65.com/\x70/west-\x63hamber\x2dseason\x2d3"
+,"co\x64\x65.goog\x6c\x65.com/\x70/icefox"
+,"co\x64\x65.goog\x6c\x65.com/\x70/break\x77all"
+,"co\x64\x65.goog\x6c\x65.com/\x70/progr\x61m-thin\x6b/wiki/\x53oftware"
+,"co\x64\x65.goog\x6c\x65.com/\x70/schol\x61rzhang"
+,"co\x64\x65.goog\x6c\x65.com/\x70/vforc\x68rome/w\x69ki/Sta\x72t"
+,"co\x64\x65.goog\x6c\x65.com/\x70/tuite"
+,"co\x64\x65.goog\x6c\x65.com/\x70/twite\x73e"
+,"co\x64\x65.goog\x6c\x65.com/\x70/twip"
+,"co\x64\x65.goog\x6c\x65.com/\x70/huham\x68ire-ho\x73ts"
+,"|h\x74tp://a\x75toprox\x79-gfwli\x73\x74.goog\x6cecod\x65.\x63om/svn\x2ftrunk/\x67fwlis\x74\x2etxt"
+,"|h\x74tps://\x61utopro\x78y-gfwl\x69s\x74.goo\x67lecod\x65\x2ecom/sv\x6e/trunk\x2fgfwlis\x74.txt"
+,"gf\x77interc\x65pto\x72.g\x6fogleco\x64\x65.com"
+,"go\x61gen\x74.g\x6fogleco\x64\x65.com"
+,"gt\x61\x70.goog\x6cecod\x65.\x63om"
+,"ss\x68tunne\x6c\x2egoogle\x63od\x65.com"
+,"tu\x69t\x65.goo\x67lecod\x65\x2ecom"
+,"ga\x65prox\x79.\x67ooglec\x6fd\x65.com"
+,"do\x63\x73.goog\x6c\x65.com/\x44oc?doc\x69d=0Ae9\x6aWMoUhg\x561ZHd0c\x6aJ2NV81\x4eGQ5MnI\x30d3E1"
+,"do\x63\x73.goog\x6c\x65.com/\x56iew?id\x3dd8xbpp\x36_4hhpb\x32dfd"
+,"do\x63\x73.goog\x6c\x65.com/\x56iew?id\x3ddds68d\x7a_9cqgm\x38vgq"
+,"do\x63\x73.goog\x6c\x65.com*\x56iew*id\x2adg5mtm\x6a9_8g3h\x6b27f5"
+,"do\x63\x73.goog\x6c\x65.com*\x56iew*id\x2adg5mtm\x6a9_3188\x7848zcn"
+,"do\x63\x73.goog\x6c\x65.com*\x64gtbmwd\x36_934gg\x399v6g4cc"
+,"do\x63\x73.goog\x6c\x65.com/\x56iew?id\x3ddhh5gt\x78b_145n\x73xgctcc"
+,"ch\x69naai\x64.\x6eet"
+,"ec\x68ofo\x6e.c\x6fm"
+,"||\x67olan\x67.\x6frg"
+,"||\x77w\x77.kli\x70.me"
+,"@@\x7c|sit\x65.\x6cocq\x6c.c\x6fm"
+,"@@\x7c|downl\x6fa\x64.syn\x69umsoft\x77ar\x65.com"
+,"|h\x74tp://u\x62\x30.cc"
+,"wo\x7a\x79.in"
+,"@@\x7c|ipv\x36.\x67oogl\x65.\x63om"
+,".g\x6fogl\x65.*\x25D8%BA%\x448%A7"
+,".g\x6fogl\x65.*\x2fcomple\x74e/sear\x63h"
+,"/s\x65arch?q\x3dcache"
+,"/s\x65arch%3\x46q%3Dca\x63he"
+,"%2\x46search\x253Fq%3D\x63ache"
+,"go\x6fgle*se\x61rch*q=\x63ache"
+,".g\x6fogl\x65.*\x73earch*\x38964"
+,".g\x6fogl\x65.*\x62oxun"
+,".g\x6fogl\x65.*\x63hinese\x2bpeople\x2beating\x2bbabies"
+,".g\x6fogl\x65.*\x68ttp*do\x74su\x62.com"
+,".g\x6fogl\x65.*\x65ast*tu\x72kistan"
+,".g\x6fogl\x65.*\x66acebook"
+,".g\x6fogl\x65.*\x66alun"
+,".g\x6fogl\x65.*\x66reechi\x6ea"
+,".g\x6fogl\x65.*\x66reetib\x65t"
+,".g\x6fogl\x65.*\x67fw"
+,".g\x6fogl\x65.*\x67oagent"
+,".g\x6fogl\x65.*\x26q=gpass"
+,".g\x6fogl\x65.*\x67reat*f\x69rewall"
+,".g\x6fogl\x65.*\x68ujin"
+,".g\x6fogl\x65.*\x68uayuan"
+,".g\x6fogl\x65.*\x6aiaqing\x6cin"
+,".g\x6fogl\x65.*\x6aiangze\x6din"
+,".g\x6fogl\x65.*\x26q=jzm&"
+,".g\x6fogl\x65.*\x6eytimes"
+,".g\x6fogl\x65.*\x70eaceha\x6cl"
+,".g\x6fogl\x77.*\x70reside\x6e\x74.go\x76.\x74w"
+,".g\x6fogl\x65.*\x70rotest\x2a1989"
+,".g\x6fogl\x65.*\x70risone\x72+of+th\x65+state"
+,".g\x6fogl\x65.*\x73earch*\x54ankman"
+,".g\x6fogl\x65.*\x74bm=mbl"
+,".g\x6fogl\x65.*\x74bm%3Dm\x62l"
+,".g\x6fogl\x65.*\x73earch*\x74bs=mbl"
+,".g\x6fogl\x65.*\x73earch*\x74bs%3Dm\x62l"
+,".g\x6fogl\x65.*\x74bs=qdr"
+,".g\x6fogl\x65.*\x74bs%3Dq\x64r"
+,".g\x6fogl\x65.*\x74bs=rltm"
+,".g\x6fogl\x65.*\x74bs%3Dr\x6ctm"
+,".g\x6fogl\x65.*\x54iananm\x65n"
+,".g\x6fogl\x65.*\x74ianwang"
+,".g\x6fogl\x65.*\x54ibetan\x2aindepe\x6edence"
+,".g\x6fogl\x65.*\x74witter"
+,".g\x6fogl\x65.*\x78ijinpi\x6eg"
+,".g\x6fogl\x65.*\x26q=ytht&"
+,".g\x6fogl\x65.*\x7ahouyon\x67kang"
+,".g\x6fogl\x65.*\x308*%E5%\x41E%AA%E\x37%AB%A0"
+,".g\x6fogl\x65.*\x364*%E7%\x39C%9F%E\x37%9B%B8"
+,".g\x6fogl\x65.*\x364*%E9%\x395%87%E\x35%8E%8B"
+,".g\x6fogl\x65.*\x25E5%85%\x41B%E4%B\x39%9D"
+,".g\x6fogl\x65.*\x25E5%8C%\x397%E5%9\x42%BD%E4\x25B9%8B%\x456%98%A5"
+,".g\x6fogl\x65.*\x25E5%8C%\x397%E4%B\x41%AC%E4\x25B9%8B%\x456%98%A\x35 "
+,".g\x6fogl\x65.*\x25E9%99%\x388%E7%A\x30%B4%E7\x25A9%BA"
+,".g\x6fogl\x65.*\x25E8%B5%\x414%E5%8\x43%AA"
+,".g\x6fogl\x65.*\x25E8%BE%\x42E%E8%B\x35%96%E5\x2596%87%\x455%98%9B"
+,".g\x6fogl\x65.*\x25E4%BB%\x413%E5%B\x43%80*%E\x35%8F%91\x25E7%A5%\x418"
+,".g\x6fogl\x65.*\x25E5%8F%\x391%E7%A\x35%A8*%E\x34%BB%A3\x25E5%BC%\x380"
+,".g\x6fogl\x65.*\x25E4%BB%\x413%E7%9\x30%86"
+,".g\x6fogl\x65.*\x25E5%9C%\x420%E4%B\x38%8B%E6\x2595%99%\x454%BC%9A"
+,".g\x6fogl\x65.*\x25E7%8B%\x41C%E7%A\x42%8B%E5\x258F%B0%\x456%B9%B\x45%E4%BC\x259A"
+,".g\x6fogl\x65.*\x25E7%8B%\x41C%E7%A\x42%8B%E4\x25B8%AD%\x456%96%8\x37%E7%AC\x2594%E4%\x42C%9A"
+,".g\x6fogl\x65.*\x25E5%8F%\x391%E8%A\x46%BE"
+,".g\x6fogl\x65.*\x25E6%B3%\x395%E6%8\x42%89%E5\x2588%A9"
+,".g\x6fogl\x65.*\x25E7%BF%\x42B%E5%A\x32%99"
+,".g\x6fogl\x65.*\x25E6%96%\x429%E6%B\x42%A8%E5\x2585%B4"
+,".g\x6fogl\x65.*\x25E9%98%\x422%E7%8\x31%AB%E9\x2595%BF%\x455%9F%8E"
+,".g\x6fogl\x65.*\x25E5%86%\x41F%E6%A\x44%A3%E8\x2599%8E"
+,".g\x6fogl\x65.*\x25E9%AB%\x398%E6%9\x39%BA%E6\x2599%9F"
+,".g\x6fogl\x65.*\x25E9%9D%\x419%E5%9\x31%BD"
+,".g\x6fogl\x65.*\x25E5%85%\x421%E4%B\x41%A7"
+,".g\x6fogl\x65.*\x25E5%85%\x423%E9%9\x34%AE%E6\x2597%B6%\x455%88%BB"
+,".g\x6fogl\x65.*\x25E5%B9%\x42F%E5%9\x43%BA"
+,".g\x6fogl\x65.*\x25E5%9B%\x42D%E5%A\x45%B6%E9\x2598%B2%\x457%81%A\x42%E5%A2\x2599"
+,".g\x6fogl\x65.*\x25E8%9B%\x414%E8%9\x46%86"
+,".g\x6fogl\x65.*\x25E9%9B%\x386%E4%B\x43%9A"
+,".g\x6fogl\x65.*\x25E8%AE%\x420%E8%8\x30%85%E6\x2597%A0%\x457%96%8\x36%E7%95\x258C"
+,".g\x6fogl\x65.*\x25E5%AE%\x426%E5%A\x45%9D"
+,".g\x6fogl\x65.*\x25E5%81%\x387%E5%B\x41%86%E6\x25B7%8B"
+,".g\x6fogl\x65.*\x25E6%88%\x392%E4%B\x38%A5"
+,".g\x6fogl\x65.*\x25E9%94%\x416%E6%B\x36%9B"
+,".g\x6fogl\x65.*\x25E7%BB%\x38F%E6%9\x36%87"
+,".g\x6fogl\x65.*\x25E8%BF%\x391%E5%B\x39%B3"
+,".g\x6fogl\x65.*\x25E4%B9%\x39D%E5%B\x38%B8%E5\x25A7%94"
+,".g\x6fogl\x65.*\x25E9%85%\x427%E5%8\x38%91"
+,".g\x6fogl\x65.*\x25E4%BB%\x414"
+,".g\x6fogl\x65.*\x25E9%9B%\x426%E5%8\x35%AB*%E\x35%AE%AA\x25E7%AB%\x410"
+,".g\x6fogl\x65.*\x73earch*\x25E5%88%\x398%E6%B\x37%87"
+,".g\x6fogl\x65.*\x25E5%85%\x41D*%E5%\x39B%9B"
+,".g\x6fogl\x65.*\x25E9%B2%\x381%E6%9\x38%95"
+,".g\x6fogl\x65.*\x25E9%A9%\x41C%E5%8\x37%AF"
+,".g\x6fogl\x65.*\x25E9%A9%\x41C%E5%8\x41%9B"
+,".g\x6fogl\x65.*\x25E9%BA%\x416%E5%B\x44%93%E5\x258A%B3"
+,".g\x6fogl\x65.*\x25E6%AF%\x39B%E5%9\x30%91%E8\x25BE%89"
+,".g\x6fogl\x65.*\x25E5%86%\x385%E8%9\x32%99*%E\x37%A4%BA\x25E5%A8%\x381"
+,".g\x6fogl\x65.*\x25E5%AD%\x39F%E5%B\x42%BA%E6\x259F%B1"
+,".g\x6fogl\x65.*\x25E6%A2%\x416%E8%9\x30%A6%E6\x259C%AA%\x455%90%8\x44%E6%B9\x2596"
+,".g\x6fogl\x65.*\x25E5%85%\x38D%E8%B\x34%B9*vpn"
+,".g\x6fogl\x65.*\x25E8%8C%\x389%E8%8\x45%89"
+,".g\x6fogl\x65.*\x25E8%8E%\x41B%E6%9\x37%A5%E6\x25A0%B9"
+,".g\x6fogl\x65.*\x25E7%BA%\x423%E7%B\x31%B3%E6\x25AF%94%\x454%BA%9A"
+,".g\x6fogl\x65.*\x25E8%AF%\x42A%E8%B\x34%9D%E5\x25B0%94%\x455%92%8\x43%E5%B9\x25B3%E5%\x415%96"
+,".g\x6fogl\x65.c\x6fm*sear\x63h*nami\x62ia*nuc\x74ech"
+,".g\x6fogl\x65.*\x25E7%9B%\x398%E5%8\x46%A4%E4\x25B9%90%\x459%98%9F"
+,".g\x6fogl\x65.*\x25E5%BD%\x41D%E4%B\x38%BD%E5\x25AA%9B"
+,".g\x6fogl\x65.*\x25E8%BF%\x41B%E5%A\x45%B3"
+,".g\x6fogl\x65.*\x25E5%89%\x38D%E4%B\x38%96%E4\x25BB%8A%\x457%94%9F"
+,".g\x6fogl\x65.*\x25E6%9E%\x41A%E5%A\x33%B0"
+,".g\x6fogl\x65.*\x25E9%9D%\x392%E5%A\x34%A9%E7\x2599%BD%\x456%97%A\x35%E6%97\x2597"
+,".g\x6fogl\x65.*\x25E4%BA%\x42A%E6%B\x30%91%E5\x2585%AC%\x455%9B%AD"
+,".g\x6fogl\x65.*\x25E6%97%\x415%E8%A\x45%B0"
+,".g\x6fogl\x65.*\x25E4%B8%\x389%E9%8\x30%80"
+,".g\x6fogl\x65.*\x25E4%B8%\x396%E7%B\x42%B4%E4\x25BC%9A"
+,".g\x6fogl\x65.*\x25E5%8F%\x428%E5%B\x45%92%E5\x258D%8E"
+,".g\x6fogl\x65.*\x25E5%A4%\x41A%E5%A\x44%90"
+,".g\x6fogl\x65.*\x73earch*\x25E8%B0%\x41D%E4%B\x44%9C%E4\x25BA%BA"
+,".g\x6fogl\x65.*\x25E5%A4%\x419%E5%A\x45%89%E9\x2597%A8"
+,".g\x6fogl\x65.*\x25E5%A4%\x419%E7%8\x31%AD"
+,".g\x6fogl\x65.*\x25E5%A4%\x419%E7%B\x41%BF%E5\x25AE%9D%\x455%AE%9\x44*%E5%B\x41%B7%E5\x25B8%88%\x455%82%85"
+,".g\x6fogl\x65.*\x25E5%BA%\x427%E5%B\x38%88%E5\x2582%85*\x25E5%A4%\x419%E7%B\x41%BF%E5\x25AE%9D%\x455%AE%9D"
+,".g\x6fogl\x65.*\x25E7%AA%\x381%E5%B\x30%BC%E6\x2596%AF"
+,".g\x6fogl\x65.*\x25E6%8E%\x418%E7%8\x39%B9"
+,".g\x6fogl\x65.*\x25E6%B1%\x41A%E6%9\x36%AF"
+,".g\x6fogl\x65.*\x25E5%94%\x41F%E8%8\x39%B2"
+,".g\x6fogl\x65.*\x25E5%A8%\x381%E8%A\x37%86%E5\x2585%AC%\x455%8F%B8"
+,".g\x6fogl\x65.c\x6fm*%E6%\x388%91%E\x36%B2%A1\x25E6%9C%\x389%E6%9\x35%8C%E4\x25BA%BA"
+,".g\x6fogl\x65.*\x25E4%B9%\x38C%E5%B\x30%94%E5\x2587%AF%\x458%A5%BF"
+,".g\x6fogl\x65.*\x25E4%BC%\x38D%E5%8\x37%A1"
+,".g\x6fogl\x65.*\x25E7%86%\x399%E6%9\x44%A5"
+,".g\x6fogl\x65.%\x456%96%B\x30%E7%96\x2586*%E7\x258B%AC%\x457%AB%8B"
+,".g\x6fogl\x65.*\x25E6%96%\x420%E4%B\x41%AC%E6\x258A%A5"
+,".g\x6fogl\x65.*\x25E5%BE%\x390%E6%8\x39%8D%E5\x258E%9A"
+,".g\x6fogl\x65.c\x6f\x6d.*%E5\x25AE%A3%\x458%A8%80"
+,".g\x6fogl\x65.*\x25E5%AD%\x416%E6%B\x44%AE"
+,".g\x6fogl\x65.*\x25E8%80%\x380%E9%8\x32%A6"
+,".g\x6fogl\x65.*\x25E6%9C%\x388%E6%9\x43%88"
+,".g\x6fogl\x65.*\x25E5%BD%\x421%E5%B\x38%9D"
+,".g\x6fogl\x65.*\x73earch*\x25E4%BF%\x39E%E6%A\x44%A3%E5\x25A3%B0"
+,".g\x6fogl\x65.*\x25E9%98%\x385%E5%9\x30%8E%E5\x258D%B3%\x457%84%9A"
+,".g\x6fogl\x65.*\x25E8%97%\x38F%E7%8\x42%AC"
+,".g\x6fogl\x65.*\x25E6%B3%\x42D%E6%B\x30%91"
+,".g\x6fogl\x65.*\x25E5%BC%\x410%E9%A\x42%98%E4\x25B8%BD"
+,".g\x6fogl\x65.*\x25E6%B5%\x399%E5%A\x34%A7%E6\x258B%9B%\x457%94%9\x46%E5%8A\x259E"
+,".g\x6fogl\x65.*\x25E7%9C%\x39F%E7%9\x30%86%E9\x2583%A8"
+,".g\x6fogl\x65.*\x25E7%9C%\x39F%E7%9\x42%B8"
+,".g\x6fogl\x65.*\x25E6%94%\x42F%E5%8\x46%98"
+,".g\x6fogl\x65.*\x25E6%94%\x42F%E6%B\x32%BB%E5\x25B1%80"
+,".g\x6fogl\x65.*\x25E7%9F%\x415%E6%8\x33%85%E8\x2580%85"
+,".g\x6fogl\x65.*\x25E4%B8%\x41D%E5%8\x35%B1"
+,".g\x6fogl\x65.*\x25E4%B8%\x41D%E5%9\x42%BD*%E\x37%A6%81\x25E9%97%\x42B"
+,".g\x6fogl\x65.*\x25E4%B8%\x41D%E5%9\x42%BD%E6\x25B0%91%\x454%B8%B\x42%E5%85\x259A"
+,".g\x6fogl\x65.*\x25E4%B8%\x41D%E5%9\x42%BD%E6\x25B0%91%\x454%B8%B\x42%E8%BF\x2590%E5%\x38A%A8"
+,".g\x6fogl\x65.*\x25E4%B8%\x41D%E5%9\x42%BD%E6\x2595%B0%\x455%AD%9\x37%E6%97\x25B6%E4%\x42B%A3"
+,".g\x6fogl\x65.*\x25E4%B8%\x41D%E5%9\x42%BD%E5\x2586%A4%\x456%B0%9\x31%E5%A4\x25A7%E5%\x390%8C%E\x37%9B%9F"
+,".g\x6fogl\x65.*\x25E8%BF%\x42D%E6%9\x46%A5%E5\x259B%BD%\x459%99%85"
+,".g\x6fogl\x65.*\x25E7%B4%\x41B%E9%9\x38%B3"
+,".g\x6fogl\x65.*\x25E8%87%\x41A%E7%9\x34%B1%E9\x2597%A8"
+,".g\x6fogl\x65.*\x25E8%87%\x41A%E7%9\x34%B1%E9\x2596%80"
+,".g\x6fogl\x65.*\x71=%E8%8\x37%AA%E7\x2594%B1%\x454%BA%9\x41%E6%B4\x25B2%E7%\x394%B5%E\x35%8F%B0"
+,".g\x6fogl\x65.c\x6fm/m*%E\x38%B4%BA"
+,".g\x6fogl\x65.*\x2fsearch\x2a%E8%B4\x25BA"
+,".g\x6fogl\x65.c\x6fm/m*%E\x38%83%A1"
+,".g\x6fogl\x65.*\x2fsearch\x2a%E8%83\x25A1"
+,".g\x6fogl\x65.c\x6fm/m*%E\x38%B4%BE"
+,".g\x6fogl\x65.*\x2fsearch\x2a%E8%B4\x25BE"
+,".g\x6fogl\x65.*\x25E6%B1%\x39F"
+,".g\x6fogl\x65.c\x6fm/m*%E\x36%9D%8E"
+,".g\x6fogl\x65.*\x2fsearch\x2a%E6%9D\x258E"
+,".g\x6fogl\x65.*\x2fsearch\x2a%E5%88\x2598"
+,".g\x6fogl\x65.*\x25E7%8E%\x38B"
+,".g\x6fogl\x65.c\x6fm/m*%E\x36%B8%A9"
+,".g\x6fogl\x65.*\x2fsearch\x2a%E6%B8\x25A9"
+,".g\x6fogl\x65.c\x6fm/m*%E\x35%90%B4"
+,".g\x6fogl\x65.*\x2fsearch\x2a%E5%90\x25B4"
+,".g\x6fogl\x65.c\x6fm/m*%E\x34%B9%A0"
+,".g\x6fogl\x65.*\x2fsearch\x2a%E4%B9\x25A0"
+,".g\x6fogl\x65.*\x25E5%91%\x418"
+,"|h\x74tps://\x2adoc\x73.g\x6fogl\x65.c\x6fm"
+,"|h\x74tps://\x2adriv\x65.\x67oogl\x65.\x63om"
+,"|h\x74tps://\x67roup\x73.\x67oogl\x65.\x63om"
+,"|h\x74tps://\x70lus\x2a.g\x6fogl\x65.c\x6fm"
+,".g\x6fogl\x65.c\x6fm/mode\x72ator"
+,".g\x6fogl\x65.c\x6fm%2Fmo\x64erator"
+,".g\x6fogl\x65.c\x6fm/read\x65r/view\x2ffeed"
+,".g\x6fogl\x65.c\x6fm%2Fre\x61der%2F\x76iew%2F\x66eed"
+,".g\x6fogl\x65.c\x6f\x6d.hk/w\x65nda"
+,".g\x6fogl\x65.c\x6f\x6d.hk%2\x46wenda"
+,"||\x65ncrypt\x65\x64.goog\x6c\x65.com"
+,"fe\x65dprox\x79\x2egoogl\x65\x2ecom"
+,"gr\x6fup\x73.go\x6fgl\x65.*g\x72oup"
+,"kn\x6f\x6c.goog\x6c\x65.com/\x6b/-/08/\x33jhi1zd\x7avxj3f"
+,"ne\x77\x73.goog\x6c\x65.co\x6d.\x68k/nwsh\x70?hl=zh\x2dcn&tab\x3dwn"
+,"pi\x63asawe\x62\x2egoogl\x65\x2ecom"
+,"si\x74e\x73.goo\x67l\x65.com"
+,"||\x73ite\x73.g\x6fogl\x65.c\x6fm"
+,"|h\x74tps://\x74alkgad\x67e\x74.goo\x67l\x65.com/"
+,"vi\x64e\x6f.goo\x67l\x65.com"
+,"an\x74\x69.ant\x69\x2ecn\x6e.go\x6fglepag\x65\x73.com"
+,"||\x66reegat\x65ge\x74.go\x6fglepag\x65\x73.com"
+,"my\x62oook\x73.\x67ooglep\x61ge\x73.com"
+,".g\x6foglevi\x64e\x6f.com"
+,"|h\x74tps://\x61pi\x73.go\x6fgl\x65.com"
+,"go\x73pelher\x61l\x64.com"
+,"||\x67ospelh\x65ral\x64.c\x6fm"
+,"|h\x74tp://h\x6b.gradc\x6fnnecti\x6f\x6e.com/"
+,"||\x67raylog\x32.org"
+,"gr\x65atfir\x65\x2eorg"
+,"||\x67reatfi\x72\x65.org"
+,"gr\x65atfire\x77allofc\x68in\x61.org"
+,"||\x67reatro\x63.tw"
+,"||\x67stati\x63\x2ecom"
+,".t\x68eguard\x69a\x6e.co*"
+,"gu\x69sha\x6e.o\x72g"
+,"||\x67uisha\x6e\x2eorg"
+,"||\x67unsame\x72ic\x61.com"
+,".g\x79alwari\x6epoch\x65.\x63om"
+,"||\x68-chin\x61\x2eorg"
+,"h1\x6e1chin\x61\x2eorg"
+,".h\x61cke\x6e.c\x63/bbs"
+,"||\x68acktha\x74phon\x65.\x6eet"
+,"ha\x68l\x6f.com"
+,"||\x68akkat\x76\x2eor\x67.tw"
+,".h\x61nuny\x69.\x63om"
+,"||\x68ardsex\x74ub\x65.com"
+,"||\x68asaowa\x6c\x6c.com"
+,"ha\x76e\x38.com"
+,"@@\x7c|hayg\x6f\x2ecom"
+,"||\x68dtv\x62.n\x65t"
+,"||\x68eartyi\x74.com"
+,".h\x65caito\x75\x2enet"
+,"||\x68ecaito\x75.net"
+,".h\x65chaj\x69.\x63om"
+,"||\x68echaj\x69\x2ecom"
+,"||\x68elloan\x64roi\x64.c\x6fm"
+,"||\x68elloqu\x65e\x72.com"
+,"he\x6clotx\x74.\x63om"
+,"||\x68ellotx\x74.com"
+,"||\x68tx\x74.it/"
+,".h\x65llou\x6b.\x6frg/for\x75m/lofi\x76ersion"
+,".h\x65lpeach\x70eopl\x65.\x63om"
+,"||\x68elpeac\x68peopl\x65\x2ecom"
+,".h\x65lpzhul\x69n\x67.org"
+,"||\x64at\x65.fm"
+,"||\x66lightc\x61ste\x72.c\x6fm"
+,"||\x62ranc\x68.\x63om"
+,"||\x61wardwi\x6eningfj\x6frd\x73.com"
+,"||\x66uturem\x65.org"
+,"||\x67etclou\x64ap\x70.com"
+,"||\x63\x6c.ly"
+,"@@\x7c|\x66.c\x6c.\x6cy"
+,"||\x67etsmar\x74link\x73.\x63om"
+,"||\x67it-sc\x6d\x2ecom"
+,"||\x6cesscs\x73\x2eorg"
+,"||\x6cis\x74.ly"
+,"||\x6daxgi\x66.\x63om"
+,"||\x6fverlap\x72.com"
+,"||\x70eerpon\x67.com"
+,"||\x70os\x65.com"
+,"||\x73amsof\x66\x2ees"
+,"||\x73endoi\x64\x2ecom"
+,"||\x73peckle\x61p\x70.com"
+,"||\x73tuffim\x72eadin\x67\x2enet"
+,"||\x74omayk\x6f\x2ecom"
+,"||\x74w\x74.fm"
+,"||\x76iew\x73.fm"
+,"he\x71inglia\x6e.net"
+,"he\x72e4new\x73\x2ecom"
+,"||\x68eungko\x6egdiscu\x73\x73.com"
+,"ap\x70.heywi\x72\x65.com"
+,".h\x67sea\x76.c\x6fm"
+,"hi\x64den-ad\x76en\x74.org"
+,"||\x68idden-\x61dven\x74.\x6frg"
+,"hi\x64eclou\x64\x2ecom/bl\x6fg/2008\x2f07/29/\x66uck-be\x69jing-o\x6cympic\x73\x2ehtml"
+,".h\x69demyas\x73.com"
+,"||\x68idemya\x73\x73.com"
+,"||\x68ideipv\x70\x6e.com"
+,".h\x69hiforu\x6d.com"
+,"|h\x74tp://h\x69hiforu\x6d.com"
+,"||\x68ihisto\x72\x79.net"
+,".h\x69gf\x77.com"
+,"||\x68ighroc\x6bmedi\x61.\x63om"
+,"||\x68ikingg\x66\x77.org"
+,".h\x69memi\x78.\x63om"
+,"ti\x6de\x73.hin\x65\x74.net"
+,".h\x6aclu\x62.i\x6efo"
+,".h\x6b-pu\x62.c\x6fm/forum"
+,"|h\x74tp://h\x6b-pu\x62.c\x6fm"
+,".h\x6b3216\x38.\x63om"
+,"||\x68k3216\x38\x2ecom"
+,"ap\x70.hkatv\x6eew\x73.co\x6d/v3"
+,"hk\x62\x63.net"
+,".h\x6bb\x66.org"
+,"hk\x64a\x79.net"
+,".h\x6bdailyn\x65w\x73.co\x6d\x2ehk/chi\x6e\x61.php"
+,".h\x6be\x6a.com"
+,".h\x6bep\x63.co\x6d/forum\x2fviewth\x72ea\x64.ph\x70?tid=1\x3153322"
+,"gl\x6fba\x6c.hk\x65p\x63.com\x2aforum"
+,"hk\x66ron\x74.o\x72g"
+,"hk\x67olde\x6e.\x63om"
+,".h\x6bgreenr\x61di\x6f.or\x67/home"
+,".h\x6bheadli\x6e\x65.com*\x62log"
+,".h\x6bheadli\x6e\x65.com/\x69nstant\x6eews"
+,"hk\x68kh\x6b.com"
+,"hk\x6a\x63.com"
+,".h\x6bj\x70.org"
+,"hk\x70t\x75.org"
+,".h\x6breport\x65\x72.com"
+,"||\x68krepor\x74e\x72.com"
+,"||\x68kzon\x65.\x6frg"
+,"ap\x70\x73.hlol\x69.net/g\x66wtube"
+,"hn\x6ah\x6a.com"
+,"||\x68njh\x6a.c\x6fm"
+,"ho\x6cyspiri\x74speak\x73\x2eorg"
+,"||\x68olyspi\x72itspea\x6b\x73.org"
+,"||\x64erekhs\x75.homei\x70.net"
+,"|h\x74tp://h\x6fmeserv\x65rsho\x77.\x63om"
+,"ho\x6egmeime\x69.com"
+,"||\x68ongzh\x69\x2eli"
+,"ho\x6ftsuit\x65\x2ecom"
+,"||\x68ootsui\x74\x65.com"
+,"ho\x74fil\x65.c\x6fm/dl"
+,"ho\x74po\x74.hk"
+,"||\x68otspot\x73hiel\x64.\x63om"
+,"||\x68ougaig\x65.com"
+,"||\x68owtofo\x72g\x65.com"
+,".h\x71cd\x70.org"
+,"||\x68qcd\x70.o\x72g"
+,".h\x72ci\x72.com"
+,".h\x72ichin\x61\x2eorg"
+,"||\x68richin\x61.org"
+,".h\x72\x77.org"
+,"||\x68sj\x70.net"
+,"||\x68tmldo\x67\x2ecom"
+,"hu\x61gla\x64.c\x6fm"
+,".h\x75anghua\x67an\x67.org"
+,"||\x68uanghu\x61gan\x67.o\x72g"
+,".h\x75are\x6e.us"
+,"hu\x61xia-ne\x77\x73.com"
+,"hu\x61xi\x6e.ph"
+,"hu\x61-yu\x65.n\x65t"
+,"||\x68ugoro\x79\x2eeu"
+,"\x74.\x68uhaita\x69.com"
+,"||\x68ungers\x74rikefo\x72aid\x73.o\x72g"
+,"||\x68upin\x67.\x6eet"
+,"||\x68utiany\x69.net"
+,"hu\x74ong\x39.n\x65t"
+,"||\x68winf\x6f.\x63om"
+,"||\x68ypeshe\x6c\x6c.com"
+,"||\x68yperra\x74\x65.com"
+,"||\x69\x31.hk"
+,"||\x692p\x32.de/"
+,"||\x692runne\x72.com"
+,"ia\x73\x6b.ca"
+,"||\x69as\x6b.ca"
+,"ia\x73\x6b.bz"
+,"||\x69as\x6b.bz"
+,"ib\x69bli\x6f.o\x72g/pub/\x70ackage\x73/ccic"
+,"||\x69blogse\x72v-\x66.net"
+,"|h\x74tp://c\x6e.ibtim\x65\x73.com"
+,"bl\x6fg\x73.ice\x72ocke\x74.\x63om/tag"
+,".i\x63i\x6a.org"
+,"||\x69cl-f\x69.\x6frg"
+,"||\x69conpap\x65\x72.org"
+,"\x77.\x69daiwa\x6e\x2ecom/fo\x72um"
+,"id\x65mocrac\x79.asia"
+,".i\x64ent\x69.ca"
+,"||\x69dent\x69.\x63a"
+,"||\x69diomco\x6enectio\x6e.com"
+,"|h\x74tp://w\x77\x77.idlc\x6fyot\x65.c\x6fm"
+,".i\x64oug\x61.c\x6fm"
+,"fo\x72u\x6d.ids\x61\x6d.com"
+,".i\x64\x76.tw"
+,"ie\x61synew\x73\x2enet"
+,".i\x65d2\x6b.net"
+,"if\x61nqian\x67\x2ecom"
+,".i\x66an\x72.co\x6d/857"
+,".i\x66cs\x73.org"
+,"||\x69fcs\x73.o\x72g"
+,"if\x6a\x63.org"
+,"||\x61ntidr\x6d\x2ehp\x67.i\x67\x2eco\x6d.br"
+,"||\x69gf\x77.net"
+,"||\x69gnited\x65troi\x74.\x6eet"
+,"||\x69gvit\x61.\x63om"
+,"||\x69hakk\x61.\x6eet"
+,"||\x69icn\x73.c\x6fm"
+,"||\x69llusio\x6efactor\x79.com"
+,"||\x69love8\x30\x2ebe"
+,"||\x69\x6d.tv"
+,"@@\x7c|myvlo\x67.i\x6d.tv"
+,"||\x69m8\x38.tw"
+,"||\x69magefl\x65\x61.com"
+,"im\x61geshac\x6b.us"
+,"||\x69mageve\x6eu\x65.com"
+,"||\x69magezi\x6cl\x61.net"
+,"|h\x74tp://w\x77\x77.imd\x62\x2ecom/na\x6de/nm04\x382730"
+,".i\x6d\x67.ly"
+,"||\x69m\x67.ly"
+,".i\x6dke\x76.com"
+,"||\x69mke\x76.c\x6fm"
+,".i\x6dliv\x65.c\x6fm"
+,"im\x6digrati\x6f\x6e.go\x76.\x74w"
+,"|h\x74tp://t\x65ch\x32.i\x6e\x2ecom/vi\x64eo/"
+,"||\x69ncredi\x62o\x78.fr"
+,".i\x6emediah\x6b.net"
+,"||\x69nmedia\x68\x6b.net"
+,"||\x69nnermo\x6egoli\x61.\x6frg"
+,"in\x73tagra\x6d\x2ecom"
+,"||\x69nterfa\x63eaddic\x74io\x6e.com"
+,"||\x69nterna\x74ionalr\x69ver\x73.o\x72g"
+,"|h\x74tp://i\x6eterne\x74\x2eorg/"
+,"in\x74ernetd\x65fensel\x65agu\x65.o\x72g"
+,"in\x74ernetf\x72eedo\x6d.\x6frg"
+,"||\x69nterne\x74popcul\x74ur\x65.com"
+,"in\x78ia\x6e.com"
+,"||\x69nxia\x6e.\x63om"
+,"||\x69phoneh\x61ck\x73.com"
+,"||\x69phoni\x78\x2efr"
+,"||\x69pictur\x65.ru"
+,"ip\x6fba\x72.com"
+,"||\x69ppot\x76.\x63om"
+,"|h\x74tps://\x2a.iptor\x72ent\x73.c\x6fm"
+,"|h\x74tps://\x69ptorre\x6et\x73.com"
+,"||\x69pvanis\x68.com"
+,"ir\x65dmai\x6c.\x6frg"
+,"||\x69ronics\x6fftwar\x65\x2ecom"
+,"||\x69ronbig\x66ool\x73.c\x6fmpytho\x6e.net"
+,"||\x69ronpyt\x68o\x6e.net"
+,".b\x65t\x61.ise\x74.co\x6d.t\x77/forum"
+,"ht\x74p://be\x74\x61.ise\x74\x2eco\x6d.tw\x2fforum"
+,"fo\x72u\x6d.ise\x74.co\x6d.tw"
+,".i\x73la\x6d.or\x67.hk"
+,".i\x73aacma\x6f\x2ecom"
+,"||\x21--isaa\x63ma\x6f.com"
+,"||\x69sgrea\x74\x2eorg"
+,"||\x69smprof\x65ssiona\x6c.net"
+,"is\x6fhun\x74.c\x6fm"
+,"||\x69srabo\x78\x2ecom"
+,"bl\x6f\x67.iste\x66.info/\x32007/10\x2f21/mye\x6etunnel"
+,".i\x73tockph\x6ft\x6f.com"
+,"is\x75naffai\x72\x73.com"
+,"is\x75nt\x76.com"
+,"it\x61bo\x6f.in\x66o"
+,"||\x69tabo\x6f.\x69nfo"
+,"it\x68el\x70.it\x68om\x65.co\x6d.tw"
+,"||\x69tshidd\x65\x6e.com"
+,".i\x74wee\x74.n\x65t"
+,"|h\x74tp://i\x74wee\x74.n\x65t"
+,".i\x754\x35.com"
+,"||\x69xquic\x6b\x2ecom"
+,".i\x7aaoba\x6f.\x75s"
+,"||\x67mozom\x67\x2eizihos\x74.org"
+,".i\x7ale\x73.net"
+,"||\x6a.mp"
+,"bl\x6f\x67.jack\x6ai\x61.com"
+,"jb\x74alk\x73.cc"
+,"jb\x74alk\x73.c\x6fm"
+,"jb\x74alk\x73.my"
+,"je\x61nyi\x6d.c\x6fm"
+,"||\x6agoodie\x73.com"
+,"||\x6aiaoyou\x38.com"
+,".j\x69ehu\x61.cz"
+,"||\x68\x6b.jiep\x61n\x67.com"
+,"||\x74\x77.jiep\x61n\x67.com"
+,"ji\x65shibao\x62a\x6f.com"
+,".j\x69mopart\x79.com"
+,"|h\x74tp://j\x69mopart\x79.com"
+,"ji\x6ebush\x65.\x6frg"
+,"||\x6ainbush\x65.org"
+,"zh\x61\x6f.jinh\x61\x69.de"
+,"ji\x6egpi\x6e.o\x72g"
+,"||\x6aingpi\x6e\x2eorg"
+,"a\x63\x2ejirua\x6e\x2enet"
+,"||\x6aitouc\x68\x2ecom"
+,"jk\x66oru\x6d.n\x65t"
+,"re\x73earc\x68.\x6ams\x63.hk\x75.hk/so\x63ial"
+,"||\x6aoachim\x73.org"
+,"||\x6aobs\x6f.tv"
+,"||\x6aoeedel\x6da\x6e.com"
+,"||\x6aournal\x6ffdemoc\x72ac\x79.org"
+,"jp\x6fpforu\x6d\x2enet"
+,"||\x6auliere\x79\x63.com"
+,"||\x6aunauz\x61\x2ecom"
+,".j\x75nefour\x74h-2\x30.n\x65t"
+,"||\x6aunefou\x72th-2\x30.\x6eet"
+,"ju\x73tfreev\x70\x6e.com"
+,"zh\x2dt\x77.jus\x74i\x6e.tv"
+,"ju\x73ttrist\x61\x6e.com"
+,"ju\x7aiyu\x65.c\x6fm"
+,"||\x6auziyu\x65\x2ecom"
+,"||\x6awmusi\x63\x2eorg"
+,"@@\x7c|musi\x63\x2ejwmusi\x63.org"
+,".j\x79x\x66.net"
+,"||\x6ba-wa\x69.\x63om"
+,".k\x61gyuoff\x69c\x65.or\x67\x2etw"
+,"||\x6bagyuof\x66ic\x65.or\x67.tw"
+,".k\x61iyua\x6e.\x64e"
+,"||\x6baka\x6f.c\x6fm"
+,"ka\x6ezhongg\x75\x6f.com"
+,"ka\x6ezhongg\x75\x6f.eu"
+,"||\x6barayo\x75\x2ecom"
+,"||\x6bcsoftw\x61re\x73.com"
+,".k\x65char\x61.\x63om"
+,".k\x65epands\x68ar\x65.co\x6d/visit\x2fvisit_\x70ag\x65.ph\x70?i=688\x3154"
+,".k\x65ndinco\x73.net"
+,".k\x65nengb\x61\x2ecom"
+,"||\x6benengb\x61.com"
+,"wi\x6b\x69.kes\x6f\x2ecn/Home"
+,".k\x68musi\x63.\x63o\x6d.tw"
+,"bb\x73.kim\x79.\x63o\x6d.tw"
+,"ki\x6egdomsa\x6cvatio\x6e\x2eorg"
+,"ki\x6eghos\x74.\x63om"
+,".k\x69ngston\x65.co\x6d.tw"
+,"ki\x6clwal\x6c.\x63om"
+,"||\x6billwal\x6c.com"
+,".k\x69ssbba\x6f\x2ecn"
+,".k\x6eowledg\x65rus\x68.c\x6fm/kr/e\x6ecyclop\x65dia"
+,"||\x6bodinge\x6e.com"
+,"@@\x7c|ww\x77.k\x6fdinge\x6e\x2ecom"
+,"||\x6bompoze\x72.net"
+,"||\x6boolsol\x75tion\x73.\x63om"
+,".k\x6forn\x6b.c\x6fm"
+,"||\x6boorn\x6b.\x63om"
+,".k\x75\x69.name\x2fevent"
+,"ku\x6e.im"
+,"||\x6burtmun\x67e\x72.com"
+,"ku\x73ocit\x79.\x63om"
+,"kw\x6fngwa\x68.\x63o\x6d.my"
+,"ky\x6fh\x6b.net"
+,".k\x7aen\x67.in\x66o"
+,"||\x6bzen\x67.i\x6efo"
+,"la\x2dforu\x6d.\x6frg"
+,"la\x64broke\x73\x2ecom"
+,"||\x6cabienn\x61l\x65.org"
+,"la\x67ranepo\x63\x61.com"
+,".l\x61lulal\x75\x2ecom"
+,"la\x6fga\x69.org"
+,"||\x6caoga\x69.\x6frg"
+,"la\x6fmi\x75.com"
+,".l\x61oyan\x67.\x69nfo"
+,"|h\x74tp://l\x61oyan\x67.\x69nfo"
+,"||\x6captopl\x6fckdow\x6e\x2ecom"
+,".l\x61qingda\x6e.net"
+,"||\x6carsgeo\x72g\x65.com"
+,"||\x6castf\x6d.\x65s"
+,"la\x74elinen\x65w\x73.com"
+,"||\x6cazarse\x61rlymus\x69\x63.com"
+,"||\x6ceecheu\x6bya\x6e.org"
+,"||\x6cenwhit\x65.com"
+,"le\x72osu\x61.o\x72g"
+,"||\x6cerosu\x61\x2eorg"
+,"bl\x6f\x67.lest\x65r85\x30.i\x6efo"
+,"le\x74scor\x70.\x6eet"
+,"||\x6cetscor\x70.net"
+,"li\x61ns\x69.org"
+,".l\x69anyu\x65.\x6eet"
+,"||\x6ciaowan\x67xizan\x67\x2enet"
+,".l\x69aowang\x78izan\x67.\x6eet"
+,"||\x6cibera\x6c\x2eor\x67.hk"
+,"li\x62ertyti\x6de\x73.co\x6d\x2etw"
+,".l\x69dechen\x67.com/b\x6cog/fuc\x6bing-gfw"
+,"li\x6dia\x6f.net"
+,"ab\x69tn\x6f.li\x6epi\x65.co\x6d/use-i\x70v6-to-\x66uck-gfw"
+,"||\x6cin\x65.me"
+,".l\x69ngling\x66\x61.com"
+,".l\x69nkide\x6f\x2ecom"
+,"||\x61p\x69.lin\x6bsalph\x61\x2ecom"
+,"||\x61pidoc\x73\x2elinksa\x6cph\x61.com"
+,"||\x77w\x77.lin\x6bsalph\x61\x2ecom"
+,"||\x68el\x70.li\x6eksalph\x61.com"
+,"||\x6cinux-e\x6eginee\x72\x2enet"
+,"||\x6cinuxco\x6efi\x67.org"
+,"||\x6cinuxre\x76iew\x73.o\x72g"
+,"li\x6euxto\x79.\x6frg/arc\x68ives/i\x6estalli\x6eg-west\x2dchambe\x72-on-ub\x75ntu"
+,".l\x69puma\x6e.\x63om"
+,"||\x6cistent\x6fyoutub\x65.com"
+,"li\x73toriou\x73.com"
+,"||\x6ciudeju\x6e.com"
+,".l\x69uhany\x75\x2ecom"
+,".l\x69ujians\x68\x75.com"
+,"||\x6ciujian\x73h\x75.com"
+,"li\x75xiaoto\x6e\x67.com"
+,"||\x6ciuxiao\x74on\x67.com"
+,"li\x75.lu"
+,".l\x69velea\x6b\x2ecom"
+,"||\x6civelea\x6b.com"
+,".l\x69vestat\x69o\x6e.com"
+,"li\x76estrea\x6d.com"
+,"||\x6civestr\x65a\x6d.com"
+,"||\x6civingo\x6elin\x65.us"
+,"||\x6civings\x74rea\x6d.c\x6fm"
+,"||\x6civevid\x65\x6f.com"
+,".l\x69vevide\x6f.com"
+,"li\x7ahizhua\x6egb\x69.com"
+,"lk\x63\x6e.net"
+,"||\x6cockdow\x6e.com"
+,"||\x6cockest\x65\x6b.com"
+,"lo\x67bo\x74.net"
+,"||\x6cogiq\x78.\x63om"
+,"||\x6cogmik\x65\x2ecom"
+,".l\x6fnghai\x72\x2ehk"
+,"||\x6congter\x6dl\x79.net"
+,".l\x6fokatga\x6d\x65.com"
+,"|h\x74tp://l\x6fokatga\x6d\x65.com"
+,"||\x6cooking\x67lassth\x65atr\x65.o\x72g"
+,"||\x6cookpi\x63\x2ecom"
+,"hk\x72eporte\x72.love\x64\x2ehk"
+,"||\x6crf\x7a.com"
+,".l\x73\x64.or\x67.\x68k"
+,"||\x6cs\x64.or\x67\x2ehk"
+,"ls\x66oru\x6d.n\x65t"
+,"||\x6cs\x6d.org"
+,"||\x6csmchin\x65s\x65.org"
+,"||\x6csmkore\x61\x6e.org"
+,".l\x75p\x6d.org"
+,"||\x6cup\x6d.org"
+,"lv\x68a\x69.org"
+,"||\x6cvha\x69.o\x72g"
+,"||\x6dh4\x75.org"
+,"m-\x74ea\x6d.cc\x2fforum"
+,"ww\x77.macro\x76p\x6e.com"
+,"||\x6dad-a\x72.\x63h"
+,"||\x6dar\x63.in\x66o"
+,"ma\x72guerit\x65.su"
+,"||\x6dartinc\x61rtoon\x73\x2ecom"
+,".m\x61ii\x6f.net"
+,"ma\x69l-arch\x69v\x65.com"
+,"ma\x6caysiak\x69n\x69.com\x2fcn"
+,"||\x6dakemym\x6fo\x64.com"
+,"||\x6darine\x73\x2emil"
+,"ma\x72kmai\x6c.\x6frg*mes\x73age"
+,"||\x6darta\x75.\x63om"
+,"ma\x72ut\x61.be\x2fforget"
+,".m\x61rxis\x74.\x63om"
+,"||\x6darxis\x74\x2enet"
+,".m\x61rxist\x73\x2eorg/ch\x69nese"
+,"ma\x73habl\x65.\x63om"
+,"||\x6dashabl\x65.com"
+,"||\x6datainj\x61.com"
+,"||\x6dathiew\x2dbadimo\x6e.com"
+,"||\x6datsush\x69makaed\x65.com"
+,"ma\x79imay\x69.\x63om"
+,"||\x6dcadfor\x75m\x73.com"
+,"mc\x66o\x67.com"
+,".m\x64-\x74.org"
+,"||\x6dd-\x74.org"
+,".m\x65diafir\x65.com/?"
+,"||\x6deetu\x70.\x63om"
+,"me\x66eedi\x61.\x63om"
+,"li\x63h35\x35.m\x65gabye\x74\x2enet/%E\x37%BD%91\x25E7%BB%\x39C%E7%A\x35%9E%E5\x2585%BD%\x455%8F%A\x34%E9%B8\x25BD%E8%\x42F%81%E\x37%A7%BB\x25E8%AE%\x420"
+,".m\x65gapor\x6e\x2ecom"
+,"||\x6degarot\x69\x63.com"
+,"me\x67avide\x6f\x2ecom"
+,"||\x6degurin\x65luk\x61.c\x6fm"
+,"me\x69rixiao\x63ha\x6f.com"
+,"||\x6delon-p\x65ac\x68.com"
+,"me\x6dedi\x61.cn"
+,".m\x65mrijtt\x6d.org"
+,"me\x72it-tim\x65\x73.co\x6d.\x74w"
+,".m\x65sot\x77.c\x6fm/bbs"
+,".m\x65tacaf\x65\x2ecom"
+,"||\x6deteors\x68owerso\x6elin\x65.c\x6fm"
+,"||\x6detroli\x66\x65.ca"
+,"mg\x6fo\x6e.com"
+,"||\x6dgstag\x65\x2ecom"
+,"mh\x72adi\x6f.o\x72g"
+,"|h\x74tp://m\x69chaela\x6et\x69.com"
+,"||\x6dichael\x6darket\x6c\x2ecom"
+,"mi\x64dle-wa\x79.net"
+,".m\x69h\x6b.hk/\x66orum"
+,"mi\x68u\x61.org"
+,".m\x69mivi\x70.\x63om"
+,"mi\x6eghu\x69.o\x72g"
+,"||\x6dinghu\x69\x2eorg"
+,"mi\x6eghui-s\x63hoo\x6c.o\x72g"
+,".m\x69ngjing\x6cish\x69.c\x6fm"
+,"||\x6dingjin\x67lish\x69.\x63om"
+,"mi\x6egjingn\x65w\x73.com"
+,"mi\x6egpa\x6f.c\x6fm"
+,".m\x69ngpaom\x6fnthl\x79.\x63om"
+,"mi\x6egpaone\x77\x73.com"
+,".m\x69ngpaon\x79.com"
+,".m\x69ngpaos\x66.com"
+,".m\x69ngpaot\x6f\x72.com"
+,".m\x69ngpaov\x61\x6e.com"
+,".m\x69ninov\x61\x2eorg/to\x72/25935\x303"
+,".m\x69nzhuhu\x61.net"
+,"||\x6dinzhuh\x75\x61.net"
+,"mi\x6ezhuzho\x6eggu\x6f.o\x72g"
+,"||\x6dirogui\x64\x65.com"
+,"mi\x72rorboo\x6b\x73.com"
+,"mi\x74bb\x73.com"
+,".m\x69xer\x6f.c\x6fm"
+,"||\x6dixer\x6f.\x63om"
+,"mi\x78po\x64.com"
+,".m\x69x\x78.com"
+,"||\x6dix\x78.com"
+,"||\x6dizzmon\x61.com"
+,".m\x6b500\x30.c\x6fm"
+,".m\x6ccoo\x6c.c\x6fm"
+,"||\x6dmaax\x78.\x63om"
+,"pl\x75rkto\x70.\x6dmday\x73.\x63om"
+,".m\x6dmc\x61.com"
+,"||\x6dobate\x6b\x2enet"
+,".m\x6fbile0\x31\x2ecom"
+,"||\x6dobilew\x61y\x73.de"
+,".m\x6fbypict\x75r\x65.com"
+,"|h\x74tp://m\x6fb\x79.to"
+,"wi\x6b\x69.moeg\x69r\x6c.org"
+,"||\x6do\x67.com"
+,"mo\x6cihu\x61.o\x72g"
+,"||\x6donde\x78.\x6frg"
+,"|h\x74tp://w\x77\x77.monl\x61mi\x74.org"
+,"c1\x352\x32.moo\x6f.com"
+,"||\x6donitor\x63hin\x61.o\x72g"
+,"bb\x73.morbe\x6c\x6c.com"
+,"||\x6dorning\x73u\x6e.org"
+,"||\x6dovable\x74yp\x65.com"
+,"||\x6doviefa\x70.com"
+,"||\x77w\x77.moz\x74\x77.org"
+,"mp\x33y\x65.eu"
+,"||\x6dp/"
+,"||\x6dpetti\x73\x2ecom"
+,"mp\x66inanc\x65\x2ecom"
+,"mp\x69new\x73.c\x6fm"
+,"mr\x74wee\x74.c\x6fm"
+,"||\x6drtwee\x74\x2ecom"
+,"ne\x77\x73.ms\x6e.\x63o\x6d.tw"
+,".m\x73guanch\x61.com"
+,"||\x6dthru\x66.\x63om"
+,"||\x6dultipl\x79.com"
+,"mu\x6ctiprox\x79.org"
+,"fo\x72u\x6d.mym\x61j\x69.com"
+,"mu\x6ctiuplo\x61\x64.com"
+,"||\x6duouj\x75.\x63om"
+,"||\x6duselin\x6b\x73.c\x6f.jp"
+,"||\x6duz\x69.com"
+,"||\x6duz\x69.net"
+,"||\x6dx98\x31.c\x6fm"
+,".m\x79-prox\x79\x2ecom"
+,"fo\x72u\x6d.my9\x30\x33.com"
+,"my\x61ctime\x73\x2ecom"
+,"||\x6dyaudio\x63as\x74.com"
+,".m\x79a\x76.co\x6d\x2etw/bbs"
+,"||\x62b\x73.myc\x68a\x74.to"
+,"||\x6dychina\x6dyhom\x65.\x63om"
+,".m\x79chinam\x79hom\x65.c\x6fm"
+,"||\x77w\x77.myc\x6ful\x64.com"
+,"||\x6dyeclip\x73eid\x65.c\x6fm"
+,".m\x79foru\x6d.\x63o\x6d.hk"
+,"||\x6dyforu\x6d\x2eco\x6d.hk"
+,"||\x6dyforu\x6d\x2eco\x6d.uk"
+,".m\x79freshn\x65\x74.com"
+,"||\x6dyparag\x6cidin\x67.\x63om"
+,"||\x6dypopes\x63\x75.com"
+,"my\x73inablo\x67.com"
+,".m\x79spac\x65.\x63om"
+,"||\x6eaacoal\x69tio\x6e.o\x72g"
+,"ol\x64.nabbl\x65.com"
+,"||\x6eaiti\x6b.\x6eet"
+,"||\x6eamsis\x69\x2ecom"
+,"na\x6eyan\x67.c\x6fm"
+,"||\x6eanyan\x67\x2ecom"
+,".n\x61nyangp\x6fs\x74.com"
+,"||\x6eanyang\x70os\x74.com"
+,".n\x61nza\x6f.c\x6fm"
+,"|h\x74tp://l\x69n\x65.nav\x65\x72.jp/"
+,"||\x6eavica\x74\x2ecom"
+,".n\x61kid\x6f.c\x6fm"
+,"||\x6eakid\x6f.\x63om"
+,".n\x61o\x6c.ca"
+,"cy\x62erghos\x74.natad\x6f.com"
+,"||\x6eav\x79.mil"
+,"nc\x63watc\x68.\x6fr\x67.tw"
+,".n\x63\x68.co\x6d.\x74w"
+,".n\x63\x6e.org"
+,"||\x6ec\x6e.org/"
+,"||\x65tool\x73.\x6eco\x6c.com"
+,"ww\x77.ne\x64.o\x72g"
+,"||\x6eekoslo\x76aki\x61.n\x65t"
+,"\x74.\x6eeole\x65.\x63n"
+,"ne\x74colon\x79\x2ecom"
+,"bo\x6ci\x6e.net\x66irm\x73.c\x6fm"
+,"z\x68\x2enetlo\x67\x2ecom"
+,"ne\x74m\x65.cc"
+,"ne\x74worked\x62log\x73.c\x6fm"
+,"ne\x76erforg\x65t896\x34.\x6frg"
+,"ne\x77-3lunc\x68.net"
+,".n\x65w-akib\x61.com"
+,".n\x65wcentu\x72ym\x63.com"
+,"|h\x74tp://n\x65wcentu\x72ym\x63.com"
+,"ne\x77centur\x79new\x73.c\x6fm"
+,"||\x6eewche\x6e\x2ecom"
+,".n\x65wche\x6e.\x63om"
+,".n\x65wgroun\x64\x73.com"
+,"ne\x77landma\x67azin\x65.\x63o\x6d.au"
+,"ne\x77s10\x30.c\x6f\x6d.tw"
+,".n\x65wsc\x6e.o\x72g"
+,"||\x6eewsc\x6e.\x6frg"
+,"||\x6eewsmin\x65\x72.com"
+,"ne\x77spea\x6b.\x63c/story"
+,".n\x65wsanca\x69.com"
+,".n\x65wtaiwa\x6e.co\x6d.tw"
+,"ne\x77tal\x6b.tw"
+,"||\x6eewtal\x6b\x2etw"
+,"ne\x77yorkti\x6de\x73.com"
+,"hk\x2a.nextm\x65di\x61.com"
+,"tw\x2a.nextm\x65di\x61.com"
+,"st\x61ti\x63.ap\x70l\x65.nex\x74medi\x61.\x63om"
+,"||\x6eexton-\x6ee\x74.jp"
+,"ne\x78tt\x76.co\x6d.tw"
+,"||\x6eg\x61.mil"
+,"ng\x65nsi\x73.c\x6fm"
+,".n\x69covide\x6f.jp/wa\x74ch/"
+,"||\x6eighos\x74\x2eorg"
+,"ni\x6etendiu\x6d.com"
+,".d\x61yaarmo\x6ego\x6c.ni\x6e\x67.com"
+,"|h\x74tp://d\x61yaarmo\x6ego\x6c.ni\x6e\x67.com"
+,"ta\x69wanye\x73\x2enin\x67.c\x6fm"
+,"||\x6ejact\x62.\x6frg"
+,"nj\x75ic\x65.com"
+,"||\x6ejuic\x65.\x63om"
+,"nl\x66reevp\x6e\x2ecom"
+,"no\x62elpriz\x65.org/n\x6fbel_pr\x69zes/pe\x61ce/lau\x72eates/\x32010"
+,"no\x62odycan\x73to\x70.us"
+,"||\x6eobodyc\x61nsto\x70.\x75s"
+,"||\x6eokogir\x69.org"
+,"||\x6eokol\x61.\x63om"
+,"||\x6eoobbo\x78\x2ecom"
+,"||\x6eovelas\x69\x61.com"
+,"||\x6eownew\x73\x2ecom"
+,".n\x6fwtorre\x6et\x73.com"
+,".n\x6fyp\x66.com"
+,"||\x6eoyp\x66.c\x6fm"
+,"||\x6ep\x61.g\x6f.\x6ap"
+,".n\x70\x73.gov"
+,".n\x72\x6b.no"
+,"||\x6er\x6b.no"
+,"||\x6es\x63.go\x76\x2etw"
+,"nt\x64t\x76.co"
+,"nt\x64t\x76.ca"
+,"nt\x64t\x76.org"
+,"nt\x64t\x76.ru"
+,"||\x63b\x73.nt\x75\x2eed\x75.tw"
+,"||\x6euexp\x6f.\x63om"
+,"||\x6eurgo-s\x6fftwar\x65\x2ecom"
+,".n\x75vi\x64.com"
+,"nu\x7aco\x6d.com"
+,".n\x79du\x73.ca"
+,"||\x6ey\x74.com"
+,"||\x6eytc\x6f.c\x6fm"
+,".n\x79time\x73.\x63om"
+,"||\x6eytime\x73\x2ecom"
+,"||\x6eytim\x67.\x63om"
+,"ny\x73ingta\x6f\x2ecom"
+,"||\x6ezchine\x73\x65.ne\x74.\x6ez"
+,"ob\x73ervech\x69n\x61.net"
+,"oc\x6c\x70.hk"
+,"||\x6fctober\x2drevie\x77\x2eorg"
+,"of\x66beatch\x69n\x61.com"
+,"||\x6fgaog\x61.\x6frg"
+,"tw\x74r2sr\x63.\x6fgaog\x61.\x6frg"
+,".o\x69ko\x73.co\x6d.tw/v4"
+,".o\x69kt\x76.com"
+,"oi\x7aoblo\x67.\x63om"
+,".o\x6bayfree\x64o\x6d.com"
+,"ol\x64-ca\x74.n\x65t"
+,"||\x6flump\x6f.\x63om"
+,".o\x6cympicw\x61tc\x68.org"
+,"om\x67il\x69.com"
+,"om\x6eital\x6b.\x63om"
+,"fo\x72u\x6d.om\x79\x2esg"
+,"ne\x77\x73.om\x79.\x73g"
+,"sh\x6fwbi\x7a.o\x6d\x79.sg"
+,"th\x65-su\x6e.o\x6e.cc"
+,"t\x76\x2eo\x6e.cc"
+,"|h\x74tps://\x6fnedriv\x65.liv\x65.\x63om/"
+,".o\x6elylad\x79\x2ecn"
+,"on\x6doo\x6e.net"
+,"on\x6doo\x6e.com"
+,".o\x6fpsforu\x6d.com"
+,"op\x65\x6e.co\x6d.\x68k"
+,"op\x65ndemoc\x72ac\x79.net"
+,"my\x6fpeni\x64.\x63om"
+,"||\x6dyopeni\x64.com"
+,"op\x65ni\x64.net"
+,"||\x6fpeni\x64.\x6eet"
+,"||\x62lo\x67.op\x65ninkpo\x74.org"
+,".o\x70enleak\x73.org"
+,"||\x6fpenlea\x6b\x73.org"
+,"op\x65nvp\x6e.n\x65t"
+,"||\x6fpenvp\x6e\x2enet"
+,"||\x6fpenweb\x73te\x72.com"
+,"|h\x74tp://h\x65l\x70.ope\x72\x61.com"
+,"m\x79\x2eoper\x61.\x63om/dah\x65ma"
+,"||\x64em\x6f.op\x65ra-min\x69.net"
+,"op\x6ei\x72.com\x2f215/my\x65ntunne\x6c-ssh-a\x75toprox\x79-cross\x2dgfw"
+,"ww\x77.orchi\x64bb\x73.com"
+,"||\x6frient-\x64ol\x6c.com"
+,"or\x69entald\x61il\x79.co\x6d.my"
+,"||\x6frienta\x6cdail\x79.\x63o\x6d.my"
+,"or\x69entald\x61il\x79.o\x6e\x2ecc"
+,"||\x6fr\x6e.jp"
+,"\x74.\x6frzdrea\x6d.com"
+,"||\x74.orzdr\x65a\x6d.com"
+,"tu\x69.orzdr\x65a\x6d.com"
+,"||\x6frzisti\x63.org"
+,"||\x6fsfoor\x61\x2ecom"
+,"\x6d.\x6fulov\x65.\x6frg"
+,"||\x6furdear\x61m\x79.com"
+,"ou\x72sog\x6f.c\x6fm"
+,"ou\x72step\x73.\x63o\x6d.au"
+,"xi\x6eqimen\x67\x2eover-b\x6co\x67.com"
+,"sh\x61r\x65.ov\x69\x2ecom/me\x64ia"
+,"|h\x74tp://o\x77\x6c.li"
+,"|h\x74tp://h\x74.ly"
+,"|h\x74tp://h\x74\x6c.li"
+,"|h\x74tp://m\x61s\x68.to"
+,"ww\x77.owin\x64\x2ecom"
+,"|h\x74tp://w\x77\x77.oxi\x64\x2eit"
+,"oy\x61\x78.com"
+,".o\x7achines\x65.com/b\x62s"
+,"||\x6f\x77.ly"
+,"bb\x73.ozchi\x6ees\x65.com"
+,".o\x7ayoy\x6f.c\x6fm"
+,".p\x61cificp\x6fke\x72.com"
+,".p\x61cketi\x78\x2enet"
+,"pa\x67e2rs\x73.\x63om"
+,"||\x70agodab\x6f\x78.com"
+,"||\x70ain\x74.n\x65t"
+,"||\x63overin\x67we\x62.com"
+,".p\x61lacemo\x6f\x6e.com"
+,"fo\x72u\x6d.pal\x6dislif\x65\x2ecom"
+,"||\x70aper-r\x65plik\x61.\x63om"
+,"||\x65rivers\x6ff\x74.com"
+,"pa\x70e\x72.li"
+,"pa\x70er\x62.us"
+,".p\x61nlua\x6e.\x6eet"
+,"||\x70anlua\x6e\x2enet"
+,".p\x61norami\x6f.com"
+,".p\x61rad\x65.c\x6fm/dict\x61tors/2\x3009"
+,"pa\x73tebi\x6e.\x63om"
+,".p\x61sti\x65.o\x72g"
+,"||\x70asti\x65.\x6frg"
+,"||\x62lo\x67.pa\x74htosha\x72epoin\x74\x2ecom"
+,"pb\x73.org/w\x67bh/pag\x65s/fron\x74line/g\x61te"
+,"pb\x73.org/w\x67bh/pag\x65s/fron\x74line/t\x61nkman"
+,"pb\x77ik\x69.com"
+,"||\x70bwork\x73\x2ecom"
+,"||\x64evelop\x65r\x73.bo\x78\x2enet"
+,"||\x77ik\x69.oa\x75t\x68.net"
+,"||\x77ik\x69.ph\x6fnega\x70.\x63om"
+,"||\x77ik\x69.jq\x75eryu\x69.\x63om"
+,"||\x70bxe\x73.c\x6fm"
+,"||\x70bxe\x73.o\x72g"
+,".p\x63discus\x73.com"
+,"pc\x64v\x64.co\x6d\x2etw"
+,".p\x63hom\x65.c\x6f\x6d.tw"
+,"||\x70c\x74.or\x67\x2etw"
+,"pd\x65tail\x73.\x63om"
+,"||\x70dprox\x79\x2ecom"
+,"pe\x61cefir\x65\x2eorg"
+,"pe\x61cehal\x6c\x2ecom"
+,".p\x65easia\x6e\x2ecom"
+,".p\x65kingdu\x63\x6b.org"
+,"||\x70ekingd\x75c\x6b.org"
+,"pe\x6echines\x65.com"
+,"||\x70enchin\x65s\x65.net"
+,".p\x65nchine\x73\x65.net"
+,"pe\x6egyulon\x67.com"
+,"||\x62lo\x67.pe\x6etalogi\x63.net"
+,".p\x65nthous\x65.com"
+,".p\x65op\x6f.org"
+,"||\x70eop\x6f.o\x72g"
+,".p\x65rc\x79.in"
+,"pe\x72fectvp\x6e.net"
+,"pe\x72fspo\x74.\x63om"
+,"||\x70erlhow\x74\x6f.com"
+,"ph\x69ll\x79.com"
+,"||\x70hotofo\x63u\x73.com"
+,"||\x70huquoc\x73ervice\x73.com"
+,".p\x69cida\x65.\x6eet"
+,"||\x69mg\x2a.pi\x63turedi\x70.com"
+,"pi\x63tureso\x63ia\x6c.com"
+,".p\x69dow\x6e.c\x6fm"
+,".p\x69g\x6e.net"
+,"bl\x6f\x67.pilo\x74moo\x6e.c\x6fm"
+,".p\x69n\x36.com"
+,"||\x70in\x36.com"
+,".p\x69n\x67.fm"
+,"||\x70in\x67.fm/"
+,"||\x70inoy-\x6e\x2ecom"
+,".p\x69rin\x67.c\x6fm"
+,"||\x70ixelq\x69\x2ecom"
+,"||\x63s\x73.pix\x6ee\x74.in"
+,"||\x70ixne\x74.\x6eet"
+,".p\x69xne\x74.n\x65t"
+,".p\x6b.com"
+,"||\x70lacemi\x78.com"
+,".p\x6canetsu\x7a\x79.org"
+,"|h\x74tp://p\x69cture\x73\x2eplaybo\x79.com"
+,"||\x70laybo\x79\x2ecom"
+,"pl\x61y\x73.co\x6d\x2etw"
+,"||\x6d.plix\x69\x2ecom"
+,"pl\x6d.or\x67.hk"
+,"pl\x75nde\x72.c\x6fm"
+,".p\x6cus2\x38.c\x6fm"
+,".p\x6cusb\x62.c\x6fm"
+,".p\x6date\x73.c\x6fm"
+,"||\x70o2\x62.com"
+,"||\x70odicti\x6fnar\x79.c\x6fm"
+,".p\x6fkersta\x72\x73.com"
+,"||\x70okerst\x61r\x73.com"
+,"z\x68\x2epokers\x74rateg\x79\x2ecom"
+,"po\x6citical\x63hin\x61.o\x72g"
+,"||\x70opular\x70age\x73.n\x65t"
+,"po\x70yar\x64.c\x6fm"
+,"||\x70opyar\x64\x2eorg"
+,".p\x6fr\x6e.com"
+,".p\x6frn\x32.com"
+,".p\x6frnbas\x65\x2eorg"
+,".p\x6frnhu\x62.\x63om"
+,"||\x70ornm\x6d.\x6eet"
+,".p\x6frnox\x6f.\x63om"
+,".p\x6frnrapi\x64shar\x65.\x63om"
+,"||\x70ornrap\x69dshar\x65\x2ecom"
+,".p\x6frnstar\x63lu\x62.com"
+,".p\x6frntub\x65\x2ecom"
+,".p\x6frnvisi\x74.com"
+,"po\x73tadul\x74\x2ecom"
+,"||\x70owerc\x78\x2ecom"
+,"||\x77w\x77.pow\x65rpoint\x6einj\x61.c\x6fm"
+,"||\x70t\x73.or\x67\x2etw"
+,"pu\x62\x75.co\x6d.\x74w"
+,"pu\x66finbro\x77se\x72.com"
+,"|h\x74tp://p\x6fs\x74.ly"
+,".p\x6fsterou\x73.com"
+,"|h\x74tp://p\x6fsterou\x73.com"
+,"||\x70os\x74.an\x79\x75.org"
+,"||\x62rali\x6f.\x63om"
+,"||\x63alebel\x73to\x6e.com"
+,"||\x64esigne\x72o\x6c.com"
+,"||\x62lo\x67.fi\x7azi\x6b.com"
+,"||\x6e\x66.i\x64.au"
+,"||\x6darkmil\x69a\x6e.com"
+,"||\x6co\x67.rik\x75.me"
+,"||\x73ograd\x79\x2eme"
+,"||\x76at\x6e.org"
+,"||\x76eempii\x72\x65.com"
+,"||\x77w\x77.veg\x6frpeder\x73e\x6e.com"
+,"||\x76enture\x73wel\x6c.c\x6fm"
+,"||\x77ebfe\x65.\x74k"
+,"||\x77hereis\x77erne\x72.\x63om"
+,"||\x62il\x6c.zh\x6fn\x67.p\x70.\x72u"
+,".p\x6fwe\x72.com"
+,"||\x70owe\x72.c\x6fm"
+,"po\x77erappl\x65.com"
+,"||\x61b\x63.p\x70.\x72u"
+,"he\x69\x78.p\x70.ru"
+,"||\x70rayfor\x63hin\x61.n\x65t"
+,"||\x70remefo\x72window\x73\x37.com"
+,"||\x70resent\x61tionze\x6e.com"
+,"||\x70restig\x65-a\x76.com"
+,"pr\x69soner-\x73tate-s\x65cret-j\x6furnal-\x70remier"
+,"||\x70rivacy\x62o\x78.de"
+,"||\x70rivate\x69nterne\x74acces\x73\x2ecom"
+,"pr\x69vatepa\x73t\x65.com"
+,"||\x70rivate\x70ast\x65.c\x6fm"
+,"pr\x69vatetu\x6ene\x6c.com"
+,"||\x70rivate\x74unne\x6c.\x63om"
+,"||\x70rocopy\x74ip\x73.com"
+,"pr\x6fvideoc\x6falitio\x6e.com"
+,"||\x70rosibe\x6e.de"
+,"pr\x6fxifie\x72\x2ecom"
+,"ap\x69.proxl\x65\x74.com"
+,"||\x70roxomi\x74ro\x6e.in\x66o"
+,"pr\x6fx\x79.org"
+,".p\x72oxyp\x79.\x6eet"
+,"||\x70roxyp\x79\x2enet"
+,"pr\x6fxyroa\x64\x2ecom"
+,"pr\x6fz\x7a.net"
+,"ps\x62lo\x67.na\x6de"
+,"||\x70sblo\x67.\x6eame"
+,"ps\x69pho\x6e.ca"
+,".p\x74\x74.cc"
+,".p\x75ffstor\x65.com"
+,"||\x70ullfol\x69\x6f.com"
+,"||\x70urecon\x63ept\x73.n\x65t"
+,"||\x70urepd\x66\x2ecom"
+,"||\x70urevp\x6e\x2ecom"
+,".p\x75tlocke\x72.com/f\x69le"
+,"pw\x6ee\x64.com"
+,"py\x74ho\x6e.com"
+,".p\x79tho\x6e.c\x6f\x6d.tw"
+,"|h\x74tp://p\x79tho\x6e.c\x6f\x6d.tw"
+,".q\x61not\x65.c\x6fm"
+,"||\x71anot\x65.\x63om"
+,"qi\x2dgon\x67.me"
+,".q\x69enkue\x6e\x2eorg"
+,"||\x71ienkue\x6e.org"
+,"qi\x78iangl\x75\x2ecn"
+,"bb\x73.qmzd\x64\x2ecom"
+,".q\x6bshar\x65.\x63om"
+,"qo\x6f\x73.com"
+,"||\x71oo\x73.com"
+,"bl\x6f\x67.qooz\x61.hk*da\x66engqixi"
+,"||\x65fksof\x74\x2ecom"
+,"||\x71statu\x73\x2ecom"
+,"||\x71tweete\x72.com"
+,"||\x71tra\x63.eu"
+,"||\x71uadedg\x65.com"
+,"||\x77w\x77.get\x79oura\x6d.\x63om"
+,"||\x68iitc\x68.\x63om"
+,"qu\x73i\x38.net"
+,".q\x76odz\x79.o\x72g"
+,"ne\x6desis\x32.\x71\x78.net*\x70ages*M\x79EnTunn\x65l"
+,"qx\x62b\x73.org"
+,"ra\x64ioaust\x72ali\x61.n\x65\x74.au"
+,"op\x6d\x6c.radi\x6ftim\x65.c\x6fm"
+,"||\x72adiova\x74ican\x61.\x6frg"
+,"||\x72aidcal\x6c.co\x6d.tw"
+,"ra\x6egze\x6e.o\x72g"
+,"ra\x6eyunfe\x69\x2ecom"
+,"||\x72anyunf\x65\x69.com"
+,".r\x61pbul\x6c.\x6eet"
+,"||\x72apidsh\x61re\x38.com"
+,".r\x61pidsha\x72edat\x61.\x63om"
+,"rc\x69ne\x74.ca"
+,".r\x65ad10\x30.\x63om"
+,".r\x65adingt\x69me\x73.co\x6d.tw"
+,"||\x72eading\x74ime\x73.c\x6f\x6d.tw"
+,".r\x65alrapt\x61l\x6b.com"
+,".r\x65cordhi\x73tor\x79.o\x72g"
+,".r\x65dtub\x65.\x63om"
+,"re\x66ere\x72.us"
+,"||\x72efere\x72\x2eus"
+,"||\x72eflect\x69vecod\x65\x2ecom"
+,"re\x6caxbb\x73.\x63om"
+,"re\x6eminba\x6f\x2ecom"
+,".r\x65nyuren\x71ua\x6e.org"
+,"||\x72enyure\x6equa\x6e.o\x72g"
+,"su\x62acm\x65.r\x65route\x64\x2eorg"
+,"c\x6e\x2ereuter\x73.com"
+,".r\x65vlef\x74.\x63om"
+,"re\x74weetis\x74.com"
+,"||\x72etweet\x72an\x6b.com"
+,"co\x6enected\x63hin\x61.r\x65uter\x73.\x63om"
+,"|h\x74tp://w\x77\x77.reut\x65r\x73.com\x2fnews/v\x69deo"
+,"re\x76ve\x72.com"
+,".r\x66\x61.org"
+,".r\x66achin\x61\x2ecom"
+,".r\x66amobil\x65.org"
+,"||\x72fer\x6c.o\x72g"
+,".r\x66\x69.fr"
+,"||\x72f\x69.fr"
+,"|h\x74tp://r\x66\x69.my/"
+,".r\x68clou\x64.\x63om"
+,".r\x69leygui\x64\x65.com"
+,"ri\x6b\x75.me/"
+,".r\x6cwl\x77.com"
+,"||\x72lwl\x77.c\x6fm"
+,"ch\x69nes\x65.r\x6e\x77.nl"
+,".r\x6e\x77.nl"
+,"ro\x62te\x78.com"
+,"||\x72obustn\x65ssiske\x79.com"
+,"||\x72ocm\x70.o\x72g"
+,"||\x72oj\x6f.com"
+,"||\x72onjone\x73write\x72\x2ecom"
+,".r\x6fod\x6f.com"
+,".r\x73\x66.org"
+,"||\x72s\x66.org/"
+,".r\x73f-chin\x65s\x65.org"
+,"||\x72sf-chi\x6ees\x65.org"
+,".r\x73smem\x65.\x63om"
+,"||\x72ssmem\x65\x2ecom"
+,".r\x74h\x6b.hk"
+,"|h\x74tp://r\x74h\x6b.hk"
+,".r\x74h\x6b.or\x67\x2ehk"
+,"|h\x74tp://r\x74h\x6b.or\x67\x2ehk"
+,"rt\x69.or\x67.tw"
+,".r\x75anyife\x6e\x67.com/\x62log*so\x6de_ways\x5fto_bre\x61k_the_\x67reat_f\x69rewall"
+,".r\x75shbe\x65.\x63om"
+,"ru\x74ub\x65.ru"
+,".r\x75yisee\x6b\x2ecom"
+,".r\x78h\x6a.net"
+,"bl\x6f\x67.s13\x35\x2ecom/go\x6fgle_ssl"
+,"||\x731hen\x67.\x63om"
+,"||\x738foru\x6d\x2ecom"
+,"sa\x63o\x6d.hk"
+,"||\x73aco\x6d.hk"
+,"||\x73adpand\x61.us"
+,".s\x61i\x71.me"
+,"||\x73ai\x71.me/"
+,".s\x61lvatio\x6e.or\x67.hk"
+,"||\x73alvati\x6f\x6e.or\x67.\x68k"
+,".s\x61mai\x72.r\x75/proxy\x2ftype-01"
+,"sa\x6dmyj\x73.o\x72g"
+,"sa\x6ednobl\x65\x2ecom/bo\x6fkSearc\x68/isbnI\x6equir\x79.\x61sp"
+,"||\x73ankaiz\x6f\x6b.com"
+,".s\x61nmi\x6e.c\x6f\x6d.tw"
+,"sa\x70ikach\x75\x2enet"
+,"sa\x76emedi\x61\x2ecom"
+,"sa\x76etibe\x74\x2eorg"
+,"sa\x76evi\x64.c\x6fm"
+,"||\x73ay\x32.in\x66o"
+,".s\x63m\x70.com"
+,".s\x63mpchin\x65s\x65.com"
+,".s\x63rib\x64.c\x6fm"
+,"||\x73cripts\x70o\x74.com"
+,"se\x61puf\x66.c\x6fm"
+,"do\x6dainhel\x70.searc\x68.com"
+,"se\x63retchi\x6e\x61.com"
+,"||\x73ecretg\x61rde\x6e.no"
+,"||\x64efaul\x74\x2esecure\x73erve\x72.\x6eet"
+,"se\x63urityk\x69s\x73.com"
+,"se\x65smi\x63.c\x6fm"
+,"||\x73eevp\x6e.\x63om"
+,"||\x73eezon\x65\x2enet"
+,"se\x6ai\x65.com"
+,".s\x65ndspac\x65.com/f\x69le"
+,"|h\x74tp://t\x77eet\x73.s\x65rap\x68.m\x65/"
+,"se\x73aw\x65.net"
+,"||\x73esaw\x65.\x6eet"
+,".s\x65saw\x65.o\x72g"
+,"||\x73ethwkl\x65i\x6e.net"
+,"fo\x72u\x6d.set\x74\x79.co\x6d.\x74w"
+,".s\x65venloa\x64.com"
+,"||\x73evenlo\x61\x64.com"
+,".s\x65\x78.com"
+,".s\x65x-1\x31.c\x6fm"
+,".s\x65x\x38.cc"
+,".s\x65xandsu\x62missio\x6e.com"
+,".s\x65xh\x75.com"
+,".s\x65xhuan\x67\x2ecom"
+,"se\x78inse\x78.\x6eet"
+,"||\x73exinse\x78.net"
+,"6\x37\x2e22\x30.9\x31\x2e18"
+,"6\x37\x2e22\x30.9\x31\x2e23"
+,"|h\x74tp://\x2a\x2es\x66.net"
+,".s\x66ileyd\x79\x2ecom"
+,"sh\x61do\x77.ma"
+,"||\x73hadows\x6fck\x73.org"
+,"sh\x61hamat-\x65nglis\x68\x2ecom"
+,".s\x68angfan\x67.org"
+,"||\x73hangfa\x6e\x67.org"
+,"sh\x61peserv\x69ce\x73.com"
+,".s\x68arebe\x65\x2ecom"
+,"||\x73hareco\x6f\x6c.org"
+,"||\x73harkdo\x6cphi\x6e.c\x6fm"
+,"sh\x61rpdail\x79.co\x6d.hk"
+,"||\x73harpda\x69l\x79.co\x6d\x2ehk"
+,".s\x68arpdai\x6c\x79.hk"
+,".s\x68aunthe\x73hee\x70.c\x6fm"
+,"||\x73haunth\x65shee\x70.\x63om"
+,"sh\x65ikyerm\x61m\x69.com"
+,"||\x73hellmi\x78.com"
+,"sh\x65nsho\x75.\x6frg"
+,"sh\x65nyunpe\x72formin\x67art\x73.o\x72g"
+,"sh\x65nzhouf\x69l\x6d.com"
+,"||\x73henzho\x75fil\x6d.c\x6fm"
+,"sh\x69nycha\x6e\x2ecom"
+,".s\x68itaot\x76\x2eorg"
+,"||\x73hixia\x6f\x2eorg"
+,"||\x73hizha\x6f\x2eorg"
+,".s\x68izha\x6f.\x6frg"
+,"sh\x6bsp\x72.mo\x62i/dabr"
+,"||\x73hodanh\x71.com"
+,".s\x68oppin\x67\x2ecom"
+,".s\x68owtim\x65\x2ejp"
+,"c\x68\x2eshvoon\x67.com"
+,".s\x68wchurc\x68\x33.com"
+,"|h\x74tp://s\x68wchurc\x68\x33.com"
+,"si\x6dplec\x64.\x6frg"
+,"||\x73implec\x64.org"
+,"@@\x7c|simpl\x65c\x64.me"
+,"si\x6dplepro\x64uctivi\x74yblo\x67.\x63om"
+,"bb\x73.sin\x61.\x63om/"
+,"bb\x73.sin\x61.\x63om%2F"
+,"bl\x6f\x67.sin\x61\x2eco\x6d.tw"
+,"da\x69lynew\x73\x2esin\x61.c\x6fm/"
+,"da\x69lynew\x73\x2esin\x61.c\x6fm%2F"
+,"fo\x72u\x6d.sin\x61.co\x6d.hk"
+,"ho\x6d\x65.sin\x61\x2ecom"
+,"||\x6dagazin\x65\x73.sin\x61\x2eco\x6d.tw"
+,"ne\x77\x73.sin\x61\x2eco\x6d.hk"
+,"ne\x77\x73.sin\x61\x2eco\x6d.tw"
+,"si\x6egta\x6f.c\x6fm"
+,"||\x73ingta\x6f\x2ecom"
+,"ne\x77\x73.sing\x74a\x6f.ca"
+,"||\x63d\x70.sin\x69c\x61.ed\x75\x2etw"
+,"si\x6eo-mont\x68l\x79.com"
+,"||\x73inocas\x74.com"
+,"si\x6eocis\x6d.\x63om"
+,"si\x6eomontr\x65a\x6c.ca"
+,".s\x69none\x74.\x63a"
+,".s\x69nopit\x74\x2einfo"
+,".s\x69noant\x73\x2ecom"
+,"||\x73inoant\x73.com"
+,"si\x6eoquebe\x63.com"
+,"||\x73ite9\x30.\x6eet"
+,".s\x69tebr\x6f.\x74w"
+,"||\x73itek\x73.\x75\x6b.to"
+,"||\x73itemap\x73.org"
+,"si\x74eta\x67.us"
+,"si\x73.xxx"
+,"||\x73is00\x31.\x63om"
+,"si\x7300\x31.us"
+,"||\x73ju\x6d.cn/"
+,"||\x73kimtub\x65.com"
+,"||\x73kybe\x74.\x63om"
+,"|h\x74tp://s\x6byhighp\x72emiu\x6d.\x63om/"
+,"bb\x73.skyki\x77\x69.com"
+,"|h\x74tp://w\x77\x77.skyp\x65.com/i\x6etl/"
+,"sh\x61r\x65.sky\x70\x65.com/\x73ites/e\x6e/2008/\x310/skyp\x65_presi\x64ent_ad\x64resses\x5fchin"
+,"|h\x74tp://w\x77\x77.skyp\x65.com/z\x68-Hant"
+,".x\x73kywalk\x65\x72.com"
+,"||\x78skywal\x6be\x72.com"
+,"\x6d.\x73land\x72.\x6eet"
+,"||\x73lavaso\x66\x74.com"
+,"||\x73lhen\x67.\x63om"
+,".s\x6cidesha\x72\x65.net"
+,"fo\x72u\x6d.sli\x6d\x65.co\x6d.\x74w"
+,".s\x6cutloa\x64\x2ecom"
+,"sm\x68ri\x63.org"
+,"||\x73o-g\x61.n\x65t"
+,".s\x6f-g\x61.net"
+,"||\x73o-new\x73\x2ecom"
+,".s\x6f-new\x73.\x63om"
+,"ho\x6d\x65.so-n\x65\x74.ne\x74.\x74w/yisa\x5ftsai"
+,"||\x73o\x63.mil/"
+,"||\x73ocksli\x73\x74.net"
+,".s\x6f\x64.c\x6f.jp"
+,".s\x6fftethe\x72.org"
+,"||\x73ofteth\x65\x72.org"
+,".s\x6fftethe\x72-downl\x6fa\x64.com"
+,"||\x73ofteth\x65r-down\x6coa\x64.com"
+,"||\x73ogclu\x62\x2ecom"
+,"so\x68cradi\x6f\x2ecom"
+,"||\x73ohcrad\x69\x6f.com"
+,"||\x77w\x77.som\x65\x65.com"
+,"||\x73orting\x2dalgori\x74hm\x73.com"
+,".s\x6fum\x6f.in\x66o"
+,"||\x73ou\x70.io/"
+,"@@\x7c|stati\x63.sou\x70.\x69o"
+,".s\x6cinkse\x74\x2ecom"
+,"||\x73lickvp\x6e.com"
+,".s\x6eapt\x75.c\x6fm"
+,"||\x73napt\x75.\x63om"
+,"sn\x65akm\x65.n\x65t"
+,"||\x73noope\x72\x2ec\x6f.uk"
+,".s\x6fbee\x73.c\x6fm"
+,"||\x73obee\x73.\x63om"
+,"so\x63ialwha\x6c\x65.com"
+,".s\x6fftethe\x72.c\x6f.jp"
+,"||\x73oftwar\x65bychuc\x6b.com"
+,"bl\x6f\x67.sogo\x6f.org"
+,"so\x68.tw"
+,"||\x73o\x68.tw"
+,"so\x68franc\x65\x2eorg"
+,"||\x73ohfran\x63\x65.org"
+,"ch\x69nes\x65.s\x6fifin\x64.\x63om"
+,"so\x6bamonli\x6e\x65.com"
+,"||\x73ome\x65.c\x6fm"
+,".s\x6fngjian\x6au\x6e.com"
+,"||\x73ongjia\x6eju\x6e.com"
+,".s\x6fpcas\x74.\x63om"
+,".s\x6fpcas\x74.\x6frg"
+,"||\x73oundcl\x6fu\x64.com"
+,"so\x75ndofho\x70\x65.org"
+,"||\x73oundof\x68op\x65.org"
+,"||\x73oupofm\x65di\x61.com"
+,".s\x6furcefo\x72g\x65.net"
+,"so\x75thnew\x73\x2eco\x6d.tw"
+,"so\x77er\x73.or\x67.hk"
+,"||\x77l\x78.sow\x69k\x69.net"
+,"||\x73pace-s\x63ap\x65.com"
+,".s\x70ankwir\x65.com"
+,".s\x70\x62.com/\x62lackbe\x72ry-sof\x74ware/t\x76/downl\x6fad"
+,"|h\x74tp://s\x70\x62.com/\x62lackbe\x72ry-sof\x74ware/t\x76/downl\x6fad"
+,".s\x70\x62.com/\x70ocketp\x63-softw\x61re/tv/\x64ownload"
+,"|h\x74tp://s\x70\x62.com/\x70ocketp\x63-softw\x61re/tv/\x64ownload"
+,".s\x70\x62.com/\x73ymbian\x2dsoftwa\x72e/tv/d\x6fwnload"
+,"|h\x74tp://s\x70\x62.com/\x73ymbian\x2dsoftwa\x72e/tv/d\x6fwnload"
+,".s\x70eedplu\x73\x73.org"
+,"||\x73pencer\x74ippin\x67\x2ecom"
+,"sp\x69nej\x73.c\x6fm"
+,"||\x73proutc\x6fr\x65.com"
+,"sq\x75arespa\x63\x65.com"
+,"||\x73sh9\x31.c\x6fm"
+,"|h\x74tp://c\x64\x6e.ssta\x74i\x63.net/"
+,"ww\x77.stack\x66il\x65.co\x6d/freed\x75r"
+,"us\x69nf\x6f.st\x61t\x65.gov"
+,".s\x74arp2\x70.\x63om"
+,"||\x73tarp2\x70\x2ecom"
+,"||\x73tartpa\x67\x65.com"
+,".s\x74ate16\x38\x2ecom"
+,"||\x73teel-s\x74or\x6d.com"
+,"st\x68o\x6f.com"
+,"||\x73tho\x6f.c\x6fm"
+,".s\x74icka\x6d.\x63om"
+,"st\x69ckerac\x74io\x6e.co\x6d/sesawe"
+,"||\x73tonega\x6de\x73.net"
+,"||\x73tonei\x70\x2einfo"
+,"||\x73torage\x6eewslet\x74e\x72.com"
+,".s\x74optibe\x74crisi\x73\x2enet"
+,"||\x73toptib\x65tcrisi\x73.net"
+,"||\x73towebo\x79\x64.com"
+,"||\x73treami\x6egth\x65.n\x65t"
+,"c\x6e\x2estreet\x76oic\x65.c\x6fm/arti\x63le"
+,"c\x6e\x2estreet\x76oic\x65.c\x6fm/diary"
+,"cn\x32.stree\x74voic\x65.\x63om"
+,"t\x77\x2estreet\x76oic\x65.c\x6fm"
+,"||\x73trongv\x70\x6e.com"
+,".s\x74uden\x74.\x74w/db"
+,"st\x75pidvid\x65o\x73.com"
+,"su\x66en\x67.org"
+,"||\x73ufen\x67.\x6frg"
+,".s\x75garsyn\x63.com"
+,"||\x73ugarsy\x6e\x63.com"
+,"su\x6dmif\x79.c\x6fm"
+,".s\x75olu\x6f.o\x72g"
+,"ap\x69.super\x74wee\x74.n\x65t"
+,"ww\x77.super\x74wee\x74.n\x65t"
+,".s\x75rfeas\x79\x2eco\x6d.au"
+,"su\x70port/y\x6futube/\x62in/req\x75es\x74.py\x3fcontac\x74_type=\x61buse&"
+,"/s\x75pport/\x79outube\x2fbin/st\x61ti\x63.py\x3fpage=s\x74ar\x74.cs&"
+,"||\x73vwin\x64.\x63om"
+,"||\x73weu\x78.c\x6fm"
+,"||\x73wift-t\x6fol\x73.net"
+,".s\x79dneyto\x64a\x79.com"
+,"||\x73yncbac\x6b.com"
+,"||\x73ysadmi\x6e113\x38.n\x65t"
+,"sy\x73rescc\x64\x2eorg"
+,".s\x79te\x73.net"
+,"bl\x6f\x67.syx8\x36.com/2\x3009/09/\x70uff"
+,"bl\x6f\x67.syx8\x36.cn/20\x309/09/p\x75ff"
+,".s\x7abb\x73.net"
+,"||\x73zetowa\x68.or\x67.hk"
+,".t\x33\x35.com"
+,".t\x366\x79.com"
+,"||\x7466\x79.com"
+,".t\x61a-us\x61.\x6frg"
+,"|h\x74tp://t\x61a-us\x61.\x6frg"
+,"ta\x62tte\x72.jp"
+,".t\x61ce\x6d.org"
+,"||\x74afawar\x64.com"
+,"ta\x67wal\x6b.c\x6fm"
+,"||\x74agwal\x6b\x2ecom"
+,"ta\x69pe\x69.go\x76.tw"
+,".t\x61ipeiso\x63iet\x79.o\x72g"
+,"||\x74aipeis\x6fciet\x79.\x6frg"
+,".t\x61iwanda\x69l\x79.net"
+,"||\x74aiwant\x74.or\x67.tw"
+,"||\x74aiwand\x61il\x79.net"
+,"ta\x69wankis\x73.com"
+,"ta\x69wannat\x69o\x6e.com"
+,"ta\x69wannat\x69o\x6e.co\x6d\x2etw"
+,"||\x74aiwann\x65w\x73.co\x6d\x2etw"
+,"ta\x69wanu\x73.\x6eet"
+,"ta\x69wanye\x73\x2ecom"
+,"ta\x69wan-se\x78.com"
+,"||\x74amiaod\x65.tk"
+,"||\x74an\x63.org"
+,"ta\x6egbe\x6e.c\x6fm"
+,".t\x61olu\x6e.i\x6efo"
+,"||\x74aolu\x6e.\x69nfo"
+,"bl\x6f\x67.tara\x67an\x61.com"
+,".t\x61wee\x74.c\x6fm"
+,"||\x74awee\x74.\x63om"
+,"||\x74bpi\x63.i\x6efo"
+,"tc\x68r\x64.org"
+,"tc\x6e\x6f.net*\x64oc*tor"
+,"||\x74eamsee\x73mi\x63.com"
+,".t\x65ashar\x6b\x2ecom/do\x77nloa\x64.\x68tml"
+,"||\x74echlif\x65we\x62.com"
+,"||\x74echpar\x61is\x6f.com"
+,"||\x74ec\x6b.in/"
+,".t\x65lecoms\x70ac\x65.com"
+,"||\x74elegra\x70\x68.c\x6f.uk"
+,".t\x65nac\x79.c\x6fm"
+,"||\x74heampf\x61ctor\x79.\x63om"
+,"||\x74heappl\x65blo\x67.c\x6fm"
+,"||\x74heatru\x6d-bell\x69\x2ecom"
+,"||\x74hebody\x73hop-us\x61.com"
+,"th\x65blemis\x68.com"
+,"||\x74hebcom\x70le\x78.com"
+,".t\x68echina\x62ea\x74.org"
+,"||\x74hediel\x69n\x65.com"
+,"||\x74hed\x77.us"
+,"||\x74hegate\x73note\x73.\x63om"
+,"th\x65housen\x65w\x73.com"
+,"||\x74hehu\x6e.\x6eet"
+,"||\x74helife\x79oucans\x61v\x65.com"
+,"||\x74heliu\x73\x2eorg"
+,"th\x65pirate\x62a\x79.org"
+,"||\x74hepira\x74eba\x79.se"
+,"th\x65qi\x69.in\x66o/blog"
+,"th\x65reallo\x76\x65.kr"
+,"||\x74hesart\x6frialis\x74.com"
+,"th\x65speede\x72.com"
+,"||\x74hetibe\x74pos\x74.c\x6fm"
+,"th\x65trotsk\x79movi\x65.\x63om/"
+,"th\x65viveks\x70o\x74.com"
+,".t\x68isa\x76.c\x6fm"
+,"|h\x74tp://t\x68isa\x76.c\x6fm"
+,"th\x6bphot\x6f.\x63om"
+,"||\x74homasb\x65rnhar\x64\x2eorg"
+,"th\x72eatcha\x6f\x73.com"
+,"||\x74hrough\x6eightsf\x69r\x65.com"
+,".t\x68umbzil\x6c\x61.com"
+,"ti\x61nanmen\x6dothe\x72.\x6frg"
+,"||\x74iananm\x65nuni\x76.\x63om"
+,"||\x74iananm\x65nuni\x76.\x6eet"
+,"||\x74iandix\x69n\x67.org"
+,".t\x69anhuay\x75a\x6e.com"
+,"ti\x61ntiboo\x6b\x73.org"
+,".t\x69anzh\x75.\x6frg"
+,".t\x69be\x74.com"
+,"||\x74ibe\x74.c\x6fm"
+,".t\x69be\x74.net"
+,"||\x74ibe\x74.n\x65t"
+,"ti\x62e\x74.or\x67\x2etw"
+,"ti\x62etal\x6b.\x63om"
+,".t\x69betany\x6futhcon\x67res\x73.o\x72g"
+,"||\x74ibetan\x79outhco\x6egres\x73.\x6frg"
+,"ti\x62etfun\x64\x2eorg"
+,"ti\x62etonli\x6e\x65.com"
+,"||\x74ibeton\x6cin\x65.com"
+,"||\x74ibeton\x6cin\x65.tv"
+,".t\x69betonl\x69n\x65.tv"
+,"||\x74ibetwr\x69te\x73.org"
+,".t\x69m\x65.com\x2ftime/t\x69me100/\x6ceaders\x2fprofil\x65/rebel"
+,".t\x69m\x65.com\x2ftime/s\x70ecials\x2fpackag\x65s/arti\x63le/0,2\x38804"
+,".t\x69m\x65.com\x2ftime/m\x61gazine"
+,"||\x62lo\x67.ti\x6ee\x79.com"
+,"ti\x6eycha\x74.\x63om"
+,"||\x74inypas\x74\x65.com"
+,"||\x74idyrea\x64.com"
+,".t\x69stor\x79.\x63om"
+,"||\x74kcs-co\x6clin\x73.c\x6fm"
+,"||\x74kforu\x6d\x2etk"
+,"c\x6e\x2etmagaz\x69n\x65.com"
+,"|h\x74tp://t\x6d\x69.me"
+,".t\x6eafli\x78.\x63om"
+,"||\x74nafli\x78\x2ecom"
+,"to\x67ette\x72.\x63om"
+,".t\x6fkyo-24\x37.com"
+,"to\x6byo-ho\x74\x2ecom"
+,"||\x74okyoc\x6e\x2ecom"
+,"to\x6eyya\x6e.n\x65t"
+,".t\x6fodo\x63.c\x6fm"
+,"to\x6fne\x6c.net"
+,".t\x6fpnew\x73.\x69n"
+,"||\x74opshar\x65.us"
+,".t\x6fpshare\x77ar\x65.com"
+,"||\x74opstyl\x65\x34.com"
+,"||\x74ops\x79.c\x6fm"
+,"to\x70s\x79.com"
+,"to\x72\x61.to"
+,".t\x6frproje\x63\x74.org"
+,"||\x74orproj\x65c\x74.org"
+,"to\x72rentcr\x61z\x79.com"
+,"||\x74orrent\x63raz\x79.c\x6fm"
+,"||\x74orvp\x6e.\x63om"
+,"to\x75ch9\x39.c\x6fm"
+,"||\x74outf\x72.\x63om"
+,".t\x70\x69.or\x67.\x74w"
+,"||\x74p\x69.or\x67\x2etw"
+,"||\x74ransgr\x65ssioni\x73\x6d.org"
+,"||\x74raveli\x6eloca\x6c.\x63om"
+,"tr\x65ndsma\x70\x2ecom"
+,"||\x74rendsm\x61\x70.com"
+,".t\x72ialofc\x63\x70.org"
+,"||\x74rialof\x63c\x70.org"
+,"||\x74ripo\x64.\x63om"
+,"@@\x7c|ww\x77.t\x72ipo\x64.c\x6fm"
+,"tr\x74\x63.co\x6d.\x74w"
+,"tr\x75lyergo\x6eomi\x63.c\x6fm"
+,"||\x74rusted\x62\x69.com"
+,".t\x72uth10\x31\x2ec\x6f.tv"
+,"|h\x74tp://t\x72uth10\x31\x2ec\x6f.tv"
+,"||\x74ruthc\x6e\x2ecom"
+,".t\x72uve\x6f.c\x6fm"
+,".t\x73emtulk\x75.com"
+,"ts\x71uar\x65.tv"
+,"ts\x75nagaru\x6do\x6e.com"
+,".t\x73ct\x76.net"
+,"||\x74t106\x39.\x63om"
+,"||\x74tta\x6e.c\x6fm"
+,".t\x74ta\x6e.com"
+,"b\x62\x2ett\x76.co\x6d.tw/bb"
+,".t\x75anz\x74.c\x6fm"
+,".t\x75b\x65.com"
+,"tu\x62e\x38.com"
+,"||\x74ube\x38.c\x6fm"
+,"tu\x62eca\x6f.c\x6fm"
+,"||\x74ubewol\x66.com"
+,"tu\x69dan\x67.n\x65t"
+,"tu\x69dan\x67.o\x72g"
+,"bb\x73.tuitu\x69.info"
+,"||\x74umutan\x7a\x69.com"
+,".t\x75nei\x6e.c\x6fm"
+,"|h\x74tp://t\x75nei\x6e.c\x6fm"
+,"||\x74unnelb\x65a\x72.com"
+,".t\x75rbobi\x74\x2enet"
+,"|h\x74tp://t\x75rbobi\x74\x2enet"
+,"||\x74urning\x74ors\x6f.c\x6fm"
+,"||\x74uxtrai\x6ein\x67.com"
+,"||\x3301work\x73.org"
+,"||\x3365sing\x6ce\x73.co\x6d\x2ear"
+,"||\x61ll-tha\x74-is-in\x74eresti\x6e\x67.com"
+,"||\x61rt-or-\x70or\x6e.com"
+,"||\x6eew\x73.at\x65bit\x73.c\x6fm"
+,"||\x74umbl\x72.\x61wflash\x65\x72.com"
+,"||\x62adassj\x73.com"
+,"||\x62asetim\x65sheigh\x74divide\x64by\x32.com"
+,"||\x62enjami\x6est\x65.in"
+,"||\x62lo\x67.bi\x72dhouse\x61p\x70.com"
+,"||\x62obulat\x65.com"
+,"||\x62onjour\x6cesgeek\x73.com"
+,"||\x62ookshe\x6cfpor\x6e.\x63om"
+,"||\x62lo\x67.bo\x78ca\x72.io"
+,"||\x62lo\x67.bi\x74l\x79.com"
+,"||\x63hevron\x77p\x37.com"
+,"||\x63lients\x66romhel\x6c.net"
+,"||\x63odebox\x61p\x70.com"
+,"||\x63ooking\x74othego\x6fdlif\x65.\x63om"
+,"||\x63ubicle\x31\x37.com"
+,"||\x70hoto\x73.\x64ailym\x65\x2ecom"
+,"||\x64avidsl\x6f\x67.com"
+,"||\x62lo\x67.da\x76idzieg\x6ce\x72.net"
+,"||\x62lo\x67.da\x79oneap\x70\x2ecom"
+,"||\x64rewola\x6eof\x66.com"
+,"||\x62lo\x67.dr\x69bbbl\x65.\x63om"
+,"||\x63hao\x73.e\x2dspac\x79.\x63om"
+,"||\x65amonnb\x72enna\x6e.\x63om"
+,"||\x65veryda\x79-carr\x79\x2ecom"
+,"||\x65yespir\x69\x74.info"
+,"||\x6cif\x65.fl\x794eve\x72.\x6de"
+,"||\x66redwil\x73o\x6e.vc"
+,"||\x66uckgf\x77\x2ecom"
+,"||\x67eekmad\x65.c\x6f.uk"
+,"||\x67eneres\x69\x73.com"
+,"||\x6eew\x73.gh\x6fster\x79.\x63om"
+,"||\x67ivemes\x6fmethin\x67torea\x64\x2ecom"
+,"||\x62lo\x67.go\x77all\x61.c\x6fm"
+,"||\x68eiy\x6f.i\x6efo"
+,"||\x68ellone\x77yor\x6b.us"
+,"||\x62lo\x67.ho\x74potat\x6f\x2ecom"
+,"||\x69almost\x6caug\x68.c\x6fm"
+,"||\x62lo\x67.if\x74t\x74.com"
+,"||\x62lo\x67.in\x73tagra\x6d\x2ecom"
+,"||\x62lo\x67.in\x73tapape\x72.com"
+,"||\x69nteres\x74inglau\x67\x68.com"
+,"||\x62lo\x67.ip\x68one-de\x76.org"
+,"||\x6aaypark\x69nsonm\x64\x2ecom"
+,"||\x62lo\x67.jo\x65yrober\x74.org"
+,"||\x6b\x74.kcom\x65.org"
+,"||\x6d\x79.kes\x6f\x2ecn"
+,"||\x62lo\x67.ki\x63kstart\x65\x72.com"
+,"||\x62lo\x67.k\x6c\x2eam"
+,"||\x62lo\x67.kl\x69\x70.me"
+,"||\x74.ku\x6e.im"
+,"||\x62lo\x67.li\x67htbo\x78.\x63om"
+,"||\x6cittleb\x69gdetai\x6c\x73.com"
+,"||\x6covequi\x63ksilve\x72.com"
+,"||\x6cyricsq\x75ot\x65.com"
+,"||\x6dadmenu\x6ebutton\x65\x64.com"
+,"||\x6darc\x6f.o\x72g"
+,"||\x6dinimal\x6da\x63.com"
+,"||\x6dixedme\x64ialab\x73\x2ecom"
+,"||\x6dodfeti\x73\x68.com"
+,"||\x62lo\x67.mo\x6egod\x62.o\x72g"
+,"||\x6eavigea\x74er\x73.com"
+,"||\x6condo\x6e.\x6eeighbo\x72hood\x72.\x63om"
+,"||\x62lo\x67.pa\x74\x68.com"
+,"||\x70arisle\x6do\x6e.com"
+,"||\x62lo\x67.pi\x6bchu\x72.c\x6fm"
+,"||\x62lo\x67.ro\x63kmel\x74.\x63om"
+,"||\x62lo\x67.ro\x6danandr\x65\x67.com"
+,"||\x73olozor\x72\x6f.tk"
+,"||\x62lo\x67.sp\x61rrowma\x69lap\x70.c\x6fm"
+,"||\x73tuffim\x72eadin\x67\x2ecom"
+,"||\x62lo\x67.su\x6dmif\x79.c\x6fm"
+,"||\x74hedail\x79w\x68.at"
+,"||\x74heinte\x72netwis\x68lis\x74.c\x6fm"
+,"||\x74hisisw\x68yyouar\x65fa\x74.com"
+,"||\x77w\x77.tif\x66anyarm\x65n\x74.com"
+,"||\x74jholow\x61ychu\x6b.\x63om"
+,"||\x74oms\x63.c\x6fm"
+,"||\x62lo\x67.to\x70if\x79.com"
+,"||\x74hehung\x72ydude\x73\x2ecom"
+,"||\x74umblwe\x65\x64.org"
+,"||\x73tatu\x73.\x74whir\x6c.\x6frg"
+,"||\x62lo\x67.us\x61.gov"
+,"||\x70hot\x6f.u\x74o\x6d.us"
+,"||\x76-stat\x65\x2eorg"
+,"||\x77ellpla\x63edpixe\x6c\x73.com"
+,"||\x77hydidy\x6fubuyme\x74ha\x74.com"
+,"||\x77ordbon\x65\x72.com"
+,"||\x77ordsan\x64turd\x73.\x63om"
+,"||\x77orstth\x69ngieve\x72at\x65.com"
+,"||\x78musi\x63.\x66m"
+,"||\x78uzhuoe\x72.com"
+,"||\x62\x64.zh\x65.\x6ca"
+,"||\x63oco\x61.z\x6fnbl\x65.n\x65t"
+,".t\x76.com"
+,"||\x77w\x77.t\x76.\x63om"
+,"|h\x74tp://t\x76.com"
+,"||\x74v-intr\x6f\x73.com"
+,"tv\x61nt\x73.com"
+,"fo\x72u\x6d.tv\x62\x2ecom/"
+,"tv\x62oxno\x77.\x63om"
+,"tv\x69de\x72.com"
+,"||\x74vunetw\x6frk\x73.com"
+,"tw\x61.sh"
+,"tw\x61pperke\x65pe\x72.com"
+,"||\x74wapper\x6beepe\x72.\x63om"
+,"||\x74wau\x64.io"
+,".t\x77au\x64.io"
+,".t\x77bb\x73.ne\x74.tw"
+,"tw\x62b\x73.org"
+,"tw\x62b\x73.tw"
+,"||\x74wblogg\x65\x72.com"
+,"tw\x65epma\x67.\x63om"
+,".t\x77eepm\x6c.\x6frg"
+,"||\x74weepm\x6c\x2eorg"
+,".t\x77eetbac\x6bu\x70.com"
+,"||\x74weetba\x63ku\x70.com"
+,"tw\x65etboar\x64.com"
+,"||\x74weetbo\x61r\x64.com"
+,".t\x77eetbon\x65\x72.biz"
+,"||\x74weetbo\x6ee\x72.biz"
+,".t\x77eetdec\x6b.com"
+,"||\x74weetde\x63\x6b.com"
+,"|h\x74tp://d\x65c\x6b.ly"
+,"||\x74weet\x65.\x6eet"
+,"\x6d.\x74weet\x65.\x6eet"
+,"||\x6dt\x77.tl"
+,"||\x74weeted\x74ime\x73.c\x6fm"
+,"tw\x65etmem\x65\x2ecom"
+,"||\x74weetmy\x6cas\x74.fm"
+,"tw\x65etphot\x6f.com"
+,"||\x74weetph\x6ft\x6f.com"
+,"||\x74weetra\x6e\x73.com"
+,"tw\x65etre\x65.\x63om"
+,"||\x74weetre\x65.com"
+,"||\x74weetwa\x6cl\x79.com"
+,"tw\x65etymai\x6c.com"
+,"||\x74wft\x70.o\x72g"
+,"tw\x69bas\x65.c\x6fm"
+,".t\x77ibbl\x65.\x64e"
+,"||\x74wibbl\x65\x2ede"
+,"tw\x69bbo\x6e.c\x6fm"
+,"||\x74wib\x73.c\x6fm"
+,"tw\x69cs\x79.com"
+,".t\x77ifa\x6e.c\x6fm"
+,"|h\x74tp://t\x77ifa\x6e.c\x6fm"
+,"tw\x69ff\x6f.com"
+,"||\x74wiff\x6f.\x63om"
+,"tw\x69lo\x67.org"
+,"tw\x69mbo\x77.c\x6fm"
+,"||\x74wimbo\x77\x2ecom"
+,"||\x74windex\x78.com"
+,"tw\x69ppl\x65.jp"
+,"||\x74wippl\x65\x2ejp"
+,"||\x74wi\x70.me/"
+,"tw\x69sta\x72.cc"
+,"tw\x69sterno\x77.com"
+,"tw\x69stor\x79.\x6eet"
+,"tw\x69tbrows\x65\x72.net"
+,"||\x74witcau\x73\x65.com"
+,"||\x74witget\x68e\x72.com"
+,"||\x74wiggi\x74\x2eorg"
+,"tw\x69tgo\x6f.c\x6fm"
+,"tw\x69ti\x71.com"
+,"||\x74witi\x71.\x63om"
+,".t\x77itlong\x65\x72.com"
+,"||\x74witlon\x67e\x72.com"
+,"|h\x74tp://t\x6c.gd/"
+,"tw\x69toaste\x72.com"
+,"||\x74witoas\x74e\x72.com"
+,"||\x74witonm\x73\x6e.com"
+,".t\x77itpi\x63.\x63om"
+,"||\x74witpi\x63\x2ecom"
+,"tw\x69trefer\x72a\x6c.com"
+,".t\x77it2\x64.c\x6fm"
+,"||\x74wit2\x64.\x63om"
+,".t\x77itsta\x74\x2ecom"
+,"||\x74witsta\x74.com"
+,"||\x64otheyf\x6fllowea\x63hothe\x72\x2ecom"
+,"||\x66irstfi\x76efollo\x77er\x73.com"
+,"||\x72etweet\x65ffec\x74.\x63om"
+,"||\x74weepli\x6b\x65.me"
+,"||\x74weepgu\x69d\x65.com"
+,"||\x74urbotw\x69tte\x72.c\x6fm"
+,".t\x77itvi\x64.\x63om"
+,"||\x74witvi\x64\x2ecom"
+,"19\x39.5\x39.14\x38.20"
+,"|h\x74tp://\x74\x2eco"
+,"|h\x74tps://\x74.co"
+,"|h\x74tp://t\x77\x74.tl"
+,"tw\x69ttbo\x74.\x6eet"
+,"tw\x69tte\x72.c\x6fm"
+,"||\x74witte\x72\x2ecom"
+,"||\x74witte\x72\x2ejp"
+,"||\x74wtt\x72.c\x6fm"
+,"/^\x68ttps?:\x5c/\/[^\\x2f]+twit\x74er\x5c.co\x6d/"
+,"||\x74witter\x34\x6a.org"
+,".t\x77itterc\x6funte\x72.\x63om"
+,"||\x74witter\x63ounte\x72\x2ecom"
+,"tw\x69tterfe\x65\x64.com"
+,".t\x77itterg\x61dge\x74.c\x6fm"
+,"||\x74witter\x67adge\x74.\x63om"
+,".t\x77itterk\x72.com"
+,"||\x74witter\x6b\x72.com"
+,"||\x74witter\x6dai\x6c.com"
+,"tw\x69tterti\x6d.es"
+,"||\x74witter\x74i\x6d.es"
+,"tw\x69ttha\x74.\x63om"
+,".t\x77itturl\x79.com"
+,"||\x74wittur\x6c\x79.com"
+,".t\x77itza\x70.\x63om"
+,"tw\x69yi\x61.com"
+,".t\x77re\x67.in\x66o"
+,"||\x74wre\x67.i\x6efo"
+,"||\x74wsta\x72.\x6eet"
+,".t\x77tk\x72.com"
+,"|h\x74tp://t\x77tk\x72.com"
+,"||\x74wim\x67.c\x6fm"
+,"tw\x74rlan\x64.\x63om"
+,"tw\x75r\x6c.nl"
+,".t\x77ya\x63.org"
+,"||\x74wya\x63.o\x72g"
+,".t\x79coo\x6c.c\x6fm"
+,"||\x74ycoo\x6c.\x63om"
+,"ty\x6eso\x65.org"
+,"||\x74zangm\x73\x2ecom"
+,"||\x74ypepa\x64\x2ecom"
+,"@@\x7c|ww\x77.t\x79pepa\x64.\x63om"
+,"@@\x7c|stati\x63.typep\x61\x64.com"
+,"||\x62lo\x67.ex\x70ofutur\x65\x73.com"
+,"||\x6cegalte\x63\x68.la\x77.\x63om"
+,"||\x77w\x77.loi\x63lemeu\x72\x2ecom"
+,"||\x6catimes\x62log\x73.l\x61time\x73.\x63om"
+,"||\x62lo\x67.pa\x6c\x6d.com"
+,"||\x62log\x73.t\x61mpaba\x79\x2ecom"
+,"||\x63ontest\x73.twili\x6f.com"
+,"em\x62\x72.in"
+,"||\x65mb\x72.in"
+,"gu\x6fmi\x6e.us\x2flogin"
+,".s\x72c\x66.uca\x6d.org/s\x61lon/"
+,"||\x75cdc199\x38.org"
+,"||\x75derz\x6f.\x69t"
+,"||\x75d\x6e.com"
+,".u\x64\x6e.com"
+,"uf\x72eevp\x6e.\x63om"
+,".u\x67\x6f.com"
+,"uh\x72\x70.org"
+,"ui\x67hurbi\x7a\x2enet"
+,".u\x6cik\x65.net"
+,"|h\x74tp://w\x77\x77.ukch\x69nes\x65.c\x6fm/www/\x322/2009\x2d03/284\x32.html"
+,"uk\x6ciferad\x69\x6f.c\x6f.uk"
+,"||\x75klifer\x61di\x6f.c\x6f\x2euk"
+,"ul\x74ravp\x6e.\x66r"
+,"||\x75ltravp\x6e.fr"
+,"ul\x74rax\x73.c\x6fm"
+,"||\x75nbloc\x6b\x2ec\x6e.com"
+,"un\x63yclome\x64i\x61.org"
+,"un\x63yclope\x64i\x61.info"
+,"||\x75nholyk\x6eigh\x74.c\x6fm"
+,".u\x6e\x69.cc"
+,"un\x69cod\x65.o\x72g"
+,".u\x6eitedda\x69l\x79.co\x6d\x2emy/ind\x65\x78.php?"
+,".u\x6eix10\x30.\x63om"
+,"||\x75nknown\x73pac\x65.o\x72g"
+,"un\x70\x6f.org"
+,"||\x75oc\x6e.org"
+,"to\x72.updat\x65sta\x72.c\x6fm"
+,".u\x70load4\x75\x2einfo"
+,".u\x70loade\x64\x2eto/file"
+,"|h\x74tp://u\x70loade\x64\x2eto/file"
+,".u\x70loadst\x61tio\x6e.c\x6fm/file"
+,"ww\x77.urban\x6futfitt\x65r\x73.com"
+,"my\x73har\x65.u\x72\x6c.co\x6d.\x74w/"
+,"||\x75rlbor\x67\x2ecom"
+,"||\x75rlpars\x65\x72.com"
+,"u\x73\x2eto"
+,"||\x75sac\x6e.c\x6fm"
+,"be\x74\x61.usej\x75m\x70.com"
+,"||\x75sf\x6b.mil"
+,"ea\x72thquak\x65.usg\x73.\x67ov/eqc\x65nter/r\x65centeq\x73ww/Map\x73/10/10\x35_3\x30.php"
+,"||\x75sm\x63.mil"
+,".u\x73trea\x6d.\x74v"
+,"||\x75strea\x6d\x2etv"
+,"us\x75\x73.cc"
+,".u\x75shar\x65.\x63om"
+,"|h\x74tp://u\x75shar\x65.\x63om"
+,".u\x77ant\x73.c\x6fm"
+,".u\x77ant\x73.n\x65t"
+,"||\x75yghurc\x6fngres\x73\x2eorg"
+,"uy\x67u\x72.org"
+,"v7\x30.us"
+,"||\x76aayo\x6f.\x63om"
+,"||\x76alue-d\x6fmai\x6e.c\x6fm"
+,".v\x61n69\x38.c\x6fm"
+,".v\x61nem\x75.cn"
+,".v\x61nilla-\x6a\x70.com"
+,"va\x6esk\x79.com"
+,"||\x76apur\x6c.\x63om"
+,"||\x76cf-onl\x69n\x65.org"
+,"||\x76cfbuil\x64e\x72.org"
+,".v\x65lkaepo\x63h\x61.sk"
+,"ve\x6f\x68.com"
+,".v\x65rizo\x6e.\x6eet"
+,"||\x76eryb\x73.\x63om"
+,".v\x66\x74.co\x6d.\x74w"
+,"vi\x64eoba\x6d.\x63om"
+,"||\x76ideoba\x6d.com"
+,".v\x69deom\x6f.\x63om"
+,"||\x76idoem\x6f\x2ecom"
+,"||\x76ik\x69.com"
+,"vi\x6de\x6f.com"
+,"||\x76imgol\x66\x2ecom"
+,"||\x76impera\x74o\x72.org"
+,"||\x76incn\x64.\x63om"
+,"||\x76innie\x76\x2ecom"
+,"vi\x64e\x6f.tis\x63al\x69.it\x2fcanali\x2ftruveo"
+,"||\x76mixcor\x65.com"
+,"c\x6e\x2evo\x61.mo\x62i"
+,"t\x77\x2evo\x61.mo\x62i"
+,".v\x6fachine\x73eblo\x67.\x63om"
+,"||\x76oachin\x65seblo\x67\x2ecom"
+,"vo\x61g\x64.com"
+,"vo\x61canton\x65s\x65.com"
+,"||\x76oacant\x6fnes\x65.c\x6fm"
+,"vo\x61chines\x65.com"
+,"||\x76oachin\x65s\x65.com"
+,"vo\x61tibeta\x6e.com"
+,"||\x76oatibe\x74a\x6e.com"
+,"vo\x61new\x73.c\x6fm/chin\x65se"
+,"vo\x63\x6e.tv"
+,".v\x6f\x74.org"
+,"||\x76o\x74.org"
+,"ww\x77.vo\x79.c\x6fm"
+,"||\x77w\x77.vpn\x63u\x70.com"
+,"vp\x6eboo\x6b.c\x6fm"
+,"vp\x6efir\x65.c\x6fm"
+,"||\x76pngat\x65\x2ejp"
+,".v\x70ngat\x65.\x6eet"
+,"||\x76pngat\x65\x2enet"
+,"||\x76pnpo\x70.\x63om"
+,"||\x76pnpron\x65\x74.com"
+,"||\x76tunne\x6c\x2ecom"
+,"li\x73t\x73.w\x33.\x6frg/arc\x68ives/p\x75blic"
+,"||\x77affle1\x399\x39.com"
+,".j\x79z\x6a.waq\x6e.com"
+,"||\x6ayz\x6a.wa\x71\x6e.com"
+,".w\x61ha\x73.com"
+,".w\x61igaob\x75\x2ecom"
+,"wa\x69keun\x67.\x6frg/php\x5fwind"
+,".w\x61iwaie\x72\x2ecom"
+,"|h\x74tp://w\x61iwaie\x72\x2ecom"
+,"wa\x6clorno\x74\x2eorg"
+,"||\x77allpap\x65rcas\x61.\x63om"
+,"||\x77w\x77.wan\x2dpres\x73.\x6frg"
+,"||\x77anderi\x6eghors\x65\x2enet"
+,"||\x77angaf\x75\x2enet"
+,"||\x77angjin\x62\x6f.org"
+,".w\x61ngjinb\x6f.org"
+,"wa\x6eglixio\x6e\x67.com"
+,"wa\x6egruosh\x75\x69.net"
+,"ww\x77.wangr\x75owan\x67.\x6frg"
+,"wa\x6et-dail\x79.com"
+,"wa\x70edi\x61.m\x6fbi/zhs\x69mp"
+,".m\x61kzho\x75.\x77arehou\x73e33\x33.c\x6fm"
+,"wa\x73hen\x67.n\x65t"
+,".w\x61ttpa\x64.\x63om"
+,".w\x65ar\x6e.com"
+,"||\x77ear\x6e.c\x6fm"
+,"||\x68udator\x69\x71.we\x62.\x69d"
+,"||\x77eb2pro\x6aec\x74.net"
+,"we\x62ban\x67.n\x65t"
+,"we\x62lag\x75.c\x6fm"
+,"we\x62s-t\x76.n\x65t"
+,"we\x62shot\x73.\x63om"
+,"we\x62sitepu\x6cs\x65.com\x2fhelp/t\x65sttool\x73.china\x2dtes\x74.h\x74ml"
+,"we\x62worker\x64ail\x79.c\x6fm"
+,"we\x65ewoo\x6f.\x6eet/hss\x2fhotspo\x74_cn"
+,".w\x65ekma\x67.\x69nfo"
+,".w\x65fon\x67.c\x6fm"
+,"we\x69bolea\x6b\x2ecom"
+,"we\x69jingsh\x65n\x67.org"
+,".w\x65imin\x67.\x69nfo"
+,"we\x69quanwa\x6e\x67.org"
+,"we\x6egewan\x67\x2ecom"
+,".w\x65ngewan\x67.org"
+,"||\x77engewa\x6e\x67.org"
+,".w\x65nhu\x69.ch"
+,"||\x77enk\x75.c\x6fm"
+,"we\x6exuecit\x79.com"
+,".w\x65nyunch\x61\x6f.com"
+,"||\x77enyunc\x68a\x6f.com"
+,"we\x73tc\x61.com"
+,"||\x77estc\x61.\x63om"
+,"||\x77estern\x77olve\x73.\x63om"
+,"hk\x67.westk\x69\x74.net"
+,"ww\x77.wet12\x33.com"
+,"||\x77ep\x6e.in\x66o"
+,"we\x74pussyg\x61me\x73.com"
+,"we\x78iaob\x6f.\x6frg"
+,"||\x77exiaob\x6f.org"
+,"we\x7ahiyon\x67\x2eorg"
+,"||\x77ezon\x65.\x6eet"
+,".w\x66oru\x6d.c\x6fm"
+,"||\x77foru\x6d.\x63om/"
+,".w\x68atbloc\x6be\x64.com"
+,"||\x77hatblo\x63ke\x64.com"
+,".w\x68ippeda\x73\x73.com"
+,"wh\x79love\x72.\x63om"
+,"||\x77hy\x78.org"
+,"ev\x63h\x6b.wik\x69\x61.com/\x77iki/%E\x35%A4%A7\x25E7%B4%\x380%E5%8\x35%83%E6\x2599%82%\x455%A0%B1"
+,"c\x6e\x2euncycl\x6fpedi\x61.\x77iki\x61.c\x6fm"
+,"z\x68\x2euncycl\x6fpedi\x61.\x77iki\x61.c\x6fm"
+,"||\x77ikilea\x6b\x73.ch"
+,"||\x77ikilea\x6b\x73.de"
+,"||\x77ikilea\x6b\x73.eu"
+,"||\x77ikilea\x6b\x73.lu"
+,".w\x69kileak\x73.org"
+,"||\x77ikilea\x6b\x73.org"
+,"||\x77ikilea\x6b\x73.pl"
+,"||\x63ollate\x72almurd\x65\x72.com"
+,"||\x63ollate\x72almurd\x65\x72.org"
+,"wi\x6bilivre\x73.info/\x77iki/%E\x39%9B%B6\x25E5%85%\x41B%E5%A\x45%AA%E7\x25AB%A0"
+,"||\x77ikimap\x69\x61.org"
+,"||\x73ecur\x65.\x77ikimed\x69\x61.org"
+,"||\x77ikimed\x69\x61.or\x67.\x6do"
+,"z\x68\x2ewikine\x77\x73.org"
+,"||\x77ikiwik\x69.jp"
+,"||\x73port\x73.\x77illiam\x68il\x6c.com"
+,"||\x77ill\x77.n\x65t"
+,"||\x77indows\x70honem\x65\x2ecom"
+,"wi\x6ewhispe\x72\x73.info"
+,"||\x77iredby\x74e\x73.com"
+,"||\x77iredpe\x6e.com"
+,".w\x69sevi\x64.\x63om"
+,"||\x77isevi\x64\x2ecom"
+,".w\x69topi\x61.\x6eet"
+,".w\x6f.tc"
+,"||\x77oese\x72.\x63om"
+,"wo\x6cfa\x78.com"
+,"||\x77olfa\x78.\x63om"
+,".w\x6fmensri\x67htsofc\x68in\x61.org"
+,"||\x77omensr\x69ghtsof\x63hin\x61.o\x72g"
+,"wo\x6fpi\x65.jp"
+,"||\x77oopi\x65.\x6ap"
+,"wo\x6fpi\x65.tv"
+,"||\x77oopi\x65.\x74v"
+,"||\x77orkatr\x75n\x61.com"
+,".w\x6frldca\x74\x2eorg"
+,"wo\x72ldjour\x6ea\x6c.com"
+,".w\x6frdpres\x73.com"
+,"||\x77ordpre\x73\x73.com"
+,"wo\x78inghui\x67u\x6f.com"
+,"wo\x77-lif\x65.\x6eet"
+,".w\x70oforu\x6d\x2ecom"
+,"||\x77poforu\x6d.com"
+,".w\x71lh\x77.com"
+,".w\x71y\x64.org"
+,"||\x77qy\x64.org"
+,"wr\x65tc\x68.cc"
+,".w\x73\x6a.com"
+,".w\x74fpeopl\x65.com"
+,".w\x75al\x61.com"
+,"wu\x65rkaix\x69\x2ecom"
+,"wu\x66\x69.or\x67.\x74w"
+,"wu\x6ai\x65.net"
+,"wu\x6aieliul\x61\x6e.com"
+,"||\x77ujieli\x75la\x6e.com"
+,"wu\x6bangru\x69\x2enet"
+,"ww\x69t\x76.com"
+,"wz\x79bo\x79.im\x2fpost/1\x360"
+,"|h\x74tp://w\x77\x77.x-be\x72r\x79.com\x2fgoagent"
+,"||\x78-ar\x74.c\x6fm"
+,"||\x78-wal\x6c.\x6frg"
+,"x1\x3949\x78.com"
+,"x3\x365\x78.com"
+,"xa\x6eg\x61.com"
+,".x\x62ookc\x6e.\x63om"
+,"||\x78bookc\x6e\x2ecom"
+,"\x78.\x78cit\x79.jp"
+,".x\x63riti\x63.\x63om"
+,"de\x73tin\x79.x\x66ile\x73.t\x6f/ubbth\x72eads"
+,".x\x66\x6d.p\x70.ru"
+,"xg\x6dy\x64.com"
+,"xh\x34\x6e.cn/b\x6cog"
+,"xh\x61mste\x72.\x63om"
+,"on\x65.xthos\x74.info"
+,".x\x69aochun\x63nj\x70.com"
+,"\x73.\x78iao\x64.in"
+,".x\x69aohexi\x65.com"
+,"||\x78iaom\x61.\x6frg"
+,"||\x78iaohex\x69\x65.com"
+,"xi\x65zhu\x61.c\x6fm"
+,".x\x69n\x67.com"
+,"||\x78in\x67.com"
+,".x\x69nmia\x6f.\x63o\x6d.hk"
+,"||\x78inmia\x6f\x2eco\x6d.hk"
+,"xi\x6eshen\x67.\x6eet"
+,"xi\x6eshiju\x65\x2ecom"
+,"xi\x6ehuane\x74\x2eorg"
+,"xi\x7aang-zh\x69y\x65.org"
+,"xj\x70.cc"
+,"||\x78j\x70.cc"
+,"||\x78ml-tra\x69ning-g\x75id\x65.com"
+,"xm\x6fvie\x73.c\x6fm"
+,"||\x78nx\x78.com"
+,"xp\x64\x6f.net"
+,"||\x78pu\x64.org"
+,"||\x6b\x32.xre\x61\x2ecom"
+,"||\x78tub\x65.c\x6fm"
+,"bl\x6f\x67.xuit\x65.net"
+,"vl\x6f\x67.xuit\x65.net"
+,"xu\x7ahiyon\x67\x2enet"
+,"||\x78ucha\x6f.\x6frg"
+,"xu\x63ha\x6f.net"
+,"||\x78ucha\x6f.\x6eet"
+,"xv\x65dio\x73.c\x6fm"
+,".x\x76ideo\x73.\x63om"
+,".x\x78bb\x78.com"
+,"||\x78xx\x78.co\x6d.au"
+,"xy\x73.org"
+,"xy\x73blog\x73.\x6frg"
+,"xy\x796\x39.com"
+,"xy\x796\x39.info"
+,"pa\x67\x65.bi\x64.\x79aho\x6f.c\x6fm"
+,"bl\x6fg\x73.yah\x6f\x6f.c\x6f.jp"
+,"bu\x79.yaho\x6f\x2eco\x6d.tw\x2fgdsale"
+,"h\x6b\x2eyaho\x6f.\x63om"
+,"h\x6b\x2eknowle\x64g\x65.yah\x6f\x6f.com"
+,"h\x6b\x2emyblo\x67\x2eyaho\x6f.\x63om"
+,"h\x6b\x2enew\x73.y\x61ho\x6f.com"
+,"h\x6b\x2er\x64.yah\x6f\x6f.com"
+,"h\x6b\x2esearc\x68\x2eyaho\x6f.\x63om/sea\x72ch"
+,"h\x6b\x2evide\x6f.\x6eew\x73.ya\x68o\x6f.com\x2fvideo"
+,"me\x6d\x65.yaho\x6f.com"
+,"t\x77\x2eyaho\x6f.\x63om"
+,"t\x77\x2emyblo\x67\x2eyaho\x6f.\x63om"
+,"t\x77\x2enew\x73.y\x61ho\x6f.com"
+,"pu\x6cs\x65.yah\x6f\x6f.com"
+,"up\x63omin\x67.\x79aho\x6f.c\x6fm"
+,"vi\x64e\x6f.yah\x6f\x6f.com"
+,"||\x79aho\x6f.c\x6f\x6d.hk"
+,"ya\x6d.com"
+,"||\x79a\x6d.com"
+,"ya\x73n\x69.c\x6f.\x75k"
+,"||\x79asukun\x69.o\x72.jp"
+,".y\x64\x79.com"
+,"||\x79eelo\x75.\x63om"
+,"ye\x65y\x69.com"
+,"ye\x67l\x65.net"
+,"||\x79egl\x65.n\x65t"
+,"yf\x72o\x67.com"
+,"||\x79hc\x77.net"
+,".y\x69.org"
+,".y\x69di\x6f.com"
+,"||\x79idi\x6f.c\x6fm"
+,"yi\x6cubb\x73.c\x6fm"
+,"x\x61\x2eyim\x67.c\x6fm"
+,".y\x69pu\x62.com"
+,"||\x79ipu\x62.c\x6fm"
+,".y\x6fgiche\x6e\x2eorg"
+,"||\x79ogiche\x6e.org"
+,"yo\x6e\x67.hu"
+,".y\x6frkbb\x73.\x63a"
+,"||\x79oux\x75.i\x6efo"
+,".y\x79i\x69.org"
+,"||\x79yi\x69.org"
+,".y\x7az\x6b.com"
+,"||\x79zz\x6b.com"
+,".y\x6fujiz\x7a.\x63om"
+,"||\x79oujiz\x7a\x2ecom"
+,"yo\x75make\x72.\x63om"
+,"yo\x75pa\x69.org"
+,"||\x79oupa\x69.\x6frg"
+,".y\x6fur-fre\x65do\x6d.net"
+,".y\x6fusendi\x74.com"
+,"||\x79ousend\x69\x74.com"
+,"yo\x75thba\x6f.\x63om"
+,".y\x6futhnet\x72adi\x6f.o\x72g/tmit\x2fforum"
+,"bl\x6f\x67.yout\x68wan\x74.c\x6f\x6d.tw"
+,"sh\x61r\x65.you\x74hwan\x74.\x63o\x6d.tw"
+,"to\x70i\x63.you\x74hwan\x74.\x63o\x6d.tw"
+,".y\x6fupor\x6e.\x63om"
+,"||\x79oupor\x6e\x2ecom"
+,"||\x79out\x75.be"
+,".y\x6futub\x65.\x63om"
+,"||\x79outub\x65\x2ecom"
+,"||\x79outube\x2dnocook\x69\x65.com"
+,".y\x6futubec\x6e.com"
+,"yo\x75versio\x6e.com"
+,"||\x79ouvers\x69o\x6e.com"
+,"bl\x6f\x67.youx\x75.info/\x32010/03\x2f14/wes\x74-chamb\x65r"
+,"||\x79tim\x67.c\x6fm"
+,"yt\x68\x74.net"
+,"yu\x61nmin\x67.\x6eet"
+,"||\x79uncha\x6f\x2enet"
+,"||\x79vesgel\x65y\x6e.com"
+,"yx\x35\x31.net"
+,"||\x79ymay\x61.\x63om"
+,"za\x63eboo\x6b.\x63om"
+,"||\x7aanne\x6c.\x63om"
+,"||\x74ap1\x31.c\x6fm"
+,"lu\x6eta\x6e.za\x6fba\x6f.com"
+,".z\x61oba\x6f.c\x6f\x6d.sg"
+,"||\x7aaoba\x6f.\x63o\x6d.sg"
+,".z\x61ozo\x6e.c\x6fm"
+,"||\x7aaria\x73.\x63om"
+,"ww\x77.zauru\x73.or\x67.uk"
+,".z\x64ne\x74.co\x6d.tw/ne\x77s/soft\x77are/0,\x32000085\x3678,201\x311187,00"
+,".z\x65ngjiny\x61\x6e.org"
+,"||\x7aeutc\x68.\x63om"
+,"ww\x77.zfree\x74.com/p\x6fst/use\x6aump-br\x6fwn\x73.ht\x6dl"
+,"zg\x7acj\x6a.net"
+,".z\x68anbi\x6e.\x6eet"
+,"||\x7ahanbi\x6e\x2enet"
+,"zh\x65nghu\x69.\x6frg"
+,"zh\x65nlib\x75.\x69nfo"
+,"||\x7ahenlib\x75.info"
+,".z\x68inengl\x75yo\x75.com"
+,"||\x7ahonggu\x6ftes\x65.n\x65t"
+,"||\x7ahongme\x6e\x67.org"
+,"||\x7ahreade\x72.com"
+,"zh\x75ichagu\x6fj\x69.org"
+,"||\x7ahuicha\x67uoj\x69.o\x72g"
+,".z\x69dd\x75.co\x6d/downl\x6fad"
+,"||\x7aillion\x6b.com"
+,"zi\x6ei\x6f.com"
+,"||\x7aini\x6f.c\x6fm"
+,"||\x7aipli\x62.\x63om"
+,".z\x6bai\x70.com"
+,"||\x7akai\x70.c\x6fm"
+,"||\x7ali\x62.ne\x74/"
+,"zm\x77.cn"
+,"zo\x6dob\x6f.net"
+,".z\x6fnaeuro\x70\x61.com"
+,"||\x7aonaeur\x6fp\x61.com"
+,"||\x7aootoo\x6c\x2ecom"
+,".z\x6fozl\x65.n\x65t"
+,"wr\x69te\x72.zo\x68\x6f.com"
+,".z\x73har\x65.n\x65t/down\x6coad"
+,".z\x73rha\x6f.c\x6fm"
+,".z\x75\x6f.la"
+,"||\x7au\x6f.la"
+,".z\x75ol\x61.com"
+,"||\x7auol\x61.c\x6fm"
+,"||\x7averef\x66\x2ecom"
+,"zy\x7ac\x39.com"
+,"fr\x65enet"
+,"q=\x66reedom"
+,"q%\x33Dfreed\x6fm"
+,"re\x6demberi\x6eg_tian\x61nmen_2\x30_years"
+,"se\x61rch*sa\x66eweb"
+,"q=\x74riangle"
+,"q%\x33DTrian\x67le"
+,"ul\x74rareach"
+,"ul\x74rasurf"
+,"zh\x65ngjian"
+,"%E\x37%BD%A2\x25E8%AF%\x42E"
+,".g\x6fogl\x65.*\x25E9%B2%\x38D%E5%B\x44%A4"
+,".g\x6fogl\x65.*\x25E9%AE%\x391%E5%B\x44%A4"
+,"se\x61rch*%E\x35%8D%9A\x25E8%AE%\x41F"
+,"se\x61rch*%E\x35%A4%A7\x25E7%BA%\x41A%E5%8\x35%83"
+,"se\x61rch*%E\x39%92%93\x25E9%B1%\x42C%E5%B\x32%9B"
+,"%E\x35%8A%A8\x25E6%80%\x381%E7%B\x44%91"
+,"se\x61rch*%E\x35%A4%9A\x25E7%B6%\x41D"
+,"se\x61rch*%E\x35%A4%9A\x25E7%BB%\x424"
+,"se\x61rch*fr\x65egate"
+,"se\x61rch*%E\x36%B3%95\x25E4%BC%\x39A"
+,"%E\x36%B3%95\x25E8%BD%\x41E%E5%A\x34%A7%E6\x25B3%95"
+,"%E\x36%B3%95\x25E8%BC%\x41A%E5%8\x41%9F"
+,"%E\x36%B3%95\x25E8%BD%\x41E%E5%8\x41%9F"
+,"%E\x38%83%A1\x25E6%B5%\x427%E5%B\x33%B0"
+,"%E\x38%83%A1\x25E6%B5%\x427%E6%B\x38%85"
+,"se\x61rch*%E\x38%8A%B1\x25E8%8A%\x421%E5%8\x35%AC%E5\x25AD%90"
+,"se\x61rch*%B\x43%CD%D4\x25AA"
+,"se\x61rch*%B\x43%D3%C3\x25DC%B4%\x46A%C0%ED"
+,"se\x61rch*%E\x35%8A%A0\x25E5%AF%\x386%E4%B\x42%A3%E7\x2590%86"
+,"se\x61rch*%E\x36%B1%9F\x25E6%B5%\x381%E6%B\x30%93"
+,"se\x61rch*%E\x37%9C%8B\x25E4%B8%\x41D%E5%9\x42%BD"
+,"se\x61rch*%E\x35%85%AD\x25E5%9B%\x39B"
+,"%E\x35%88%98\x25E6%99%\x393%E6%B\x33%A2"
+,"%E\x37%BE%8E\x25E5%9B%\x42D%E4%B\x39%8B%E9\x259F%B3"
+,"%E\x36%B0%91\x25E8%BF%\x39B%E5%8\x35%9A"
+,"%E\x36%B0%91\x25E8%BF%\x390"
+,"se\x61rch*%E\x38%89%B2\x25E6%83%\x385"
+,"%E\x37%8E%8B\x25E4%B8%\x429"
+,"se\x61rch*%E\x37%BD%91\x25E7%89%\x429"
+,"se\x61rch*%E\x37%8E%8B\x25E5%B8%\x38C%E5%9\x33%B2"
+,"se\x61rch*%E\x39%AD%8F\x25E4%BA%\x41C%E7%9\x34%9F"
+,"se\x61rch*%E\x36%96%87\x25E5%AD%\x397%E7%8\x42%B1"
+,"se\x61rch*%E\x36%88%91\x25E7%9A%\x384%E5%A\x35%8B%E6\x2596%97"
+,"se\x61rch*%E\x36%97%A0\x25E7%95%\x38C"
+,"se\x61rch*%E\x39%82%AA\x25E6%81%\x426"
+,"se\x61rch*%E\x36%B4%97\x25E8%84%\x391"
+,"se\x61rch*%E\x36%96%B0\x25E5%94%\x390%E4%B\x41%BA"
+,"se\x61rch*%E\x36%96%B0\x25E8%AF%\x41D%E4%B\x38%9D"
+,"se\x61rch*%E\x35%AD%A6\x25E8%BF%\x390"
+,"se\x61rch*%E\x34%B8%AD\x25E5%8A%\x39F"
+,"se\x61rch*%E\x34%B8%AD\x25E5%9B%\x42D%E8%A\x45%BA%E5\x259D%9B"
+,"se\x61rch*%E\x34%B8%AD\x25E5%AE%\x413%E9%8\x33%A8"
+,"|h\x74tps://\x75ploa\x64.\x77ikimed\x69\x61.org"
+,"|h\x74tps://\x2a.wikip\x65di\x61.org"
+,".w\x69kipedi\x61.org/w\x69ki/Dal\x61i_Lama"
+,".w\x69kipedi\x61.org/w\x69ki/Dal\x61i-Lama"
+,"a\x72\x2ewikipe\x64i\x61.org\x2a%D8%AF\x25D8%A7%\x449%84%D\x38%A7%D9\x258A_%D9\x2584%D8%\x417%D9%8\x35%D8%A7"
+,"zh\x2dyu\x65.wi\x6bipedi\x61\x2eorg/wi\x6bi/%E5%\x38A%89%E\x36%9B%89\x25E6%B3%\x412"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/A\x6eti-com\x6dunism"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/B\x6fok_bur\x6eing"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/C\x65nsorsh\x69p_in_t\x68e_Peop\x6ce%27s_\x52epubli\x63_of_Ch\x69na"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/C\x68arter_\x308"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/C\x68en_Gua\x6egcheng"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/D\x65ep_pac\x6bet_ins\x70ection"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/F\x72eegate"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/G\x6flden_S\x68ield_P\x72oject"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/G\x72eat_Fi\x72ewall_\x6ff_China"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/H\x6fng_Kong"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/H\x75ang_Qi"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/I\x6eternet\x5fcensor\x73hip"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/J\x61va_Ano\x6e_Proxy"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/L\x69u_Xiao\x62o"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/S\x68i_Tao"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/T\x61nk_man"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/T\x69ananme\x6e_Papers"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/T\x69ananme\x6e_Squar\x65_prote\x73ts_of_\x31989"
+,"e\x6e\x2ewikipe\x64i\x61.org\x2fwiki/T\x69betan_\x69ndepen\x64ence_m\x6fvement"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fwiki/W\x69kipedi\x61:%E9%A\x30%81%E9\x259D%A2%\x455%AD%9\x38%E5%BB\x25A2%E8%\x418%8E%E\x38%AB%96"
+,"z\x68\x2e\x6d.wiki\x70edi\x61.o\x72g"
+,"z\x68\x2ewikiso\x75rc\x65.org"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a2012%E\x35%B9%B4\x25E4%B8%\x41D%E5%8\x44%8E%E4\x25BA%BA%\x456%B0%9\x31%E5%85\x25B1%E5%\x392%8C%E\x35%9B%BD\x25E8%85%\x390%E8%B\x34%A5%E6\x25A1%88%\x454%BB%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a512%E5\x25A4%A7%\x455%9C%B\x30%E9%9C\x2587"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a08%E5%\x41E%AA%E\x37%AB%A0"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a1959%E\x35%B9%B4"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a1989%E\x35%B9%B4"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a610%E8\x25BE%A6%\x455%85%A\x43%E5%AE\x25A4"
+,"z\x68\x2ewikipe\x64i\x61.org\x2aAnti-C\x4eN"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%98\x25BF%E5%\x42A%95%E\x35%B3%BD"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%98\x25BF%E6%\x422%9B%C\x32%B7%E9\x2598%BF%\x456%97%B\x41%E6%99\x258B%E7%\x42E%8E"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%89\x25BE%E6%\x39C%AA%E\x36%9C%AA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%85\x25AB%E4%\x429%9D%E\x35%AD%A6\x25E8%BF%\x390"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%85\x25AB%E6%\x380%9D%E\x35%B7%B4"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8F\x25AD%E7%\x416%85"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%B2\x258D%E5%\x42D%A4"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%AE\x2591%E5%\x42D%A4"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8C\x2597%E4%\x42A%AC%E\x39%AB%98\x25E6%A0%\x411%E5%A\x44%A6%E7\x2594%9F%\x458%87%A\x41%E6%B2\x25BB%E8%\x381%94%E\x35%90%88\x25E4%BC%\x39A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8C\x2597%E4%\x42A%AC%E\x34%B9%8B\x25E6%98%\x415"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%96\x2584%E7%\x386%99%E\x36%9D%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8D\x259A%E8%\x41E%AF"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%B8\x2583%E6%\x38B%89%E\x36%A0%BC\x25E4%B9%\x38B%E6%9\x38%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9F\x25B4%E7%\x38E%B2"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BB\x2593%E5%\x414%AE%E\x35%98%89\x25E6%8E%\x41A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9B\x25B9%E9%\x395%B7%E\x39%9D%92"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%99\x2588%E5%\x385%89%E\x38%AF%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%A5\x259A%E5%\x428%83%E\x35%AF%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%e5%a4\x25a7%e5%\x38f%82%e\x38%80%83\x5f(%e7%b\x64%91%e7\x25bb%9c%\x656%9d%8\x32%e5%bf\x2597)"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A7%E7%\x424%80%E\x35%85%83"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A7%E7%\x42A%AA%E\x35%85%83\x25E6%97%\x426%E6%8\x41%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%BE\x25BE%E8%\x425%96%E\x35%96%87\x25E5%98%\x39B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%BE\x25BE%E5%\x385%B0%E\x38%90%A8\x25E6%8B%\x389"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%81\x2594%E8%\x398%AD%E\x38%96%A9\x25E6%8B%\x389"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%BE\x25BE%E5%\x420%94%E\x37%BD%95\x25E6%B4%\x42B%E4%B\x44%9B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A7%E8%\x425%A6%E\x35%9B%BD\x25E9%99%\x385"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A7%E8%\x425%A6%E\x35%9C%8B\x25E9%9A%\x39B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A7%E5%\x421%A0%E\x36%9D%80\x25E5%88%\x397%E8%A\x31%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A7%E8%\x397%8F%E\x35%AF%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A7%E6%\x398%AD%E\x35%AF%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25B9%E5%\x412%9E%E\x35%98%89\x25E6%8E%\x41A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x2581%E5%\x41D%90%E\x39%9C%96"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x259C%E9%\x413%8E-2\x31%E4%B8\x25AD%E7%\x418%8B%E\x35%BC%B9\x25E9%81%\x393%E5%A\x46%BC%E5\x25BC%B9 "
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x25B1%E9%\x412%A8-3\x31%E6%B4\x25B2%E9%\x39A%9B%E\x35%BD%88\x25E9%81%\x393%E5%B\x30%8E%E5\x25BD%88"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x25B1%E7%\x41A%81%E\x35%8E%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x259C%E7%\x41A%81%E\x35%8E%A5\x25E6%96%\x41F%E5%9\x44%A6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x259A%E7%\x42B%B4"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x259A%E7%\x426%AD"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BF\x2584%E7%\x42E%85%E\x36%96%AF"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8F\x258D%E5%\x38D%8E%E\x35%8A%BF\x25E5%8A%\x39B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%98\x25B2%E7%\x381%AB%E\x39%95%BF\x25E5%9F%\x38E"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%96\x25B9%E5%\x38A%B1%E\x34%B9%8B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%96\x25B9%E5%\x38B%B5%E\x34%B9%8B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%96\x25B9%E8%\x388%9F%E\x35%AD%90"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%84\x25A4%E9%\x39D%92"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%B0\x2581%E4%\x42B%8E%E\x35%BE%B7"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%B0\x2581%E5%\x42E%9E%E\x35%BE%B7"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%86\x25AF%E6%\x41D%A3%E\x38%99%8E"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%82\x2585%E9%\x393%81%E\x35%B1%B1"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%99\x25B6%E5%\x380%AB%E\x38%B5%A4\x25E5%B7%\x424"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%AB\x2598%E6%\x399%BA%E\x36%99%9F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9B\x25B4%E7%\x399%BB%E\x37%A2%BA\x25E5%90%\x389%E5%B\x30%BC%E7\x2591%AA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%99\x25B6%E4%\x428%BE%E\x36%B4%BE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%94\x25B9%E9%\x39D%A9%E\x35%8E%86\x25E7%A8%\x38B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%94\x2598%E4%\x428%B9%E\x35%AF%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%AB\x2598%E8%\x411%8C%E\x35%81%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%99\x25B6%E5%\x42D%93%E\x36%B4%BE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%A0\x25BC%E9%\x422%81%E\x36%B4%BE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2aGFW"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%85\x25AC%E5%\x385%B1%E\x37%9F%A5\x25E8%AF%\x386%E5%8\x38%86%E5\x25AD%90"
+,"z\x68\x2ewikipe\x64i\x61.org\x2aGoogle\x25E5%AE%\x411%E6%9\x46%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fzh-cn/\x25E8%B0%\x427%E6%A\x44%8C%E9\x2580%80%\x455%87%B\x41%E4%B8\x25AD%E5%\x39B%BD%E\x34%BA%8B\x25E4%BB%\x426"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fwiki/%\x458%B0%B\x37%E6%AD\x258C%E9%\x380%80%E\x35%87%BA\x25E4%B8%\x41D%E5%9\x42%BD%E4\x25BA%8B%\x454%BB%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fwiki/%\x455%B9%B\x46%E5%B7\x259E%E5%\x428%82%E\x36%96%B0\x25E5%A1%\x398%E4%B\x41%8B%E4\x25BB%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%9B\x25BD%E4%\x42F%9D"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%83\x25AD%E4%\x42C%AF%E\x39%9B%84"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%9B\x25BD%E9%\x399%85%E\x37%89%B9\x25E8%B5%\x416%E7%B\x42%84%E7\x25BB%87"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%9B\x25BD%E5%\x386%85%E\x35%AE%89\x25E5%85%\x418%E4%B\x46%9D%E5\x258D%AB%\x456%94%A\x46%E9%98\x259F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%9C\x258B%E5%\x38B%99%E\x39%99%A2\x25E9%98%\x422%E7%A\x46%84%E5\x2592%8C%\x458%99%9\x35%E7%90\x2586%E9%\x382%AA%E\x36%95%99\x25E5%95%\x38F%E9%A\x31%8C%E8\x25BE%A6%\x455%85%A\x43%E5%AE\x25A4"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%9F\x25A9%E4%\x428%9C%E\x36%96%B9"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%B4\x25BA%E5%\x39B%BD%E\x35%BC%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BD\x2595%E4%\x42F%8A%E\x34%BB%81"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B2\x25B3%E6%\x41E%87"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B4\x25AA%E5%\x393%B2%E\x35%8B%9D"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BE\x25AF%E5%\x42E%B7%E\x35%BB%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BE\x25AF%E8%\x425%9B%E\x35%9B%A0\x25E6%B1%\x39F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BE\x25AF%E5%\x42E%B7%E\x35%81%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%83\x25A1%E4%\x42D%B3_%\x3281973%\x455%B9%B\x34%29"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%83\x25A1%E4%\x42D%B3_%\x328%E7%A\x34%BE%E6\x25B4%BB%\x455%8B%9\x35%E5%AE\x25B6%29"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%83\x25A1%E4%\x42D%B3_%\x328%E7%A\x34%BE%E6\x259C%83%\x456%B4%B\x42%E5%8B\x2595%E5%\x41E%B6%29"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%83\x25A1%E9%\x394%A6%E\x36%B6%9B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%83\x25A1%E5%\x429%B3_%\x328%E4%B\x44%9C%E5\x25AE%B6%\x329"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%91\x25BC%E5%\x39C%96%E\x35%85%8B\x25E5%9C%\x396"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%83\x25A1%E6%\x428%A9%E\x34%BD%93\x25E5%88%\x426"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%83\x25A1%E8%\x380%80%E\x39%82%A6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8D\x258E%E5%\x39B%BD%E\x39%94%8B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%8F\x25AF%E5%\x39C%8B%E\x39%8B%92"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8D\x258E%E5%\x414%8F%E\x36%96%87\x25E6%91%\x398"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%8A\x25B1%E5%\x39B%AD%E\x38%BD%AF\x25E4%BB%\x426"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%8A\x25B1%E5%\x39B%AD%E\x37%BD%91"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%BB\x2584%E7%\x390%A6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%BB\x2583%E7%\x390%A6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%BB\x2583%E9%\x39B%80%E\x38%A1%8C\x25E5%8B%\x395"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%BB\x2584%E4%\x428%87%E\x39%87%8C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%BB\x2583%E6%\x39B%89%E\x36%95%8F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%9B\x259E%E8%\x389%AF%E\x37%8E%89"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%9C\x258D%E8%\x38B%B1%E\x36%9D%B1"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%AF\x2582%E8%\x41D%B7"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%BF\x2580%E6%\x425%81%E\x34%B8%AD\x25E5%9B%\x42D"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%98\x2589%E9%\x39D%96"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%AE\x25B6%E4%\x429%90%E\x37%A6%8F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%B3\x2588%E6%\x385%B6%E\x36%9E%97"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%B4\x25BE%E5%\x42A%86%E\x36%9E%97"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%BB\x25BA%E5%\x39B%BD%E\x39%97%A8\x25E4%BA%\x38B%E4%B\x42%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A7\x259C%E7%\x42B%B4%E\x35%B9%B3"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B1\x259F%E6%\x423%BD%E\x36%B0%91"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B1\x259F%E6%\x42E%A4%E\x36%B0%91"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%87\x2591%E7%\x39B%BE%E\x35%B7%A5\x25E7%A8%\x38B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%BD%F0\x25B6%DC%\x429%A4%B\x33%CC"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B9\x259D%E8%\x41F%84%E\x35%85%B1\x25E4%BA%\x417%E5%8\x35%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B9\x259D%E8%\x419%95%E\x35%85%B1\x25E7%94%\x412%E9%B\x42%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%B7\x25A8%E6%\x425%AA2%\x455%9E%8\x42%E6%BD\x259C%E5%\x420%84%E\x35%BC%B9\x25E9%81%\x393%E5%A\x46%BC%E5\x25BC%B9"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%A6\x25BA%E5%\x39B%8A%E\x36%B4%BE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%BB\x259D%E9%\x413%9F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%8B\x2589%E5%\x38D%9C%E\x36%A5%9E\x25E5%AF%\x42A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%8B\x2589%E8%\x390%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%BB\x258E%E5%\x41E%89%E\x35%8F%8B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E9%\x395%BF%E\x36%98%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E9%\x395%B7%E\x36%98%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E6%\x424%AA%E\x35%BF%97"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E5%\x385%8B%E\x35%BC%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E9%\x425%AC"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E9%\x429%8F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E7%\x391%9E%E\x37%8E%AF"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E7%\x391%9E%E\x37%92%B0"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E6%\x385%8E%E\x34%B9%8B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8E\x2586%E5%\x38F%B2%E\x37%9A%84\x25E4%BC%\x414%E5%8\x46%A3"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E8%\x38B%B1%E\x36%B5%A9"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E6%\x42A%90%E\x36%BD%AE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x258E%E5%\x38D%93%E\x34%BA%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%BB\x2596%E4%\x42A%A6%E\x36%AD%A6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%93\x25AE%E8%\x38A%B1%E\x37%94%9F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%A2\x2581%E5%\x39B%BD%E\x39%9B%84"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%A2\x2581%E5%\x39C%8B%E\x39%9B%84"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%9B\x25B6%E5%\x385%AB%E\x35%AE%AA\x25E7%AB%\x410"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BB\x25A4%E8%\x420%B7"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BB\x25A4%E8%\x41E%A1%E\x35%88%92"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%88\x2598%E5%\x41E%BE%E\x39%9B%81"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8A\x2589%E5%\x389%9B_(\x25E6%B0%\x391%E9%8\x31%8B%E4\x25BA%BA%\x455%A3%A\x42)"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%88\x2598%E6%\x385%A7%E\x35%8D%BF"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8A\x2589%E6%\x385%A7%E\x35%8D%BF"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%88\x2598%E6%\x427%87"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%85\x25AD%E5%\x39B%9B"
+,"zh\x2dyu\x65.wi\x6bipedi\x61\x2eorg*%E\x35%85%AD\x25E5%9B%\x39B%E4%B\x41%8B%E4\x25BB%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8A\x2589%E6%\x39B%89%E\x36%B3%A2"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%88\x2598%E5%\x42B%B6%E\x34%B8%9C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%88\x2598%E4%\x42A%91%E\x35%B1%B1"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%BE\x2585%E5%\x429%B9"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%BE\x2585%E5%\x429%B2"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B4\x259B%E6%\x411%91%E\x36%A3%AE\x25E6%A0%\x42C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%B6\x25A0%E5%\x413%A9%C\x32%B7%E8\x258A%B1%\x455%AD%A\x33%E8%AD\x25B7%E8%\x388%AA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%BB\x25BF%E5%\x39D%9D%C\x32%B7%E8\x258A%B1%\x455%AD%A\x33%E6%8A\x25A4%E8%\x388%AA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fwiki/%\x657%bb%b\x66%e5%9d\x259d%e5%\x618%98"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%A6\x25AC%E4%\x428%89%E\x35%AE%B6\x25E5%A5%\x423%E5%A\x44%90%E5\x258B%9E%\x456%95%9\x39%E6%89\x2580"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%A6\x25AC%E8%\x38B%B1%E\x34%B9%9D"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%BE\x258E%E5%\x39B%BD%E\x35%9B%BD\x25E5%AE%\x426%E6%B\x30%91%E4\x25B8%BB%\x455%9F%B\x41%E9%87\x2591%E4%\x42C%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%95\x258F%E6%\x384%9F%E\x34%BA%BA\x25E5%A3%\x41B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B0\x2591%E9%\x396%93%E\x34%BA%BA\x25E6%AC%\x38A%E9%9\x39%A3%E7\x25B7%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%95\x258F%E7%\x38F%A0%E\x36%9E%97\x25E5%AF%\x42A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B0\x2591%E4%\x428%BB%E\x35%A5%B3\x25E7%A5%\x39E"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B0\x2591%E4%\x428%BB%E\x39%BB%A8\x5f(%E9%A\x36%99%E6\x25B8%AF)"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B0\x2591%E4%\x428%BB%E\x36%AD%8C\x25E8%81%\x422%E7%8\x44%BB%E4\x25B8%AD%\x458%8F%AF"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%8C\x2589%E8%\x38E%89%E\x38%8A%B1\x25E9%9D%\x419%E5%9\x31%BD"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8D\x2597%E6%\x396%B9%E\x39%83%BD\x25E5%B8%\x382%E6%8\x41%A5*"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fwiki/%\x455%86%8\x35%E8%92\x2599%E5%\x38F%A4%E\x36%8A%97\x25E8%AE%\x41E"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fzh-hk/\x25E5%86%\x385%E8%9\x32%99%E5\x258F%A4%\x456%8A%9\x37%E8%AE\x25AE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fzh-tw/\x25E5%86%\x385%E8%9\x32%99%E5\x258F%A4%\x456%8A%9\x37%E8%AE\x25AE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%86\x2585%E8%\x392%99%E\x35%8F%A4\x25E4%BA%\x42A%E6%B\x30%91%E5\x2585%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%85\x25A7%E8%\x392%99%E\x35%8F%A4\x25E4%BA%\x42A%E6%B\x30%91%E9\x25BB%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%AE\x2581%E7%\x38E%9B%E\x36%B4%BE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%89\x259B%E5%\x38D%9A%E\x37%BD%91"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%AF\x25BA%E8%\x424%9D%E\x35%B0%94\x25E5%92%\x38C%E5%B\x39%B3%E5\x25A5%96"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%8C\x25AA%E5%\x418%81"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%9B\x2598%E5%\x38F%A4%E\x34%B9%90\x25E9%98%\x39F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%BD\x25AD%E4%\x428%BD%E\x35%AA%9B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%A0\x25B4%E7%\x42D%91"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B5\x25A6%E5%\x42F%97%E\x35%BC%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x2583%E4%\x428%80%E\x39%81%8A\x25E8%A1%\x38C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%A7\x25A6%E5%\x39F%8E%E\x37%9B%91\x25E7%8B%\x421"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B8\x2585%E6%\x39C%9D"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%85\x25A8%E7%\x390%83%E\x38%97%8F\x25E4%BA%\x42A%E7%8\x39%B9%E5\x2588%AB%\x455%A4%A\x37%E4%BC\x259A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%C8%BC\x25C9%D5%\x436%BF"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%87\x2583%E7%\x383%A7%E\x37%93%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%83\x25AD%E6%\x41F%94%E\x35%A8%85"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%86\x25B1%E6%\x41F%94%E\x35%A9%AD"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%91\x259E%E5%\x385%B8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%90\x25A8%E8%\x42F%A6%E\x36%B4%BE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x2589%E5%\x429%B4%E\x38%87%AA\x25E7%84%\x426%E7%8\x31%BE%E5\x25AE%B3"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x2589%E9%\x380%80"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%89\x25B2%E6%\x38B%89%E\x35%AF%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%9C\x25A3%E9%\x39B%84%E\x37%94%98\x25E5%9C%\x420"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%9B\x259B%E9%\x39B%AA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fzh-cn/\x25E4%B8%\x396%E7%9\x35%8C%E5\x2590%84%\x456%94%B\x46%E6%9D\x2583%E5%\x38F%97%E\x36%89%BF\x25E8%AE%\x414%E7%8\x41%B6%E5\x2586%B5%\x455%88%9\x37%E8%A1\x25A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x2596%E7%\x395%8C%E\x37%BB%8F\x25E6%B5%\x38E%E5%A\x46%BC%E6\x258A%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x2596%E7%\x395%8C%E\x37%BB%B4\x25E5%90%\x42E%E5%B\x30%94%E5\x25A4%A7%\x454%BC%9\x41!--Shi\x20Jie We\x69 Wu Er\x20Qing N\x69an Dai\x20Biao D\x61 Hui"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x2596%E7%\x395%8C%E\x37%BB%B4\x25E5%90%\x42E%E5%B\x30%94%E9\x259D%92%\x455%B9%B\x34%E4%BB\x25A3%E8%\x411%A8%E\x35%A4%A7\x25E4%BC%\x39A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x2596%E7%\x395%8C%E\x37%B6%AD\x25E5%90%\x42E%E7%8\x38%BE%E4\x25BB%A3%\x458%A1%A\x38%E5%A4\x25A7%E6%\x39C%83"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8D\x2581%E5%\x39B%9B%E\x34%B8%96\x25E8%BE%\x42E%E8%B\x35%96"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%B8\x2588%E6%\x426%9B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%B8\x25AB%E6%\x42F%A4"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%87\x258A%E6%\x398%9F%E\x34%BA%91"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8F\x25B8%E5%\x42E%92%E\x35%8D%8E"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8F\x25B8%E5%\x42E%92%E\x38%8F%AF"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%9B\x259B%E4%\x42A%94%E\x38%A1%8C\x25E5%8B%\x395"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%AE\x258B%E5%\x42D%AC%E\x35%BD%AC"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%AE\x258B%E4%\x42B%BB%E\x37%A9%B7"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%AE\x258B%E4%\x42B%BB%E\x37%AA%AE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%8B\x258F%E5%\x41E%B6%E\x35%B1%AF\x25E4%BA%\x38B%E4%B\x42%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%AD\x2599%E6%\x396%87%E\x35%B9%BF"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A1\x2594%E5%\x420%94%E\x35%AF%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%8F\x25B0%E7%\x381%A3%E\x37%8D%A8\x25E7%AB%\x38B%E5%B\x42%BA%E5\x259C%8B%\x458%81%A\x46%E7%9B\x259F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25AA%E5%\x41D%90%E\x35%85%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25AA%E5%\x41D%90%E\x35%85%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fzh-cn/\x25E5%A4%\x41A%E5%A\x44%90%E5\x2585%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%B0\x25AD%E4%\x42D%9C%E\x34%BA%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%94\x2590%E6%\x39F%8F%E\x36%A1%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fzh/%E9\x2599%B6%\x459%A9%B\x37%E9%A9\x25B9"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A9%E5%\x41E%89%E\x39%97%A8\x25E5%B9%\x42F%E5%9\x43%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A9%E5%\x41E%89%E\x39%97%A8\x25E6%AF%\x38D%E4%B\x41%B2%E8\x25BF%90%\x455%8A%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A9%E5%\x41E%89%E\x39%96%80\x25E4%BA%\x38B%E4%B\x42%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A9%E5%\x41E%89%E\x39%97%A8\x25E6%96%\x387%E4%B\x42%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A9%E5%\x41E%89%E\x39%96%80\x25E6%96%\x387%E4%B\x42%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A9%E5%\x41E%89%E\x39%97%A8\x25E8%87%\x41A%E7%8\x34%9A%E4\x25BA%8B%\x454%BB%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x25A9%E8%\x391%AC"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fzh-cn/\x54or"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fzh-hk/\x54witter"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x2587%E9%\x387%8C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8E\x258B%E5%\x386%9B%E\x36%B6%9B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8E\x258B%E6%\x418%82%E\x36%B3%89"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8E\x258B%E7%\x41B%8B%E\x35%86%9B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8E\x258B%E5%\x422%90%E\x35%B1%B1"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8E\x258B%E5%\x38D%83%E\x36%BA%90"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8E\x258B%E7%\x42B%B4%E\x36%9E%97"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8E\x258B%E6%\x39C%89%E\x36%89%8D"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%AD\x258F%E4%\x42A%AC%E\x37%94%9F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B1\x25B6%E5%\x427%9D%E\x35%A4%A7\x25E5%9C%\x420%E9%9\x43%87"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8E\x258B%E7%\x382%B3%E\x37%AB%A0"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8E\x258B%E4%\x429%90%E\x36%B3%89"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8E\x258B%E5%\x38A%9B%E\x39%9B%84"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%BD\x2591%E7%\x42B%9C%E\x38%AF%84\x25E8%AE%\x42A%E5%9\x31%98"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fwiki/%\x457%8E%8\x42%E5%A7\x2593"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B1\x25AA%E6%\x424%8B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%8E\x258B%E5%\x385%86%E\x35%9B%BD"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%94\x25AF%E8%\x389%B2"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A8\x2581%E8%\x417%86%E\x38%85%90\x25E8%B4%\x415%E6%A\x31%88"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B1\x25B6%E5%\x427%9D%E\x35%9C%B0\x25E9%9C%\x387"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B8\x25A9%E5%\x41E%B6%E\x35%AE%9D"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%B8\x25A9%E4%\x42A%91%E\x36%9D%BE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fwiki/%\x456%96%8\x37%E5%AD\x2597%E7%\x38B%B1"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fwiki/%\x456%96%8\x37%E5%AD\x2597%E7%\x38D%84"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%90\x25B4%E9%\x382%A6%E\x35%9B%BD"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%88\x2591%E7%\x39A%84%E\x35%A5%8B\x25E6%96%\x397"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%90\x25BE%E5%\x420%94%E\x35%BC%80\x25E5%B8%\x38C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%90\x25BE%E7%\x388%BE%E\x39%96%8B\x25E5%B8%\x38C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%97\x25A0%E5%\x39B%BD%E\x37%95%8C\x25E8%AE%\x420%E8%8\x30%85"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%90\x25B4%E5%\x42C%98%E\x38%BE%BE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%97\x25A0%E7%\x395%8C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%83\x258F%E5%\x39D%8E%E\x34%BA%8B\x25E4%BB%\x426"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B9\x258C%E9%\x422%81%E\x36%9C%A8\x25E9%BD%\x390%E4%B\x38%83%C2\x25B7%E4%\x42A%94%E\x36%9A%B4\x25E5%8A%\x39B%E4%B\x41%8B%E4\x25BB%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BA\x2594%E6%\x41F%9B%E\x38%9B%8B\x25E4%BA%\x38B%E4%B\x42%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%A5\x25BF%E5%\x38D%95%E\x36%B0%91\x25E4%B8%\x42B%E5%A\x32%99"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%BF\x2592%E8%\x42F%91%E\x35%B9%B3"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B9\x25A0%E8%\x42F%91%E\x35%B9%B3"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%A5\x25BF%E5%\x38E%A2%E\x38%AE%A1\x25E5%88%\x392"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%A5\x25BF%E8%\x397%8F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B9\x25A0%E4%\x42B%B2%E\x35%8B%8B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%A4\x258F%E7%\x391%AA%E\x35%B7%B4"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%A6\x2599%E6%\x428%AF%E\x37%8D%A8\x25E7%AB%\x38B%E9%8\x31%8B%E5\x258B%95"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%A6\x2599%E6%\x428%AF%E\x36%B0%91\x25E4%B8%\x42B%E9%B\x42%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%A6\x2599%E6%\x428%AF*%\x456%B0%9\x31%E4%B8\x25BB%E6%\x424%BE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%B0\x258F%E6%\x398%AD%E\x35%AF%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%B0\x25A2%E5%\x42D%A6%E\x39%A3%9E"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%BE\x259B%E7%\x381%8F%E\x35%B9%B4"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%96\x25B0%E7%\x396%86%E\x37%8B%AC\x25E7%AB%\x38B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%96\x25B0%E7%\x396%86%E\x37%8D%A8\x25E7%AB%\x38B"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%96\x25B0%E5%\x394%90%E\x34%BA%BA\x25E9%9B%\x42B%E8%A\x36%96%E5\x258F%B0"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%96\x25B0%E9%\x397%BB%E\x38%87%AA\x25E7%94%\x421%E6%8\x45%A0%E5\x25A4%BA%\x458%80%85"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%98\x259F%E4%\x42A%91%E\x36%B3%95\x25E5%B8%\x388"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%86\x258A%E7%\x384%B1"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%BE\x2590%E6%\x389%8D%E\x35%8E%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%AE\x25B8%E5%\x41E%B6%E\x35%B1%AF"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%9B\x25AA%E5%\x421%B1%E\x37%8D%85\x25E5%AD%\x390%E6%9\x37%97"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%A9\x25A2%E5%\x395%8F%E\x38%99%95"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%9A\x25B4%E5%\x41E%B6%E\x35%85%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25A5%E5%\x41E%B6%E\x35%85%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%98\x258E%E6%\x398%8E%E\x35%A4%8D"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%9D\x25A8%E4%\x42D%B3%E\x38%A2%AD\x25E8%AD%\x416%E6%A\x31%88"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%A5\x258A%E5%\x42B%BA%E\x35%88%A9"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%9A\x2581%E5%\x38A%9B%E\x37%A5%9E"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E9%9B\x258D%E5%\x392%8C%E\x35%AE%AB"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%B9\x25BD%E7%\x381%B5%E\x37%BD%91"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BD\x2599%E6%\x39D%B0"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BF\x259E%E4%\x428%BD%E\x38%90%8D"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%BF\x259E%E6%\x41D%A3%E\x35%A3%B0"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%A2\x2581%E7%\x42A%A2%E\x35%86%B0"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%A2\x2581%E7%\x424%85%E\x35%86%B0"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%97\x258F%E4%\x42C%A0%E\x34%BD%9B\x25E6%95%\x399"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E6%89\x258E%E4%\x42B%80%E\x34%BC%A6\x25E5%B8%\x383%E5%A\x46%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%BC\x25A0%E5%\x42E%B7%E\x36%B1%9F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%BC\x25A0%E9%\x41B%98%E\x34%B8%BD"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%AB\x25A0%E5%\x398%89%E\x35%91%BC\x25E5%9B%\x42E%E5%8\x35%8B%E5\x259B%BE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%BC\x25A0%E7%\x41B%8B%E\x36%98%8C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%BC\x25A0%E5%\x39F%B9%E\x38%8E%89"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%BC\x25B5%E6%\x396%87%E\x35%85%89"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%AB\x25A0%E8%\x419%92%E\x35%92%8C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%AB\x25A0%E8%\x41F%92%E\x35%92%8C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%BC\x25A0%E9%\x392%B0"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%BC\x25B5%E9%\x388%BA"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%B5\x25B5%E7%\x424%AB%E\x39%98%B3"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%B6\x2599%E7%\x424%AB%E\x39%99%BD"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%93\x25B2%E5%\x428%83%E\x35%B0%8A\x25E4%B8%\x429%E5%B\x37%B4%E5\x2591%BC%\x455%9B%B\x45%E5%85\x258B%E5%\x39B%BE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E7%9C\x259F%E5%\x396%84%E\x35%BF%8D"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x385%B1%E\x34%B8%AD\x25E5%A4%\x41E%E5%A\x45%A3%E4\x25BC%A0%\x459%83%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2fwiki/%\x454%B8%A\x44%E5%9B\x25BD"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39C%8B%E\x36%8C%81\x25E4%B8%\x38D%E5%9\x30%8C%E6\x2594%BF%\x458%A6%8\x42%E8%80\x2585%E5%\x390%8D%E\x35%96%AE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39B%BD%E\x35%A4%A7\x25E9%99%\x386%E5%B\x30%81%E9\x2594%81%\x457%BB%B\x34%E5%9F\x25BA%E5%\x41A%92%E\x34%BD%93\x25E4%BA%\x38B%E4%B\x42%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39B%BD%E\x35%A4%A7\x25E9%99%\x386%E5%B\x30%81%E9\x2594%81%\x457%BB%B\x34%E5%9F\x25BA%E7%\x399%BE%E\x37%A7%91\x25E4%BA%\x38B%E4%B\x42%B6"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39C%8B%E\x35%A4%A7\x25E9%99%\x428%E7%B\x36%B2%E8\x25B7%AF%\x455%B0%8\x31%E9%8E\x2596"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39B%BD%E\x37%94%B5\x25E8%A7%\x386%E5%A\x45%A1%E6\x259F%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39B%BD%E\x36%B3%9B\x25E8%93%\x39D%E8%8\x31%94%E7\x259B%9F"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39B%BD%E\x35%85%B1\x25E4%BA%\x417%E5%8\x35%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39C%8B%E\x35%85%B1\x25E7%94%\x412%E9%BB"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39B%BD%E\x35%9F%BA\x25E7%9D%\x413%E6%9\x35%99%E5\x258D%8F%\x454%BC%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39B%BD%E\x35%AE%B6\x25E5%BA%\x41D%E6%9\x35%99%E4\x25BC%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39C%8B%E\x38%81%AF\x25E9%82%\x416%E4%B\x38%BB%E7\x25BE%A9"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39B%BD%E\x36%B0%91\x25E4%B8%\x42B%E5%8\x35%9A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39B%BD%E\x36%B0%91\x25E4%B8%\x42B%E8%B\x46%90%E5\x258A%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39C%8B%E\x36%B0%91\x25E4%B8%\x42B%E9%8\x31%8B%E5\x258B%95"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39C%8B%E\x38%8C%89\x25E8%8E%\x389%E8%8\x41%B1%E9\x259D%A9%\x455%91%BD"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD*%E5\x259B%BD%\x454%BA%B\x41%E6%9D\x2583"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39B%BD%E\x37%BD%91\x25E7%BB%\x39C%E8%B\x44%AF%E4\x25BB%B6%\x458%BF%8\x37%E6%BB\x25A4%E5%\x385%B3%E\x39%94%AE\x25E5%AD%\x397%E5%8\x38%97%E8\x25A1%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39B%BD%E\x37%BD%91\x25E7%BB%\x39C%E5%A\x45%A1%E6\x259F%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x39C%8B%E\x37%B6%B2\x25E8%B7%\x41F%E5%A\x46%A9%E6\x259F%A5"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E8%\x38F%AF%E\x34%BA%BA\x25E6%B0%\x391%E5%8\x35%B1%E5\x2592%8C%\x455%9C%8\x42%E4%BA\x25BA%E6%\x41C%8A"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E8%\x38F%AF%E\x34%BA%BA\x25E6%B0%\x391%E5%8\x35%B1%E5\x2592%8C%\x455%9C%8\x42%E5%AF\x25A9%E6%\x39F%A5%E\x38%BE%AD\x25E5%BD%\x399%E5%8\x38%97%E8\x25A1%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x38D%8E%E\x34%BA%BA\x25E6%B0%\x391%E5%8\x35%B1%E5\x2592%8C%\x455%9B%B\x44%E5%AE\x25AA%E6%\x423%95"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E8%\x38F%AF%E\x36%B0%91\x25E5%9C%\x38B%E5%9\x43%8B%E6\x25B0%91%\x455%A4%A\x37%E6%9C\x2583"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E8%\x38F%AF%E\x36%B0%91\x25E5%9C%\x38B%E6%B\x32%BB%E8\x2597%8F%\x456%AD%B\x37%E5%8F\x25B2"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E8%\x38F%AF%E\x36%B0%91\x25E5%9C%\x38B%E7%B\x38%BD%E7\x25B5%B1%\x455%BA%9C"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x38D%8E%E\x34%BA%BA\x25E6%B0%\x391%E5%8\x35%B1%E5\x2592%8C%\x455%9B%B\x44%E7%BD\x2591%E7%\x42B%9C%E\x35%AE%A1\x25E6%9F%\x415"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E8%\x38F%AF%E\x34%BA%BA\x25E6%B0%\x391%E5%8\x35%B1%E5\x2592%8C%\x455%9C%8\x42%E7%B6\x25B2%E7%\x425%A1%E\x35%AF%A9\x25E6%9F%\x415"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E8%\x38F%AF%E\x34%BA%BA\x25E6%B0%\x391%E5%8\x35%B1%E5\x2592%8C%\x455%9C%8\x42%E6%B0\x2591%E4%\x428%BB%E\x39%81%8B\x25E5%8B%\x395"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E8%\x38F%AF%E\x34%BA%BA\x25E6%B0%\x391%E5%8\x35%B1%E5\x2592%8C%\x455%9C%8\x42%E5%AE\x2597%E6%\x395%99"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E6%\x396%87%E\x37%BB%B4\x25E5%9F%\x42A%E7%9\x39%BE%E7\x25A7%91"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x414%AE%E\x38%AD%A6\x25E8%A1%\x39B%E5%B\x31%80"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E5%\x414%AE%E\x36%96%87\x25E5%8C%\x396%E9%9\x44%A9%E5\x2591%BD%\x455%B0%8\x46%E7%BB\x2584"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E4%B8\x25AD%E8%\x38B%B1%E\x37%BA%8C\x25E8%A8%\x382%E8%9\x37%8F%E5\x258D%B0%\x456%A2%9\x44%E7%B4\x2584"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%91\x25A8%E6%\x42B%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%91\x25A8%E6%\x420%B8%E\x35%BA%B7"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%BD\x25AC%E6%\x423%95%E\x38%BD%AE"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%87\x25AA%E7%\x394%B1%E\x39%97%A8"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E8%87\x25AA%E7%\x394%B1%E\x34%BA%9A\x25E6%B4%\x422"
+,"z\x68\x2ewikipe\x64i\x61.org\x2a%E5%AE\x2597%E5%\x396%80%E\x35%B7%B4"
+,"z\x68\x2ewikibo\x6fk\x73.org\x2a%E7%AA\x2581%E7%\x410%B4%E\x37%BD%91\x25E7%BB%\x39C%E5%A\x45%A1%E6\x259F%A5"
+,"go\x76.tw"
+,"@@\x7c|ta\x78.n\x61\x74.go\x76.\x74w"
+,"@@\x7c|mo\x65.g\x6f\x76.tw"
+,"@@\x7c|cw\x62.g\x6f\x76.tw"
+,"@@\x7c|np\x6d.g\x6f\x76.tw"
+,"@@\x7c|yatse\x6e.go\x76.tw"
+,"@@\x7c|ae\x63.g\x6f\x76.tw"
+,"@@\x7c|mvdi\x73\x2ego\x76.tw"
+,"@@\x7c|stdti\x6d\x65.go\x76.\x74w"
+,"@@\x7c|nmmb\x61\x2ego\x76.tw"
+,"@@\x7c|ntdm\x68\x2ego\x76.tw"
+,"@@\x7c|gr\x62.g\x6f\x76.tw"
+,"@@\x7c|tpd\x65.\x61id\x65.go\x76.tw"
+,"@@\x7c|matsu\x2dnew\x73.g\x6f\x76.tw"
+,"@@\x7c|nerh\x6c\x2ego\x76.tw"
+,"@@\x7c|dapu-\x68ous\x65.g\x6f\x76.tw"
+,"@@\x7c|vght\x63\x2ego\x76.tw"
+,"@@\x7c|aid\x65.\x67o\x76.tw"
+,"@@\x7c|hchc\x63\x2ego\x76.tw"
+,"@@\x7c|ntu\x68.\x67o\x76.tw"
+,"@@\x7c|nhr\x69.\x67o\x76.tw"
+,"@@\x7c|nst\x6d.\x67o\x76.tw"
+,"@@\x7c|ntse\x63\x2ego\x76.tw"
+,"@@\x7c|ne\x72.g\x6f\x76.tw"
+,"@@\x7c|nmt\x6c.\x67o\x76.tw"
+,"@@\x7c|nt\x6c.g\x6f\x76.tw"
+,"@@\x7c|pe\x74.g\x6f\x76.tw"
+,"@@\x7c|khc\x63.\x67o\x76.tw"
+,"@@\x7c|nmmb\x61\x2ego\x76.tw"
+,"@@\x7c|khm\x73.\x67o\x76.tw"
+,"@@\x7c|wanfa\x6e\x67.go\x76.\x74w"
+,"@@\x7c|nic\x74.\x67o\x76.tw"
+,"@@\x7c|art\x65.\x67o\x76.tw"
+,"@@\x7c|nm\x68.g\x6f\x76.tw"
+,"@@\x7c|nm\x70.g\x6f\x76.tw"
+,"@@\x7c|tphc\x63\x2ego\x76.tw"
+,"@@\x7c|ine\x72.\x67o\x76.tw"
+,"@@\x7c|tncse\x63.go\x76.tw"
+,"@@\x7c|nsp\x6f.\x67o\x76.tw"
+,"@@\x7c|aid\x65.\x67o\x76.tw"
+,"@@\x7c|ncre\x65\x2ego\x76.tw"
+,"@@\x7c|vghk\x73\x2ego\x76.tw"
+,"@@\x7c|tch\x62.\x67o\x76.tw"
+,"@@\x7c|pab\x70.\x67o\x76.tw"
+,"@@\x7c|itr\x63.\x67o\x76.tw"
+,"@@\x7c|d\x66.go\x76.tw"
+,"@@\x7c|women\x62usines\x73.ny\x63.g\x6f\x76.tw"
+,"@@\x7c|gsn-c\x65r\x74.na\x74\x2ego\x76.tw"
+,"@@\x7c|k\x6b.go\x76.tw"
+,"@@\x7c|thbst\x63.go\x76.tw"
+,"@@\x7c|comne\x77\x73.gi\x6f.\x67o\x76.tw"
+,"@@\x7c|comne\x77\x73.gi\x6f.\x67o\x76.tw"
+,"@@\x7c|klcca\x62.go\x76.tw"
+,"@@\x7c|yvt\x63.\x67o\x76.tw"
+,"@@\x7c|aftyg\x68.go\x76.tw"
+,"@@\x7c|klr\x61.\x67o\x76.tw"
+,"@@\x7c|lungt\x61nh\x72.go\x76.tw"
+,"@@\x7c|taoyu\x61\x6e.go\x76.\x74w"
+,"@@\x7c|hc\x63.g\x6f\x76.tw"
+,"@@\x7c|nvr\x69.\x67o\x76.tw"
+,"@@\x7c|nmvtt\x63.go\x76.tw"
+,"@@\x7c|km\x68.g\x6f\x76.tw"
+,"@@\x7c|pateh\x72.go\x76.tw"
+,"@@\x7c|nerc\x68\x2ego\x76.tw"
+,"@@\x7c|kmse\x68\x2ego\x76.tw"
+,"@@\x7c|nert\x74\x2ego\x76.tw"
+,"@@\x7c|cyca\x62\x2ego\x76.tw"
+,"@@\x7c|chuku\x61n\x67.go\x76\x2etw"
+,"@@\x7c|gys\x64.\x6ey\x63.go\x76\x2etw"
+,"@@\x7c|cp-ho\x75s\x65.go\x76\x2etw"
+,"@@\x7c|vghtp\x65.go\x76.tw"
+,"@@\x7c|etrai\x6ein\x67.go\x76.tw"
+,"@@\x7c|sta\x67.\x67o\x76.tw"
+,"@@\x7c|bdh\x72.\x67o\x76.tw"
+,"@@\x7c|tcsa\x63\x2ego\x76.tw"
+,"@@\x7c|image\x73blo\x67.g\x69\x6f.go\x76.\x74w"
+,"@@\x7c|art\x65.\x67o\x76.tw"
+,"@@\x7c|dmti\x70\x2ego\x76.tw"
+,"@@\x7c|chcc\x63\x2ego\x76.tw"
+,"@@\x7c|hengc\x68ue\x6e.go\x76.tw"
+,"@@\x7c|hsinc\x68u-c\x63.g\x6f\x76.tw"
+,"@@\x7c|92\x31.g\x6f\x76.tw"
+,"@@\x7c|ncd\x72.\x6ea\x74.go\x76\x2etw"
+,"@@\x7c|4ppp\x63\x2ego\x76.tw"
+,"@@\x7c|klsi\x6f\x2ego\x76.tw"
+,"@@\x7c|nic\x69.\x6ea\x74.go\x76\x2etw"
+,"@@\x7c|cromo\x74\x63.na\x74.\x67o\x76.tw"
+,"@@\x7c|taitu\x6eg-hous\x65.go\x76.tw"
+,"17\x34.14\x32.1\x30\x35.153"
+,"6\x39\x2e6\x35.1\x39.\x3160"
+,"@@\x7c|aliyu\x6e.com"
+,"@@\x7c|baid\x75\x2ecom"
+,"@@\x7c|jik\x65.\x63om"
+,"@@\x7c|pangu\x73\x6f.com"
+,"@@\x7c|q\x71.com"
+,"@@\x7c|sin\x61.\x63n"
+,"@@\x7c|sin\x61.\x63o\x6d.cn"
+,"@@\x7c|sogo\x75\x2ecom"
+,"@@\x7c|s\x6f.com"
+,"@@\x7c|sos\x6f.\x63om"
+,"@@\x7c|yaho\x6f\x2ecn"
+,"@@\x7c|youda\x6f.com"
+,"@@\x7c|zhong\x73o\x75.com"
+,"@@\x7chttps:\x2f/autop\x72ox\x79.org"
+,"@@\x7chttp:/\x2fim\x65.ba\x69d\x75.jp"
+];
 
 var cnIpRange = [
 {},{0x10001:1,0x10002:1,0x10003:1,0x10008:4,0x1000c:4,0x10020:16,0x10030:16,0x10100:1,0x10102:1,0x10103:1,0x10104:4,0x10108:4,0x1010c:4,0x10110:16,0x10120:16,0x10130:16,0x10200:1,0x10201:1,0x10202:1,0x10204:1,0x10205:1,0x10206:1,0x10207:1,0x10208:1,0x10209:1,0x1020a:1,0x1020b:1,0x1020c:4,0x10210:16,0x10220:16,0x10230:16,0x10240:64,0x10300:256,0x10401:1,0x10402:1,0x10403:1,0x10404:1,0x10405:1,0x10406:1,0x10407:1,0x10408:4,0x1040c:4,0x10410:16,0x10420:16,0x10430:16,0x10440:64,0x10800:256,0x10a00:4,0x10a04:4,0x10a08:1,0x10a09:1,0x10a0b:1,0x10a0c:4,0x10a10:16,0x10a20:16,0x10a30:16,0x10a40:64,0x10c00:1024,0x11800:1024,0x11c00:1024,0x12d00:256,0x13000:256,0x13100:256,0x13200:256,0x13300:256,0x13800:1024,0x13c00:1024,0x14400:1024,0x15000:1024,0x15400:1024,0x15800:1024,0x15c00:256,0x15d00:256,0x15e00:256,0x15f00:256,0x17400:1024,0x1b400:1024,0x1b800:256,0x1b900:256,0x1bc00:1024,0x1c000:1024,0x1c400:1024,0x1ca00:256,0x1cb00:256,0x1cc00:1024},{},{},{},{},{},{},{},{},{},{},{},{},{0xe0000:4,0xe0004:4,0xe000c:4,0xe0100:4,0xe1000:1024,0xe1400:1024,0xe1800:1024,0xe1c00:1024,0xe6680:4,0xe669c:4,0xe6700:256,0xe6800:1024,0xe6c00:1024,0xe7000:1024,0xe7400:1024,0xe7800:1024,0xe7c00:1024,0xe8200:256,0xe8300:256,0xe8600:256,0xe8700:256,0xe9000:1024,0xe9400:1024,0xe9800:1024,0xe9c00:1024,0xec03c:4,0xec04c:4,0xec400:256,0xec500:256,0xecc00:256,0xecd00:256,0xed000:1024,0xed400:1024,0xed800:1024,0xedc00:1024},{},{},{},{},{},{},{},{},{},{},{},{},{0x1b0800:1024,0x1b0c00:1024,0x1b1000:1024,0x1b1400:1024,0x1b1800:1024,0x1b1c00:1024,0x1b22e8:4,0x1b22ec:4,0x1b2400:1024,0x1b2800:1024,0x1b2c00:1024,0x1b3228:4,0x1b322c:4,0x1b3280:64,0x1b32c0:64,0x1b3648:4,0x1b364c:4,0x1b3698:4,0x1b369c:4,0x1b36c0:64,0x1b62d0:16,0x1b62e0:16,0x1b62f0:16,0x1b6380:64,0x1b63c0:64,0x1b6700:256,0x1b6a80:64,0x1b6acc:4,0x1b6d20:16,0x1b6d30:16,0x1b7000:64,0x1b7050:16,0x1b7180:64,0x1b7300:64,0x1b7340:64,0x1b742c:4,0x1b7948:4,0x1b794c:4,0x1b7978:4,0x1b797c:4,0x1b8000:256,0x1b8100:256,0x1b83dc:4,0x1b9000:256,0x1b9400:1024,0x1b9800:1024,0x1b9c00:1024,0x1bb800:1024,0x1bbc00:1024,0x1bc000:1024,0x1bc400:1024,0x1bc800:1024,0x1bcc00:1024,0x1bd000:1024,0x1bd400:1024,0x1bd800:1024,0x1bdc00:1024,0x1be000:1024},{},{},{},{},{},{},{},{},{0x240000:4,0x240008:4,0x24000c:4,0x240010:16,0x240020:16,0x240030:16,0x240040:64,0x240080:64,0x2400c0:64,0x240100:256,0x240400:1024,0x241000:1024,0x241400:1024,0x241800:1024,0x241c00:1024,0x242000:1024,0x242400:256,0x242500:16,0x242510:16,0x242524:1,0x242525:1,0x242527:1,0x242528:4,0x24252c:4,0x242530:16,0x242800:1024,0x242c00:1024,0x243000:256,0x243100:256,0x243300:256,0x243800:1024,0x243c00:1024,0x246000:1024,0x246400:1024,0x246800:1024,0x246c00:1024,0x247000:1024,0x247400:1024,0x247800:1024,0x247c00:1024,0x248000:1024,0x248400:1024,0x248800:1024,0x248c00:1024,0x249000:1024,0x249400:1024,0x249800:1024,0x249c00:1024,0x24a000:1024,0x24a400:1024,0x24a800:1024,0x24ac00:1024,0x24b000:1024,0x24b400:1024,0x24b800:1024,0x24bc00:1024,0x24c000:1024,0x24c400:1024,0x24c800:1024,0x24cc00:1024,0x24d000:1024,0x24d400:1024,0x24d800:1024,0x24dc00:1024,0x24f800:1024,0x24fe00:256},{},{},{0x270000:1,0x270002:1,0x270003:1,0x270004:4,0x270008:4,0x27000c:4,0x270010:16,0x270020:16,0x270030:16,0x270040:64,0x270080:64,0x2700c0:64,0x274000:1024,0x274400:1024,0x274800:1024,0x274c00:1024,0x275000:1024,0x275400:1024,0x275800:1024,0x275c00:1024,0x278000:1024,0x278400:1024,0x278800:1024,0x278c00:1024,0x279000:1024,0x279400:1024,0x279800:1024,0x279c00:1024,0x27a000:1024,0x27a400:1024,0x27a800:1024,0x27ac00:1024,0x27b000:1024,0x27b400:1024,0x27b800:1024,0x27bc00:1024},{},{},{0x2a0000:4,0x2a0008:4,0x2a000c:4,0x2a0010:4,0x2a0014:4,0x2a0018:4,0x2a0020:16,0x2a0030:16,0x2a0080:64,0x2a00c0:64,0x2a0100:16,0x2a0110:16,0x2a0120:16,0x2a0130:4,0x2a0134:4,0x2a0138:4,0x2a0180:64,0x2a01c0:64,0x2a0400:1024,0x2a3000:256,0x2a3100:256,0x2a3200:256,0x2a3300:256,0x2a3400:1024,0x2a3800:1024,0x2a3e00:64,0x2a3e40:64,0x2a3e80:16,0x2a3e90:16,0x2a3ea0:16,0x2a3eb4:4,0x2a3eb8:4,0x2a3ebc:4,0x2a3f00:256,0x2a5000:256,0x2a5100:256,0x2a5340:16,0x2a5350:4,0x2a5358:4,0x2a535c:4,0x2a5360:16,0x2a5370:16,0x2a5380:64,0x2a53c0:64,0x2a5400:1024,0x2a5800:1024,0x2a5c00:1024,0x2a6040:16,0x2a6050:16,0x2a6060:4,0x2a6064:4,0x2a606c:4,0x2a6070:16,0x2a6080:64,0x2a60c0:64,0x2a6100:256,0x2a6300:64,0x2a6340:16,0x2a6350:16,0x2a6360:16,0x2a6370:4,0x2a6378:4,0x2a637c:4,0x2a6400:1024,0x2a7800:256,0x2a7900:256,0x2a7a00:256,0x2a7b00:16,0x2a7b10:16,0x2a7b24:4,0x2a7b28:4,0x2a7b2c:4,0x2a7b30:16,0x2a7b40:64,0x2a7b80:64,0x2a7bc0:64,0x2a8000:1024,0x2a8400:1024,0x2a8800:1024,0x2a8c00:1024,0x2a9c00:16,0x2a9c10:16,0x2a9c24:4,0x2a9c28:4,0x2a9c2c:4,0x2a9c30:16,0x2a9c40:64,0x2a9c80:64,0x2a9cc0:64,0x2a9d00:256,0x2a9e00:256,0x2a9f00:256,0x2aa000:1024,0x2aa400:1024,0x2aa800:1024,0x2aac00:1024,0x2ab000:1024,0x2ab400:1024,0x2ab800:256,0x2ab900:256,0x2aba00:256,0x2abb00:64,0x2abb40:16,0x2abb50:16,0x2abb60:16,0x2abb70:4,0x2abb74:4,0x2abb78:4,0x2abb80:64,0x2abbc0:64,0x2ac000:256,0x2ac100:256,0x2ac200:4,0x2ac204:4,0x2ac208:4,0x2ac20c:4,0x2ac210:16,0x2ac220:16,0x2ac230:16,0x2ac240:64,0x2ac280:64,0x2ac2c0:64,0x2ac300:256,0x2ac400:1024,0x2ac900:64,0x2ac940:64,0x2aca00:256,0x2acb00:256,0x2acc00:1024,0x2ad000:1024,0x2ad400:1024,0x2ad800:1024,0x2adc00:1024,0x2ae000:1024,0x2ae400:1024,0x2ae800:1024,0x2aec00:1024,0x2af000:64,0x2af040:64,0x2af080:64,0x2af0c0:64,0x2af200:256,0x2af300:256,0x2af400:1024,0x2af800:1024,0x2afc00:1024},{0x2bec00:4,0x2bec04:4,0x2bec08:4,0x2bec0c:4,0x2bec10:4,0x2bec14:4,0x2bec18:4,0x2bec1c:4,0x2bec20:4,0x2bec24:4,0x2bec28:4,0x2bec2c:4,0x2bec30:4,0x2bec34:4,0x2bec38:4,0x2bec3c:4,0x2bec40:4,0x2bec44:4,0x2bec48:4,0x2bec4c:4,0x2bec50:4,0x2bec54:4,0x2bec58:4,0x2bec5c:4,0x2bec60:4,0x2bec64:4,0x2bec68:4,0x2bec6c:4,0x2bec70:4,0x2bec74:4,0x2bec78:4,0x2bec7c:4,0x2bec80:4,0x2bec84:4,0x2bec88:4,0x2bec8c:4,0x2bec90:4,0x2bec94:4,0x2bec98:4,0x2bec9c:4,0x2beca0:4,0x2beca4:4,0x2beca8:4,0x2becac:4,0x2becb0:4,0x2becb4:4,0x2becb8:4,0x2becbc:4,0x2becc0:4,0x2becc4:4,0x2becc8:4,0x2beccc:4,0x2becd0:4,0x2becd4:4,0x2becd8:4,0x2becdc:4,0x2bece0:4,0x2bece4:4,0x2bece8:4,0x2becec:4,0x2becf0:4,0x2becf4:4,0x2becf8:4,0x2becfc:4,0x2bed00:4,0x2bed04:4,0x2bed08:4,0x2bed0c:4,0x2bed10:4,0x2bed14:4,0x2bed18:4,0x2bed1c:4,0x2bed20:4,0x2bed24:4,0x2bed28:4,0x2bed2c:4,0x2bed30:4,0x2bed34:4,0x2bed38:4,0x2bed3c:4,0x2bed40:4,0x2bed44:4,0x2bed48:4,0x2bed4c:4,0x2bed50:4,0x2bed54:4,0x2bed58:4,0x2bed5c:4,0x2bed60:4,0x2bed64:4,0x2bed68:4,0x2bed6c:4,0x2bed70:4,0x2bed74:4,0x2bed78:4,0x2bed7c:4,0x2bed80:4,0x2bed84:4,0x2bed88:4,0x2bed8c:4,0x2bed90:4,0x2bed94:4,0x2bed98:4,0x2bed9c:4,0x2beda0:4,0x2beda4:4,0x2beda8:4,0x2bedac:4,0x2bedb0:4,0x2bedb4:4,0x2bedb8:4,0x2bedbc:4,0x2bedc0:4,0x2bedc4:4,0x2bedc8:4,0x2bedcc:4,0x2bedd0:4,0x2bedd4:4,0x2bedd8:4,0x2beddc:4,0x2bede0:4,0x2bede4:4,0x2bede8:4,0x2bedec:4,0x2bedf0:4,0x2bedf4:4,0x2bedf8:4,0x2bedfc:4,0x2bee00:4,0x2bee04:4,0x2bee08:4,0x2bee0c:4,0x2bee10:4,0x2bee14:4,0x2bee18:4,0x2bee1c:4,0x2bee20:4,0x2bee24:4,0x2bee28:4,0x2bee2c:4,0x2bee30:4,0x2bee34:4,0x2bee38:4,0x2bee3c:4,0x2bee40:4,0x2bee44:4,0x2bee48:4,0x2bee4c:4,0x2bee50:4,0x2bee54:4,0x2bee58:4,0x2bee5c:4,0x2bee60:4,0x2bee64:4,0x2bee68:4,0x2bee6c:4,0x2bee70:4,0x2bee74:4,0x2bee78:4,0x2bee7c:4,0x2bee80:4,0x2bee84:4,0x2bee88:4,0x2bee8c:4,0x2bee90:4,0x2bee94:4,0x2bee98:4,0x2bee9c:4,0x2beea0:4,0x2beea4:4,0x2beea8:4,0x2beeac:4,0x2beeb0:4,0x2beeb4:4,0x2beeb8:4,0x2beebc:4,0x2beec0:4,0x2beec4:4,0x2beec8:4,0x2beecc:4,0x2beed0:4,0x2beed4:4,0x2beed8:4,0x2beedc:4,0x2beee0:4,0x2beee4:4,0x2beee8:4,0x2beeec:4,0x2beef0:4,0x2beef4:4,0x2beef8:4,0x2beefc:4,0x2bef00:4,0x2bef04:4,0x2bef08:4,0x2bef0c:4,0x2bef10:4,0x2bef14:4,0x2bef18:4,0x2bef1c:4,0x2bef20:4,0x2bef24:4,0x2bef28:4,0x2bef2c:4,0x2bef30:4,0x2bf000:4,0x2bf030:4,0x2bf038:4,0x2bf03c:4,0x2bf044:4,0x2bf048:4,0x2bf04c:4,0x2bf054:4,0x2bf07c:4,0x2bf080:4,0x2bf084:4,0x2bf088:4,0x2bf09c:4,0x2bf0a0:4,0x2bf0a4:4,0x2bf0a8:4,0x2bf0ac:4,0x2bf0b0:4,0x2bf0b4:4,0x2bf0b8:4,0x2bf0bc:4,0x2bf0c0:4,0x2bf0c4:4,0x2bf0c8:4,0x2bf0cc:4,0x2bf0d0:4,0x2bf0d4:4,0x2bf0d8:4,0x2bf0dc:4,0x2bf0ec:4,0x2bf0f0:4,0x2bf0f4:4,0x2bf0f8:4,0x2bf0fc:4,0x2bf100:4,0x2bf104:4,0x2bf108:4,0x2bf10c:4,0x2bf110:4,0x2bf114:4,0x2bf130:4,0x2bf14c:4,0x2bf150:4,0x2bf154:4,0x2bf158:4,0x2bf15c:4,0x2bf170:4,0x2bf1a8:4,0x2bf1ac:4,0x2bf1b0:4,0x2bf1b4:4,0x2bf1b8:4,0x2bf1c4:4,0x2bf1d0:4,0x2bf1d4:4,0x2bf1d8:4,0x2bf1dc:4,0x2bf1e0:4,0x2bf1e4:4,0x2bf1e8:4,0x2bf1ec:4,0x2bf1f0:4,0x2bf1f8:4,0x2bf1fc:4,0x2bf208:4,0x2bf20c:4,0x2bf210:4,0x2bf214:4,0x2bf218:4,0x2bf21c:4,0x2bf220:4,0x2bf22c:4,0x2bf230:4,0x2bf234:4,0x2bf238:4,0x2bf23c:4,0x2bf240:4,0x2bf248:4,0x2bf24c:4,0x2bf250:4,0x2bf254:4,0x2bf258:4,0x2bf25c:4,0x2bf260:4,0x2bf290:4,0x2bf294:4,0x2bf298:4,0x2bf29c:4,0x2bf2a0:4,0x2bf2a4:4,0x2bf2a8:4,0x2bf2b4:4,0x2bf2bc:4,0x2bf2c0:4,0x2bf2c4:4,0x2bf2cc:4,0x2bf2d8:4,0x2bf2dc:4,0x2bf2fc:4,0x2bf304:4,0x2bf308:4,0x2bf30c:4,0x2bf310:4,0x2bf318:4,0x2bf358:4,0x2bf380:4,0x2bf388:4,0x2bf390:4,0x2bf394:4,0x2bf39c:4,0x2bf3a8:4,0x2bf3b4:4,0x2bf3bc:4,0x2bf3e4:4,0x2bf3e8:4,0x2bf3f4:4,0x2bf600:4,0x2bf604:4,0x2bf608:4,0x2bf60c:4,0x2bf610:4,0x2bf614:4,0x2bf618:4,0x2bf61c:4,0x2bf620:4,0x2bf624:4,0x2bf628:4,0x2bf62c:4,0x2bf630:4,0x2bf634:4,0x2bf638:4,0x2bf63c:4,0x2bf640:4,0x2bf644:4,0x2bf648:4,0x2bf64c:4,0x2bf650:4,0x2bf654:4,0x2bf658:4,0x2bf65c:4,0x2bf660:4,0x2bf704:4,0x2bf708:4,0x2bf72c:4,0x2bf730:4,0x2bf744:4,0x2bf74c:4,0x2bf754:4,0x2bf758:4,0x2bf75c:4,0x2bf760:4,0x2bf764:4,0x2bf76c:4,0x2bf770:4,0x2bf794:4,0x2bf798:4,0x2bf7b0:4,0x2bf7b4:4,0x2bf7b8:4,0x2bf7bc:4,0x2bf7c4:4,0x2bf7c8:4,0x2bf7cc:4,0x2bf7d0:4,0x2bf7d4:4,0x2bf7d8:4,0x2bf7dc:4,0x2bf7e0:4,0x2bf7e4:4,0x2bf7e8:4,0x2bf7ec:4,0x2bf7f0:4,0x2bf7f4:4,0x2bf7f8:4,0x2bf7fc:4,0x2bf800:4,0x2bf804:4,0x2bf814:4,0x2bf81c:4,0x2bf830:4,0x2bf838:4,0x2bf84c:4,0x2bf850:4,0x2bf854:4,0x2bf858:4,0x2bf85c:4,0x2bf860:4,0x2bf864:4,0x2bf868:4,0x2bf86c:4,0x2bf870:4,0x2bf874:4,0x2bf878:4,0x2bf87c:4,0x2bf880:4,0x2bf884:4,0x2bf888:4,0x2bf88c:4,0x2bf890:4,0x2bf894:4,0x2bf8b0:4,0x2bf8b4:4,0x2bf8b8:4,0x2bf8bc:4,0x2bf8c0:4,0x2bf8c4:4,0x2bf8c8:4,0x2bf8cc:4,0x2bf8d0:4,0x2bf8e4:4,0x2bf8e8:4,0x2bf8f4:4,0x2bf900:4,0x2bf904:4,0x2bf908:4,0x2bf918:4,0x2bf978:4,0x2bf984:4,0x2bf988:4,0x2bf990:4,0x2bf994:4,0x2bf998:4,0x2bf99c:4,0x2bf9a0:4,0x2bf9a4:4,0x2bf9a8:4,0x2bf9c0:4,0x2bf9ec:4,0x2bfc28:4,0x2bfc30:4,0x2bfc38:4,0x2bfce0:4,0x2bfe00:4,0x2bfe04:4,0x2bfe08:4,0x2bfe18:4,0x2bfe24:4,0x2bfe2c:4,0x2bfe34:4,0x2bfe40:4,0x2bfe48:4,0x2bfe54:4,0x2bfe58:4,0x2bfe5c:4,0x2bfe64:4,0x2bfe68:4,0x2bfe70:4,0x2bfe74:4,0x2bfe80:4,0x2bfe88:4,0x2bfe8c:4,0x2bfe90:4,0x2bfe94:4,0x2bfe98:4,0x2bfe9c:4,0x2bfea8:4,0x2bfeac:4,0x2bfeb4:4,0x2bfeb8:4,0x2bfebc:4,0x2bfec0:4,0x2bfec4:4,0x2bfec8:4,0x2bfed0:4,0x2bfedc:4,0x2bfee0:4,0x2bfee4:4,0x2bfee8:4,0x2bfeec:4,0x2bfef0:4,0x2bfef8:4,0x2bfefc:4,0x2bff00:4,0x2bff04:4,0x2bff08:4,0x2bff10:4,0x2bff30:4,0x2bff3c:4,0x2bff40:4,0x2bff44:4,0x2bff48:4,0x2bff4c:4,0x2bff54:4,0x2bff60:4,0x2bff6c:4,0x2bff90:4,0x2bffa8:4,0x2bffb0:4,0x2bffb8:4,0x2bffc0:4,0x2bffc8:4,0x2bffcc:4,0x2bffd0:4,0x2bffd4:4,0x2bffe0:4,0x2bffe4:4,0x2bffe8:4,0x2bfff4:4},{},{0x2d4070:1,0x2d4071:1},{},{},{},{0x310400:1024,0x313300:256,0x313400:1024,0x314000:1024,0x314400:1024,0x314800:1024,0x314c00:1024,0x315000:1024,0x315400:1024,0x315800:1024,0x315c00:1024,0x317000:1024,0x317400:1024,0x317800:1024,0x318000:1,0x318002:1,0x318003:1,0x318c00:256,0x318d00:256,0x319800:1024,0x31d000:256,0x31d100:256,0x31d200:256,0x31d300:256,0x31dc00:1024,0x31e800:1024,0x31ef00:64,0x31efc0:64,0x31f6e0:16,0x31f6f0:16},{},{},{},{},{0x36de00:256,0x36df00:256},{},{},{},{0x3a0e00:256,0x3a0f00:256,0x3a1000:256,0x3a1100:64,0x3a1140:64,0x3a1180:64,0x3a11c0:64,0x3a1200:256,0x3a1300:256,0x3a1400:256,0x3a1500:256,0x3a1600:256,0x3a1700:256,0x3a1800:256,0x3a1900:256,0x3a1e00:256,0x3a1f00:256,0x3a2000:1024,0x3a2400:1024,0x3a2800:256,0x3a2900:256,0x3a2a00:256,0x3a2b00:256,0x3a2c00:1024,0x3a3000:1024,0x3a3400:1024,0x3a3800:256,0x3a3900:256,0x3a3a00:256,0x3a3b00:64,0x3a3b40:64,0x3a3b80:64,0x3a3bc0:64,0x3a3c00:1024,0x3a41e8:4,0x3a41ec:4,0x3a4200:256,0x3a4300:256,0x3a4480:64,0x3a44c0:64,0x3a5200:64,0x3a5240:64,0x3a5300:64,0x3a5340:64,0x3a5380:64,0x3a53c0:64,0x3a5740:64,0x3a6380:64,0x3a63c0:64,0x3a6400:256,0x3a6500:256,0x3a7400:1024,0x3a8000:1024,0x3a8400:1024,0x3a9000:256,0x3a9a00:256,0x3a9b00:256,0x3ac000:256,0x3ac100:256,0x3ac200:256,0x3ac300:256,0x3ac400:256,0x3ac500:256,0x3ac600:256,0x3ac700:256,0x3ac800:1024,0x3acc00:1024,0x3ad000:1024,0x3ad400:1024,0x3ad800:1024,0x3adc00:1024,0x3af000:256,0x3af100:256,0x3af200:256,0x3af300:256,0x3af400:256,0x3af500:256,0x3af600:256,0x3af700:256,0x3af800:1024,0x3afc00:1024},{0x3b2000:1024,0x3b2400:1024,0x3b2800:256,0x3b2900:256,0x3b2a00:256,0x3b2b00:256,0x3b2c00:1024,0x3b3000:256,0x3b3100:64,0x3b3140:64,0x3b3180:64,0x3b31c0:64,0x3b3200:256,0x3b3300:64,0x3b3340:64,0x3b3380:64,0x3b33c0:64,0x3b3400:1024,0x3b3800:1024,0x3b3c00:256,0x3b3d00:256,0x3b3e00:256,0x3b3f00:256,0x3b4000:1024,0x3b4400:1024,0x3b4800:256,0x3b4900:256,0x3b4a00:256,0x3b4b00:256,0x3b4c00:256,0x3b4d00:256,0x3b4e00:256,0x3b4f00:256,0x3b5000:256,0x3b5100:256,0x3b5200:256,0x3b5300:256,0x3b6b00:64,0x3b6b40:64,0x3b6b80:64,0x3b6bc0:64,0x3b6c00:256,0x3b6d00:256,0x3b6e00:256,0x3b6f00:256,0x3b9700:64,0x3b9740:64,0x3b9b00:256,0x3bac00:256,0x3bad00:256,0x3bae00:256,0x3baf00:256,0x3bbf00:64,0x3bbf40:64,0x3bbff0:16,0x3bc000:1024,0x3bc400:1024,0x3bc800:1024,0x3bcc00:1024,0x3bd000:1024,0x3bd400:1024,0x3bd800:1024,0x3bdc00:1024,0x3be000:1024,0x3be400:1024,0x3be800:1024,0x3bec00:1024,0x3bf000:1024,0x3bf400:1024,0x3bf800:1024,0x3bfc00:1024},{0x3c0000:1024,0x3c0400:1024,0x3c0800:256,0x3c0900:256,0x3c0a00:256,0x3c0b00:256,0x3c0c00:256,0x3c0d00:64,0x3c0d40:64,0x3c0d80:64,0x3c0dc0:64,0x3c0e00:256,0x3c0f00:256,0x3c1000:1024,0x3c1400:1024,0x3c1800:1024,0x3c1c00:256,0x3c1d00:256,0x3c1e00:256,0x3c1f00:256,0x3c3700:256,0x3c3f00:256,0x3ca000:256,0x3ca100:256,0x3ca200:256,0x3ca300:256,0x3ca400:256,0x3ca500:256,0x3ca600:256,0x3ca700:256,0x3ca800:1024,0x3cac00:1024,0x3cb000:1024,0x3cb400:1024,0x3cb800:1024,0x3cbc00:1024,0x3cc200:256,0x3cc300:256,0x3cc800:1024,0x3ccc00:256,0x3ccd00:256,0x3cce00:256,0x3ccf00:256,0x3cd000:1024,0x3cd400:1024,0x3cd800:256,0x3cd900:256,0x3cda00:256,0x3cdb00:256,0x3cdc00:1024,0x3ce800:256,0x3ce900:256,0x3ceb00:256,0x3cf580:64,0x3cf5c0:64,0x3cf700:256,0x3cfc00:256,0x3cfd80:64,0x3cfdc0:64,0x3cff00:256},{0x3d0450:4,0x3d0454:4,0x3d0458:4,0x3d045c:4,0x3d04b0:16,0x3d08a0:16,0x3d1c00:16,0x3d1c10:16,0x3d1c20:16,0x3d1c30:16,0x3d1c40:64,0x3d1d80:64,0x3d1dc0:16,0x3d1dd0:16,0x3d1de0:16,0x3d1df0:16,0x3d2d80:64,0x3d2de0:16,0x3d2f80:64,0x3d3000:1024,0x3d3400:256,0x3d3500:256,0x3d3600:256,0x3d3700:256,0x3d57c0:64,0x3d8000:256,0x3d8100:256,0x3d8200:256,0x3d8300:256,0x3d8400:256,0x3d8500:64,0x3d8540:64,0x3d8580:64,0x3d85c0:64,0x3d8600:64,0x3d8640:16,0x3d8650:16,0x3d8660:16,0x3d8670:16,0x3d8680:64,0x3d86c0:64,0x3d8700:256,0x3d8800:64,0x3d8840:64,0x3d8880:64,0x3d88c0:64,0x3d8900:64,0x3d8940:64,0x3d8980:64,0x3d89c0:64,0x3d8a00:64,0x3d8a40:64,0x3d8a80:64,0x3d8ac0:64,0x3d8b00:64,0x3d8b40:64,0x3d8b80:64,0x3d8bc0:64,0x3d8c00:1024,0x3d9000:1024,0x3d9400:256,0x3d9500:256,0x3d9600:256,0x3d9700:256,0x3d9800:256,0x3d9900:256,0x3d9a00:256,0x3d9b00:256,0x3d9c00:256,0x3d9d00:256,0x3d9e00:64,0x3d9e40:64,0x3d9e80:64,0x3d9ec0:64,0x3d9f00:64,0x3d9f40:64,0x3d9f80:64,0x3d9fc0:64,0x3da000:256,0x3da100:64,0x3da140:64,0x3da180:64,0x3da1c0:64,0x3da200:256,0x3da300:256,0x3da400:256,0x3da500:256,0x3da600:256,0x3da700:256,0x3da800:256,0x3da900:256,0x3daa00:256,0x3dab00:256,0x3dac00:1024,0x3db000:256,0x3db100:256,0x3db200:256,0x3db300:256,0x3db400:64,0x3db440:64,0x3db480:64,0x3db4c0:64,0x3db500:256,0x3db600:256,0x3db700:256,0x3db800:1024,0x3dbc00:256,0x3dbd00:64,0x3dbd40:64,0x3dbd80:64,0x3dbdc0:64,0x3dbe00:256,0x3dbf00:256,0x3de800:1024,0x3dec00:256,0x3ded00:256,0x3df000:1024},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{0x650000:4,0x650100:4,0x6502ac:4,0x650400:1024,0x651000:1024,0x651400:1024,0x651800:1024,0x651c00:1024,0x652000:1024,0x652400:1024,0x652800:1024,0x652c00:1024,0x653000:256,0x653100:256,0x653238:4,0x653400:256,0x653564:4,0x653600:256,0x6537e0:4,0x6537e4:4,0x654000:1024,0x654400:1024,0x654800:1024,0x654c00:256,0x654d00:256,0x654e00:4,0x654e20:16,0x654e30:16,0x655000:1024,0x655400:1024,0x655800:1024,0x655c00:1024,0x656000:4,0x656004:4,0x656008:4,0x656010:16,0x656080:64,0x6560c0:64,0x656360:16,0x656370:16,0x656540:16,0x656550:16,0x656564:1,0x656566:1,0x656567:1,0x656568:4,0x65656c:4,0x656570:16,0x656640:16,0x656650:16,0x656664:1,0x656665:1,0x656666:1,0x656668:4,0x65666c:4,0x656670:16,0x656800:1024,0x656e40:16,0x656e50:16,0x656e60:16,0x656e74:4,0x656e78:4,0x656e7c:4,0x657800:1024,0x657c00:256,0x657d00:256,0x657e00:256,0x658000:4,0x658008:4,0x65800c:4,0x658010:16,0x658020:16,0x658030:16,0x658100:256,0x658200:256,0x658300:256,0x658400:1024,0x659000:1024,0x659400:1024,0x659800:1024,0x659c00:1024,0x65c000:1024,0x65c400:1024,0x65c800:256,0x65c900:256,0x65cb80:16,0x65cb90:16,0x65cba0:4,0x65cba4:4,0x65cbac:4,0x65cbb0:16,0x65cc00:1024,0x65e000:1024,0x65e400:1024,0x65e800:256,0x65e900:256,0x65ea40:4,0x65ea44:4,0x65ea4c:4,0x65ea50:16,0x65ea60:16,0x65ea70:16,0x65ec00:1024,0x65f000:1024,0x65f400:1024,0x65f800:256,0x65f900:256,0x65fb00:4,0x65fb08:4,0x65fb0c:4,0x65fb10:16,0x65fb20:16,0x65fb30:16,0x65fb40:64,0x65fb80:64,0x65fbc0:64,0x65fc00:256,0x65fd00:256,0x65fe00:256},{},{0x670108:4,0x670114:4,0x670118:4,0x670148:4,0x670158:4,0x6701a8:4,0x67026c:4,0x67029c:4,0x6702a4:4,0x6702c8:4,0x6702cc:4,0x6702d0:4,0x6702d4:4,0x670354:4,0x670358:4,0x67035c:4,0x670360:4,0x670364:4,0x670368:4,0x67036c:4,0x670370:4,0x670374:4,0x670378:4,0x67037c:4,0x670380:4,0x670384:4,0x670388:4,0x67038c:4,0x670394:4,0x670398:4,0x67039c:4,0x670438:4,0x6704a8:4,0x6704b8:4,0x670524:4,0x670534:4,0x670538:4,0x6705fc:4,0x67064c:4,0x6706dc:4,0x670704:4,0x67071c:4,0x6707d4:4,0x6707d8:4,0x6707dc:4,0x670804:4,0x670808:4,0x670820:4,0x670834:4,0x67086c:4,0x67089c:4,0x6708c8:4,0x6708cc:4,0x6708dc:4,0x670998:4,0x6709f8:4,0x6709fc:4,0x670a00:4,0x670a10:4,0x670a54:4,0x670a6f:1,0x670a8c:4,0x670bb4:4,0x670c20:4,0x670c44:4,0x670c88:4,0x670cb8:4,0x670ce8:4,0x670d7c:4,0x670d90:4,0x670dc4:4,0x670df4:4,0x670e54:4,0x670e70:4,0x670e84:4,0x670e88:4,0x670e9c:4,0x670ef0:4,0x670f04:4,0x670f08:4,0x670f10:4,0x670f60:4,0x670fc8:4,0x671034:4,0x671050:4,0x671054:4,0x671058:4,0x67106c:4,0x67107c:4,0x671128:4,0x671178:4,0x6711a0:4,0x6711cc:4,0x6711e4:4,0x6712c0:4,0x6712d0:4,0x6712d4:4,0x6712e0:4,0x67130c:4,0x671328:4,0x67132c:4,0x671340:4,0x671344:4,0x671348:4,0x6713e8:4,0x67140c:4,0x671420:4,0x671470:4,0x671480:4,0x6714a0:4,0x6714f8:4,0x671570:4,0x671574:4,0x671588:4,0x67158c:4,0x6715b0:4,0x6715d0:4,0x6715f0:4,0x671600:4,0x671604:4,0x671608:4,0x67160c:4,0x671610:4,0x671614:4,0x671618:4,0x67161c:4,0x671620:4,0x671624:4,0x671628:4,0x67162c:4,0x671630:4,0x671634:4,0x671638:4,0x67163c:4,0x671640:4,0x671644:4,0x671648:4,0x67164c:4,0x671650:4,0x671654:4,0x671658:4,0x67165c:4,0x671664:4,0x671668:4,0x67166c:4,0x671670:4,0x671674:4,0x671678:4,0x67167c:4,0x6716bc:4,0x6716e4:4,0x6716fc:4,0x671708:4,0x671738:4,0x6717a0:4,0x6717a4:4,0x6717b0:4,0x6717e4:4,0x671874:4,0x671880:4,0x671890:4,0x6718b0:4,0x6718b8:4,0x6718dc:4,0x6718e4:4,0x6718f8:4,0x6718fc:4,0x671908:1,0x671909:1,0x671914:4,0x671918:4,0x67191c:4,0x671920:4,0x671924:4,0x671928:4,0x671930:4,0x671940:4,0x671944:4,0x671994:4,0x67199c:4,0x6719d8:4,0x671a00:4,0x671a40:4,0x671a9c:4,0x671aa0:4,0x671ae4:4,0x671af0:4,0x671b04:4,0x671b0c:4,0x671b18:4,0x671b38:4,0x671b60:4,0x671bd0:4,0x671bf0:4,0x671c04:4,0x671c08:4,0x671ccc:4,0x671d10:4,0x671d80:4,0x671d84:4,0x671d88:4,0x671e14:4,0x671e60:4,0x671e94:4,0x671ec8:4,0x671ed8:4,0x671ee4:4,0x671eec:4,0x671f00:4,0x671f30:4,0x671f34:4,0x671f38:4,0x671f3c:4,0x671f40:4,0x671f44:4,0x671f48:4,0x671f94:4,0x671fa0:4,0x671fa8:4,0x671fc8:4,0x672000:4,0x672004:4,0x672008:4,0x67200c:4,0x672010:4,0x672014:4,0x672018:4,0x67201c:4,0x672020:4,0x672024:4,0x672028:4,0x67202c:4,0x672030:4,0x672034:4,0x672038:4,0x67203c:4,0x672040:4,0x672044:4,0x672048:4,0x67204c:4,0x672050:4,0x672054:4,0x672058:4,0x67205c:4,0x672060:4,0x672064:4,0x672068:4,0x67206c:4,0x672070:4,0x672074:4,0x672078:4,0x67207c:4,0x672080:4,0x672084:4,0x672088:4,0x67208c:4,0x672090:4,0x672094:4,0x672098:4,0x67209c:4,0x6720a0:4,0x6720a4:4,0x6720a8:4,0x6720ac:4,0x6720b0:4,0x6720b4:4,0x6720b8:4,0x6720bc:4,0x6720c0:4,0x6720c4:4,0x6720c8:4,0x6720cc:4,0x6720d0:4,0x6720d4:4,0x6720d8:4,0x6720dc:4,0x6720e0:4,0x6720e4:4,0x6720e8:4,0x6720ec:4,0x6720f0:4,0x6720f4:4,0x6720f8:4,0x6720fc:4,0x672100:4,0x672104:4,0x672108:4,0x67210c:4,0x672110:4,0x672114:4,0x672118:4,0x67211c:4,0x672120:4,0x672124:4,0x672128:4,0x67212c:4,0x672130:4,0x672134:4,0x672138:4,0x67213c:4,0x672140:4,0x672144:4,0x672148:4,0x67214c:4,0x672150:4,0x672154:4,0x672158:4,0x67215c:4,0x672160:4,0x672164:4,0x672168:4,0x67216c:4,0x672170:4,0x672174:4,0x672178:4,0x67217c:4,0x672180:4,0x672184:4,0x672188:4,0x67218c:4,0x672190:4,0x672194:4,0x672198:4,0x67219c:4,0x6721a0:4,0x6721a4:4,0x6721a8:4,0x6721ac:4,0x6721b0:4,0x6721b4:4,0x6721b8:4,0x6721bc:4,0x6721c0:4,0x6721c4:4,0x6721c8:4,0x6721cc:4,0x6721d0:4,0x6721d4:4,0x6721d8:4,0x6721dc:4,0x6721e0:4,0x6721e4:4,0x6721e8:4,0x6721ec:4,0x6721f0:4,0x6721f4:4,0x6721f8:4,0x6721fc:4,0x672200:4,0x672204:4,0x672208:4,0x67220c:4,0x672210:4,0x672214:4,0x672218:4,0x67221c:4,0x672220:4,0x672224:4,0x672228:4,0x67222c:4,0x672230:4,0x672234:4,0x672238:4,0x67223c:4,0x672240:4,0x672244:4,0x672248:4,0x67224c:4,0x672250:4,0x672254:4,0x672258:4,0x67225c:4,0x672260:4,0x672264:4,0x672268:4,0x67226c:4,0x672270:4,0x672274:4,0x672278:4,0x67227c:4,0x672280:4,0x672284:4,0x672288:4,0x67228c:4,0x672290:4,0x672294:4,0x672298:4,0x67229c:4,0x6722a0:4,0x6722a4:4,0x6722a8:4,0x6722ac:4,0x6722b0:4,0x6722b4:4,0x6722b8:4,0x6722bc:4,0x6722c0:4,0x6722c4:4,0x6722c8:4,0x6722cc:4,0x6722d0:4,0x6722d4:4,0x6722d8:4,0x6722dc:4,0x6722e0:4,0x6722e4:4,0x6722e8:4,0x6722ec:4,0x6722f0:4,0x6722f4:4,0x6722f8:4,0x6722fc:4,0x672300:4,0x672304:4,0x672308:4,0x67230c:4,0x672310:4,0x672314:4,0x672318:4,0x67231c:4,0x672320:4,0x672324:4,0x672328:4,0x67232c:4,0x672330:4,0x672414:4,0x67241c:4,0x672424:4,0x672438:4,0x67243c:4,0x672440:4,0x672448:4,0x672460:4,0x672484:4,0x672488:4,0x6724a0:4,0x6724a4:4,0x6724a8:4,0x6724ac:4,0x6724b0:4,0x6724b4:4,0x6724b8:4,0x6724bc:4,0x6724c0:4,0x6724c4:4,0x6724c8:4,0x6724cc:4,0x6724d0:4,0x6724d4:4,0x6724d8:4,0x6724dc:4,0x6724e0:4,0x6724e4:4,0x6724e8:4,0x6724ec:4,0x6724f0:4,0x6724f4:4,0x672500:4,0x67250c:4,0x672510:4,0x672518:4,0x67252c:4,0x672534:4,0x672538:4,0x672548:4,0x672564:4,0x672568:4,0x67257c:4,0x672588:4,0x67258c:4,0x672590:4,0x672594:4,0x672598:4,0x67259c:4,0x6725a0:4,0x6725a4:4,0x6725ac:4,0x6725b0:4,0x6725d0:4,0x6725d4:4,0x6725d8:4,0x6725dc:4,0x6725f8:4,0x6725fc:4,0x672600:4,0x672620:4,0x672628:4,0x67262c:4,0x672638:4,0x67264c:4,0x672654:4,0x67265c:4,0x672660:4,0x672674:4,0x672684:4,0x67268c:4,0x6726dc:4,0x6726e0:4,0x6726e4:4,0x6726e8:4,0x6726fc:4,0x672710:4,0x672740:4,0x672758:4,0x672764:4,0x672768:4,0x67276c:4,0x672790:4,0x6727a0:4,0x6727a4:4,0x6727a8:4,0x6727ac:4,0x6727b0:4,0x6727b4:4,0x6727b8:4,0x6727bc:4,0x6727c8:4,0x6727cc:4,0x6727d0:4,0x6727d4:4,0x6727d8:4,0x6727dc:4,0x6727e0:4,0x6727e4:4,0x6727e8:4,0x67280c:4,0x672810:4,0x672814:4,0x672818:4,0x67281c:4,0x672820:4,0x672824:4,0x672828:4,0x67282c:4,0x672858:4,0x672864:4,0x672870:4,0x6728c0:4,0x6728d4:4,0x6728dc:4,0x6728e4:4,0x6728e8:4,0x6728ec:4,0x6728f0:4,0x6728f4:4,0x6728f8:4,0x6728fc:4,0x672900:4,0x672910:4,0x672934:4,0x672974:4,0x67e028:4,0x67e02c:4,0x67e03c:4,0x67e050:4,0x67e0dc:4,0x67e0e0:4,0x67e0e4:4,0x67e0e8:4,0x67e154:4,0x67e210:4,0x67e228:4,0x67e238:4,0x67e23c:4,0x67e250:4,0x67e274:4,0x67e284:4,0x67e29c:4,0x67e2b4:4,0x67e2c4:4,0x67e330:4,0x67e348:4,0x67e34c:4,0x67e350:4,0x67e364:4,0x67e378:4,0x67e384:4,0x67e388:4,0x67e3c4:4,0x67e3cc:4,0x67e3d4:4,0x67e3e4:4,0x67e40c:4,0x67e41c:4,0x67e444:4,0x67e458:4,0x67e480:4,0x67e4a0:4,0x67e4b0:4,0x67e4cc:4,0x67e4d0:4,0x67e4e4:4,0x67e4e8:4,0x67e514:4,0x67e588:4,0x67e594:4,0x67e5ac:4,0x67e5d4:4,0x67e5d8:4,0x67e5dc:4,0x67e5e4:4,0x67e5ec:4,0x67e5f0:4,0x67e600:4,0x67e61c:4,0x67e628:4,0x67e62c:4,0x67e660:4,0x67e6c4:4,0x67e6c8:4,0x67e6cc:4,0x67e6d4:4,0x67e6ec:4,0x67e710:4,0x67e714:4,0x67e740:4,0x67e744:4,0x67e790:4,0x67e7b4:4,0x67e7b8:4,0x67e7f4:4,0x67e804:4,0x67e890:4,0x67e8d4:4,0x67e904:4,0x67e92c:4,0x67e934:4,0x67e968:4,0x67e980:4,0x67e988:4,0x67e9e4:4,0x67ea00:4,0x67ea14:4,0x67ea38:4,0x67ea7c:4,0x67ea80:4,0x67eaac:4,0x67eab4:4,0x67eb10:4,0x67eb30:4,0x67eb38:4,0x67eb3c:4,0x67eb50:4,0x67eb54:4,0x67eb80:4,0x67eb84:4,0x67eb88:4,0x67eb8c:4,0x67eb90:4,0x67eb94:4,0x67ebb8:4,0x67ebc0:4,0x67ebc8:4,0x67ebdc:4,0x67ebe0:4,0x67ebe4:4,0x67ebe8:4,0x67ebec:4,0x67ebf0:4,0x67ebf4:4,0x67ebf8:4,0x67ebfc:4,0x67ec00:4,0x67ec04:4,0x67ec08:4,0x67ec0c:4,0x67ec10:4,0x67ec14:4,0x67ec18:4,0x67ec1c:4,0x67ec20:4,0x67ec24:4,0x67ec28:4,0x67ec2c:4,0x67ec30:4,0x67ec34:4,0x67ec38:4,0x67ec3c:4,0x67ec40:4,0x67ec44:4,0x67ec48:4,0x67ec4c:4,0x67ec50:4,0x67ec54:4,0x67ec58:4,0x67ec5c:4,0x67ec60:4,0x67ed00:4,0x67ed04:4,0x67ed08:4,0x67ed0c:4,0x67ed18:4,0x67ed1c:4,0x67ed44:4,0x67ed58:4,0x67ed98:4,0x67edb0:4,0x67edb4:4,0x67edb8:4,0x67edbc:4,0x67edc0:4,0x67edc4:4,0x67edc8:4,0x67edcc:4,0x67edd0:4,0x67edd4:4,0x67edd8:4,0x67eddc:4,0x67ede0:4,0x67ede4:4,0x67ede8:4,0x67edec:4,0x67edf0:4,0x67edf4:4,0x67edf8:4,0x67edfc:4,0x67ee00:4,0x67ee04:4,0x67ee10:4,0x67ee14:4,0x67ee18:4,0x67ee1c:4,0x67ee20:4,0x67ee24:4,0x67ee28:4,0x67ee2c:4,0x67ee30:4,0x67ee34:4,0x67ee38:4,0x67ee58:4,0x67ee5c:4,0x67ee60:4,0x67ee84:4,0x67ee8c:4,0x67ee90:4,0x67eea0:4,0x67eea4:4,0x67eea8:4,0x67eeac:4,0x67eeb0:4,0x67eeb4:4,0x67eeb8:4,0x67eebc:4,0x67eec4:4,0x67eecc:4,0x67eefc:4,0x67ef00:4,0x67ef28:4,0x67ef2c:4,0x67ef44:4,0x67ef60:4,0x67ef98:4,0x67ef9c:4,0x67efb0:4,0x67efb4:4,0x67efb8:4,0x67efc0:4,0x67efc4:4,0x67efcc:4,0x67efd0:4,0x67efe0:4,0x67eff4:4,0x67f010:4,0x67f024:4,0x67f048:4,0x67f054:4,0x67f07c:4,0x67f09c:4,0x67f0ac:4,0x67f0f4:4,0x67f10c:4,0x67f148:4,0x67f15c:4,0x67f160:4,0x67f1a0:4,0x67f1b8:4,0x67f1bc:4,0x67f1dc:4,0x67f208:4,0x67f240:4,0x67f280:4,0x67f284:4,0x67f2a0:4,0x67f2a8:4,0x67f2ac:4,0x67f2b0:4,0x67f2c8:4,0x67f2d4:4,0x67f2dc:4,0x67f2f0:4,0x67f318:4,0x67f388:4,0x67f3fc:4,0x67f410:4,0x67f43a:1,0x67f43b:1,0x67f43c:4,0x67f440:4,0x67f444:4,0x67f448:4,0x67f44c:4,0x67f450:4,0x67f454:4,0x67f4a4:4,0x67f4e8:4,0x67f4fc:4,0x67f517:1,0x67f534:4,0x67f53c:4,0x67f550:4,0x67f57c:4,0x67f580:4,0x67f608:4,0x67f60c:4,0x67f678:4,0x67f67c:4,0x67f684:4,0x67f698:4,0x67f69c:4,0x67f7a8:4,0x67f7ac:4,0x67f7b0:4,0x67f7c8:4,0x67f7d4:4,0x67f800:1,0x67f801:1,0x67f840:4,0x67f864:4,0x67f87c:4,0x67f898:4,0x67f8a8:4,0x67f8c0:4,0x67f8d4:4,0x67f8e0:4,0x67f8e4:4,0x67f90c:4,0x67f934:4,0x67f980:4,0x67f988:4,0x67f990:4,0x67f9a4:4,0x67f9a8:4,0x67f9ac:4,0x67f9b0:4,0x67f9bc:4,0x67f9c0:4,0x67f9f4:4,0x67f9fc:4,0x67fa20:4,0x67fa68:4,0x67fa7c:4,0x67fab4:4,0x67fac0:4,0x67fad8:4,0x67fae0:4,0x67faec:4,0x67faf8:4,0x67fafc:4,0x67fb20:4,0x67fb54:4,0x67fb60:4,0x67fb7c:4,0x67fb80:4,0x67fba0:4,0x67fbcc:4,0x67fbec:4,0x67fbf0:4,0x67fc1c:4,0x67fc24:4,0x67fc40:4,0x67fc68:4,0x67fcac:4,0x67fccc:4,0x67fcd0:4,0x67fce8:4,0x67fcf8:4,0x67fd04:4,0x67fd3c:4,0x67fdcc:4,0x67fddc:4,0x67fde0:4,0x67fde8:4,0x67fe08:4,0x67fe14:4,0x67fe40:4,0x67fe44:4,0x67fe48:4,0x67fe4c:4,0x67fe70:4,0x67fe94:4,0x67feb0:4,0x67febc:4,0x67fec4:1,0x67fedc:4,0x67ff44:4,0x67ff58:4,0x67ff5c:4,0x67ff88:4,0x67ff8c:4,0x67ffb8:4,0x67ffc8:4,0x67ffd0:4,0x67ffd4:4,0x67ffe4:4},{},{},{0x6a0000:1,0x6a0002:1,0x6a0003:1,0x6a0004:4,0x6a0008:4,0x6a000c:4,0x6a0010:16,0x6a0040:64,0x6a0200:256,0x6a0300:256,0x6a0400:1024,0x6a0800:256,0x6a0900:256,0x6a0b00:256,0x6a0c00:1024,0x6a1000:1024,0x6a1400:1024,0x6a1800:1024,0x6a1c00:1024,0x6a2000:1024,0x6a2400:1024,0x6a2800:1024,0x6a2c00:1024,0x6a3000:256,0x6a3100:256,0x6a3200:256,0x6a3400:1024,0x6a3800:1024,0x6a3c00:1024,0x6a4a00:256,0x6a4b00:256,0x6a5000:1024,0x6a5400:1024,0x6a5800:1024,0x6a5c00:1024,0x6a6c00:1024,0x6a7000:1024,0x6a7400:1024,0x6a7800:1024,0x6a7c00:1024,0x6ae000:1024,0x6ae400:1024,0x6ae800:1024,0x6aec00:1024},{},{},{},{0x6e0600:256,0x6e0700:256,0x6e1000:1024,0x6e2800:1024,0x6e2c90:16,0x6e3000:256,0x6e3300:256,0x6e3400:256,0x6e3500:256,0x6e3800:1024,0x6e3c00:1024,0x6e4000:256,0x6e4100:256,0x6e4800:256,0x6e4900:256,0x6e4b00:64,0x6e4b40:64,0x6e4b80:16,0x6e4b90:16,0x6e4ba0:16,0x6e4bb0:16,0x6e4bc0:64,0x6e4c00:16,0x6e4c10:16,0x6e4c20:16,0x6e4c30:16,0x6e4c9c:4,0x6e4cb8:4,0x6e4cc0:64,0x6e4d00:64,0x6e4d40:64,0x6e5000:1024,0x6e5400:1024,0x6e5800:1024,0x6e5d20:16,0x6e5d30:16,0x6e5e00:256,0x6e5f00:256,0x6e6000:1024,0x6e6400:1024,0x6e6800:1024,0x6e6c00:1024,0x6e7000:1024,0x6e7400:1024,0x6e7800:1024,0x6e7c00:1024,0x6e9800:1024,0x6e9c00:256,0x6e9d00:256,0x6ea520:16,0x6ea530:16,0x6ea600:256,0x6ea700:256,0x6eacc0:64,0x6ead00:16,0x6ead10:16,0x6ead20:16,0x6ead40:16,0x6ead50:16,0x6ead60:16,0x6ead70:16,0x6eadc0:16,0x6eadd0:16,0x6eb000:1024,0x6eb400:1024,0x6eb800:1024,0x6ebc00:1024,0x6ec000:1024,0x6ec400:1024,0x6ec800:1024,0x6ecc00:1024,0x6ed000:1024,0x6ed400:1024,0x6ed800:1024,0x6edc00:1024,0x6ee400:1024,0x6ee820:16,0x6ee830:16,0x6eec00:256,0x6eed00:256,0x6ef000:1024,0x6ef400:1024,0x6ef800:1024,0x6efc00:1024},{0x6f0000:1024,0x6f0400:1024,0x6f0800:1024,0x6f0c00:1024,0x6f1000:1024,0x6f1400:1024,0x6f1800:1024,0x6f1c00:1024,0x6f2000:1024,0x6f2400:1024,0x6f2800:1024,0x6f2c00:1024,0x6f3000:1024,0x6f3400:1024,0x6f3800:1024,0x6f3c00:1024,0x6f4200:256,0x6f43c0:16,0x6f4440:16,0x6f4450:16,0x6f4800:1024,0x6f4c00:1024,0x6f5500:256,0x6f5bc0:16,0x6f5bd0:16,0x6f7000:256,0x6f7100:256,0x6f7200:256,0x6f7300:256,0x6f7400:256,0x6f7500:256,0x6f76c8:4,0x6f76cc:4,0x6f7740:64,0x6f7780:16,0x6f7790:16,0x6f7800:1024,0x6f7c00:256,0x6f7e00:256,0x6f7f00:256,0x6f8000:1024,0x6f8400:1024,0x6f8800:1024,0x6f8c00:1024,0x6f9000:1024,0x6f9400:1024,0x6f9800:1024,0x6f9c00:1024,0x6fa000:1024,0x6fa400:1024,0x6faa00:256,0x6fac00:1024,0x6fb000:1024,0x6fb400:1024,0x6fba00:256,0x6fbb00:256,0x6fc000:1024,0x6fc400:1024,0x6fc800:1024,0x6fcc00:1024,0x6fd000:1024,0x6fd400:1024,0x6fdd80:64,0x6fddc0:64,0x6fde00:256,0x6fdff0:4,0x6fdff8:4,0x6fe000:1024,0x6fe400:1024,0x6feb60:16,0x6feb70:16,0x6feb9c:4,0x6feba0:16,0x6febb0:16},{0x700000:1024,0x700400:1024,0x700800:1024,0x700c00:1024,0x701000:1024,0x701400:1024,0x701800:1024,0x701c00:1024,0x702000:1024,0x702400:1024,0x702800:1024,0x702c00:1024,0x703000:1024,0x703400:1024,0x703800:1024,0x703c00:1024,0x704000:256,0x704100:256,0x704200:256,0x704300:256,0x704900:256,0x704a00:256,0x704b00:256,0x705000:1024,0x705400:1024,0x705800:1024,0x705c00:1024,0x706000:256,0x706100:256,0x706200:256,0x706300:256,0x706400:1024,0x706d80:64,0x706dc0:64,0x706f00:256,0x707000:1024,0x707400:256,0x707500:256,0x707a00:256,0x707b00:256,0x707c00:1024,0x708000:1024,0x708400:256,0x708930:4,0x708934:4,0x70c000:1024,0x70e000:1024,0x70e400:1024,0x70e800:1024,0x70ec00:1024,0x70f000:1024,0x70f400:1024,0x70f800:1024,0x70fc00:1024},{0x710000:1024,0x710400:1024,0x710800:256,0x710900:256,0x710bc0:16,0x710bd0:16,0x710c00:1024,0x711000:256,0x711100:256,0x711200:256,0x711800:1024,0x711f00:256,0x712c00:1024,0x713000:1024,0x7134a0:16,0x7134b0:16,0x713600:256,0x713700:256,0x713800:256,0x713900:256,0x713a00:256,0x713b00:64,0x713b40:64,0x713be0:4,0x713e00:256,0x713f00:256,0x714000:1024,0x714400:1024,0x714800:1024,0x714c00:1024,0x715000:1024,0x715400:1024,0x715800:1024,0x715c00:1024,0x716000:1024,0x716400:1024,0x716800:1024,0x716c00:1024,0x717000:1024,0x717400:1024,0x717800:1024,0x717c00:1024,0x718000:256,0x718100:256,0x718260:16,0x718270:4,0x718274:4,0x718400:1024,0x718800:1024,0x718c00:1024,0x71c200:256,0x71c300:256,0x71c564:4,0x71c800:256,0x71c900:256,0x71ca00:256,0x71cc00:1024,0x71d060:16,0x71d070:16,0x71d080:64,0x71d0c0:64,0x71d100:256,0x71d400:64,0x71d464:4,0x71d4b8:4,0x71d4bc:4,0x71d500:64,0x71d540:64,0x71d600:256,0x71d700:256,0x71da00:256,0x71db00:256,0x71dc00:1024,0x71e000:1024,0x71e400:1024,0x71e800:1024,0x71ec00:1024,0x71f000:1024,0x71f400:1024,0x71f800:1024},{0x721c00:256,0x723600:256,0x723700:256,0x723c00:1024,0x724000:1024,0x724400:256,0x724f40:64,0x725000:1024,0x725400:1024,0x725800:1024,0x725c00:1024,0x726000:1024,0x726400:1024,0x726800:1024,0x726e00:16,0x726e40:64,0x726f00:16,0x726f10:16,0x726fa0:16,0x726fb0:16,0x727000:1024,0x727400:256,0x727500:256,0x727600:256,0x727700:64,0x727740:64,0x727780:64,0x7277c0:4,0x7277c4:4,0x7277c8:4,0x7277cc:4,0x7277d0:16,0x7277e0:16,0x7277f0:16,0x728400:256,0x728700:256,0x728a00:256,0x728b00:256,0x728d40:4,0x728d44:4,0x728d80:64,0x72c400:256,0x72c500:256,0x72c6f8:4,0x72c6fc:4,0x72d000:1024,0x72d400:256,0x72d500:256,0x72d600:256,0x72d700:256,0x72d800:1024,0x72dc00:1024,0x72e000:1024,0x72e400:1024,0x72e800:1024,0x72ec00:1024,0x72f000:1024,0x72f400:1024,0x72f800:1024,0x72fc00:1024},{0x731800:1024,0x731c00:256,0x731d00:256,0x732000:1024,0x732c00:256,0x732d00:256,0x732e00:256,0x732f00:256,0x733000:1024,0x733400:1024,0x733800:1024,0x733c00:1024,0x734540:16,0x735400:64,0x7354c0:16,0x7354d0:16,0x7355c0:64,0x736400:1024,0x736800:1024,0x737800:1024,0x737c10:16,0x739400:1024,0x739800:256,0x739900:256,0x739a00:256,0x739b00:256,0x739c00:256,0x739d00:256,0x739e00:256,0x739f00:256,0x73a640:16,0x73a650:16,0x73a800:1024,0x73ac00:1024,0x73b400:1024,0x73be00:256,0x73bf00:256,0x73c000:1024,0x73c400:1024,0x73c800:1024,0x73cc00:1024,0x73d000:1024,0x73d400:1024,0x73d800:1024,0x73dc00:1024,0x73e000:1024,0x73e400:1024,0x73e800:1024,0x73ec00:1024},{0x740008:4,0x74000c:4,0x740018:4,0x74001c:4,0x740100:256,0x740200:256,0x740300:256,0x740400:1024,0x740800:1024,0x740d00:256,0x741000:1024,0x741400:1024,0x741800:1024,0x741c00:1024,0x743200:16,0x743400:1024,0x743800:256,0x743900:256,0x743a80:16,0x743ad0:16,0x743c00:1024,0x744200:64,0x744240:64,0x744500:256,0x744600:64,0x744640:64,0x744c00:256,0x744d00:256,0x744e00:256,0x744f00:256,0x745500:256,0x745990:16,0x745a50:16,0x745ab8:4,0x745abc:4,0x745f00:256,0x747000:1024,0x747400:256,0x747500:256,0x748000:1024,0x748400:1024,0x748800:1024,0x748c00:1024,0x749000:1024,0x749400:1024,0x749800:1024,0x749c00:1024,0x74a000:1024,0x74a400:1024,0x74a800:1024,0x74ac00:1024,0x74b000:1024,0x74b400:1024,0x74b800:1024,0x74bc00:1024,0x74c000:256,0x74c110:16,0x74c120:16,0x74c130:16,0x74c1b0:4,0x74c1b4:4,0x74c200:256,0x74c300:256,0x74c400:256,0x74c600:256,0x74c700:64,0x74c740:64,0x74c780:16,0x74c790:16,0x74cc00:256,0x74cd00:256,0x74cf00:256,0x74d000:1024,0x74d4a0:16,0x74d540:64,0x74d580:64,0x74d5c0:64,0x74d620:16,0x74d630:16,0x74d640:16,0x74d680:64,0x74d6c0:64,0x74d700:256,0x74d800:1024,0x74e000:1024,0x74e400:1024,0x74e800:1024,0x74ec00:1024,0x74f200:256,0x74f300:256,0x74f400:256,0x74f500:256,0x74f600:256,0x74f700:256,0x74f800:256,0x74f900:256,0x74fb40:64,0x74fc00:256,0x74fd00:256,0x74fe80:64,0x74fec0:64,0x74ff80:64,0x74ffc0:64},{0x750800:1024,0x750c00:1024,0x751500:256,0x751600:256,0x751700:256,0x751800:1024,0x751c00:1024,0x752000:1024,0x752400:1024,0x752800:1024,0x752c00:256,0x752d00:256,0x753000:1024,0x753530:16,0x7535b0:16,0x753900:256,0x753a00:64,0x753a40:64,0x753b00:256,0x753c00:1024,0x754000:1024,0x754400:1024,0x754800:256,0x754900:256,0x754a40:16,0x754a50:16,0x754a80:64,0x754ac0:64,0x754b00:256,0x754c00:1024,0x755000:1024,0x755400:1024,0x755800:1024,0x755c00:1024,0x756400:256,0x756500:256,0x756710:16,0x756728:4,0x75672c:4,0x756748:4,0x75674c:4,0x756780:16,0x7568a8:4,0x7568ac:4,0x756a00:256,0x756b00:256,0x757000:1024,0x757400:1024,0x757840:64,0x757880:64,0x7578c0:64,0x757900:64,0x757940:64,0x757980:64,0x7579c0:4,0x7579c4:4,0x757a80:64,0x757ac0:64,0x757c00:1024,0x758000:1024,0x758400:1024,0x758800:1024,0x758c00:1024,0x759000:1024,0x759400:1024,0x759800:1024,0x759c00:1024,0x75a000:1024,0x75a400:1024,0x75a800:1024,0x75ac00:1024,0x75b000:1024,0x75b400:1024,0x75b800:1024,0x75bc00:1024},{0x761800:256,0x761900:256,0x761a00:256,0x761c00:256,0x761d00:256,0x761e00:256,0x761f00:256,0x764000:256,0x764100:256,0x764200:256,0x764370:16,0x764800:1024,0x764c00:1024,0x765000:256,0x765100:256,0x765400:256,0x765500:256,0x765820:16,0x765830:16,0x765840:64,0x765880:64,0x7658c0:64,0x765900:256,0x765bf0:16,0x766610:16,0x766620:4,0x766624:4,0x767000:1024,0x767400:1024,0x767800:1024,0x767c00:256,0x767d00:256,0x767e00:256,0x767f80:16,0x767f90:16,0x768400:1024,0x769000:1024,0x76b200:256,0x76b400:1024,0x76b800:256,0x76ba00:256,0x76bb00:256,0x76bc00:256,0x76be00:256,0x76bf00:256,0x76c000:256,0x76c100:256,0x76c200:64,0x76c240:64,0x76c280:64,0x76c2c0:64,0x76c300:64,0x76c340:64,0x76c380:64,0x76c3c0:64,0x76c400:1024,0x76ca00:256,0x76cb00:256,0x76cc00:1024,0x76d400:256,0x76d500:256,0x76e000:1024,0x76e400:256,0x76e500:256,0x76e600:256,0x76ef00:256,0x76f200:256,0x76f400:1024,0x76f800:1024,0x76fc00:1024},{0x770000:256,0x770100:256,0x770200:16,0x770210:16,0x770280:64,0x7702c0:64,0x770300:256,0x770400:1024,0x770800:256,0x770a00:64,0x770a40:64,0x770f88:4,0x770f8c:4,0x771000:256,0x7712c0:16,0x7712d0:4,0x7712d4:4,0x7712e0:16,0x7712f0:16,0x771300:256,0x771400:1024,0x771b40:64,0x771b80:16,0x771b90:16,0x771ba0:16,0x771bb0:16,0x771bc0:64,0x771c00:256,0x771d00:256,0x771e30:16,0x771fc0:16,0x771fd0:16,0x772000:1024,0x772400:256,0x772500:64,0x772540:64,0x772580:64,0x7725c0:64,0x772600:64,0x772640:64,0x772680:64,0x7726c0:16,0x7726d0:16,0x7726e0:16,0x7726f0:16,0x772700:256,0x772800:64,0x772840:16,0x772880:64,0x7728c0:64,0x772900:256,0x772a00:16,0x772a10:16,0x772a80:4,0x772a84:4,0x772a88:4,0x772a8c:4,0x772ae0:16,0x772af0:16,0x772c00:256,0x772d00:256,0x773000:1024,0x773400:1024,0x773900:256,0x773a00:256,0x773b80:64,0x773bc0:64,0x773c00:256,0x773d00:256,0x773e00:256,0x773f20:16,0x773f30:16,0x774bd0:16,0x774e00:256,0x774f00:256,0x775000:256,0x7752d0:16,0x775400:1024,0x775800:1024,0x776000:1024,0x776400:1024,0x776c00:256,0x776d00:256,0x777000:1024,0x777400:1024,0x777800:1024,0x777c00:1024,0x778000:1024,0x778400:1024,0x778800:1024,0x778c00:1024,0x779000:1024,0x7794a0:16,0x7794b0:16,0x7797c0:64,0x77a0c8:4,0x77a0cc:4,0x77a180:64,0x77a1c0:64,0x77a200:256,0x77a300:256,0x77a400:1024,0x77b000:1024,0x77b400:1024,0x77b800:1024,0x77bc00:1024,0x77e800:256,0x77e900:256,0x77eb80:64,0x77f800:1024,0x77fc60:4,0x77fc64:4,0x77fcf0:16,0x77fd00:256,0x77fe00:256,0x77ff00:256},{0x780000:1024,0x780400:1024,0x780800:1024,0x780c00:1024,0x781800:1024,0x781e00:256,0x781f00:256,0x782000:1024,0x782400:1024,0x782800:1024,0x782c00:1024,0x783000:256,0x783100:256,0x783400:256,0x783500:256,0x783600:256,0x783700:256,0x784000:1024,0x784400:1024,0x784820:16,0x784830:16,0x784880:64,0x7848c0:64,0x784c00:1024,0x785000:1024,0x785400:1024,0x785808:4,0x78580c:4,0x785a00:256,0x785b00:256,0x785c00:256,0x785e00:256,0x785f00:256,0x788000:1024,0x788400:64,0x788440:64,0x788480:64,0x7884c0:64,0x788500:256,0x788600:256,0x788700:256,0x788880:64,0x788900:64,0x788940:64,0x788f80:16,0x788f90:16,0x78c000:1024,0x78c400:1024,0x78c800:1024,0x78cc00:1024,0x78d000:1024,0x78d400:1024,0x78d800:1024,0x78dc00:1024,0x78e000:1024,0x78e400:1024,0x78e800:1024,0x78ec00:1024,0x78f000:1024,0x78f400:1024,0x78f800:1024,0x78fc00:1024},{0x790008:4,0x79000c:4,0x790010:16,0x790400:256,0x790500:256,0x790800:1024,0x790c00:1024,0x791000:1024,0x791400:1024,0x791800:1024,0x791c00:256,0x791d00:256,0x791e00:256,0x791f00:256,0x792000:1024,0x792400:256,0x792500:256,0x792600:256,0x792700:256,0x792800:1024,0x792e00:64,0x792e80:64,0x792ec0:64,0x792f00:256,0x793000:256,0x793100:256,0x793208:4,0x79320c:4,0x793300:256,0x7934a0:16,0x7934b0:16,0x7934d0:16,0x7934e0:16,0x7934f0:16,0x7936b0:4,0x7936b4:4,0x793700:64,0x793800:256,0x793900:256,0x793a00:64,0x793a40:64,0x793a88:4,0x793a8c:4,0x793a90:16,0x793aa0:4,0x793aa4:4,0x793b00:256,0x793c00:1024,0x794400:1024,0x794c00:256,0x794d00:256,0x794f80:64,0x795900:256,0x796480:64,0x7964c0:64,0x796500:64,0x7965d0:16,0x79c000:256,0x79c100:256,0x79c200:256,0x79c300:256,0x79c400:1024,0x79c8c0:4,0x79c8c4:4,0x79c900:256,0x79cc00:1024,0x79e000:1024,0x79e400:1024,0x79e800:1024,0x79ec00:1024,0x79f800:1024,0x79ff00:256},{0x7a0040:64,0x7a0080:64,0x7a00c0:64,0x7a0400:1024,0x7a0800:256,0x7a0900:256,0x7a0a00:64,0x7a0a40:64,0x7a0a80:64,0x7a0ac0:64,0x7a0b00:64,0x7a0b40:64,0x7a0c00:256,0x7a0d00:256,0x7a0e00:256,0x7a3000:256,0x7a3100:64,0x7a3300:256,0x7a4000:1024,0x7a4400:1024,0x7a4800:1024,0x7a4c00:1024,0x7a5000:1024,0x7a5400:1024,0x7a5800:1024,0x7a5c00:1024,0x7a6000:256,0x7a6100:256,0x7a6600:16,0x7a6640:16,0x7a6650:16,0x7a7000:1024,0x7a7700:256,0x7a8078:4,0x7a807c:4,0x7a8800:1024,0x7a8c00:1024,0x7a9080:64,0x7a90c0:64,0x7a98c0:64,0x7a9c00:1024,0x7abc00:1024,0x7ac000:1024,0x7ac600:256,0x7ac840:64,0x7ac930:16,0x7acc00:1024,0x7ae000:1024,0x7ae400:1024,0x7ae800:1024,0x7aec00:1024,0x7af000:1024,0x7af400:1024,0x7af818:4,0x7af81c:4,0x7af830:16,0x7aff40:4,0x7aff44:4},{0x7b0080:64,0x7b0400:1024,0x7b0800:1024,0x7b0c00:1024,0x7b3180:64,0x7b31c0:64,0x7b32a0:16,0x7b32b0:16,0x7b3400:1024,0x7b3800:256,0x7b3900:256,0x7b3a00:256,0x7b3b00:256,0x7b3c00:256,0x7b3d00:256,0x7b3e00:256,0x7b4000:1024,0x7b4400:1024,0x7b4800:1024,0x7b4c00:1024,0x7b5000:1024,0x7b5400:1024,0x7b5800:1024,0x7b5c00:1024,0x7b6000:256,0x7b6100:256,0x7b6200:64,0x7b6240:64,0x7b6380:64,0x7b63c0:64,0x7b6400:16,0x7b6410:16,0x7b6500:256,0x7b6700:64,0x7b6740:64,0x7b6c80:16,0x7b6cd0:16,0x7b7000:1024,0x7b7400:1024,0x7b7800:1024,0x7b7c00:1024,0x7b8000:1024,0x7b8400:1024,0x7b8850:16,0x7b8900:256,0x7b8a00:256,0x7b8b00:256,0x7b9000:1024,0x7b9400:256,0x7b9500:256,0x7b9600:256,0x7b9700:256,0x7b9800:1024,0x7b9c00:1024,0x7ba000:1024,0x7ba400:1024,0x7ba800:1024,0x7bac00:256,0x7bad00:256,0x7bae00:256,0x7baf00:256,0x7bb03c:4,0x7bb050:16,0x7bb100:256,0x7bb200:256,0x7bb300:256,0x7bb400:1024,0x7bb800:1024,0x7bbc00:1024,0x7bc400:256,0x7bc500:256,0x7bc780:64,0x7bc7c0:64,0x7bce00:256,0x7bcf00:256,0x7be800:1024,0x7bf200:64,0x7bf240:64,0x7bf400:1024,0x7bf900:256,0x7bfd00:256},{0x7c0640:64,0x7c0e00:256,0x7c0f00:256,0x7c1000:256,0x7c1100:256,0x7c1400:256,0x7c1500:16,0x7c1510:16,0x7c1520:16,0x7c1530:16,0x7c1540:64,0x7c1580:64,0x7c15c0:64,0x7c1600:256,0x7c1700:256,0x7c1cc0:64,0x7c1d00:64,0x7c1d40:64,0x7c1f00:256,0x7c2870:16,0x7c2880:64,0x7c28c0:16,0x7c28d0:16,0x7c2a00:64,0x7c2a40:64,0x7c2a80:64,0x7c2ac0:64,0x7c2f00:64,0x7c4000:256,0x7c4100:256,0x7c4200:64,0x7c4240:64,0x7c4300:256,0x7c4400:1024,0x7c4800:256,0x7c4900:256,0x7c4a00:256,0x7c4b00:256,0x7c4c00:1024,0x7c5800:256,0x7c5900:64,0x7c5940:64,0x7c5980:64,0x7c59c0:64,0x7c5a00:256,0x7c5b00:256,0x7c5c00:1024,0x7c6c08:4,0x7c6c0c:4,0x7c6c28:4,0x7c6c2c:4,0x7c6d60:4,0x7c6d64:4,0x7c7000:256,0x7c7100:256,0x7c7200:256,0x7c7300:256,0x7c7400:256,0x7c7500:256,0x7c7600:256,0x7c7700:256,0x7c7e00:256,0x7c7f00:256,0x7c8000:1024,0x7c8400:1024,0x7c9380:64,0x7c93c0:64,0x7c9700:256,0x7c9800:256,0x7c9c00:256,0x7ca000:256,0x7ca100:256,0x7ca200:256,0x7ca300:256,0x7ca400:1024,0x7cac00:256,0x7cad00:256,0x7cae00:256,0x7caf00:256,0x7cc000:256,0x7cc100:256,0x7cc400:256,0x7cc800:1024,0x7ccc00:1024,0x7cdc00:1024,0x7ce000:256,0x7ce100:256,0x7ce200:256,0x7ce300:256,0x7ce400:1024,0x7ce800:256,0x7ce900:256,0x7cea00:256,0x7ceb00:256,0x7cec00:1024,0x7cf000:64,0x7cf040:64,0x7cf080:64,0x7cf200:256,0x7cf3c0:64,0x7cf800:64,0x7cf840:64,0x7cf900:256,0x7cfa00:256,0x7cfb00:256,0x7cfe00:64},{0x7d1fc0:64,0x7d2000:256,0x7d2100:256,0x7d2200:256,0x7d2300:64,0x7d2340:64,0x7d2380:64,0x7d23c0:64,0x7d2400:1024,0x7d2800:1024,0x7d2c00:1024,0x7d3a80:64,0x7d3ac0:64,0x7d3d80:64,0x7d3dc0:64,0x7d3e00:64,0x7d4000:1024,0x7d4400:1024,0x7d4800:256,0x7d4900:256,0x7d4a00:256,0x7d4b00:256,0x7d4c00:64,0x7d4c40:64,0x7d4c80:64,0x7d4cc0:64,0x7d4d00:256,0x7d4e00:256,0x7d4f00:256,0x7d5000:1024,0x7d5400:1024,0x7d5800:1024,0x7d5c00:1024,0x7d6000:256,0x7d6100:256,0x7d6200:256,0x7d6800:1024,0x7d6c00:1024,0x7d7000:1024,0x7d7400:1024,0x7d7800:1024,0x7d7c00:1024,0x7da900:256,0x7dab00:256,0x7dd000:64,0x7dd200:256,0x7dd300:256,0x7dd500:64,0x7dd540:64,0x7dd660:16,0x7dd670:16,0x7dd700:64,0x7dd800:256,0x7dd900:256,0x7dda00:256,0x7ddb00:256,0x7ddc00:256,0x7ddd00:256,0x7dde00:256,0x7ddf00:256,0x7dfe80:64,0x7dfec0:64},{},{},{},{},{},{},{},{},{},{},{},{},{},{0x8b0900:256,0x8b8100:256,0x8b9400:256,0x8b9b00:256,0x8b9f00:256,0x8baa00:256,0x8bb000:256,0x8bb700:256,0x8bba00:256,0x8bbd00:256,0x8bc400:1024,0x8bc800:1024,0x8bcc00:1024,0x8bd000:1024,0x8bd400:1024,0x8bd900:256,0x8bdb00:256,0x8bdc00:256,0x8bdd00:256,0x8be000:256,0x8be200:256,0x8be300:256},{0x8c4b00:256,0x8c8f00:256,0x8ccd00:256,0x8cce00:256,0x8ccf00:256,0x8cd200:256,0x8ce000:256,0x8ced00:256,0x8cf000:256,0x8cf300:256,0x8cf600:256,0x8cf900:256,0x8cfa00:256,0x8cff00:256},{},{},{},{0x900000:256,0x900700:256,0x900c00:256,0x903400:256,0x907b00:256,0x90ff00:256},{},{},{},{},{},{0x960000:256,0x967300:256,0x967900:256,0x967a00:256,0x968198:4,0x9681c0:4,0x9681d8:4,0x9681fc:4,0x968a00:256,0x968b00:256,0x96df00:256,0x96f200:4,0x96f204:4,0x96f208:4,0x96f21c:4,0x96f22c:4,0x96f230:4,0x96f234:4,0x96f238:4,0x96f24c:4,0x96f250:4,0x96f25c:4,0x96f260:4,0x96f270:4,0x96f274:4,0x96f278:4,0x96f298:4,0x96f29c:4,0x96f2a0:4,0x96f2a4:4,0x96f2a8:4,0x96f2b8:4,0x96f2bc:4,0x96f2c0:4,0x96f2d4:4,0x96f2e0:4,0x96f2e8:4,0x96f2ec:4,0x96f2f0:4,0x96f2f4:4,0x96f2f8:4,0x96ff00:256},{},{0x986880:64,0x9868c0:64},{0x990000:256,0x990300:256,0x992200:256,0x992300:256,0x992400:256,0x992500:256,0x996300:256,0x996500:256,0x997600:256,0x997700:256},{},{},{},{0x9d0000:256,0x9d1200:256,0x9d3d00:256,0x9d7a00:256,0x9d9400:256,0x9d9c00:256,0x9dff00:256},{},{0x9fe200:256},{},{0xa1cf00:256},{0xa26900:256},{0xa30000:256,0xa32f04:4,0xa33500:4,0xa33504:4,0xa33508:4,0xa3350c:4,0xa33524:4,0xa33528:4,0xa3352c:4,0xa33530:4,0xa33534:4,0xa33538:4,0xa3353c:4,0xa33540:4,0xa33558:4,0xa3355c:4,0xa33560:4,0xa33564:4,0xa33568:4,0xa3356c:4,0xa33570:4,0xa33574:4,0xa33578:4,0xa3357c:4,0xa33580:4,0xa33584:4,0xa33588:4,0xa335a0:4,0xa335a4:4,0xa335a8:4,0xa335ac:4,0xa335bc:4,0xa335dc:4,0xa335f0:4,0xa37d00:256,0xa38e00:256,0xa3b100:256,0xa3b300:256,0xa3cc00:256},{},{},{0xa66f00:256},{0xa78b00:256,0xa7bd00:256},{0xa8a000:256},{},{},{0xab0800:1024,0xab0c00:1024,0xab2200:256,0xab2300:256,0xab2400:1024,0xab2800:1024,0xab2c00:1024,0xab5000:1024,0xab5400:1024,0xab5800:1024,0xab5c00:1024,0xab6800:1024,0xab6c00:1024,0xab7000:1024,0xab7400:1024,0xab7800:1024,0xab7c00:1024,0xabd000:1024,0xabd400:1024,0xabd800:1024,0xabdc00:1024},{},{},{},{0xaf0000:1024,0xaf0400:1024,0xaf0800:1024,0xaf0c00:1024,0xaf1000:1024,0xaf1400:1024,0xaf1800:1024,0xaf1e00:256,0xaf1f00:256,0xaf2a00:256,0xaf2b00:256,0xaf2c00:256,0xaf2e00:256,0xaf2f00:256,0xaf3000:1024,0xaf3400:1024,0xaf3800:1024,0xaf3c00:1024,0xaf4000:1024,0xaf4400:1024,0xaf4800:1024,0xaf4c00:1024,0xaf5000:1024,0xaf5400:1024,0xaf5800:1024,0xaf5c00:1024,0xaf6600:256,0xaf6a80:64,0xaf6ac0:64,0xaf9200:256,0xaf9300:256,0xaf9400:1024,0xaf9800:1024,0xafa000:1024,0xafa400:1024,0xafa800:1024,0xafac00:1024,0xafb200:256,0xafb880:64,0xafb900:256,0xafba00:256,0xafbb00:256,0xafbc00:1024},{},{},{},{},{0xb44c00:256,0xb44d00:256,0xb44e00:256,0xb44f00:256,0xb45400:256,0xb45500:256,0xb45600:256,0xb45800:1024,0xb45e38:4,0xb45e3c:4,0xb45e60:16,0xb45f80:64,0xb45fc0:64,0xb46000:1024,0xb46400:1024,0xb46800:1024,0xb46c00:1024,0xb47000:1024,0xb47400:1024,0xb47800:1024,0xb47c00:1024,0xb48180:64,0xb481c0:64,0xb48200:256,0xb48800:1024,0xb48c00:1024,0xb49410:4,0xb49414:4,0xb49498:4,0xb4949c:4,0xb494d8:4,0xb494dc:4,0xb494e0:16,0xb494f0:16,0xb49580:16,0xb49590:16,0xb496a0:16,0xb496b0:16,0xb49800:1024,0xb49c00:1024,0xb4a000:1024,0xb4a400:1024,0xb4a800:1024,0xb4ac00:1024,0xb4b2c0:64,0xb4b800:1024,0xb4bc00:64,0xb4bc40:64,0xb4bd94:4,0xb4c8fc:4,0xb4c900:256,0xb4ca00:256,0xb4cb00:256,0xb4d000:256,0xb4d100:256,0xb4d2e0:16,0xb4d2f0:16,0xb4d400:256,0xb4d500:256,0xb4dee0:16,0xb4def0:16,0xb4df00:256,0xb4e900:64,0xb4e940:16,0xb4e950:16,0xb4eb40:16,0xb4eb50:16},{},{0xb610c0:16,0xb610d0:16,0xb61200:64,0xb61240:64,0xb617b8:4,0xb617bc:4,0xb617c8:4,0xb617cc:4,0xb62000:1024,0xb62400:1024,0xb62800:1024,0xb62c00:1024,0xb63060:16,0xb63070:16,0xb63100:256,0xb63200:16,0xb63270:16,0xb63300:256,0xb63600:64,0xb63640:64,0xb63d00:256,0xb65000:1024,0xb65400:1024,0xb65800:1024,0xb65c00:256,0xb66000:1024,0xb66400:1024,0xb66800:1024,0xb66c00:1024,0xb67000:1024,0xb67400:1024,0xb67800:1024,0xb67c00:1024,0xb68000:1024,0xb68400:1024,0xb68800:1024,0xb68c00:1024,0xb69000:1024,0xb69400:1024,0xb69d00:256,0xb6a040:16,0xb6a050:16,0xb6ae00:256,0xb6af00:256,0xb6c800:1024,0xb6cc00:1024,0xb6ec80:64,0xb6ecc0:64,0xb6ee00:256,0xb6ef00:16,0xb6ef10:16,0xb6f000:1024,0xb6f400:1024,0xb6fe00:256},{0xb70000:1024,0xb70400:1024,0xb70800:1024,0xb70c00:1024,0xb71000:1024,0xb71400:1024,0xb71800:1024,0xb71c00:1024,0xb72000:1024,0xb72400:1024,0xb72800:1024,0xb72c00:1024,0xb73000:1024,0xb73400:1024,0xb73800:1024,0xb73c00:1024,0xb74000:1024,0xb74400:1024,0xb74eb4:4,0xb751b4:4,0xb75400:256,0xb75500:256,0xb75b80:4,0xb75b88:4,0xb75b8c:4,0xb75b90:16,0xb75c00:1024,0xb78000:1024,0xb78400:1024,0xb78800:1024,0xb78c00:1024,0xb79000:1024,0xb79400:1024,0xb79800:1024,0xb79c00:1024,0xb7a000:1024,0xb7a400:1024,0xb7a800:256,0xb7a900:256,0xb7aa00:256,0xb7ac00:1024,0xb7b600:16,0xb7b610:16,0xb7b800:1024,0xb7bc00:1024,0xb7c000:1024,0xb7c400:1024,0xb7c800:1024,0xb7cc00:1024,0xb7d000:1024,0xb7d400:1024,0xb7d800:1024,0xb7dc00:1024,0xb7e000:1024,0xb7e400:1024,0xb7e800:1024,0xb7ec00:1024,0xb7f000:1024,0xb7f400:1024,0xb7f800:1024,0xb7fc00:1024},{},{},{},{},{},{},{},{},{0xc07c9a:1,0xc0bcaa:1},{},{},{},{},{},{},{},{},{},{0xca0064:1,0xca0065:1,0xca007a:1,0xca007b:1,0xca00b0:4,0xca0380:1,0xca0381:1,0xca0480:16,0xca0490:16,0xca04fc:4,0xca0606:1,0xca0607:1,0xca0642:1,0xca0643:1,0xca0648:1,0xca0649:1,0xca0657:1,0xca0658:1,0xca0659:1,0xca065c:1,0xca065d:1,0xca0667:1,0xca066c:1,0xca066e:1,0xca066f:1,0xca0672:1,0xca06b0:16,0xca0800:1,0xca0802:1,0xca0803:1,0xca0804:1,0xca0805:1,0xca080c:1,0xca0818:1,0xca084d:1,0xca0880:16,0xca0890:16,0xca08c0:16,0xca0920:1,0xca0922:1,0xca0923:1,0xca0930:1,0xca0931:1,0xca0933:1,0xca0934:1,0xca0935:1,0xca0936:1,0xca0939:1,0xca093a:1,0xca093b:1,0xca0a40:16,0xca0c01:1,0xca0c02:1,0xca0c11:1,0xca0c12:1,0xca0c13:1,0xca0c48:1,0xca0c54:1,0xca0c55:1,0xca0c60:1,0xca0c62:1,0xca0c63:1,0xca0c6a:1,0xca0c6f:1,0xca0c74:1,0xca0e40:1,0xca0e41:1,0xca0e45:1,0xca0e49:1,0xca0e4a:1,0xca0e4b:1,0xca0e4c:1,0xca0e4e:1,0xca0e4f:1,0xca0e58:1,0xca0e61:1,0xca0e68:1,0xca0e69:1,0xca0e6c:1,0xca0e6d:1,0xca0e6f:1,0xca0e72:1,0xca0e73:1,0xca0e76:1,0xca0e77:1,0xca0e7c:1,0xca0e7d:1,0xca0e7f:1,0xca0e81:1,0xca0e87:1,0xca0e88:1,0xca0e95:1,0xca0e97:1,0xca0e9d:1,0xca0e9e:1,0xca0e9f:1,0xca0ea9:1,0xca0eaa:1,0xca0eab:1,0xca0eb0:1,0xca0eb8:1,0xca0eb9:1,0xca0ed0:1,0xca0ed1:1,0xca0ed5:1,0xca0edb:1,0xca0edc:1,0xca0ede:1,0xca0edf:1,0xca0ee1:1,0xca0ee2:1,0xca0ee3:1,0xca0ee7:1,0xca0eeb:1,0xca0eec:1,0xca0eed:1,0xca0eee:1,0xca0eef:1,0xca0ef6:1,0xca0efb:1,0xca1442:1,0xca144f:1,0xca1457:1,0xca1458:1,0xca1459:1,0xca145a:1,0xca145e:1,0xca145f:1,0xca1472:1,0xca1475:1,0xca1478:1,0xca147d:1,0xca147f:1,0xca1583:1,0xca1584:1,0xca158d:1,0xca158e:1,0xca1593:1,0xca1594:1,0xca1596:1,0xca1597:1,0xca1598:1,0xca1599:1,0xca159a:1,0xca159c:1,0xca16f8:4,0xca16fc:4,0xca1b88:1,0xca1b89:1,0xca2600:1,0xca2601:1,0xca2602:1,0xca2603:1,0xca2608:4,0xca260c:4,0xca2630:16,0xca2640:16,0xca2650:16,0xca2660:16,0xca2670:16,0xca2680:1,0xca2681:1,0xca2682:1,0xca2683:1,0xca2684:1,0xca2685:1,0xca2686:1,0xca2687:1,0xca2688:1,0xca2689:1,0xca268a:1,0xca268c:1,0xca268d:1,0xca268e:1,0xca268f:1,0xca2692:1,0xca2693:1,0xca2695:1,0xca2696:1,0xca2697:1,0xca2698:1,0xca2699:1,0xca269a:1,0xca269b:1,0xca269c:1,0xca269e:1,0xca269f:1,0xca26a0:1,0xca26a1:1,0xca26a4:4,0xca26a8:1,0xca26a9:1,0xca26aa:1,0xca26ab:1,0xca26b0:1,0xca26b1:1,0xca26b8:4,0xca26bc:4,0xca26c0:64,0xca2804:1,0xca2805:1,0xca2807:1,0xca280f:1,0xca2887:1,0xca2888:1,0xca288c:1,0xca288f:1,0xca2890:1,0xca2891:1,0xca2896:1,0xca289b:1,0xca289c:1,0xca289e:1,0xca289f:1,0xca28a2:1,0xca2908:1,0xca2909:1,0xca290b:1,0xca290c:1,0xca290d:1,0xca2980:1,0xca2982:1,0xca2983:1,0xca2998:4,0xca299c:4,0xca29c0:1,0xca29f0:16,0xca2b4c:4,0xca2b90:16,0xca2c10:16,0xca2c43:1,0xca2c4a:1,0xca2c81:1,0xca2c84:1,0xca2c85:1,0xca2c92:1,0xca2c93:1,0xca2d00:1,0xca2d01:1,0xca2d02:1,0xca2d0f:1,0xca2d10:16,0xca2e10:1,0xca2e11:1,0xca2e12:1,0xca2e14:1,0xca2e15:1,0xca2e20:16,0xca2e30:16,0xca2e80:1,0xca2ee0:16,0xca2f52:1,0xca2f53:1,0xca2f7e:1,0xca2f80:1,0xca2f82:1,0xca2f83:1,0xca39f0:16,0xca3a00:1,0xca3b00:1,0xca3bd4:4,0xca3be8:1,0xca3be9:1,0xca3bec:1,0xca3c30:4,0xca3c34:4,0xca3c60:4,0xca3c64:4,0xca3c70:16,0xca3c84:4,0xca3c88:4,0xca3c8c:4,0xca3c90:16,0xca3e70:4,0xca3ef8:4,0xca3efc:1,0xca3eff:1,0xca3f51:1,0xca3f52:1,0xca3f53:1,0xca3f54:4,0xca3f58:4,0xca3f5c:4,0xca3fa0:16,0xca3fb0:16,0xca3ff8:4,0xca4100:4,0xca4104:4,0xca4108:1,0xca4109:1,0xca4300:4,0xca4504:4,0xca4510:16,0xca4600:16,0xca4610:16,0xca4660:16,0xca46c0:16,0xca4828:4,0xca482c:4,0xca4850:16,0xca4980:4,0xca4a08:4,0xca4a0c:4,0xca4a50:16,0xca4afe:1,0xca4aff:1,0xca4bd0:16,0xca4bfc:4,0xca4cfc:4,0xca4d50:4,0xca4d54:4,0xca4d5c:4,0xca4e08:4,0xca4e0c:4,0xca4fe0:4,0xca4fe4:4,0xca4ff8:4,0xca50c0:4,0xca50c4:4,0xca50c8:4,0xca50cc:4,0xca5100:4,0xca53fc:4,0xca5400:4,0xca5404:4,0xca5408:4,0xca540c:4,0xca5410:1,0xca5411:1,0xca5418:4,0xca541c:4,0xca55d0:16,0xca56f9:1,0xca56fc:4,0xca5750:16,0xca5908:4,0xca590c:4,0xca5a00:4,0xca5a70:16,0xca5ac4:1,0xca5ae0:16,0xca5b00:4,0xca5b60:16,0xca5b80:4,0xca5bb0:16,0xca5be0:16,0xca5bf0:16,0xca5c00:4,0xca5c08:4,0xca5c0c:4,0xca5c30:16,0xca5cfc:4,0xca5d00:4,0xca5dfc:4,0xca5e5c:4,0xca5f00:4,0xca5f04:4,0xca5f08:4,0xca5f0c:4,0xca5f10:16,0xca5ff0:4,0xca5ff4:4,0xca5ffc:4,0xca6000:64,0xca6040:4,0xca6044:4,0xca6048:4,0xca604c:4,0xca6050:16,0xca6060:4,0xca6064:4,0xca6068:4,0xca606c:4,0xca6070:16,0xca6080:4,0xca6084:4,0xca6088:4,0xca608c:4,0xca6090:16,0xca60a0:4,0xca60a4:4,0xca60a8:4,0xca60ac:4,0xca60b0:16,0xca60c0:4,0xca60c4:4,0xca60c8:4,0xca60cc:4,0xca60d0:16,0xca60e0:4,0xca60e4:4,0xca60e8:4,0xca60ec:4,0xca60f0:16,0xca6100:4,0xca6104:4,0xca6108:4,0xca610c:4,0xca6110:16,0xca6120:16,0xca6130:16,0xca6140:16,0xca6150:16,0xca6160:16,0xca6170:16,0xca6180:64,0xca61c0:16,0xca61d0:16,0xca61e0:4,0xca61e4:4,0xca61e8:4,0xca61ec:4,0xca61f0:16,0xca6200:4,0xca6204:4,0xca6208:4,0xca620c:4,0xca6210:16,0xca6220:4,0xca6224:4,0xca6228:4,0xca622c:4,0xca6230:16,0xca6240:16,0xca6250:16,0xca6260:4,0xca6264:4,0xca6268:4,0xca626c:4,0xca6270:16,0xca6280:16,0xca6290:16,0xca62a0:4,0xca62a4:4,0xca62a8:4,0xca62ac:4,0xca62b0:16,0xca62c0:4,0xca62c4:4,0xca62c8:4,0xca62cc:4,0xca62d0:16,0xca62e0:4,0xca62e4:4,0xca62e8:4,0xca62ec:4,0xca62f0:16,0xca6300:64,0xca6340:16,0xca6350:16,0xca6360:4,0xca6364:4,0xca6368:4,0xca636c:4,0xca6370:16,0xca6380:16,0xca6390:16,0xca63a0:4,0xca63a4:4,0xca63a8:4,0xca63ac:4,0xca63b0:16,0xca63c0:4,0xca63c4:4,0xca63c8:4,0xca63cc:4,0xca63d0:16,0xca63e0:4,0xca63e4:4,0xca63e8:4,0xca63ec:4,0xca63f0:16,0xca6400:4,0xca6404:4,0xca6408:4,0xca640c:4,0xca6410:16,0xca6420:16,0xca6430:16,0xca6440:4,0xca6444:4,0xca6448:4,0xca644c:4,0xca6450:16,0xca6460:4,0xca6464:4,0xca6468:4,0xca646c:4,0xca6470:16,0xca6480:4,0xca6484:4,0xca6488:4,0xca648c:4,0xca6490:16,0xca64a0:4,0xca64a4:4,0xca64a8:4,0xca64ac:4,0xca64b0:16,0xca64c0:4,0xca64c4:4,0xca64c8:4,0xca64cc:4,0xca64d0:16,0xca64e0:16,0xca64f0:16,0xca6500:64,0xca6540:16,0xca6550:16,0xca6560:16,0xca6570:16,0xca6580:64,0xca65c0:16,0xca65d0:16,0xca65e0:4,0xca65e4:4,0xca65e8:4,0xca65ec:4,0xca65f0:16,0xca6600:16,0xca6610:16,0xca6620:16,0xca6630:16,0xca6640:64,0xca6680:4,0xca6684:4,0xca6688:4,0xca668c:4,0xca6690:16,0xca66a0:16,0xca66b0:16,0xca66c0:4,0xca66c4:4,0xca66c8:4,0xca66cc:4,0xca66d0:16,0xca66e0:4,0xca66e4:4,0xca66e8:4,0xca66ec:4,0xca66f0:16,0xca6700:4,0xca6704:4,0xca6708:4,0xca670c:4,0xca6710:16,0xca6720:16,0xca6730:16,0xca6740:16,0xca6750:16,0xca6760:4,0xca6764:4,0xca6768:4,0xca676c:4,0xca6770:16,0xca6780:64,0xca67c0:16,0xca67d0:16,0xca67e0:4,0xca67e4:4,0xca67e8:4,0xca67ec:4,0xca67f0:16,0xca6800:256,0xca6900:256,0xca6a00:256,0xca6b00:64,0xca6b40:64,0xca6b80:64,0xca6bc0:64,0xca6c00:256,0xca6d00:256,0xca6e00:64,0xca6e40:64,0xca6e80:64,0xca6ec0:64,0xca6f00:64,0xca6f40:64,0xca6f80:16,0xca6f90:16,0xca6fa0:16,0xca6fb0:16,0xca6fc0:64,0xca7000:256,0xca7100:16,0xca7110:16,0xca7120:16,0xca7130:16,0xca7140:64,0xca7180:64,0xca71c0:16,0xca71d0:16,0xca71e0:16,0xca71f0:16,0xca7200:16,0xca7210:16,0xca7220:16,0xca7230:16,0xca7240:64,0xca7280:64,0xca72c0:64,0xca7300:16,0xca7310:16,0xca7320:16,0xca7330:16,0xca7340:64,0xca7380:64,0xca73c0:64,0xca7400:16,0xca7410:16,0xca7420:16,0xca7430:16,0xca7440:16,0xca7450:16,0xca7460:16,0xca7470:16,0xca7480:64,0xca74c0:64,0xca7500:64,0xca7540:64,0xca7580:64,0xca75c0:64,0xca7600:16,0xca7610:16,0xca7620:16,0xca7630:16,0xca7640:64,0xca7680:64,0xca76c0:64,0xca7700:16,0xca7710:16,0xca7720:16,0xca7730:16,0xca7740:16,0xca7750:16,0xca7760:16,0xca7770:16,0xca7780:64,0xca77c0:64,0xca7800:64,0xca7840:64,0xca7880:64,0xca78c0:64,0xca7900:256,0xca7a00:4,0xca7a04:4,0xca7a20:4,0xca7a24:4,0xca7a40:16,0xca7a50:16,0xca7a70:4,0xca7a74:4,0xca7a78:4,0xca7a7c:4,0xca7a80:1,0xca7a84:1,0xca7b60:16,0xca7c10:4,0xca7c14:4,0xca7c18:4,0xca7d70:16,0xca7db0:16,0xca7f00:1,0xca7f01:1,0xca7f02:1,0xca7f03:1,0xca7f04:1,0xca7f05:1,0xca7f06:1,0xca7f07:1,0xca7f0c:4,0xca7f10:16,0xca7f28:4,0xca7f2c:4,0xca7f30:16,0xca7f70:16,0xca7f80:16,0xca7f90:16,0xca7fa0:4,0xca7fa4:4,0xca7fc0:1,0xca7fc1:1,0xca7fc2:1,0xca7fc3:1,0xca7fc4:4,0xca7fc8:4,0xca7fcc:4,0xca7fd0:1,0xca7fd1:1,0xca7fd4:4,0xca7fd8:4,0xca7fdc:4,0xca7fe0:16,0xca7ff0:16,0xca8200:16,0xca8210:16,0xca82e0:16,0xca82f0:16,0xca8310:4,0xca8314:4,0xca8330:16,0xca83d0:16,0xca8520:16,0xca863a:1,0xca8680:16,0xca8830:16,0xca88d0:16,0xca88e0:16,0xca89e7:1,0xca8da0:16,0xca8db0:16,0xca8e10:16,0xca8f04:4,0xca8f10:16,0xca8f20:16,0xca8f38:4,0xca8f3c:4,0xca92a0:16,0xca92bc:4,0xca92c4:4,0xca92c8:4,0xca92cc:4,0xca9390:16,0xca9420:16,0xca9440:16,0xca9450:16,0xca9460:16,0xca9470:16,0xca9520:16,0xca9530:16,0xca95a0:16,0xca95b0:16,0xca95e0:16,0xca95f0:16,0xca9610:16,0xca9620:16,0xca9638:4,0xca96c0:16,0xca96e0:16,0xca96f0:16,0xca9700:4,0xca9780:16,0xca9790:16,0xca98b0:16,0xca9900:4,0xca9930:16,0xca9dc0:16,0xca9dd0:16,0xca9ea0:16,0xca9eb0:16,0xcaa0b0:16,0xcaa243:1,0xcaa24b:1,0xcaa400:16,0xcaa460:16,0xcaa470:16,0xcaa560:16,0xcaa5b0:16,0xcaa5d0:16,0xcaa5ef:1,0xcaa5f0:1,0xcaa5f1:1,0xcaa5f3:1,0xcaa5f5:1,0xcaa5fb:1,0xcaa5fc:4,0xcaa6e0:16,0xcaa6f0:16,0xcaa8a0:16,0xcaa8b0:16,0xcaaa80:16,0xcaaa90:16,0xcaaad8:4,0xcaaadc:4,0xcaaae0:16,0xcaaaf0:16,0xcaabd8:4,0xcaabdc:4,0xcaabeb:1,0xcaac00:4,0xcaad00:4,0xcaad08:4,0xcaad0c:4,0xcaade0:16,0xcaadf0:16,0xcaae40:16,0xcab0e0:16,0xcab0f0:16,0xcab3f0:16,0xcab480:16,0xcab490:16,0xcab4d0:4,0xcab4d4:4,0xcab570:16,0xcab620:16,0xcab6c0:16,0xcab6d0:16,0xcabd00:64,0xcabd50:16,0xcabdb8:4,0xcabdbc:4,0xcabf00:1,0xcabf44:4,0xcabf48:4,0xcabf4c:4,0xcabf50:16,0xcac000:1024,0xcac400:1024,0xcac800:1024,0xcacc00:1024},{0xcb0004:4,0xcb000a:1,0xcb000b:1,0xcb0012:1,0xcb0018:1,0xcb002a:1,0xcb002b:1,0xcb002d:1,0xcb002e:1,0xcb002f:1,0xcb0051:1,0xcb0052:1,0xcb0053:1,0xcb005a:1,0xcb005b:1,0xcb0060:1,0xcb0061:1,0xcb0068:4,0xcb006c:4,0xcb0072:1,0xcb0073:1,0xcb007a:1,0xcb0080:1,0xcb0082:1,0xcb0083:1,0xcb0084:4,0xcb0089:1,0xcb008e:1,0xcb0090:1,0xcb0092:1,0xcb0094:1,0xcb0096:1,0xcb0097:1,0xcb0098:1,0xcb00b1:1,0xcb00e0:1,0xcb0104:4,0xcb0112:1,0xcb011a:1,0xcb011b:1,0xcb0141:1,0xcb0142:1,0xcb0143:1,0xcb0146:1,0xcb0147:1,0xcb014c:1,0xcb014d:1,0xcb015a:1,0xcb0161:1,0xcb0162:1,0xcb0163:1,0xcb0164:4,0xcb016c:1,0xcb01fd:1,0xcb01fe:1,0xcb0240:4,0xcb0244:4,0xcb0249:1,0xcb0270:4,0xcb0274:4,0xcb027e:1,0xcb027f:1,0xcb028c:1,0xcb0296:1,0xcb0298:4,0xcb029c:1,0xcb029d:1,0xcb02a0:4,0xcb02a4:4,0xcb02b4:1,0xcb02b5:1,0xcb02c4:1,0xcb02c5:1,0xcb02d1:1,0xcb02d6:1,0xcb02d7:1,0xcb02e2:1,0xcb02e3:1,0xcb02e5:1,0xcb02ec:1,0xcb02ed:1,0xcb0344:1,0xcb0348:1,0xcb0349:1,0xcb034b:1,0xcb0350:4,0xcb0354:4,0xcb0360:4,0xcb0369:1,0xcb0370:4,0xcb0374:4,0xcb0378:1,0xcb037b:1,0xcb0387:1,0xcb038b:1,0xcb038f:1,0xcb0484:1,0xcb0485:1,0xcb0486:1,0xcb0497:1,0xcb0498:4,0xcb04ae:1,0xcb04af:1,0xcb04b4:1,0xcb04ba:1,0xcb04cd:1,0xcb04d0:4,0xcb04e3:1,0xcb04e6:1,0xcb04e7:1,0xcb0504:1,0xcb0505:1,0xcb0507:1,0xcb0508:1,0xcb0509:1,0xcb050b:1,0xcb0515:1,0xcb0516:1,0xcb052c:1,0xcb052e:1,0xcb052f:1,0xcb0534:4,0xcb0538:1,0xcb0539:1,0xcb053c:1,0xcb053d:1,0xcb0572:1,0xcb0573:1,0xcb0576:1,0xcb0578:1,0xcb05ac:1,0xcb05b4:1,0xcb05b5:1,0xcb05b6:1,0xcb05b9:1,0xcb05ba:1,0xcb05bc:1,0xcb05bd:1,0xcb05be:1,0xcb05c3:1,0xcb05d6:1,0xcb05d7:1,0xcb05da:1,0xcb05db:1,0xcb0683:1,0xcb0688:1,0xcb068a:1,0xcb068b:1,0xcb068e:1,0xcb0696:1,0xcb0697:1,0xcb069d:1,0xcb069f:1,0xcb06e0:16,0xcb06f8:1,0xcb06f9:1,0xcb0781:1,0xcb078a:1,0xcb078b:1,0xcb0793:1,0xcb0796:1,0xcb0797:1,0xcb079e:1,0xcb07c0:1,0xcb07c1:1,0xcb07c8:1,0xcb0800:1,0xcb0808:1,0xcb0817:1,0xcb0818:4,0xcb081c:4,0xcb0846:1,0xcb0852:1,0xcb0856:1,0xcb0857:1,0xcb085b:1,0xcb086e:1,0xcb086f:1,0xcb0873:1,0xcb08a6:1,0xcb08a7:1,0xcb08a9:1,0xcb08ad:1,0xcb08b8:1,0xcb08ba:1,0xcb08bb:1,0xcb08be:1,0xcb08bf:1,0xcb08c0:1,0xcb08c5:1,0xcb08c6:1,0xcb08c7:1,0xcb08cb:1,0xcb08d1:1,0xcb08d2:1,0xcb08d3:1,0xcb08d4:4,0xcb08d9:1,0xcb08dc:1,0xcb0920:1,0xcb0924:1,0xcb0925:1,0xcb0939:1,0xcb093f:1,0xcb0941:1,0xcb0946:1,0xcb0947:1,0xcb0948:1,0xcb094b:1,0xcb094c:1,0xcb094d:1,0xcb0960:4,0xcb0964:1,0xcb0965:1,0xcb096c:1,0xcb099e:1,0xcb0a22:1,0xcb0a38:1,0xcb0a4a:1,0xcb0a4b:1,0xcb0a54:4,0xcb0a58:1,0xcb0a5f:1,0xcb0a7d:1,0xcb0b46:1,0xcb0b4c:4,0xcb0b52:1,0xcb0b54:4,0xcb0b64:4,0xcb0b6d:1,0xcb0b75:1,0xcb0b7a:1,0xcb0b7e:1,0xcb0b88:4,0xcb0b8d:1,0xcb0b8e:1,0xcb0b8f:1,0xcb0bb4:4,0xcb0bd0:4,0xcb0c10:1,0xcb0c13:1,0xcb0c18:1,0xcb0c39:1,0xcb0c41:1,0xcb0c42:1,0xcb0c46:1,0xcb0c47:1,0xcb0c57:1,0xcb0c58:4,0xcb0c5c:4,0xcb0c64:1,0xcb0c65:1,0xcb0c67:1,0xcb0c72:1,0xcb0c76:1,0xcb0c82:1,0xcb0c89:1,0xcb0cc4:4,0xcb0cc8:4,0xcb0ccc:4,0xcb0cd3:1,0xcb0cdb:1,0xcb0ce2:1,0xcb0cf0:4,0xcb0d12:1,0xcb0d18:1,0xcb0d2c:1,0xcb0d2d:1,0xcb0d50:4,0xcb0d54:4,0xcb0d58:1,0xcb0d59:1,0xcb0d5c:4,0xcb0dad:1,0xcb0de0:1,0xcb0de1:1,0xcb0de3:1,0xcb0de9:1,0xcb0e18:4,0xcb0e21:1,0xcb0e38:1,0xcb0e3d:1,0xcb0e3e:1,0xcb0e68:1,0xcb0e72:1,0xcb0e73:1,0xcb0e76:1,0xcb0ea2:1,0xcb0eb8:4,0xcb0ebc:4,0xcb0ec0:1,0xcb0ec2:1,0xcb0ec3:1,0xcb0ed6:1,0xcb0ee7:1,0xcb0ef6:1,0xcb0f00:16,0xcb0f14:1,0xcb0f15:1,0xcb0f16:1,0xcb0f57:1,0xcb0f58:1,0xcb0f59:1,0xcb0f69:1,0xcb0f70:4,0xcb0f74:4,0xcb0f82:1,0xcb0f83:1,0xcb0f95:1,0xcb0f97:1,0xcb0f9c:4,0xcb0fae:1,0xcb0fe3:1,0xcb0fe8:4,0xcb0fec:4,0xcb0ff0:1,0xcb0ff1:1,0xcb0ff6:1,0xcb100a:1,0xcb100c:1,0xcb100d:1,0xcb1010:4,0xcb1014:4,0xcb101b:1,0xcb1026:1,0xcb1031:1,0xcb1032:1,0xcb1033:1,0xcb103a:1,0xcb1085:1,0xcb10a1:1,0xcb10a2:1,0xcb10ba:1,0xcb10bb:1,0xcb10e4:1,0xcb10ee:1,0xcb10f0:1,0xcb10f5:1,0xcb1102:1,0xcb1112:1,0xcb111c:1,0xcb1127:1,0xcb1138:1,0xcb114a:1,0xcb114b:1,0xcb1158:1,0xcb1159:1,0xcb1188:1,0xcb11a4:1,0xcb11bb:1,0xcb11be:1,0xcb11bf:1,0xcb11e7:1,0xcb11e9:1,0xcb11f8:1,0xcb11ff:1,0xcb1202:1,0xcb1203:1,0xcb1204:1,0xcb1207:1,0xcb121f:1,0xcb1225:1,0xcb1230:1,0xcb1231:1,0xcb1232:1,0xcb1234:1,0xcb1248:4,0xcb1250:1,0xcb1251:1,0xcb1257:1,0xcb1264:1,0xcb1265:1,0xcb1269:1,0xcb126b:1,0xcb126e:1,0xcb1281:1,0xcb1283:1,0xcb1284:1,0xcb1285:1,0xcb1290:1,0xcb1299:1,0xcb12c7:1,0xcb12d0:1,0xcb12d3:1,0xcb12d7:1,0xcb1312:1,0xcb1318:1,0xcb131e:1,0xcb1320:4,0xcb1324:4,0xcb1329:1,0xcb132c:1,0xcb132d:1,0xcb132e:1,0xcb133a:1,0xcb133c:1,0xcb133d:1,0xcb1340:1,0xcb1344:1,0xcb1348:1,0xcb1365:1,0xcb136f:1,0xcb1383:1,0xcb1385:1,0xcb1390:1,0xcb1395:1,0xcb139c:1,0xcb13b0:1,0xcb13b2:1,0xcb13b3:1,0xcb13d0:1,0xcb13e4:4,0xcb13e9:1,0xcb13f2:1,0xcb13f8:1,0xcb13f9:1,0xcb13ff:1,0xcb1411:1,0xcb1428:1,0xcb1429:1,0xcb1430:1,0xcb143d:1,0xcb1441:1,0xcb1454:1,0xcb1455:1,0xcb1459:1,0xcb146a:1,0xcb146b:1,0xcb1473:1,0xcb1475:1,0xcb1476:1,0xcb1477:1,0xcb147a:1,0xcb147e:1,0xcb147f:1,0xcb1487:1,0xcb1488:4,0xcb148c:4,0xcb1496:1,0xcb14e6:1,0xcb14e8:1,0xcb14ec:1,0xcb1500:1,0xcb1501:1,0xcb1502:1,0xcb1508:1,0xcb150a:1,0xcb1512:1,0xcb1521:1,0xcb1522:1,0xcb1529:1,0xcb152c:1,0xcb1544:1,0xcb1552:1,0xcb1560:4,0xcb157c:1,0xcb1588:1,0xcb1589:1,0xcb1591:1,0xcb15ce:1,0xcb1618:1,0xcb161c:1,0xcb161d:1,0xcb161f:1,0xcb1644:1,0xcb164c:1,0xcb164e:1,0xcb1654:1,0xcb1657:1,0xcb165c:4,0xcb1663:1,0xcb166a:1,0xcb167a:1,0xcb167b:1,0xcb1683:1,0xcb16a3:1,0xcb16a6:1,0xcb16aa:1,0xcb16b0:4,0xcb16b4:4,0xcb16c2:1,0xcb16f2:1,0xcb16f3:1,0xcb16f5:1,0xcb16f6:1,0xcb16fc:1,0xcb16fd:1,0xcb1700:1,0xcb172f:1,0xcb173d:1,0xcb173e:1,0xcb173f:1,0xcb1749:1,0xcb1755:1,0xcb175c:4,0xcb1762:1,0xcb176b:1,0xcb1770:1,0xcb1782:1,0xcb178c:1,0xcb178d:1,0xcb17ac:1,0xcb17b6:1,0xcb17ba:1,0xcb17bb:1,0xcb17c0:1,0xcb17c5:1,0xcb17c6:1,0xcb17cc:4,0xcb17e0:1,0xcb17e2:1,0xcb17e3:1,0xcb17e4:4,0xcb17f9:1,0xcb17fb:1,0xcb180d:1,0xcb1812:1,0xcb181b:1,0xcb182b:1,0xcb1838:1,0xcb183a:1,0xcb1843:1,0xcb184a:1,0xcb184f:1,0xcb1850:1,0xcb1851:1,0xcb1854:1,0xcb1855:1,0xcb1856:1,0xcb185a:1,0xcb186f:1,0xcb1870:1,0xcb1874:1,0xcb187a:1,0xcb187b:1,0xcb1891:1,0xcb1898:1,0xcb1899:1,0xcb189d:1,0xcb18a1:1,0xcb18a7:1,0xcb18ba:1,0xcb18bb:1,0xcb18c7:1,0xcb18ca:1,0xcb18d4:1,0xcb18d5:1,0xcb18d9:1,0xcb18db:1,0xcb18f4:1,0xcb1913:1,0xcb1914:1,0xcb1915:1,0xcb192e:1,0xcb1930:4,0xcb1934:4,0xcb1940:1,0xcb1941:1,0xcb195b:1,0xcb1963:1,0xcb1964:1,0xcb196a:1,0xcb1983:1,0xcb1987:1,0xcb198a:1,0xcb1993:1,0xcb1999:1,0xcb199a:1,0xcb199b:1,0xcb19a4:1,0xcb19a6:1,0xcb19ae:1,0xcb19af:1,0xcb19b4:1,0xcb19b6:1,0xcb19bf:1,0xcb19c7:1,0xcb19c8:1,0xcb19ca:1,0xcb19cb:1,0xcb19d0:16,0xcb19e5:1,0xcb19eb:1,0xcb19ec:1,0xcb19f2:1,0xcb1a0c:1,0xcb1a22:1,0xcb1a31:1,0xcb1a32:1,0xcb1a37:1,0xcb1a38:1,0xcb1a39:1,0xcb1a3c:1,0xcb1a41:1,0xcb1a44:1,0xcb1a4c:1,0xcb1a50:1,0xcb1a54:1,0xcb1a61:1,0xcb1a66:1,0xcb1a67:1,0xcb1a73:1,0xcb1a74:1,0xcb1a81:1,0xcb1a8f:1,0xcb1a90:1,0xcb1a94:1,0xcb1a95:1,0xcb1a9a:1,0xcb1a9e:1,0xcb1a9f:1,0xcb1aaa:1,0xcb1aad:1,0xcb1ab0:1,0xcb1ab9:1,0xcb1aca:1,0xcb1acb:1,0xcb1ad2:1,0xcb1ad6:1,0xcb1ade:1,0xcb1ae0:1,0xcb1ae4:1,0xcb1ae8:1,0xcb1b00:1,0xcb1b0a:1,0xcb1b0f:1,0xcb1b10:1,0xcb1b14:1,0xcb1b16:1,0xcb1b17:1,0xcb1b28:1,0xcb1b2d:1,0xcb1b35:1,0xcb1b41:1,0xcb1b42:1,0xcb1b51:1,0xcb1b58:1,0xcb1b66:1,0xcb1b6d:1,0xcb1b75:1,0xcb1b79:1,0xcb1b7a:1,0xcb1b7b:1,0xcb1b7d:1,0xcb1bc8:1,0xcb1bca:1,0xcb1be9:1,0xcb1bf1:1,0xcb1bfa:1,0xcb1c0a:1,0xcb1c0c:1,0xcb1c21:1,0xcb1c22:1,0xcb1c23:1,0xcb1c2b:1,0xcb1c2c:1,0xcb1c36:1,0xcb1c38:1,0xcb1c49:1,0xcb1c4a:1,0xcb1c4c:1,0xcb1c56:1,0xcb1c58:1,0xcb1c70:1,0xcb1c83:1,0xcb1c88:1,0xcb1c8c:1,0xcb1c91:1,0xcb1ca5:1,0xcb1ca9:1,0xcb1caa:1,0xcb1cb2:1,0xcb1cb3:1,0xcb1cb9:1,0xcb1cbb:1,0xcb1cc4:1,0xcb1ce2:1,0xcb1ce3:1,0xcb1cef:1,0xcb1d02:1,0xcb1d08:1,0xcb1d09:1,0xcb1d0d:1,0xcb1d0e:1,0xcb1d1c:1,0xcb1d2e:1,0xcb1d39:1,0xcb1d3d:1,0xcb1d3f:1,0xcb1d45:1,0xcb1d49:1,0xcb1d51:1,0xcb1d5a:1,0xcb1d5f:1,0xcb1d64:1,0xcb1d67:1,0xcb1d70:1,0xcb1d78:4,0xcb1db6:1,0xcb1db7:1,0xcb1dbb:1,0xcb1dbd:1,0xcb1dbe:1,0xcb1dcd:1,0xcb1dd2:1,0xcb1dd9:1,0xcb1de3:1,0xcb1de7:1,0xcb1de9:1,0xcb1dea:1,0xcb1df8:1,0xcb1dfe:1,0xcb1dff:1,0xcb1e10:1,0xcb1e11:1,0xcb1e19:1,0xcb1e1b:1,0xcb1e1d:1,0xcb1e42:1,0xcb1e51:1,0xcb1e57:1,0xcb1e6f:1,0xcb1e79:1,0xcb1e7b:1,0xcb1e98:1,0xcb1e9c:1,0xcb1ea2:1,0xcb1ead:1,0xcb1eaf:1,0xcb1ebb:1,0xcb1ec2:1,0xcb1ed9:1,0xcb1edc:1,0xcb1ede:1,0xcb1ee8:1,0xcb1ee9:1,0xcb1eeb:1,0xcb1ef0:1,0xcb1ef1:1,0xcb1ef6:1,0xcb1efa:1,0xcb1efb:1,0xcb1f2d:1,0xcb1f2e:1,0xcb1f31:1,0xcb1f33:1,0xcb1f36:1,0xcb1f37:1,0xcb1f45:1,0xcb1f48:1,0xcb1f50:1,0xcb1f55:1,0xcb1f61:1,0xcb1f69:1,0xcb1f6a:1,0xcb1f6c:1,0xcb1f6d:1,0xcb1f7c:1,0xcb1fa2:1,0xcb1fae:1,0xcb1fb1:1,0xcb1fb5:1,0xcb1fbb:1,0xcb1fbd:1,0xcb1fcc:1,0xcb1fdc:1,0xcb1fde:1,0xcb1fdf:1,0xcb1fe1:1,0xcb1fe5:1,0xcb1ff8:1,0xcb1ff9:1,0xcb1ffd:1,0xcb2014:1,0xcb2030:1,0xcb2031:1,0xcb2038:1,0xcb203c:1,0xcb203e:1,0xcb2044:1,0xcb2045:1,0xcb204c:1,0xcb2051:1,0xcb2054:1,0xcb2055:1,0xcb205f:1,0xcb2066:1,0xcb2069:1,0xcb2082:1,0xcb2085:1,0xcb208c:1,0xcb2098:1,0xcb20ba:1,0xcb20bb:1,0xcb20c0:1,0xcb20c4:1,0xcb20cb:1,0xcb20cc:1,0xcb20cd:1,0xcb20d4:1,0xcb2104:1,0xcb2107:1,0xcb2108:4,0xcb210c:4,0xcb2115:1,0xcb211a:1,0xcb2120:1,0xcb213f:1,0xcb2140:1,0xcb2143:1,0xcb2144:1,0xcb2149:1,0xcb214f:1,0xcb2164:1,0xcb217a:1,0xcb2181:1,0xcb2183:1,0xcb2191:1,0xcb219c:1,0xcb219e:1,0xcb219f:1,0xcb21ae:1,0xcb21b9:1,0xcb21c8:1,0xcb21ca:1,0xcb21cb:1,0xcb21cc:1,0xcb21ce:1,0xcb21cf:1,0xcb21d6:1,0xcb21d7:1,0xcb21e0:1,0xcb21e1:1,0xcb21e2:1,0xcb21e9:1,0xcb21f3:1,0xcb21fa:1,0xcb2204:1,0xcb2215:1,0xcb221b:1,0xcb2227:1,0xcb2230:1,0xcb2231:1,0xcb2236:1,0xcb2238:1,0xcb2239:1,0xcb2243:1,0xcb2245:1,0xcb224c:1,0xcb225c:1,0xcb226a:1,0xcb2271:1,0xcb2293:1,0xcb2296:1,0xcb2298:1,0xcb2299:1,0xcb22a1:1,0xcb22a2:1,0xcb22bb:1,0xcb22c0:4,0xcb22c4:4,0xcb22cc:4,0xcb22e8:1,0xcb22f0:1,0xcb22f2:1,0xcb22f5:1,0xcb22fb:1,0xcb3702:1,0xcb3703:1,0xcb3704:1,0xcb370a:1,0xcb370d:1,0xcb3716:1,0xcb371e:1,0xcb375d:1,0xcb3765:1,0xcb376d:1,0xcb376e:1,0xcb3774:1,0xcb3775:1,0xcb3777:1,0xcb3780:1,0xcb3781:1,0xcb3792:1,0xcb3793:1,0xcb37c0:1,0xcb37c4:1,0xcb37da:1,0xcb37db:1,0xcb37dd:1,0xcb37e0:1,0xcb3801:1,0xcb3804:1,0xcb380c:1,0xcb3818:1,0xcb3826:1,0xcb3828:1,0xcb382e:1,0xcb3830:4,0xcb3834:4,0xcb3844:1,0xcb3845:1,0xcb3852:1,0xcb3853:1,0xcb3854:1,0xcb3855:1,0xcb385f:1,0xcb386e:1,0xcb3879:1,0xcb38a1:1,0xcb38a9:1,0xcb38ac:1,0xcb38ad:1,0xcb38af:1,0xcb38b7:1,0xcb38b9:1,0xcb38bb:1,0xcb38c0:1,0xcb38c6:1,0xcb38c9:1,0xcb38d0:1,0xcb38d1:1,0xcb38d2:1,0xcb38d6:1,0xcb38d8:1,0xcb38e3:1,0xcb38e4:1,0xcb38e8:1,0xcb38f0:1,0xcb38fc:1,0xcb38fe:1,0xcb3905:1,0xcb3906:1,0xcb390c:1,0xcb390d:1,0xcb391c:1,0xcb3927:1,0xcb392e:1,0xcb393a:1,0xcb393d:1,0xcb3942:1,0xcb3945:1,0xcb3946:1,0xcb3947:1,0xcb3949:1,0xcb395a:1,0xcb3965:1,0xcb396d:1,0xcb397b:1,0xcb399d:1,0xcb39c8:1,0xcb39ca:1,0xcb39ce:1,0xcb39de:1,0xcb39e0:16,0xcb39f6:1,0xcb39f7:1,0xcb39f9:1,0xcb39fd:1,0xcb39fe:1,0xcb39ff:1,0xcb3e02:1,0xcb3e83:1,0xcb3e8b:1,0xcb3ea1:1,0xcb3ec5:1,0xcb3ee4:4,0xcb3eea:1,0xcb3ef6:1,0xcb4ca0:4,0xcb4ca8:4,0xcb4db4:4,0xcb4e30:16,0xcb4f00:16,0xcb4f20:16,0xcb5004:1,0xcb5005:1,0xcb5020:16,0xcb5039:1,0xcb5084:4,0xcb5088:4,0xcb508c:4,0xcb5090:16,0xcb5100:4,0xcb5104:4,0xcb5110:16,0xcb5200:1,0xcb5201:1,0xcb5210:4,0xcb5214:4,0xcb5300:4,0xcb5338:4,0xcb533c:4,0xcb53e0:16,0xcb5600:16,0xcb5610:16,0xcb5620:16,0xcb5630:16,0xcb5640:16,0xcb5650:16,0xcb5660:16,0xcb5670:16,0xcb56fe:1,0xcb56ff:1,0xcb5820:16,0xcb5830:16,0xcb58c0:16,0xcb58d0:16,0xcb5900:4,0xcb5908:4,0xcb590c:4,0xcb5988:4,0xcb5a00:4,0xcb5a08:4,0xcb5a80:16,0xcb5a90:16,0xcb5aa0:16,0xcb5ab0:16,0xcb5ac0:16,0xcb5ad0:16,0xcb5b20:16,0xcb5b30:16,0xcb5b60:16,0xcb5b78:4,0xcb5b7c:4,0xcb5c00:4,0xcb5ca0:16,0xcb5cb0:16,0xcb5d00:4,0xcb5d04:4,0xcb5d08:1,0xcb5d09:1,0xcb5d0a:1,0xcb5d0b:1,0xcb5d0c:4,0xcb5d10:16,0xcb5d20:16,0xcb5d30:16,0xcb5d40:64,0xcb5d80:4,0xcb5d84:4,0xcb5d88:4,0xcb5d8c:1,0xcb5d8d:1,0xcb5d8e:1,0xcb5d8f:1,0xcb5d90:16,0xcb5da0:16,0xcb5db0:16,0xcb5dc0:64,0xcb5e00:4,0xcb5e04:4,0xcb5e08:4,0xcb5e0c:4,0xcb5e10:16,0xcb5f00:4,0xcb5f04:4,0xcb5f60:16,0xcb5f70:16,0xcb5f80:64,0xcb5fe0:16,0xcb5ff0:16,0xcb6308:4,0xcb630c:4,0xcb6310:16,0xcb6350:16,0xcb6420:16,0xcb6430:4,0xcb6434:4,0xcb643f:1,0xcb6450:16,0xcb6460:16,0xcb6470:16,0xcb64c0:16,0xcb6820:16,0xcb6960:16,0xcb6970:16,0xcb6980:16,0xcb6990:16,0xcb6b00:64,0xcb6b40:64,0xcb6ea0:16,0xcb6eb0:16,0xcb6ed0:16,0xcb6ee8:1,0xcb6ee9:1,0xcb6eea:1,0xcb72f4:4,0xcb76c0:16,0xcb76d0:16,0xcb76f1:1,0xcb76f8:4,0xcb7718:4,0xcb771c:4,0xcb7720:4,0xcb7750:4,0xcb7755:1,0xcb7771:1,0xcb7772:1,0xcb7773:1,0xcb7774:4,0xcb7778:4,0xcb777c:4,0xcb7780:64,0xcb77c0:64,0xcb8020:16,0xcb8030:16,0xcb8060:16,0xcb8070:16,0xcb80e0:4,0xcb80e4:4,0xcb8108:4,0xcb810c:4,0xcb8220:16,0xcb8230:16,0xcb8420:16,0xcb8430:16,0xcb86f0:4,0xcb86f4:4,0xcb8760:16,0xcb8770:16,0xcb87a0:16,0xcb8ee0:16,0xcb8ef0:16,0xcb9060:16,0xcb9070:16,0xcb9100:16,0xcb9110:16,0xcb9400:64,0xcb9440:16,0xcb9450:4,0xcb9456:1,0xcb9457:1,0xcb955c:4,0xcb9840:16,0xcb9850:16,0xcb9880:16,0xcb9890:16,0xcb9900:4,0xcb9cc0:64,0xcb9e10:4,0xcb9e14:4,0xcba068:4,0xcba06c:4,0xcba081:1,0xcba0c0:16,0xcba0d0:16,0xcba100:4,0xcba1b4:1,0xcba1c0:16,0xcba1d0:16,0xcba6a0:16,0xcba6b0:16,0xcba800:16,0xcba810:16,0xcbaa3a:1,0xcbaa3b:1,0xcbab00:4,0xcbabe0:16,0xcbae04:1,0xcbae07:1,0xcbae60:16,0xcbae70:16,0xcbaf80:16,0xcbaf90:16,0xcbafc0:64,0xcbb000:64,0xcbb040:16,0xcbb050:16,0xcbb0a8:4,0xcbb0ac:4,0xcbb850:16,0xcbbba0:16,0xcbbbb0:16,0xcbbd00:1,0xcbbd01:1,0xcbbd06:1,0xcbbd07:1,0xcbbd70:4,0xcbbdc0:16,0xcbbdd0:16,0xcbbe60:16,0xcbbef9:1,0xcbbf00:1,0xcbbf01:1,0xcbbf10:16,0xcbbf40:64,0xcbbf90:4,0xcbbf94:4,0xcbbf98:4,0xcbbf9c:4,0xcbc000:16,0xcbc010:16,0xcbc1e0:16,0xcbc1f0:16,0xcbc278:4,0xcbc27c:4,0xcbc340:16,0xcbc350:16,0xcbc370:4,0xcbc374:4,0xcbc380:64,0xcbc3c0:64,0xcbc400:4,0xcbc404:4,0xcbc408:4,0xcbc40c:4,0xcbcaec:4,0xcbcd40:16,0xcbcd50:16,0xcbcd80:64,0xcbcdc0:64,0xcbcf40:64,0xcbcf80:64,0xcbcfc0:64,0xcbd000:16,0xcbd010:4,0xcbd020:16,0xcbd030:16,0xcbd1e0:16,0xcbd1f0:16,0xcbd400:16,0xcbd450:16,0xcbd7e8:4,0xcbd7ec:4,0xcbdec0:16,0xcbdf00:16,0xcbdf10:4,0xcbdf14:4},{},{},{},{},{},{},{0xd20200:16,0xd20210:16,0xd20500:16,0xd20510:16,0xd20538:4,0xd2053c:4,0xd20580:16,0xd20590:16,0xd20c00:64,0xd20c40:64,0xd20c80:64,0xd20cc0:64,0xd20d00:64,0xd20d40:64,0xd20d80:64,0xd20dc0:64,0xd20e40:16,0xd20e50:16,0xd20e70:16,0xd20e80:16,0xd20e90:16,0xd20ea0:16,0xd20eb0:16,0xd20ec0:16,0xd20ed0:16,0xd20ee0:16,0xd20ef0:16,0xd20f00:16,0xd20f10:16,0xd20f20:16,0xd20f30:16,0xd20f40:16,0xd20f50:16,0xd20f60:16,0xd20f70:16,0xd20f80:64,0xd21080:64,0xd21500:64,0xd21540:64,0xd21580:64,0xd215c0:64,0xd21600:256,0xd21720:16,0xd21730:16,0xd21900:256,0xd21a00:256,0xd21b00:256,0xd21c00:1024,0xd22000:1024,0xd22400:1024,0xd22800:1024,0xd22c00:1024,0xd23088:4,0xd2308c:4,0xd23300:256,0xd23400:64,0xd23440:64,0xd23480:64,0xd234c0:64,0xd23500:64,0xd23540:64,0xd23580:64,0xd235c0:64,0xd238c0:16,0xd238d0:16,0xd24800:64,0xd24840:64,0xd24880:16,0xd24890:16,0xd248a0:16,0xd248b0:16,0xd248c0:64,0xd24900:16,0xd24910:16,0xd24920:16,0xd24930:16,0xd24940:64,0xd24980:64,0xd249c0:64,0xd24a00:16,0xd24a10:16,0xd24a20:16,0xd24a30:16,0xd24a40:16,0xd24a50:16,0xd24a60:16,0xd24a70:16,0xd24a80:16,0xd24a90:16,0xd24aa0:16,0xd24ab0:16,0xd24ac0:64,0xd24b00:256,0xd24c00:16,0xd24c10:16,0xd24c20:16,0xd24c30:16,0xd24c40:64,0xd24c80:64,0xd24cc0:64,0xd24d00:256,0xd24e00:16,0xd24e10:16,0xd24e20:16,0xd24e30:16,0xd24e40:64,0xd24e80:16,0xd24e90:16,0xd24ea0:16,0xd24eb0:16,0xd24ec0:64,0xd24f40:64,0xd24fe0:16,0xd24ff0:16,0xd25200:256,0xd25300:256,0xd25780:16,0xd25790:16,0xd257a0:16,0xd257b0:16,0xd2b9c0:64,0xd2c060:16,0xd2c070:16},{0xd34000:1024,0xd34400:256,0xd34500:256,0xd34600:256,0xd34700:256,0xd35000:256,0xd35100:256,0xd35200:256,0xd35300:256,0xd35400:256,0xd35500:256,0xd35600:256,0xd35700:256,0xd35800:256,0xd35900:256,0xd35a00:256,0xd35b00:256,0xd35c00:256,0xd35d00:256,0xd35e00:256,0xd35f00:256,0xd36000:256,0xd36100:256,0xd36200:256,0xd36300:64,0xd36340:16,0xd36350:16,0xd36360:16,0xd36370:16,0xd36380:64,0xd363c0:64,0xd36400:256,0xd36500:64,0xd36540:64,0xd36580:64,0xd365c0:64,0xd36600:256,0xd36700:64,0xd36740:64,0xd36780:64,0xd367c0:64,0xd38800:1024,0xd38c00:256,0xd38d00:256,0xd38e00:64,0xd38e40:64,0xd38e80:64,0xd38ec0:64,0xd38f00:256,0xd39000:256,0xd39100:256,0xd39200:256,0xd39300:256,0xd39400:1024,0xd39800:256,0xd39900:256,0xd39a00:256,0xd39b00:64,0xd39b40:16,0xd39b50:16,0xd39b60:16,0xd39b70:16,0xd39b80:64,0xd39bc0:64,0xd39c00:1024,0xd3a000:1024,0xd3a400:1024},{},{},{},{},{},{},{0xda0000:256,0xda0100:256,0xda0200:256,0xda0300:256,0xda0400:256,0xda0500:256,0xda0600:256,0xda0700:256,0xda0800:256,0xda0900:256,0xda0a00:256,0xda0b00:256,0xda0c00:256,0xda0d00:256,0xda0e00:256,0xda0f00:256,0xda1000:1024,0xda1400:256,0xda1500:64,0xda1540:64,0xda1580:64,0xda15c0:64,0xda1600:256,0xda1700:256,0xda1800:256,0xda1900:256,0xda1a00:256,0xda1b00:256,0xda1c00:256,0xda1d00:256,0xda1e00:256,0xda1f00:256,0xda3800:1024,0xda3c00:256,0xda3d00:256,0xda3e00:64,0xda3e40:64,0xda3e80:64,0xda3ec0:64,0xda3f00:256,0xda4000:256,0xda4100:256,0xda4200:256,0xda4300:64,0xda4340:64,0xda4380:64,0xda43c0:64,0xda4400:256,0xda4500:256,0xda4600:256,0xda4700:256,0xda4800:1024,0xda4c00:256,0xda4d00:256,0xda4e00:256,0xda4f00:256,0xda5000:1024,0xda5400:1024,0xda5800:1024,0xda5c00:1024,0xda6000:256,0xda6100:256,0xda6200:64,0xda6240:64,0xda6280:64,0xda62c0:16,0xda62d0:16,0xda62e0:16,0xda62f0:16,0xda6300:256,0xda6458:4,0xda645c:4,0xda6460:16,0xda6470:16,0xda6480:64,0xda64c0:64,0xda6800:64,0xda6840:64,0xda6880:16,0xda6890:16,0xda68a0:16,0xda68b0:16,0xda68c0:4,0xda68c4:4,0xda68c8:4,0xda68cc:4,0xda68d0:16,0xda68e0:16,0xda68f0:16,0xda6900:256,0xda6a00:256,0xda6b00:256,0xda6c00:256,0xda6d00:256,0xdab9c0:16,0xdab9d0:16,0xdab9f0:4,0xdab9f4:4,0xdac000:256,0xdac100:256,0xdac200:256,0xdac300:256,0xdac400:1024,0xdac800:1024,0xdacc00:256,0xdacd00:256,0xdace00:256,0xdacf00:256,0xdaf000:1024,0xdaf400:256,0xdaf500:256,0xdaf600:256,0xdaf700:256,0xdaf900:256},{0xdb4800:256,0xdb5200:256,0xdb5380:64,0xdb53c0:64,0xdb8000:1024,0xdb8400:1024,0xdb8800:1024,0xdb8c00:1024,0xdb9000:1024,0xdb9400:256,0xdb9500:64,0xdb9540:64,0xdb9580:64,0xdb95c0:64,0xdb9600:16,0xdb9610:16,0xdb9620:16,0xdb9630:16,0xdb9640:16,0xdb9650:16,0xdb9660:16,0xdb9670:16,0xdb9680:64,0xdb96c0:64,0xdb9700:16,0xdb9710:16,0xdb9720:16,0xdb9730:16,0xdb9740:64,0xdb9780:64,0xdb97c0:64,0xdb9800:256,0xdb9900:256,0xdb9a00:256,0xdb9b00:256,0xdb9c00:256,0xdb9d00:256,0xdb9e00:64,0xdb9e40:64,0xdb9e80:64,0xdb9ec0:64,0xdb9f00:64,0xdb9f40:64,0xdb9f80:64,0xdb9fc0:64,0xdbd800:256,0xdbd900:256,0xdbda00:256,0xdbdb00:256,0xdbdc00:256,0xdbdd00:256,0xdbde00:256,0xdbdf00:256,0xdbe000:256,0xdbe100:256,0xdbe200:256,0xdbe300:256,0xdbe400:256,0xdbe500:256,0xdbe600:256,0xdbe700:256,0xdbe800:1024,0xdbec00:256,0xdbed00:256,0xdbee00:256,0xdbef00:256,0xdbf200:256,0xdbf300:256,0xdbf400:1024},{0xdc65c0:64,0xdc7000:1024,0xdc9880:64,0xdc98c0:64,0xdc9a00:256,0xdc9b00:256,0xdca000:1024,0xdca400:1024,0xdca800:1024,0xdcac00:1024,0xdcb000:1024,0xdcb400:1024,0xdcb800:1024,0xdcbc00:1024,0xdcc000:256,0xdcc100:256,0xdcc200:256,0xdcc300:256,0xdcc400:1024,0xdcc800:1024,0xdccc00:1024,0xdce700:64,0xdce780:64,0xdce7c0:64,0xdce840:64,0xdcea00:256,0xdcf200:256,0xdcf300:256,0xdcf788:4,0xdcf78c:4,0xdcf800:1024,0xdcfc00:256},{0xdd0000:256,0xdd0100:256,0xdd0200:256,0xdd0300:64,0xdd0340:64,0xdd0380:64,0xdd03c0:64,0xdd0400:256,0xdd0500:64,0xdd0540:64,0xdd0580:64,0xdd05c0:64,0xdd0600:256,0xdd0700:16,0xdd0710:16,0xdd0720:16,0xdd0730:16,0xdd0740:16,0xdd0750:16,0xdd0760:16,0xdd0770:16,0xdd0780:64,0xdd07c0:64,0xdd0800:256,0xdd0900:256,0xdd0a00:256,0xdd0b00:64,0xdd0b40:64,0xdd0b80:64,0xdd0bc0:16,0xdd0bd0:16,0xdd0be0:16,0xdd0bf0:16,0xdd0c00:64,0xdd0c40:64,0xdd0c80:64,0xdd0d00:64,0xdd0d40:16,0xdd0d50:16,0xdd0d60:16,0xdd0d70:16,0xdd0d80:64,0xdd0dc0:64,0xdd0e00:256,0xdd0f00:256,0xdd7a00:256,0xdd7b00:256,0xdd8080:64,0xdd80c0:64,0xdd8100:256,0xdd8200:256,0xdd8300:256,0xdd85e0:16,0xdd85f0:16,0xdd8800:256,0xdd8900:256,0xddac00:1024,0xddb000:1024,0xddb400:1024,0xddc000:256,0xddc100:256,0xddc200:256,0xddc300:256,0xddc400:256,0xddc500:256,0xddc600:256,0xddc700:16,0xddc710:16,0xddc720:16,0xddc730:16,0xddc740:64,0xddc780:64,0xddc7c0:16,0xddc7e0:16,0xddc7f0:16,0xddc800:1024,0xddcc00:256,0xddcd00:256,0xddce00:256,0xddcf00:64,0xddcf40:64,0xddcf80:64,0xddcfc0:64,0xddd000:1024,0xddd400:256,0xddd500:256,0xddd600:256,0xddd700:256,0xddd800:1024,0xdddc00:1024,0xdde000:1024,0xdde400:1024,0xdde800:1024,0xddec00:256,0xdded00:256,0xddee00:256,0xddef00:64,0xddef40:64,0xddef80:64,0xddefc0:64},{0xde1000:256,0xde1100:256,0xde1200:256,0xde1300:256,0xde1400:256,0xde1500:256,0xde1600:256,0xde1700:256,0xde1800:256,0xde1900:256,0xde1a00:256,0xde1b00:256,0xde1c00:1024,0xde2000:1024,0xde2400:1024,0xde2800:1024,0xde2c00:1024,0xde3000:1024,0xde3400:1024,0xde3800:1024,0xde3c00:1024,0xde4000:1024,0xde4400:1024,0xde4800:256,0xde4900:256,0xde4a00:256,0xde4b00:256,0xde4c00:1024,0xde5000:256,0xde5100:256,0xde5200:256,0xde5300:64,0xde5340:64,0xde5380:64,0xde53c0:64,0xde5400:256,0xde5500:64,0xde5540:64,0xde5580:64,0xde55c0:64,0xde5600:256,0xde5700:256,0xde5800:256,0xde5900:256,0xde5a00:256,0xde5b00:256,0xde5c00:1024,0xde7d00:256,0xde7e80:64,0xde7ec0:64,0xde8000:1024,0xde8400:1024,0xde8800:1024,0xde8c00:1024,0xdea000:256,0xdea100:256,0xdea200:256,0xdea300:16,0xdea310:16,0xdea320:16,0xdea330:16,0xdea340:64,0xdea380:64,0xdea3c0:64,0xdea800:256,0xdea900:256,0xdeaa00:256,0xdeab00:256,0xdeac00:64,0xdeac40:64,0xdeac80:64,0xdeacc0:64,0xdead00:256,0xdeae00:256,0xdeaf00:256,0xdeb000:1024,0xdeb400:1024,0xdeb800:1024,0xdebc00:1024,0xdec000:1024,0xdec400:256,0xdec500:256,0xdec600:256,0xdec700:256,0xdec800:1024,0xdecc00:256,0xdecd00:256,0xdece00:256,0xdecf00:256,0xded000:1024,0xded400:1024,0xded800:256,0xded900:256,0xdeda00:256,0xdedb00:256,0xdedc00:256,0xdedd00:256,0xdede00:256,0xdedf00:256,0xdef000:1024,0xdef400:1024,0xdef800:256,0xdef900:64,0xdef940:64,0xdef980:16,0xdef990:16,0xdef9a0:16,0xdef9b0:16,0xdef9c0:64},{0xdf0000:256,0xdf0100:256,0xdf0200:256,0xdf0300:256,0xdf0400:1024,0xdf0800:1024,0xdf0c00:1024,0xdf1400:256,0xdf1500:256,0xdf1bb8:4,0xdf4000:1024,0xdf4400:1024,0xdf4800:1024,0xdf4c00:1024,0xdf5000:1024,0xdf5400:1024,0xdf5800:1024,0xdf5c00:1024,0xdf6000:1024,0xdf6400:1024,0xdf6800:1024,0xdf6c00:1024,0xdf7000:1024,0xdf7400:256,0xdf7500:256,0xdf7800:1024,0xdf7c00:1024,0xdf8000:256,0xdf8100:256,0xdf9000:1024,0xdf9400:1024,0xdf9800:1024,0xdf9c00:1024,0xdfa000:1024,0xdfa600:256,0xdfa700:256,0xdfc000:256,0xdfc100:256,0xdfc600:256,0xdfc700:256,0xdfc900:256,0xdfca00:256,0xdfcb00:256,0xdfd000:1024,0xdfd400:256,0xdfd500:256,0xdfd600:256,0xdfd700:256,0xdfdc00:256,0xdfdd00:256,0xdfdfb0:16,0xdfdfc0:16,0xdff000:1024,0xdff400:1024,0xdff800:1024,0xdffc80:64,0xdffcc0:64,0xdffe00:256,0xdfff00:64,0xdfff40:64,0xdfffec:4,0xdffffc:2}
@@ -10544,6 +11809,963 @@ function isInDomains(domain_dict, host) {
 		pos = host.lastIndexOf('.', pos - 1);
 	}
 }
+
+/*
+* This file is part of Adblock Plus <http://adblockplus.org/>,
+* Copyright (C) 2006-2014 Eyeo GmbH
+*
+* Adblock Plus is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License version 3 as
+* published by the Free Software Foundation.
+*
+* Adblock Plus is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with Adblock Plus.	If not, see <http://www.gnu.org/licenses/>.
+*/
+
+function Filter(text)
+{
+	this.text = text;
+	this.subscriptions = [];
+}
+Filter.prototype = {
+	text: null,
+	subscriptions: null,
+	serialize: function(buffer)
+	{
+		buffer.push("[Filter]");
+		buffer.push("text=" + this.text);
+	},
+	toString: function()
+	{
+		return this.text;
+	}
+};
+Filter.knownFilters = Object.create(null);
+Filter.elemhideRegExp = /^([^\/\*\|\@"!]*?)#(\@)?(?:([\w\-]+|\*)((?:\([\w\-]+(?:[$^*]?=[^\(\)"]*)?\))*)|#([^{}]+))$/;
+Filter.regexpRegExp = /^(@@)?\/.*\/(?:\$~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)?$/;
+Filter.optionsRegExp = /\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$/;
+Filter.fromText = function(text)
+{
+	if (text in Filter.knownFilters)
+	{
+		return Filter.knownFilters[text];
+	}
+	var ret;
+	var match = text.indexOf("#") >= 0 ? Filter.elemhideRegExp.exec(text) : null;
+	if (match)
+	{
+		ret = ElemHideBase.fromText(text, match[1], match[2], match[3], match[4], match[5]);
+	}
+	else if (text[0] == "!")
+	{
+		ret = new CommentFilter(text);
+	}
+	else
+	{
+		ret = RegExpFilter.fromText(text);
+	}
+	Filter.knownFilters[ret.text] = ret;
+	return ret;
+};
+Filter.fromObject = function(obj)
+{
+	var ret = Filter.fromText(obj.text);
+	if (ret instanceof ActiveFilter)
+	{
+		if ("disabled" in obj)
+		{
+			ret._disabled = obj.disabled == "true";
+		}
+		if ("hitCount" in obj)
+		{
+			ret._hitCount = parseInt(obj.hitCount) || 0;
+		}
+		if ("lastHit" in obj)
+		{
+			ret._lastHit = parseInt(obj.lastHit) || 0;
+		}
+	}
+	return ret;
+};
+Filter.normalize = function(text)
+{
+	if (!text)
+	{
+		return text;
+	}
+	text = text.replace(/[^\S ]/g, "");
+	if (/^\s*!/.test(text))
+	{
+		return text.replace(/^\s+/, "").replace(/\s+$/, "");
+	}
+	else if (Filter.elemhideRegExp.test(text))
+	{
+		var _tempVar5 = /^(.*?)(#\@?#?)(.*)$/.exec(text);
+		var domain = _tempVar5[1];
+		var separator = _tempVar5[2];
+		var selector = _tempVar5[3];
+		return domain.replace(/\s/g, "") + separator + selector.replace(/^\s+/, "").replace(/\s+$/, "");
+	}
+	else
+	{
+		return text.replace(/\s/g, "");
+	}
+};
+
+function InvalidFilter(text, reason)
+{
+	Filter.call(this, text);
+	this.reason = reason;
+}
+InvalidFilter.prototype = {
+	__proto__: Filter.prototype,
+	reason: null,
+	serialize: function(buffer)
+	{}
+};
+
+function CommentFilter(text)
+{
+	Filter.call(this, text);
+}
+CommentFilter.prototype = {
+	__proto__: Filter.prototype,
+	serialize: function(buffer)
+	{}
+};
+
+function ActiveFilter(text, domains)
+{
+	Filter.call(this, text);
+	this.domainSource = domains;
+}
+ActiveFilter.prototype = {
+	__proto__: Filter.prototype,
+	_disabled: false,
+	_hitCount: 0,
+	_lastHit: 0,
+	get disabled()
+	{
+		return this._disabled;
+	},
+	set disabled(value)
+	{
+		if (value != this._disabled)
+		{
+			var oldValue = this._disabled;
+			this._disabled = value;
+		}
+		return this._disabled;
+	},
+	get hitCount()
+	{
+		return this._hitCount;
+	},
+	set hitCount(value)
+	{
+		if (value != this._hitCount)
+		{
+			var oldValue = this._hitCount;
+			this._hitCount = value;
+		}
+		return this._hitCount;
+	},
+	get lastHit()
+	{
+		return this._lastHit;
+	},
+	set lastHit(value)
+	{
+		if (value != this._lastHit)
+		{
+			var oldValue = this._lastHit;
+			this._lastHit = value;
+		}
+		return this._lastHit;
+	},
+	domainSource: null,
+	domainSeparator: null,
+	ignoreTrailingDot: true,
+	domainSourceIsUpperCase: false,
+	get domains()
+	{
+		var prop = Object.getOwnPropertyDescriptor(this, "domains");
+		if (prop)
+		{
+			return prop.value;
+		}
+		var domains = null;
+		if (this.domainSource)
+		{
+			var source = this.domainSource;
+			if (!this.domainSourceIsUpperCase)
+			{
+				source = source.toUpperCase();
+			}
+			var list = source.split(this.domainSeparator);
+			if (list.length == 1 && list[0][0] != "~")
+			{
+				domains = {
+					__proto__: null,
+					"": false
+				};
+				if (this.ignoreTrailingDot)
+				{
+					list[0] = list[0].replace(/\.+$/, "");
+				}
+				domains[list[0]] = true;
+			}
+			else
+			{
+				var hasIncludes = false;
+				for (var i = 0; i < list.length; i++)
+				{
+					var domain = list[i];
+					if (this.ignoreTrailingDot)
+					{
+						domain = domain.replace(/\.+$/, "");
+					}
+					if (domain == "")
+					{
+						continue;
+					}
+					var include;
+					if (domain[0] == "~")
+					{
+						include = false;
+						domain = domain.substr(1);
+					}
+					else
+					{
+						include = true;
+						hasIncludes = true;
+					}
+					if (!domains)
+					{
+						domains = Object.create(null);
+					}
+					domains[domain] = include;
+				}
+				domains[""] = !hasIncludes;
+			}
+			this.domainSource = null;
+		}
+		Object.defineProperty(this, "domains",
+			{
+				value: domains,
+				enumerable: true
+			});
+		return this.domains;
+	},
+	sitekeys: null,
+	isActiveOnDomain: function(docDomain, sitekey)
+	{
+		if (this.sitekeys && (!sitekey || this.sitekeys.indexOf(sitekey.toUpperCase()) < 0))
+		{
+			return false;
+		}
+		if (!this.domains)
+		{
+			return true;
+		}
+		if (!docDomain)
+		{
+			return this.domains[""];
+		}
+		if (this.ignoreTrailingDot)
+		{
+			docDomain = docDomain.replace(/\.+$/, "");
+		}
+		docDomain = docDomain.toUpperCase();
+		while (true)
+		{
+			if (docDomain in this.domains)
+			{
+				return this.domains[docDomain];
+			}
+			var nextDot = docDomain.indexOf(".");
+			if (nextDot < 0)
+			{
+				break;
+			}
+			docDomain = docDomain.substr(nextDot + 1);
+		}
+		return this.domains[""];
+	},
+	isActiveOnlyOnDomain: function(docDomain)
+	{
+		if (!docDomain || !this.domains || this.domains[""])
+		{
+			return false;
+		}
+		if (this.ignoreTrailingDot)
+		{
+			docDomain = docDomain.replace(/\.+$/, "");
+		}
+		docDomain = docDomain.toUpperCase();
+		for (var domain in this.domains)
+		{
+			if (this.domains[domain] && domain != docDomain && (domain.length <= docDomain.length || domain.indexOf("." + docDomain) != domain.length - docDomain.length - 1))
+			{
+				return false;
+			}
+		}
+		return true;
+	},
+	serialize: function(buffer)
+	{
+		if (this._disabled || this._hitCount || this._lastHit)
+		{
+			Filter.prototype.serialize.call(this, buffer);
+			if (this._disabled)
+			{
+				buffer.push("disabled=true");
+			}
+			if (this._hitCount)
+			{
+				buffer.push("hitCount=" + this._hitCount);
+			}
+			if (this._lastHit)
+			{
+				buffer.push("lastHit=" + this._lastHit);
+			}
+		}
+	}
+};
+
+function RegExpFilter(text, regexpSource, contentType, matchCase, domains, thirdParty, sitekeys)
+{
+	ActiveFilter.call(this, text, domains, sitekeys);
+	if (contentType != null)
+	{
+		this.contentType = contentType;
+	}
+	if (matchCase)
+	{
+		this.matchCase = matchCase;
+	}
+	if (thirdParty != null)
+	{
+		this.thirdParty = thirdParty;
+	}
+	if (sitekeys != null)
+	{
+		this.sitekeySource = sitekeys;
+	}
+	if (regexpSource.length >= 2 && regexpSource[0] == "/" && regexpSource[regexpSource.length - 1] == "/")
+	{
+		var regexp = new RegExp(regexpSource.substr(1, regexpSource.length - 2), this.matchCase ? "" : "i");
+		Object.defineProperty(this, "regexp",
+			{
+				value: regexp
+			});
+	}
+	else
+	{
+		this.regexpSource = regexpSource;
+	}
+}
+RegExpFilter.prototype = {
+	__proto__: ActiveFilter.prototype,
+	domainSourceIsUpperCase: true,
+	length: 1,
+	domainSeparator: "|",
+	regexpSource: null,
+	get regexp()
+	{
+		var prop = Object.getOwnPropertyDescriptor(this, "regexp");
+		if (prop)
+		{
+			return prop.value;
+		}
+		var source = this.regexpSource.replace(/\*+/g, "*").replace(/\^\|$/, "^").replace(/\W/g, "\\$&").replace(/\\\*/g, ".*").replace(/\\\^/g, "(?:[\\x00-\\x24\\x26-\\x2C\\x2F\\x3A-\\x40\\x5B-\\x5E\\x60\\x7B-\\x7F]|$)").replace(/^\\\|\\\|/, "^[\\w\\-]+:\\/+(?!\\/)(?:[^\\/]+\\.)?").replace(/^\\\|/, "^").replace(/\\\|$/, "$").replace(/^(\.\*)/, "").replace(/(\.\*)$/, "");
+		var regexp = new RegExp(source, this.matchCase ? "" : "i");
+		Object.defineProperty(this, "regexp",
+			{
+				value: regexp
+			});
+		return regexp;
+	},
+	contentType: 2147483647,
+	matchCase: false,
+	thirdParty: null,
+	sitekeySource: null,
+	get sitekeys()
+	{
+		var prop = Object.getOwnPropertyDescriptor(this, "sitekeys");
+		if (prop)
+		{
+			return prop.value;
+		}
+		var sitekeys = null;
+		if (this.sitekeySource)
+		{
+			sitekeys = this.sitekeySource.split("|");
+			this.sitekeySource = null;
+		}
+		Object.defineProperty(this, "sitekeys",
+			{
+				value: sitekeys,
+				enumerable: true
+			});
+		return this.sitekeys;
+	},
+	matches: function(location, contentType, docDomain, thirdParty, sitekey)
+	{
+		if (this.regexp.test(location) && this.isActiveOnDomain(docDomain, sitekey))
+		{
+			return true;
+		}
+		return false;
+	}
+};
+Object.defineProperty(RegExpFilter.prototype, "0",
+	{
+		get: function()
+		{
+			return this;
+		}
+	});
+RegExpFilter.fromText = function(text)
+{
+	var blocking = true;
+	var origText = text;
+	if (text.indexOf("@@") == 0)
+	{
+		blocking = false;
+		text = text.substr(2);
+	}
+	var contentType = null;
+	var matchCase = null;
+	var domains = null;
+	var sitekeys = null;
+	var thirdParty = null;
+	var collapse = null;
+	var options;
+	var match = text.indexOf("$") >= 0 ? Filter.optionsRegExp.exec(text) : null;
+	if (match)
+	{
+		options = match[1].toUpperCase().split(",");
+		text = match.input.substr(0, match.index);
+		for (var _loopIndex6 = 0; _loopIndex6 < options.length; ++_loopIndex6)
+		{
+			var option = options[_loopIndex6];
+			var value = null;
+			var separatorIndex = option.indexOf("=");
+			if (separatorIndex >= 0)
+			{
+				value = option.substr(separatorIndex + 1);
+				option = option.substr(0, separatorIndex);
+			}
+			option = option.replace(/-/, "_");
+			if (option in RegExpFilter.typeMap)
+			{
+				if (contentType == null)
+				{
+					contentType = 0;
+				}
+				contentType |= RegExpFilter.typeMap[option];
+			}
+			else if (option[0] == "~" && option.substr(1) in RegExpFilter.typeMap)
+			{
+				if (contentType == null)
+				{
+					contentType = RegExpFilter.prototype.contentType;
+				}
+				contentType &= ~RegExpFilter.typeMap[option.substr(1)];
+			}
+			else if (option == "MATCH_CASE")
+			{
+				matchCase = true;
+			}
+			else if (option == "~MATCH_CASE")
+			{
+				matchCase = false;
+			}
+			else if (option == "DOMAIN" && typeof value != "undefined")
+			{
+				domains = value;
+			}
+			else if (option == "THIRD_PARTY")
+			{
+				thirdParty = true;
+			}
+			else if (option == "~THIRD_PARTY")
+			{
+				thirdParty = false;
+			}
+			else if (option == "COLLAPSE")
+			{
+				collapse = true;
+			}
+			else if (option == "~COLLAPSE")
+			{
+				collapse = false;
+			}
+			else if (option == "SITEKEY" && typeof value != "undefined")
+			{
+				sitekeys = value;
+			}
+			else
+			{
+				return new InvalidFilter(origText, "Unknown option " + option.toLowerCase());
+			}
+		}
+	}
+	if (!blocking && (contentType == null || contentType & RegExpFilter.typeMap.DOCUMENT) && (!options || options.indexOf("DOCUMENT") < 0) && !/^\|?[\w\-]+:/.test(text))
+	{
+		if (contentType == null)
+		{
+			contentType = RegExpFilter.prototype.contentType;
+		}
+		contentType &= ~RegExpFilter.typeMap.DOCUMENT;
+	}
+	try
+	{
+		if (blocking)
+		{
+			return new BlockingFilter(origText, text, contentType, matchCase, domains, thirdParty, sitekeys, collapse);
+		}
+		else
+		{
+			return new WhitelistFilter(origText, text, contentType, matchCase, domains, thirdParty, sitekeys);
+		}
+	}
+	catch (e)
+	{
+		return new InvalidFilter(origText, e);
+	}
+};
+RegExpFilter.typeMap = {
+	OTHER: 1,
+	SCRIPT: 2,
+	IMAGE: 4,
+	STYLESHEET: 8,
+	OBJECT: 16,
+	SUBDOCUMENT: 32,
+	DOCUMENT: 64,
+	XBL: 1,
+	PING: 1,
+	XMLHTTPREQUEST: 2048,
+	OBJECT_SUBREQUEST: 4096,
+	DTD: 1,
+	MEDIA: 16384,
+	FONT: 32768,
+	BACKGROUND: 4,
+	POPUP: 268435456,
+	ELEMHIDE: 1073741824
+};
+RegExpFilter.prototype.contentType &= ~ (RegExpFilter.typeMap.ELEMHIDE | RegExpFilter.typeMap.POPUP);
+
+function BlockingFilter(text, regexpSource, contentType, matchCase, domains, thirdParty, sitekeys, collapse)
+{
+	RegExpFilter.call(this, text, regexpSource, contentType, matchCase, domains, thirdParty, sitekeys);
+	this.collapse = collapse;
+}
+BlockingFilter.prototype = {
+	__proto__: RegExpFilter.prototype,
+	collapse: null
+};
+
+function WhitelistFilter(text, regexpSource, contentType, matchCase, domains, thirdParty, sitekeys)
+{
+	RegExpFilter.call(this, text, regexpSource, contentType, matchCase, domains, thirdParty, sitekeys);
+}
+WhitelistFilter.prototype = {
+	__proto__: RegExpFilter.prototype
+};
+
+function ElemHideBase(text, domains, selector)
+{
+	ActiveFilter.call(this, text, domains || null);
+	if (domains)
+	{
+		this.selectorDomain = domains.replace(/,~[^,]+/g, "").replace(/^~[^,]+,?/, "").toLowerCase();
+	}
+	this.selector = selector;
+}
+ElemHideBase.prototype = {
+	__proto__: ActiveFilter.prototype,
+	domainSeparator: ",",
+	ignoreTrailingDot: false,
+	selectorDomain: null,
+	selector: null
+};
+ElemHideBase.fromText = function(text, domain, isException, tagName, attrRules, selector)
+{
+	if (!selector)
+	{
+		if (tagName == "*")
+		{
+			tagName = "";
+		}
+		var id = null;
+		var additional = "";
+		if (attrRules)
+		{
+			attrRules = attrRules.match(/\([\w\-]+(?:[$^*]?=[^\(\)"]*)?\)/g);
+			for (var _loopIndex7 = 0; _loopIndex7 < attrRules.length; ++_loopIndex7)
+			{
+				var rule = attrRules[_loopIndex7];
+				rule = rule.substr(1, rule.length - 2);
+				var separatorPos = rule.indexOf("=");
+				if (separatorPos > 0)
+				{
+					rule = rule.replace(/=/, "=\"") + "\"";
+					additional += "[" + rule + "]";
+				}
+				else
+				{
+					if (id)
+					{
+						var Utils = require("utils").Utils;
+						return new InvalidFilter(text, Utils.getString("filter_elemhide_duplicate_id"));
+					}
+					else
+					{
+						id = rule;
+					}
+				}
+			}
+		}
+		if (id)
+		{
+			selector = tagName + "." + id + additional + "," + tagName + "#" + id + additional;
+		}
+		else if (tagName || additional)
+		{
+			selector = tagName + additional;
+		}
+		else
+		{
+			var Utils = require("utils").Utils;
+			return new InvalidFilter(text, Utils.getString("filter_elemhide_nocriteria"));
+		}
+	}
+	if (isException)
+	{
+		return new ElemHideException(text, domain, selector);
+	}
+	else
+	{
+		return new ElemHideFilter(text, domain, selector);
+	}
+};
+
+function ElemHideFilter(text, domains, selector)
+{
+	ElemHideBase.call(this, text, domains, selector);
+}
+ElemHideFilter.prototype = {
+	__proto__: ElemHideBase.prototype
+};
+
+function ElemHideException(text, domains, selector)
+{
+	ElemHideBase.call(this, text, domains, selector);
+}
+ElemHideException.prototype = {
+	__proto__: ElemHideBase.prototype
+};
+
+function Matcher()
+{
+	this.clear();
+}
+Matcher.prototype = {
+	filterByKeyword: null,
+	keywordByFilter: null,
+	clear: function()
+	{
+		this.filterByKeyword = Object.create(null);
+		this.keywordByFilter = Object.create(null);
+	},
+	add: function(filter)
+	{
+		if (filter.text in this.keywordByFilter)
+		{
+			return;
+		}
+		var keyword = this.findKeyword(filter);
+		var oldEntry = this.filterByKeyword[keyword];
+		if (typeof oldEntry == "undefined")
+		{
+			this.filterByKeyword[keyword] = filter;
+		}
+		else if (oldEntry.length == 1)
+		{
+			this.filterByKeyword[keyword] = [oldEntry, filter];
+		}
+		else
+		{
+			oldEntry.push(filter);
+		}
+		this.keywordByFilter[filter.text] = keyword;
+	},
+	remove: function(filter)
+	{
+		if (!(filter.text in this.keywordByFilter))
+		{
+			return;
+		}
+		var keyword = this.keywordByFilter[filter.text];
+		var list = this.filterByKeyword[keyword];
+		if (list.length <= 1)
+		{
+			delete this.filterByKeyword[keyword];
+		}
+		else
+		{
+			var index = list.indexOf(filter);
+			if (index >= 0)
+			{
+				list.splice(index, 1);
+				if (list.length == 1)
+				{
+					this.filterByKeyword[keyword] = list[0];
+				}
+			}
+		}
+		delete this.keywordByFilter[filter.text];
+	},
+	findKeyword: function(filter)
+	{
+		var result = "";
+		var text = filter.text;
+		if (Filter.regexpRegExp.test(text))
+		{
+			return result;
+		}
+		var match = Filter.optionsRegExp.exec(text);
+		if (match)
+		{
+			text = match.input.substr(0, match.index);
+		}
+		if (text.substr(0, 2) == "@@")
+		{
+			text = text.substr(2);
+		}
+		var candidates = text.toLowerCase().match(/[^a-z0-9%*][a-z0-9%]{3,}(?=[^a-z0-9%*])/g);
+		if (!candidates)
+		{
+			return result;
+		}
+		var hash = this.filterByKeyword;
+		var resultCount = 16777215;
+		var resultLength = 0;
+		for (var i = 0, l = candidates.length; i < l; i++)
+		{
+			var candidate = candidates[i].substr(1);
+			var count = candidate in hash ? hash[candidate].length : 0;
+			if (count < resultCount || count == resultCount && candidate.length > resultLength)
+			{
+				result = candidate;
+				resultCount = count;
+				resultLength = candidate.length;
+			}
+		}
+		return result;
+	},
+	hasFilter: function(filter)
+	{
+		return filter.text in this.keywordByFilter;
+	},
+	getKeywordForFilter: function(filter)
+	{
+		if (filter.text in this.keywordByFilter)
+		{
+			return this.keywordByFilter[filter.text];
+		}
+		else
+		{
+			return null;
+		}
+	},
+	_checkEntryMatch: function(keyword, location, contentType, docDomain, thirdParty, sitekey)
+	{
+		var list = this.filterByKeyword[keyword];
+		for (var i = 0; i < list.length; i++)
+		{
+			var filter = list[i];
+			if (filter.matches(location, contentType, docDomain, thirdParty, sitekey))
+			{
+				return filter;
+			}
+		}
+		return null;
+	},
+	matchesAny: function(location, contentType, docDomain, thirdParty, sitekey)
+	{
+		var candidates = location.toLowerCase().match(/[a-z0-9%]{3,}/g);
+		if (candidates === null)
+		{
+			candidates = [];
+		}
+		candidates.push("");
+		for (var i = 0, l = candidates.length; i < l; i++)
+		{
+			var substr = candidates[i];
+			if (substr in this.filterByKeyword)
+			{
+				var result = this._checkEntryMatch(substr, location, contentType, docDomain, thirdParty, sitekey);
+				if (result)
+				{
+					return result;
+				}
+			}
+		}
+		return null;
+	}
+};
+
+function CombinedMatcher()
+{
+	this.blacklist = new Matcher();
+	this.whitelist = new Matcher();
+	this.resultCache = Object.create(null);
+}
+CombinedMatcher.maxCacheEntries = 1000;
+CombinedMatcher.prototype = {
+	blacklist: null,
+	whitelist: null,
+	resultCache: null,
+	cacheEntries: 0,
+	clear: function()
+	{
+		this.blacklist.clear();
+		this.whitelist.clear();
+		this.resultCache = Object.create(null);
+		this.cacheEntries = 0;
+	},
+	add: function(filter)
+	{
+		if (filter instanceof WhitelistFilter)
+		{
+			this.whitelist.add(filter);
+		}
+		else
+		{
+			this.blacklist.add(filter);
+		}
+		if (this.cacheEntries > 0)
+		{
+			this.resultCache = Object.create(null);
+			this.cacheEntries = 0;
+		}
+	},
+	remove: function(filter)
+	{
+		if (filter instanceof WhitelistFilter)
+		{
+			this.whitelist.remove(filter);
+		}
+		else
+		{
+			this.blacklist.remove(filter);
+		}
+		if (this.cacheEntries > 0)
+		{
+			this.resultCache = Object.create(null);
+			this.cacheEntries = 0;
+		}
+	},
+	findKeyword: function(filter)
+	{
+		if (filter instanceof WhitelistFilter)
+		{
+			return this.whitelist.findKeyword(filter);
+		}
+		else
+		{
+			return this.blacklist.findKeyword(filter);
+		}
+	},
+	hasFilter: function(filter)
+	{
+		if (filter instanceof WhitelistFilter)
+		{
+			return this.whitelist.hasFilter(filter);
+		}
+		else
+		{
+			return this.blacklist.hasFilter(filter);
+		}
+	},
+	getKeywordForFilter: function(filter)
+	{
+		if (filter instanceof WhitelistFilter)
+		{
+			return this.whitelist.getKeywordForFilter(filter);
+		}
+		else
+		{
+			return this.blacklist.getKeywordForFilter(filter);
+		}
+	},
+	isSlowFilter: function(filter)
+	{
+		var matcher = filter instanceof WhitelistFilter ? this.whitelist : this.blacklist;
+		if (matcher.hasFilter(filter))
+		{
+			return !matcher.getKeywordForFilter(filter);
+		}
+		else
+		{
+			return !matcher.findKeyword(filter);
+		}
+	},
+	matchesAnyInternal: function(location, contentType, docDomain, thirdParty, sitekey)
+	{
+		var candidates = location.toLowerCase().match(/[a-z0-9%]{3,}/g);
+		if (candidates === null)
+		{
+			candidates = [];
+		}
+		candidates.push("");
+		var blacklistHit = null;
+		for (var i = 0, l = candidates.length; i < l; i++)
+		{
+			var substr = candidates[i];
+			if (substr in this.whitelist.filterByKeyword)
+			{
+				var result = this.whitelist._checkEntryMatch(substr, location, contentType, docDomain, thirdParty, sitekey);
+				if (result)
+				{
+					return result;
+				}
+			}
+			if (substr in this.blacklist.filterByKeyword && blacklistHit === null)
+			{
+				blacklistHit = this.blacklist._checkEntryMatch(substr, location, contentType, docDomain, thirdParty, sitekey);
+			}
+		}
+		return blacklistHit;
+	},
+	matchesAny: function(location, docDomain)
+	{
+		var key = location + " " + docDomain + " ";
+		if (key in this.resultCache)
+		{
+			return this.resultCache[key];
+		}
+		var result = this.matchesAnyInternal(location, 0, docDomain, null, null);
+		if (this.cacheEntries >= CombinedMatcher.maxCacheEntries)
+		{
+			this.resultCache = Object.create(null);
+			this.cacheEntries = 0;
+		}
+		this.resultCache[key] = result;
+		this.cacheEntries++;
+		return result;
+	}
+};
+var defaultMatcher = new CombinedMatcher();
+
 function FindProxyForURL(url, host) {
 	if ( isPlainHostName(host) === true ) {
 		return direct;
@@ -10554,7 +12776,7 @@ function FindProxyForURL(url, host) {
 	if ( isInDomains(white_domains, host) === true ) {
 		return nowall_proxy;
 	}
-	if ( isInDomains(black_domains, host) === true ) {
+	if ( defaultMatcher.matchesAny(url, host) instanceof BlockingFilter ) {
 		return wall_proxy;
 	}
 

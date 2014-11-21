@@ -1,23 +1,21 @@
 var wall_proxy = __PROXY__;
-var nowall_proxy = "DIRECT;";
-var direct = "DIRECT;";
+var nowall_proxy = __NOWALL_PROXY__;
+var auto_proxy = __AUTO_PROXY__; // if you have something like COW proxy
+var direct = __DIRECT__;
 
 /*
  * Copyright (C) 2014 breakwa11
  * https://github.com/breakwa11/gfw_whitelist
  */
 
-var white_domains = __DOMAINS__;
+var white_domains = __WHITE_DOMAINS__;
+var black_domains = __BLACK_DOMAINS__;
 
 var hasOwnProperty = Object.hasOwnProperty;
 
 function check_ipv4(host) {
-	// check if the ipv4 format (TODO: ipv6)
-	//   http://home.deds.nl/~aeron/regex/
 	var re_ipv4 = /^\d+\.\d+\.\d+\.\d+$/g;
 	if (re_ipv4.test(host)) {
-		// in theory, we can add chnroutes test here.
-		// but that is probably too much an overkill.
 		return true;
 	}
 }
@@ -52,16 +50,21 @@ function isInDomains(domain_dict, host) {
 		pos = host.lastIndexOf('.', pos - 1);
 	}
 }
+
 function FindProxyForURL(url, host) {
 	if ( isPlainHostName(host) === true ) {
 		return direct;
 	}
 	if ( check_ipv4(host) === true ) {
-		return nowall_proxy;
+		return direct;
 	}
 	if ( isInDomains(white_domains, host) === true ) {
 		return nowall_proxy;
 	}
-	return wall_proxy;
+	if ( isInDomains(black_domains, host) === true ) {
+		return wall_proxy;
+	}
+
+	return auto_proxy;
 }
 

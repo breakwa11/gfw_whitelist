@@ -2,6 +2,11 @@ var wall_proxy = __PROXY__;
 var nowall_proxy = "DIRECT;";
 var direct = "DIRECT;";
 
+/*
+ * Copyright (C) 2014 breakwa11
+ * https://github.com/breakwa11/gfw_whitelist
+ */
+
 var cnIpRange = __IP_LIST__;
 var cnIp16Range = __IP16_LIST__;
 

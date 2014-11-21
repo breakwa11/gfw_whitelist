@@ -4,6 +4,7 @@ from argparse import ArgumentParser
 import re
 import list_white
 import list_black
+import list_gfw
 import list_ip
 
 def parse_args():
@@ -28,9 +29,9 @@ def get_file_data(filename):
 	return content
 
 def js_shorter(content):
-	r = re.compile('//.*')
-	content = r.sub('', content)
-	content = content.replace('\n', '')
+	r = re.compile(r'; \/\/.*')
+	content = r.sub(';', content)
+	#content = content.replace('\n', ' ')
 	content = content.replace('\t', '')
 	return content
 
@@ -42,7 +43,11 @@ def writefile(input_file, proxy, auto_proxy, output_file, dynamic):
 	proxy_content = proxy_content.replace('__IP16_LIST__', ip16_content)
 	proxy_content = proxy_content.replace('__FAKE_IP_LIST__', list_ip.fake_list())
 	proxy_content = proxy_content.replace('__WHITE_DOMAINS__', list_white.final_list())
-	proxy_content = proxy_content.replace('__BLACK_DOMAINS__', list_black.final_list())
+	if '__BLACK_DOMAINS__' in proxy_content:
+		proxy_content = proxy_content.replace('__BLACK_DOMAINS__', list_black.final_list())
+	if '__GFWBLACK_DOMAINS__' in proxy_content:
+		proxy_content = proxy_content.replace('__GFWBLACK_DOMAINS__', list_gfw.final_list())
+
 	if dynamic != 'no':
 		with open(dynamic + output_file, 'w') as file_obj:
 			file_obj.write( js_shorter(proxy_content) )
