@@ -29,11 +29,114 @@ def get_file_data(filename):
 	return content
 
 def js_shorter(content):
-	r = re.compile(r'; \/\/.*')
-	content = r.sub(';', content)
-	#content = content.replace('\n', ' ')
-	content = content.replace('\t', '')
-	return content
+	result = []
+	class ParseState(object):
+		def __init__(self):
+			self.state = 'empty'
+			self.buff = ''
+			self.cur = ''
+			self.laststate = 'empty'
+			self.word_set = set()
+			for i in xrange(26):
+				self.word_set.add(chr(i + ord('A')))
+				self.word_set.add(chr(i + ord('a')))
+			for i in xrange(10):
+				self.word_set.add(chr(i + ord('0')))
+			self.word_set.add('_')
+			self.word_set.add('$')
+			self.empty_set = set([' ', '\t', '\r', '\n'])
+		def retbuf(self):
+			ret = self.buff
+			self.buff = ''
+			return ret
+		def next(self, ch):
+			self.buff += self.cur
+			self.cur = ch
+			if self.state == 'empty':
+				if ch in self.empty_set:
+					self.cur = ''
+				elif ch in self.word_set:
+					self.state = 'word'
+					if self.laststate == 'word':
+						return ' ' + self.retbuf()
+					return self.retbuf()
+				elif ch == '/':
+					self.state = 'slash'
+				elif ch == '"':
+					self.state = 'string'
+				else:
+					self.state = 'symbol'
+			elif self.state == 'symbol': # symbol
+				self.laststate = 'symbol'
+				if ch in self.empty_set:
+					self.cur = ''
+					self.state = 'empty'
+				elif ch in self.word_set:
+					self.state = 'word'
+				elif ch == '/':
+					self.state = 'slash'
+				elif ch == '"':
+					self.state = 'string'
+				else:
+					self.state = 'symbol'
+				return self.retbuf()
+			elif self.state == 'word':
+				self.laststate = 'word'
+				if ch in self.empty_set:
+					self.cur = ''
+					self.state = 'empty'
+					return self.retbuf()
+				elif ch in self.word_set:
+					self.state = 'word'
+				elif ch == '/':
+					self.state = 'slash'
+					return self.retbuf()
+				elif ch == '"':
+					self.state = 'string'
+					return self.retbuf()
+				else:
+					self.state = 'symbol'
+					return self.retbuf()
+			elif self.state == 'string':
+				if ch == '"':
+					self.cur = ''
+					self.state = 'empty'
+					return self.retbuf() + ch
+				elif ch == '\\':
+					self.state = 'string_conv'
+			elif self.state == 'string_conv':
+				self.state = 'string'
+			elif self.state == 'slash': # just OK in this case
+				if ch == '/':
+					self.state = 'comment'
+				elif ch == '*':
+					self.state = 'multiline_comment'
+				else:
+					self.state = 'symbol'
+					cur = self.cur
+					self.cur = ''
+					return self.next(ch)
+			elif self.state == 'comment':
+				if ch == '\n':
+					self.buff = ''
+					self.cur = ''
+					self.state = 'empty'
+			elif self.state == 'multiline_comment':
+				if ch == '*':
+					self.state = 'multiline_comment_ed1'
+			elif self.state == 'multiline_comment_ed1':
+				if ch == '/':
+					# keep multiline_comment
+					self.state = 'symbol'
+				else:
+					self.state = 'multiline_comment'
+			return ''
+	prase = ParseState()
+	for c in content:
+		r = prase.next(c)
+		if len(r) > 0:
+			result.append(r)
+	return ''.join(result)
 
 def writefile(input_file, proxy, auto_proxy, output_file, dynamic):
 	ip_content = list_ip.final_list()
