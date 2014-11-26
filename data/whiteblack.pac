@@ -819,7 +819,11 @@ function FindProxyForURL(url, host) {
 	if ( isInDomains(white_domains, host) === true ) {
 		return nowall_proxy;
 	}
-	if ( defaultMatcher.matchesAny(url, host) instanceof BlockingFilter ) {
+	var filter = defaultMatcher.matchesAny(url, host);
+	if ( filter instanceof WhitelistFilter ) {
+		return nowall_proxy;
+	}
+	if ( filter instanceof BlockingFilter ) {
 		return wall_proxy;
 	}
 

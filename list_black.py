@@ -115,7 +115,10 @@ def obfs(url):
 	for c in url:
 		if c == '.' or ((index & 3) == 0 and index > 0):
 			last = ord(ret[-1])
-			ret = "%s\\x%x" % (ret[:-1], last)
+			if last < 64:
+				ret = "%s\\%o" % (ret[:-1], last)
+			else:
+				ret = "%s\\x%x" % (ret[:-1], last)
 		ret += c
 		index += 1
 	return ret

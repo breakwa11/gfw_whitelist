@@ -48,7 +48,10 @@ def obfs(url):
 	for c in url:
 		if index > 0 and ( c == '.' or (index % 7) == 3 ):
 			last = ord(ret[-1])
-			ret = "%s\\x%x" % (ret[:-1], last)
+			if last < 64:
+				ret = "%s\\%o" % (ret[:-1], last)
+			else:
+				ret = "%s\\x%x" % (ret[:-1], last)
 		ret += c
 		index += 1
 	return ret
@@ -63,7 +66,10 @@ def get_all_list(lists):
 	result = list()
 	key_comma = ''
 	for key in lists:
-		result.append('%s"%s"\n' % (key_comma, obfs(key) ) )
+		if key.startswith("@@"):
+			result.append('%s"%s"\n' % (key_comma, key ) )
+		else:
+			result.append('%s"%s"\n' % (key_comma, obfs(key) ) )
 		key_comma = ','
 	return result
 
