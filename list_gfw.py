@@ -4,6 +4,7 @@
 import urlparse
 import logging
 import copy
+from blacklist import gfwcustom
 
 __all__ = ['main']
 
@@ -80,6 +81,9 @@ def final_list():
 	#with open('gfwlist_ogn.txt', 'w') as f:
 	#	f.write(content)
 	domains = parse_gfwlist(content)
+	gfwlist = list(gfwcustom.getlist())
+	gfwlist.remove("")
+	domains += list(gfwlist)
 	list_result = get_all_list(domains)
 	content = ''.join(list_result)
 	content = '[' + content + "]"
