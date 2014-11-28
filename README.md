@@ -17,7 +17,8 @@
 简单使用方法
 ---------
 
-方法一：下载 whitelist.pac或whiteiplist.pac或proxy.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 whitelist.pac或whiteiplist.pac。
+###方法一：  
+下载 whitelist.pac或whiteiplist.pac或proxy.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 whitelist.pac或whiteiplist.pac。
 
 	var wall_proxy = 'PROXY www.abc.com:443;'; 
 	以上需要更换成有效的代理地址，代理类型还可以为'SOCKS5'或'HTTPS'
@@ -27,10 +28,18 @@
 
 对于不需要翻墙，但也需要代理的网站，可自行修改`nowall_proxy`，方式与`wall_proxy`相同。
 
-方法二：设置你的动态代理地址为：[http://proxy.breakwa11.ga/?proxy=SOCKS5_127.0.0.1:1080](http://proxy.breakwa11.ga/?proxy=SOCKS5_127.0.0.1:1080)  
+###方法二：  
+设置你的动态代理地址为：[http://proxy.breakwa11.ga/?proxy=SOCKS5_127.0.0.1:1080](http://proxy.breakwa11.ga/?proxy=SOCKS5_127.0.0.1:1080)  
 如果你所在的地区使用IP匹配不合适，那么还可以使用这个地址：[http://proxy.breakwa11.ga/?style=noip&proxy=SOCKS5_127.0.0.1:1080](http://proxy.breakwa11.ga/?style=noip&proxy=SOCKS5_127.0.0.1:1080)  
 注意proxy参数可修改为你自己本地的代理配置，这样即可下载一个适合你本地配置的pac文件。  
-参数除了proxy，还支持：nowall, auto, direct，分别对应：非翻墙代理，自动代理（默认与proxy一致），直连代理（如果没有必要请不要修改）。参数之间需加入&分隔开。  
+参数除了proxy，还支持：nowall, auto, ip, direct，分别对应：非翻墙代理，自动代理（默认与proxy一致），ip代理（默认与nowall一致），直连代理（如果没有必要请不要修改）。参数之间需加入&分隔开。参数解释：  
+style: 列表类型。值为noip则不使用IP匹配，大多数情况下应该使用此值，除非你解决了DNS污染。  
+proxy: 翻墙代理，GFW黑名单使用的代理  
+nowall: 非翻墙代理，在白名单或国内IP中使用的代理  
+direct: 直连代理，内网地址段使用的代理  
+ip: ip代理，访问方式为使用IP而不使用域名的地址使用的代理（国内视频站多数为ip直连，所以默认与nowall一致）  
+auto: 自动代理，均不在以上黑白名单也不是IP直连的情况下使用的代理。与proxy一致即白名单制，与nowall一致即黑名单制。
+
 本功能在测试中，地址随时可能发生变化，访问速度可能很慢或访问不正常，如不能访问请留意本项目的变更。
 
 本地代理使用 `PROXY` 即http代理最佳，兼容性最好，可用于IE或iOS自动代理配置，s5代理可使用privoxy转换为http代理。不过如果是远程代理可能被偷窥连接内容。
