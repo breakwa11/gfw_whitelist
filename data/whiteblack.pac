@@ -1,7 +1,8 @@
 var wall_proxy = __PROXY__;
 var nowall_proxy = __NOWALL_PROXY__;
-var auto_proxy = __AUTO_PROXY__; // if you have something like COW proxy
 var direct = __DIRECT__;
+var auto_proxy = __AUTO_PROXY__; // if you have something like COW proxy
+var ip_proxy = __IP_PROXY__;
 
 /*
  * Copyright (C) 2014 breakwa11
@@ -11,6 +12,13 @@ var direct = __DIRECT__;
 var white_domains = __WHITE_DOMAINS__;
 var black_domains = __GFWBLACK_DOMAINS__;
 
+var subnetIpRangeList = [
+167772160,184549376,	//10.0.0.0/8
+2886729728,2887778304,	//172.16.0.0/12
+3232235520,3232301056,	//192.168.0.0/16
+2130706432,2130706688	//127.0.0.0/24
+];
+
 var hasOwnProperty = Object.hasOwnProperty;
 
 function check_ipv4(host) {
@@ -18,6 +26,13 @@ function check_ipv4(host) {
 	if (re_ipv4.test(host)) {
 		return true;
 	}
+}
+function getProxyFromDirectIP(strIp) {
+	var intIp = convertAddress(strIp);
+	if ( isInSubnetRange(subnetIpRangeList, intIp) ) {
+		return direct;
+	}
+	return ip_proxy;
 }
 function isInDomains(domain_dict, host) {
 	var suffix;
@@ -814,7 +829,7 @@ function FindProxyForURL(url, host) {
 		return direct;
 	}
 	if ( check_ipv4(host) === true ) {
-		return direct;
+		return getProxyFromDirectIP(host);
 	}
 	if ( isInDomains(white_domains, host) === true ) {
 		return nowall_proxy;

@@ -15,11 +15,14 @@ def parse_args():
 		help='path to output pac', metavar='PAC')
 	parser.add_argument('-p', '--proxy', dest='proxy', default='"SOCKS5 127.0.0.1:1080;"',
 		help='the proxy parameter in the pac file, for example,\
-		"127.0.0.1:1080;"', metavar='SOCKS5')
-	parser.add_argument('-a', '--auto_proxy', dest='auto_proxy', default='"SOCKS5 127.0.0.1:1080;"',
+		"SOCKS5 127.0.0.1:1080;"', metavar='SOCKS5')
+	parser.add_argument('-a', '--auto_proxy', dest='auto_proxy', default='auto',
 		help='the auto proxy parameter in the pac file, for example,\
-		"127.0.0.1:1080;"', metavar='SOCKS5')
-	parser.add_argument('-d', '--dynamic', dest='dynamic', default='no')
+		"SOCKS5 127.0.0.1:1080;"', metavar='SOCKS5')
+	parser.add_argument('-d', '--directip_proxy', dest='ip_proxy', default='auto',
+		help='the auto proxy parameter in the pac file, for example,\
+		"SOCKS5 127.0.0.1:1080;"', metavar='SOCKS5')
+	parser.add_argument('-z', '--dynamic', dest='dynamic', default='no')
 	return parser.parse_args()
 
 def get_file_data(filename):
@@ -138,7 +141,7 @@ def js_shorter(content):
 			result.append(r)
 	return ''.join(result)
 
-def writefile(input_file, proxy, auto_proxy, output_file, dynamic):
+def writefile(input_file, proxy, auto_proxy, ip_proxy, output_file, dynamic):
 	ip_content = list_ip.final_list()
 	ip16_content = list_ip.center_list()
 	proxy_content = get_file_data(input_file)
@@ -157,6 +160,7 @@ def writefile(input_file, proxy, auto_proxy, output_file, dynamic):
 
 	proxy_content = proxy_content.replace('__PROXY__', proxy)
 	proxy_content = proxy_content.replace('__NOWALL_PROXY__', '"DIRECT;"')
+	proxy_content = proxy_content.replace('__IP_PROXY__', ip_proxy)
 	proxy_content = proxy_content.replace('__AUTO_PROXY__', auto_proxy)
 	proxy_content = proxy_content.replace('__DIRECT__', '"DIRECT;"')
 	with open(output_file, 'w') as file_obj:
@@ -165,9 +169,18 @@ def writefile(input_file, proxy, auto_proxy, output_file, dynamic):
 	with open('min_' + output_file, 'w') as file_obj:
 		file_obj.write(js_shorter(proxy_content))
 
+def get_default_param(param, defstring, defval):
+	if param == defstring:
+		return defval
+	return '"' + param.strip('"') + '"'
+
 def main():
 	args = parse_args()
-	writefile(args.input, '"' + args.proxy.strip('"') + '"', '"' + args.auto_proxy.strip('"') + '"', args.output, args.dynamic)
+
+	auto_proxy = get_default_param(args.auto_proxy, 'auto', 'wall_proxy')
+	ip_proxy = get_default_param(args.ip_proxy, 'auto', 'nowall_proxy')
+
+	writefile(args.input, '"' + args.proxy.strip('"') + '"', auto_proxy, ip_proxy, args.output, args.dynamic)
 
 if __name__ == '__main__':
 	main()

@@ -1,7 +1,8 @@
 var wall_proxy = __PROXY__;
 var nowall_proxy = __NOWALL_PROXY__;
-var auto_proxy = __AUTO_PROXY__; // if you have something like COW proxy
 var direct = __DIRECT__;
+var auto_proxy = __AUTO_PROXY__; // if you have something like COW proxy
+var ip_proxy = __IP_PROXY__;
 
 /*
  * Copyright (C) 2014 breakwa11
@@ -59,6 +60,13 @@ function isInSubnetRange(ipRange, intIp) {
 		if ( ipRange[i] <= intIp && intIp < ipRange[i+1] )
 			return true;
 	}
+}
+function getProxyFromDirectIP(strIp) {
+	var intIp = convertAddress(strIp);
+	if ( isInSubnetRange(subnetIpRangeList, intIp) ) {
+		return direct;
+	}
+	return ip_proxy;
 }
 function getProxyFromIP(strIp) {
 	var intIp = convertAddress(strIp);
@@ -873,7 +881,7 @@ function FindProxyForURL(url, host) {
 		return direct;
 	}
 	if ( check_ipv4(host) === true ) {
-		return getProxyFromIP(host);
+		return getProxyFromDirectIP(host);
 	}
 	if ( isInDomains(white_domains, host) === true ) {
 		return nowall_proxy;

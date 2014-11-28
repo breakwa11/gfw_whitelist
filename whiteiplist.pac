@@ -1,6 +1,7 @@
 var wall_proxy = "SOCKS5 127.0.0.1:1080;";
 var nowall_proxy = "DIRECT;";
 var direct = "DIRECT;";
+var ip_proxy = "DIRECT;";
 
 /*
  * Copyright (C) 2014 breakwa11
@@ -41,6 +42,13 @@ function convertAddress(ipchars) {
 	(bytes[3]);
 	return result >>> 0;
 };
+function getProxyFromDirectIP(strIp) {
+	var intIp = convertAddress(strIp);
+	if ( isInSubnetRange(subnetIpRangeList, intIp) ) {
+		return direct;
+	}
+	return ip_proxy;
+}
 function isInSingleRange(ipRange, intIp) {
 	if ( hasOwnProperty.call(cnIp16Range, intIp >>> 6) ) {
 		for ( var range = 1; range < 64; range*=4 ) {
@@ -85,7 +93,7 @@ function FindProxyForURL(url, host) {
 		return direct;
 	}
 	if ( check_ipv4(host) === true ) {
-		return getProxyFromIP(host);
+		return getProxyFromDirectIP(host);
 	}
 
 	var strIp = dnsResolve(host);
