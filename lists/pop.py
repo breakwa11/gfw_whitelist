@@ -107,6 +107,7 @@ ykimg.com
 youshang.com
 zdmimg.com
 zhibo8.com
+zhimg.com
 zoopda.com
 zuoche.com
 """

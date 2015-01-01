@@ -8089,6 +8089,7 @@ var white_domains = {"am":{
 "zhijinwang":1,
 "zhileng":1,
 "zhimantian":1,
+"zhimg":1,
 "zhinei":1,
 "zhitechan":1,
 "zhituad":1,
