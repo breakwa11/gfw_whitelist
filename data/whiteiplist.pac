@@ -11,8 +11,6 @@ var ip_proxy = "DIRECT;";
 var cnIpRange = __IP_LIST__;
 var cnIp16Range = __IP16_LIST__;
 
-var fakeIpRange = __FAKE_IP_LIST__;
-
 var subnetIpRangeList = [
 167772160,184549376,	//10.0.0.0/8
 2886729728,2887778304,	//172.16.0.0/12
@@ -66,13 +64,6 @@ function isInSubnetRange(ipRange, intIp) {
 }
 function getProxyFromIP(strIp) {
 	var intIp = convertAddress(strIp);
-	{
-		var len = fakeIpRange.length;
-		for ( var i = 0; i < len; ++i ) {
-			if ( intIp == fakeIpRange[i] )
-				return wall_proxy;
-		}
-	}
 	if ( isInSubnetRange(subnetIpRangeList, intIp) ) {
 		return direct;
 	}
