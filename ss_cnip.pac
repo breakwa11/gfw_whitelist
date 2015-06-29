@@ -41,7 +41,7 @@ function check_ipv6(host) {
 	}
 }
 function check_ipv6_dns(dnsstr) {
-	var re_ipv6 = /([a-fA-F0-9]{0,4}\:){1,7}[a-fA-F0-9]{0,4}/g;
+	var re_ipv6 = /([a-fA-F0-9]{0,4}\:){1,7}[a-fA-F0-9]{0,4}(%[0-9]+)?/g;
 	if (re_ipv6.test(dnsstr)) {
 		return true;
 	}
@@ -54,13 +54,6 @@ function convertAddress(ipchars) {
 	(bytes[3]);
 	return result >>> 0;
 };
-function getProxyFromDirectIP(strIp) {
-	var intIp = convertAddress(strIp);
-	if ( isInSubnetRange(subnetIpRangeList, intIp) ) {
-		return direct;
-	}
-	return ip_proxy;
-}
 function isInSingleRange(ipRange, intIp) {
 	if ( hasOwnProperty.call(cnIp16Range, intIp >>> 6) ) {
 		for ( var range = 1; range < 64; range*=4 ) {
@@ -98,7 +91,7 @@ function FindProxyForURL(url, host) {
 		return direct;
 	}
 	if ( check_ipv4(host) === true ) {
-		return getProxyFromDirectIP(host);
+		return getProxyFromIP(host);
 	}
 	if ( check_ipv6(host) === true ) {
 		return ipv6_proxy();
@@ -117,17 +110,23 @@ function FindProxyForURLEx(url, host) {
 		return direct;
 	}
 	if ( check_ipv4(host) === true ) {
-		return getProxyFromDirectIP(host);
+		return getProxyFromIP(host);
 	}
 	if ( check_ipv6(host) === true ) {
 		return ipv6_proxy();
 	}
 
 	var strIp = dnsResolveEx(host);
-	if (!strIp) {
+	if ( !strIp ) {
 		return wall_proxy();
 	}
 	if ( check_ipv6_dns(strIp) === true ) {
+		return ipv6_proxy();
+	}
+	var dnsIps = strIp.split(";");
+	if (check_ipv4(dnsIps[0]) === true) {
+		return getProxyFromIP(dnsIps[0]);
+	} else if (check_ipv6_dns(dnsIps[0]) === true) {
 		return ipv6_proxy();
 	}
 	return wall_proxy();
