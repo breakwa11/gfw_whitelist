@@ -59,7 +59,7 @@ function isInDomains(domain_dict, host) {
 
 	var domains = domain_dict[suffix];
 	if ( domains === undefined ) {
-		return true;
+		return false;
 	}
 	host = host.substring(0, pos1);
 	var pos = host.lastIndexOf('.');
