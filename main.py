@@ -6,7 +6,7 @@ import list_ip
 
 def parse_args():
 	parser = ArgumentParser()
-	parser.add_argument('-i', '--input', dest='input', default='data\\whitelist.pac',
+	parser.add_argument('-i', '--input', dest='input', default='data/whitelist.pac',
 		help='path to gfwlist')
 	parser.add_argument('-o', '--output', dest='output', default='whitelist.pac',
 		help='path to output pac', metavar='PAC')
