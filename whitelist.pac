@@ -9628,6 +9628,20 @@ function check_ipv4(host) {
 		return true;
 	}
 }
+function convertAddress(ipchars) {
+	var bytes = ipchars.split('.');
+	var result = (bytes[0] << 24) |
+	(bytes[1] << 16) |
+	(bytes[2] << 8) |
+	(bytes[3]);
+	return result >>> 0;
+}
+function isInSubnetRange(ipRange, intIp) {
+	for ( var i = 0; i < 8; i += 2 ) {
+		if ( ipRange[i] <= intIp && intIp < ipRange[i+1] )
+			return true;
+	}
+}
 function getProxyFromDirectIP(strIp) {
 	var intIp = convertAddress(strIp);
 	if ( isInSubnetRange(subnetIpRangeList, intIp) ) {

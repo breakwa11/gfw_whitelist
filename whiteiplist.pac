@@ -37,7 +37,7 @@ function convertAddress(ipchars) {
 	(bytes[2] << 8) |
 	(bytes[3]);
 	return result >>> 0;
-};
+}
 function getProxyFromDirectIP(strIp) {
 	var intIp = convertAddress(strIp);
 	if ( isInSubnetRange(subnetIpRangeList, intIp) ) {
