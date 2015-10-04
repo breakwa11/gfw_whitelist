@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*-git@github.com:DelightRun/gfw_whitelist.git coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import os
 
 from argparse import ArgumentParser
@@ -12,7 +12,7 @@ def parse_args():
 		help='path to gfwlist')
 	parser.add_argument('-o', '--output', dest='output', default='whitelist.pac',
 		help='path to output pac', metavar='PAC')
-	parser.add_argument('-p', '--proxy', dest='proxy', default='"SOCKS5 127.0.0.1:1080;"',
+	parser.add_argument('-p', '--proxy', dest='proxy', default='"SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080;"',
 		help='the proxy parameter in the pac file, for example,\
 		"127.0.0.1:1080;"', metavar='SOCKS5')
 	return parser.parse_args()
