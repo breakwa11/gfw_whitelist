@@ -50,16 +50,17 @@ auto: 自动代理，均不在以上黑白名单也不是IP直连的情况下使
 
 执行
 
-main.py -o whitelist.pac -p "SOCKS5 127.0.0.1:1080;"
+main.py -o whitelist.pac -p "SOCKS5 127.0.0.1:1080; SOCKS 127.0,0,1080;"
 
 所有选项均可忽略（直接不带参数执行也可），以上为默认值。至于whiteiplist.pac使用mainip.py生成。对于mainproxy.py执行：  
-mainproxy.py -p "SOCKS5 127.0.0.1:1080;" -a "SOCKS5 127.0.0.1:1080;"
+mainproxy.py -p "SOCKS5 127.0.0.1:1080;" -a "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080"
 
 参数 -a 指定的是不匹配黑白名单的时候所使用的代理，一般使用与 -p 相同的代理即可。  
 最后使用生成出来的 whitelist.pac或whiteiplist.pac或proxy.pac 即可  
 自定义列表可把你的域名加入到lists/custom.py里，然后重新执行生成操作  
 严重建议你把你的加入列表项通过mmgac001[at]gmail.com或者issues或者pull request告知我们
 
+> 注：Safari浏览器不支持SOCKS5关键字，因此请再额外添加以"SOCKS"关键字开头的代理，IP与端口号不变
 
 ### SSH/Goagent/http 代理设置
 
@@ -68,7 +69,7 @@ mainproxy.py -p "SOCKS5 127.0.0.1:1080;" -a "SOCKS5 127.0.0.1:1080;"
 假设 SSH 开的本地S5端口是 7070，goagent 的本地端口开在 8087，那么设置wall_proxy为：
 
 
-	'SOCKS5 127.0.0.1:7070';
+	'SOCKS5 127.0.0.1:7070; SOCKS 127.0.0.1:7070';
 或
 
 	'PROXY 127.0.0.1:8087';
