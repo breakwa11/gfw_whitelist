@@ -8866,6 +8866,7 @@ var white_domains = {"am":{
 "li63":1,
 "lingw":1,
 "lingyuan":1,
+"linuxlearn":1,
 "linxi":1,
 "lipu":1,
 "liuxue51":1,
