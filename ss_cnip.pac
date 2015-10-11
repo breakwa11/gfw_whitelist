@@ -1,7 +1,7 @@
 var direct = "DIRECT;";
 
-var wall_proxy = function(){ return "__PROXY__;" + direct; };
-var wall_v6_proxy = function(){ return "__PROXY__;" + direct; };
+var wall_proxy = function(){ return "__PROXY__"; };
+var wall_v6_proxy = function(){ return "__PROXY__"; };
 
 var ip_proxy = function(){ return wall_proxy(); };
 var ipv6_proxy = function(){ return wall_v6_proxy(); };
