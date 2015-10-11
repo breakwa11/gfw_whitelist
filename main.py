@@ -1,16 +1,18 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import os
+
 from argparse import ArgumentParser
 import list_white
 import list_ip
 
 def parse_args():
 	parser = ArgumentParser()
-	parser.add_argument('-i', '--input', dest='input', default='data\\whitelist.pac',
+	parser.add_argument('-i', '--input', dest='input', default=os.path.join('data','whitelist.pac'),
 		help='path to gfwlist')
 	parser.add_argument('-o', '--output', dest='output', default='whitelist.pac',
 		help='path to output pac', metavar='PAC')
-	parser.add_argument('-p', '--proxy', dest='proxy', default='"SOCKS5 127.0.0.1:1080;"',
+	parser.add_argument('-p', '--proxy', dest='proxy', default='"SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080;"',
 		help='the proxy parameter in the pac file, for example,\
 		"127.0.0.1:1080;"', metavar='SOCKS5')
 	return parser.parse_args()
