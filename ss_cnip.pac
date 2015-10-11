@@ -53,7 +53,7 @@ function convertAddress(ipchars) {
 	(bytes[2] << 8) |
 	(bytes[3]);
 	return result >>> 0;
-};
+}
 function isInSingleRange(ipRange, intIp) {
 	if ( hasOwnProperty.call(cnIp16Range, intIp >>> 6) ) {
 		for ( var range = 1; range < 64; range*=4 ) {
