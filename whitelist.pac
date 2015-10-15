@@ -9610,6 +9610,7 @@ var white_domains = {"am":{
 };
 
 var subnetIpRangeList = [
+0,1,
 167772160,184549376,	//10.0.0.0/8
 2886729728,2887778304,	//172.16.0.0/12
 3232235520,3232301056,	//192.168.0.0/16
@@ -9637,7 +9638,7 @@ function convertAddress(ipchars) {
 	return result >>> 0;
 }
 function isInSubnetRange(ipRange, intIp) {
-	for ( var i = 0; i < 8; i += 2 ) {
+	for ( var i = 0; i < 10; i += 2 ) {
 		if ( ipRange[i] <= intIp && intIp < ipRange[i+1] )
 			return true;
 	}
