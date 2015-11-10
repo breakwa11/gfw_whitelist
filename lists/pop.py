@@ -8,6 +8,9 @@ def getlist():
 360doc.com
 360buyimg.com
 51buy.com
+acfun.com
+acfun.tv
+acgvideo.com
 adnxs.com
 adroll.com
 adsame.com
@@ -17,6 +20,8 @@ alipayobjects.com
 appgame.com
 atdmt.com
 betrad.com
+bilibili.com
+bilibili.tv
 bluekai.com
 cctv.com
 cnbeta.com

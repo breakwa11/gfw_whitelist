@@ -375,6 +375,7 @@ var white_domains = {"biz":{
 "abchina":1,
 "accgame":1,
 "acfun":1,
+"acgvideo":1,
 "acs86":1,
 "admaimai":1,
 "admin5":1,
