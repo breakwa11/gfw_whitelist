@@ -10,6 +10,7 @@ def getlist():
 51buy.com
 acfun.com
 acfun.tv
+acg.tv
 acgvideo.com
 adnxs.com
 adroll.com

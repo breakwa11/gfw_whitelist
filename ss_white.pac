@@ -2124,6 +2124,7 @@ var white_domains = {"biz":{
 "9928":1,
 "9998":1,
 "acfun":1,
+"acg":1,
 "bilibili":1,
 "cnsb":1,
 "hao315":1,
