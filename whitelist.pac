@@ -9571,6 +9571,7 @@ var white_domains = {"am":{
 "9555":1,
 "9928":1,
 "9998":1,
+"acg":1,
 "bilibili":1,
 "caoxian":1,
 "cnnl":1,
