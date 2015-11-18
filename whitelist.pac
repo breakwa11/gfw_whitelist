@@ -8298,6 +8298,7 @@ var white_domains = {"am":{
 "cli":1,
 "iapps":1,
 "iyy":1,
+"tower":1,
 "yixin":1
 },"info":{
 "gmold":1,
