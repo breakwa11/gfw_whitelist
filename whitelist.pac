@@ -8326,6 +8326,7 @@ var white_domains = {"am":{
 "21me":1,
 "bole":1,
 "dzj":1,
+"ele":1,
 "kyhs":1,
 "nanxi":1,
 "shijue":1,
