@@ -78,8 +78,12 @@ mainproxy.py -p "SOCKS5 127.0.0.1:1080;" -a "SOCKS5 127.0.0.1:1080; SOCKS 127.0.
 
 ### Load-Balance 多代理负载均衡设置
 
-在生成好的whitelist.pac 中会有三个代理地址，将 `wall_proxy_1` 和 `wall_proxy_2` 修改为你的其他代理地址然后把 `okToLoadBalance` 设置为 `true` 即可多代理负载均衡。
-目前是三个代理权重4\3\3，每次打开链接会随机挑选路由。
+在生成好的whitelist.pac 中会有三个代理地址，在 `wall_proxy` 数组中添加更多代理条目，如：
+
+    "SOCKS5 127.0.0.1:1083; SOCKS 127.0.0.1:1083;",
+
+然后把 `okToLoadBalance` 设置为 `true` 即可多代理负载均衡。
+目前权重平均，最大支持10调代理负载均衡，每次打开链接会随机挑选路由！
 
 
 Firefox 代理
