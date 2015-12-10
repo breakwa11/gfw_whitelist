@@ -1,3 +1,4 @@
+var okToLoadBalance = true;
 var wall_proxy = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080;";
 var wall_proxy_1 = "SOCKS5 127.0.0.1:1081; SOCKS 127.0.0.1:1081;";
 var wall_proxy_2 = "SOCKS5 127.0.0.1:1082; SOCKS 127.0.0.1:1082;";
@@ -9687,6 +9688,16 @@ function isInDomains(domain_dict, host) {
 		pos = host.lastIndexOf('.', pos - 1);
 	}
 }
+function loadBalance(seed) {
+	if (seed <= 2 ) {
+		return wall_proxy_1;
+	}
+	if (seed >= 7 ) {
+		return wall_proxy_2;
+	}
+	return wall_proxy;
+}
+
 function FindProxyForURL(url, host) {
 	if ( isPlainHostName(host) === true ) {
 		return direct;
@@ -9697,13 +9708,12 @@ function FindProxyForURL(url, host) {
 	if ( isInDomains(white_domains, host) === true ) {
 		return nowall_proxy;
 	}
-	var random = Math.random() * 10
-	if (random <= 3 ) {
-		return wall_proxy_1;
+	
+	if (okToLoadBalance) {
+		var random = Math.random() * 10;
+		return loadBalance(random)
 	}
-	if (random >= 6 ) {
-		return wall_proxy_2;
-	}
+	
 	return wall_proxy;
 }
 
