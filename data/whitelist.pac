@@ -1,4 +1,6 @@
 var wall_proxy = __PROXY__;
+var wall_proxy_1 = __PROXY__;
+var wall_proxy_2 = __PROXY__;
 var nowall_proxy = "DIRECT;";
 var direct = "DIRECT;";
 var ip_proxy = "DIRECT;";
@@ -91,6 +93,13 @@ function FindProxyForURL(url, host) {
 	}
 	if ( isInDomains(white_domains, host) === true ) {
 		return nowall_proxy;
+	}
+	var random = Math.random() * 10
+	if (random <= 3 ) {
+		return wall_proxy_1;
+	}
+	if (random >= 6 ) {
+		return wall_proxy_2;
 	}
 	return wall_proxy;
 }
