@@ -2,8 +2,9 @@ var okToLoadBalance = false;
 
 var wall_proxy = new Array( __PROXY__,
 "SOCKS5 127.0.0.1:1081; SOCKS 127.0.0.1:1081;",
+"SOCKS5 127.0.0.1:1081; SOCKS 127.0.0.1:1082;",
 //add more proxy to loadbalance!
-"SOCKS5 127.0.0.1:1082; SOCKS 127.0.0.1:1082;");
+"SOCKS5 127.0.0.1:1082; SOCKS 127.0.0.1:1083;");
 
 var nowall_proxy = "DIRECT;";
 var direct = "DIRECT;";
