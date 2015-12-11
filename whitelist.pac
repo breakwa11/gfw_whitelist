@@ -2,8 +2,9 @@ var okToLoadBalance = true;
 
 var wall_proxy = new Array( "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080;",
 "SOCKS5 127.0.0.1:1081; SOCKS 127.0.0.1:1081;",
+"SOCKS5 127.0.0.1:1081; SOCKS 127.0.0.1:1082;",
 //add more proxy to loadbalance!
-"SOCKS5 127.0.0.1:1082; SOCKS 127.0.0.1:1082;");
+"SOCKS5 127.0.0.1:1082; SOCKS 127.0.0.1:1083;");
 
 var nowall_proxy = "DIRECT;";
 var direct = "DIRECT;";
@@ -2500,6 +2501,7 @@ var white_domains = {"am":{
 "cljmmm123":1,
 "clotheshr":1,
 "clothr":1,
+"clouddn":1,
 "clssn":1,
 "cmbchina":1,
 "cmejob":1,
