@@ -5949,6 +5949,7 @@ var white_domains = {"am":{
 "qmango":1,
 "qmyue":1,
 "qnsb":1,
+"qnssl":1,
 "qooic":1,
 "qoomoo":1,
 "qopoo":1,
@@ -9352,6 +9353,7 @@ var white_domains = {"am":{
 "cnlist":1,
 "cnqr":1,
 "cnsb":1,
+"cnswift":1,
 "cocos2d-x":1,
 "cottonchina":1,
 "cq315":1,
@@ -9615,6 +9617,8 @@ var white_domains = {"am":{
 "taiwandao":1
 },"us":{
 "pangu":1
+},"wiki":{
+"233":1
 },"ws":{
 "0798":1
 },"xn--fiqs8s":{
