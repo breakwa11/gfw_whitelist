@@ -8058,6 +8058,7 @@ var white_domains = {"am":{
 "zhigame":1,
 "zhigou":1,
 "zhihu":1,
+"zhihuishu":1,
 "zhiji":1,
 "zhijia":1,
 "zhijinsteel":1,

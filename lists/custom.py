@@ -4,5 +4,6 @@
 def getlist():
     liststr = """
 clouddn.com
+zhihuishu.com
 """
     return set(liststr.splitlines(False))
