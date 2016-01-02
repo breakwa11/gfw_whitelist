@@ -8,5 +8,8 @@ zhihuishu.com
 cnswift.org
 qnssl.com
 233.wiki
+qingcdn.com
+logcg.com
+douyutv.com
 """
     return set(liststr.splitlines(False))

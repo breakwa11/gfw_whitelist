@@ -1,4 +1,4 @@
-var okToLoadBalance = true;
+var okToLoadBalance = false;
 
 var wall_proxy = new Array( "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080;",
 "SOCKS5 127.0.0.1:1081; SOCKS 127.0.0.1:1081;",
@@ -3027,6 +3027,7 @@ var white_domains = {"am":{
 "douguo":1,
 "douluodalu123":1,
 "douxie":1,
+"douyutv":1,
 "dowater":1,
 "downhot":1,
 "downxia":1,
@@ -5080,6 +5081,7 @@ var white_domains = {"am":{
 "lnzsks":1,
 "locoso":1,
 "lofter":1,
+"logcg":1,
 "logclub":1,
 "logmein":1,
 "loho88":1,
@@ -5903,6 +5905,7 @@ var white_domains = {"am":{
 "qinbei":1,
 "qincai":1,
 "qincaitou":1,
+"qingcdn":1,
 "qingdaomedia":1,
 "qingdaonews":1,
 "qingdaozaixian":1,
