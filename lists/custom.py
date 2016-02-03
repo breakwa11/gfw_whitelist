@@ -11,5 +11,10 @@ qnssl.com
 qingcdn.com
 logcg.com
 douyutv.com
+jiyifa.com
+bennythink.com
+linuxeden.com
+cn163.net
+weiphone.net
 """
     return set(liststr.splitlines(False))
