@@ -1,4 +1,11 @@
-var wall_proxy = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080;";
+var okToLoadBalance = false;
+
+var wall_proxy = new Array( "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080;",
+"SOCKS5 127.0.0.1:1081; SOCKS 127.0.0.1:1081;",
+"SOCKS5 127.0.0.1:1081; SOCKS 127.0.0.1:1082;",
+//add more proxy to loadbalance!
+"SOCKS5 127.0.0.1:1082; SOCKS 127.0.0.1:1083;");
+
 var nowall_proxy = "DIRECT;";
 var direct = "DIRECT;";
 var ip_proxy = "DIRECT;";
@@ -1559,6 +1566,8 @@ var white_domains = {"am":{
 "abchina":1,
 "ablesky":1,
 "accgame":1,
+"acfun":1,
+"acgvideo":1,
 "aci-wh":1,
 "acs86":1,
 "acshoes":1,
@@ -1908,6 +1917,7 @@ var white_domains = {"am":{
 "bendibao":1,
 "bengbeng":1,
 "bengou":1,
+"bennythink":1,
 "benseshijue":1,
 "benshouji":1,
 "benxi0414":1,
@@ -2492,6 +2502,7 @@ var white_domains = {"am":{
 "cljmmm123":1,
 "clotheshr":1,
 "clothr":1,
+"clouddn":1,
 "clssn":1,
 "cmbchina":1,
 "cmejob":1,
@@ -3017,6 +3028,7 @@ var white_domains = {"am":{
 "douguo":1,
 "douluodalu123":1,
 "douxie":1,
+"douyutv":1,
 "dowater":1,
 "downhot":1,
 "downxia":1,
@@ -5024,6 +5036,7 @@ var white_domains = {"am":{
 "linkhx":1,
 "linkwan":1,
 "linuxdiyf":1,
+"linuxeden":1,
 "linyiren":1,
 "liqucn":1,
 "lishi5":1,
@@ -5070,6 +5083,7 @@ var white_domains = {"am":{
 "lnzsks":1,
 "locoso":1,
 "lofter":1,
+"logcg":1,
 "logclub":1,
 "logmein":1,
 "loho88":1,
@@ -5893,6 +5907,7 @@ var white_domains = {"am":{
 "qinbei":1,
 "qincai":1,
 "qincaitou":1,
+"qingcdn":1,
 "qingdaomedia":1,
 "qingdaonews":1,
 "qingdaozaixian":1,
@@ -5939,6 +5954,7 @@ var white_domains = {"am":{
 "qmango":1,
 "qmyue":1,
 "qnsb":1,
+"qnssl":1,
 "qooic":1,
 "qoomoo":1,
 "qopoo":1,
@@ -8048,6 +8064,7 @@ var white_domains = {"am":{
 "zhigame":1,
 "zhigou":1,
 "zhihu":1,
+"zhihuishu":1,
 "zhiji":1,
 "zhijia":1,
 "zhijinsteel":1,
@@ -8556,6 +8573,7 @@ var white_domains = {"am":{
 "cixiedu":1,
 "cjdby":1,
 "cn":1,
+"cn163":1,
 "cn2car":1,
 "cnbaowen":1,
 "cnchache":1,
@@ -9120,6 +9138,7 @@ var white_domains = {"am":{
 "wanrendai":1,
 "wanxuan":1,
 "wddj":1,
+"weiphone":1,
 "weizhang":1,
 "wems":1,
 "wen8":1,
@@ -9341,6 +9360,7 @@ var white_domains = {"am":{
 "cnlist":1,
 "cnqr":1,
 "cnsb":1,
+"cnswift":1,
 "cocos2d-x":1,
 "cottonchina":1,
 "cq315":1,
@@ -9571,6 +9591,7 @@ var white_domains = {"am":{
 "9555":1,
 "9928":1,
 "9998":1,
+"acfun":1,
 "acg":1,
 "bilibili":1,
 "caoxian":1,
@@ -9603,6 +9624,8 @@ var white_domains = {"am":{
 "taiwandao":1
 },"us":{
 "pangu":1
+},"wiki":{
+"233":1
 },"ws":{
 "0798":1
 },"xn--fiqs8s":{
@@ -9682,6 +9705,15 @@ function isInDomains(domain_dict, host) {
 		pos = host.lastIndexOf('.', pos - 1);
 	}
 }
+function loadBalance() {
+	var random = 0;
+	while(1) {
+		random = Math.round((Math.random() * 10) - 1);
+		if (random < wall_proxy.length) {
+			return wall_proxy[random];
+		}
+	}
+}
 function FindProxyForURL(url, host) {
 	if ( isPlainHostName(host) === true ) {
 		return direct;
@@ -9692,6 +9724,10 @@ function FindProxyForURL(url, host) {
 	if ( isInDomains(white_domains, host) === true ) {
 		return nowall_proxy;
 	}
-	return wall_proxy;
+	
+	if (okToLoadBalance) {
+		return loadBalance();
+	}
+	return wall_proxy[0];
 }
 
