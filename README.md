@@ -1,4 +1,5 @@
 # GFW 白名单
+>这个项目不再与 BreakWa11 同步了，专心做域名白名单……具体的容我慢慢填坑。
 
 
 概述
@@ -17,8 +18,8 @@
 简单使用方法
 ---------
 
-###方法一：  
-下载 whitelist.pac或whiteiplist.pac或proxy.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 whitelist.pac或whiteiplist.pac。
+
+下载`whitelist.pac`或`whiteiplist.pac`或`proxy.pac`文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向`whitelist.pac`或`whiteiplist.pac`。
 
 	var wall_proxy = 'PROXY www.abc.com:443;'; 
 	以上需要更换成有效的代理地址，代理类型还可以为'SOCKS5'或'HTTPS'
@@ -28,37 +29,20 @@
 
 对于不需要翻墙，但也需要代理的网站，可自行修改`nowall_proxy`，方式与`wall_proxy`相同。
 
-###方法二：  
-设置你的动态代理地址为：[http://proxy.breakwa11.ga/?proxy=SOCKS5_127.0.0.1:1080](http://proxy.breakwa11.ga/?proxy=SOCKS5_127.0.0.1:1080)  
-如果你所在的地区使用IP匹配不合适，那么还可以使用这个地址：[http://proxy.breakwa11.ga/?style=noip&proxy=SOCKS5_127.0.0.1:1080](http://proxy.breakwa11.ga/?style=noip&proxy=SOCKS5_127.0.0.1:1080)  
-注意proxy参数可修改为你自己本地的代理配置，这样即可下载一个适合你本地配置的pac文件。  
-参数除了proxy，还支持：nowall, auto, ip, direct，分别对应：非翻墙代理，自动代理（默认与proxy一致），ip代理（默认与nowall一致），直连代理（如果没有必要请不要修改）。参数之间需加入&分隔开。参数解释：  
-style: 列表类型。值为noip则不使用IP匹配，大多数情况下应该使用此值，除非你解决了DNS污染。  
-proxy: 翻墙代理，GFW黑名单使用的代理  
-nowall: 非翻墙代理，在白名单或国内IP中使用的代理  
-direct: 直连代理，内网地址段使用的代理  
-ip: ip代理，访问方式为使用IP而不使用域名的地址使用的代理（国内视频站多数为ip直连，所以默认与nowall一致）  
-auto: 自动代理，均不在以上黑白名单也不是IP直连的情况下使用的代理。与proxy一致即白名单制，与nowall一致即黑名单制。
-
-本功能在测试中，地址随时可能发生变化，访问速度可能很慢或访问不正常，如不能访问请留意本项目的变更。
-
-本地代理使用 `PROXY` 即http代理最佳，兼容性最好，可用于IE或iOS自动代理配置，s5代理可使用privoxy转换为http代理。不过如果是远程代理可能被偷窥连接内容。
-
 
 代码生成使用方法
 ---------
 
 执行
 
-main.py -o whitelist.pac -p "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1080;"
+`main.py -o whitelist.pac -p "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1080;"`
 
-所有选项均可忽略（直接不带参数执行也可），以上为默认值。至于whiteiplist.pac使用mainip.py生成。对于mainproxy.py执行：  
-mainproxy.py -p "SOCKS5 127.0.0.1:1080;" -a "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080"
+所有选项均可忽略（直接不带参数执行也可），以上为默认值。至于`whiteiplist.pac`使用`mainip.py`生成。
 
 参数 -a 指定的是不匹配黑白名单的时候所使用的代理，一般使用与 -p 相同的代理即可。  
-最后使用生成出来的 whitelist.pac或whiteiplist.pac或proxy.pac 即可  
-自定义列表可把你的域名加入到lists/custom.py里，然后重新执行生成操作  
-严重建议你把你的加入列表项通过mmgac001[at]gmail.com或者issues或者pull request告知我们
+最后使用生成出来的 `whitelist.pac`或`whiteiplist.pac`或`proxy.pac` 即可  
+自定义列表可把你的域名加入到`lists/custom.py`里，然后重新执行生成操作  
+严重建议你把你的加入列表项通过 issues 或者 pull request 告知我
 
 > 注：Safari浏览器不支持SOCKS5关键字，因此请再额外添加以"SOCKS"关键字开头的代理，IP与端口号不变
 
@@ -66,7 +50,7 @@ mainproxy.py -p "SOCKS5 127.0.0.1:1080;" -a "SOCKS5 127.0.0.1:1080; SOCKS 127.0.
 
 谈一点题外话，不少网友通过 SSH(Tunnelier/Entunnel) 等本地 socks5 代理或者 goagent 等本地 http 代理来翻墙。
 
-假设 SSH 开的本地S5端口是 7070，goagent 的本地端口开在 8087，那么设置wall_proxy为：
+假设 SSH 开的本地S5端口是 7070，goagent 的本地端口开在 8087，那么设置`wall_proxy`为：
 
 
 	'SOCKS5 127.0.0.1:7070; SOCKS 127.0.0.1:7070';
@@ -74,11 +58,11 @@ mainproxy.py -p "SOCKS5 127.0.0.1:1080;" -a "SOCKS5 127.0.0.1:1080; SOCKS 127.0.
 
 	'PROXY 127.0.0.1:8087';
 
-然后只需要将whitelist.pac文件所在地址，直接复制到填写自动代理配置的地方（见下文图），就可以用上这个白名单了。如果是本地文件，填写路径类似于"file:///d:/whitelist.pac"。
+然后只需要将`whitelist.pac`文件所在地址，直接复制到填写自动代理配置的地方（见下文图），就可以用上这个白名单了。如果是本地文件，填写路径类似于"file:///d:/whitelist.pac"。
 
 ### Load-Balance 多代理负载均衡设置
 
-在生成好的whitelist.pac 中会有三个代理地址，在 `wall_proxy` 数组中添加更多代理条目，如：
+在生成好的`whitelist.pac`中会有三个代理地址，在 `wall_proxy` 数组中添加更多代理条目，如：
 
     "SOCKS5 127.0.0.1:1083; SOCKS 127.0.0.1:1083;",
 
@@ -178,5 +162,5 @@ base on
 [Leask Flora_Pac](https://github.com/Leask/Flora_Pac)
 
 ```
-任何意见或建议，请联系 mmgac001[at]gmail.com ，或提交issue到项目页面 ლ(╹◡╹ლ)
+任何意见或建议，请提交issue到项目页面 ლ(╹◡╹ლ)
 ```

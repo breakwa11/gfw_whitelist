@@ -4,7 +4,7 @@ import os
 
 from argparse import ArgumentParser
 import list_white
-import list_ip
+#import list_ip
 
 def parse_args():
 	parser = ArgumentParser()
@@ -24,16 +24,16 @@ def get_file_data(filename):
 	return content
 
 def writefile(input_file, proxy, output_file):
-	ip_content = list_ip.final_list()
-	ip16_content = list_ip.center_list()
-	fake_ip_content = list_ip.fake_list()
+#	ip_content = list_ip.final_list()
+#	ip16_content = list_ip.center_list()
+#	fake_ip_content = list_ip.fake_list()
 	domains_content = list_white.final_list()
 	proxy_content = get_file_data(input_file)
 	proxy_content = proxy_content.replace('__PROXY__', proxy)
 	proxy_content = proxy_content.replace('__DOMAINS__', domains_content)
-	proxy_content = proxy_content.replace('__IP_LIST__', ip_content)
-	proxy_content = proxy_content.replace('__IP16_LIST__', ip16_content)
-	proxy_content = proxy_content.replace('__FAKE_IP_LIST__', fake_ip_content)
+#	proxy_content = proxy_content.replace('__IP_LIST__', ip_content)
+#	proxy_content = proxy_content.replace('__IP16_LIST__', ip16_content)
+#	proxy_content = proxy_content.replace('__FAKE_IP_LIST__', fake_ip_content)
 	with open(output_file, 'w') as file_obj:
 		file_obj.write(proxy_content)
 

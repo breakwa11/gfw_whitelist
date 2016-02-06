@@ -3370,6 +3370,7 @@ var white_domains = {"am":{
 "fenfen":1,
 "feng":1,
 "fengbao":1,
+"fengbuy":1,
 "fengj":1,
 "fengjing":1,
 "fengniao":1,
