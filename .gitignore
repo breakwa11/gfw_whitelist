@@ -56,4 +56,4 @@ docs/_build/
 *.swp
 *.tmp
 *.bak
-
+/.idea
