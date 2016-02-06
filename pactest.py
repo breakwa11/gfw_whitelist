@@ -28,7 +28,7 @@ def main_test(filename, test_times):
 
 def time_test():
 	main_test("whitelist.pac", 10000)
-	main_test("whiteiplist.pac", 100)
+#	main_test("whiteiplist.pac", 100)
 	#main_test("flora_pac.pac", 100)
 	#main_test("usufu_flora_pac.pac", 100)
 
