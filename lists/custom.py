@@ -16,5 +16,6 @@ bennythink.com
 linuxeden.com
 cn163.net
 weiphone.net
+fengbuy.com
 """
     return set(liststr.splitlines(False))
