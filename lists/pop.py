@@ -29,6 +29,7 @@ cnbeta.com
 compete.com
 doc88.com
 douban.fm
+doubanio.com
 doubleclick.net
 ebay.com
 fastcdn.com
@@ -83,9 +84,9 @@ paypal.com
 pengyou.com
 pixlr.com
 ppstream.com
-ptlogin2.qq.com
 pubmatic.com
 qiniucdn.com
+qq.com
 qstatic.com
 quantserve.com
 renren.com
