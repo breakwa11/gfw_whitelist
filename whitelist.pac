@@ -2276,6 +2276,7 @@ var white_domains = {"am":{
 "cheyun":1,
 "chgcw":1,
 "chhkjob":1,
+"chiphell":1,
 "china":1,
 "china-3":1,
 "china-315":1,
