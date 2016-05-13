@@ -8323,6 +8323,8 @@ var white_domains = {"am":{
 "iz":1,
 "qzone":1,
 "ulinix":1
+},"link":{
+"vnet":1
 },"me":{
 "21me":1,
 "bole":1,
@@ -9204,6 +9206,7 @@ var white_domains = {"am":{
 "yongyao":1,
 "youxi5":1,
 "yoyone":1,
+"ytcz":1,
 "yx618":1,
 "yxjy":1,
 "yxol":1,
@@ -9558,6 +9561,8 @@ var white_domains = {"am":{
 "shengqian":1,
 "soutudi":1,
 "wangxiao":1
+},"tech":{
+"lab309":1
 },"tm":{
 "stone":1
 },"tv":{
