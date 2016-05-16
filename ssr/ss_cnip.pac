@@ -1,4 +1,5 @@
-var direct = "DIRECT;";
+var direct = "__DIRECT__";
+if (direct == "__DIR" + "ECT__") direct = "DIRECT;";
 
 var wall_proxy = function(){ return "__PROXY__"; };
 var wall_v6_proxy = function(){ return "__PROXY__"; };
