@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from argparse import ArgumentParser
+import os
 import re
 import list_white
 import list_black
@@ -9,7 +10,7 @@ import list_ip
 
 def parse_args():
 	parser = ArgumentParser()
-	parser.add_argument('-i', '--input', dest='input', default='data\\proxy.pac',
+	parser.add_argument('-i', '--input', dest='input', default=os.path.join('data', 'proxy.pac'),
 		help='path to gfwlist')
 	parser.add_argument('-o', '--output', dest='output', default='proxy.pac',
 		help='path to output pac', metavar='PAC')
