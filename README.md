@@ -50,7 +50,7 @@ auto: 自动代理，均不在以上黑白名单也不是IP直连的情况下使
 
 执行
 
-main.py -o whitelist.pac -p "SOCKS5 127.0.0.1:1080; SOCKS 127.0,0,1080;"
+main.py -o whitelist.pac -p "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1080;"
 
 所有选项均可忽略（直接不带参数执行也可），以上为默认值。至于whiteiplist.pac使用mainip.py生成。对于mainproxy.py执行：  
 mainproxy.py -p "SOCKS5 127.0.0.1:1080;" -a "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080"

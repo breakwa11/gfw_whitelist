@@ -21,6 +21,12 @@ function dnsResolve(host) {
 	return "27.50.128.0";
 }
 
+function dnsResolveEx(host) {
+	return "27.40.0.0";
+	return "27.50.96.0";
+	return "27.50.128.0";
+}
+
 function isInNet(ip, ipstart, ipmask) {
 	return false;
 }
@@ -30,7 +36,7 @@ function shExpMatch(a, b) {
 }
 
 function test(url, host) {
-	ret = FindProxyForURL(url, host);
+	ret = FindProxyForURLEx(url, host);
 	if ( typeof(direct) == "undefined" ) {
 		if ( ret.toLowerCase().indexOf("direct") >= 0 ) {
 			return 0;

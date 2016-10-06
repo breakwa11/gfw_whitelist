@@ -10,6 +10,7 @@ def getlist():
 51buy.com
 acfun.com
 acfun.tv
+acg.tv
 acgvideo.com
 adnxs.com
 adroll.com
@@ -28,6 +29,7 @@ cnbeta.com
 compete.com
 doc88.com
 douban.fm
+doubanio.com
 doubleclick.net
 ebay.com
 fastcdn.com
@@ -82,9 +84,9 @@ paypal.com
 pengyou.com
 pixlr.com
 ppstream.com
-ptlogin2.qq.com
 pubmatic.com
 qiniucdn.com
+qq.com
 qstatic.com
 quantserve.com
 renren.com
