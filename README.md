@@ -17,7 +17,7 @@
 简单使用方法
 ---------
 
-###方法一：  
+### 方法一：  
 下载 whitelist.pac或whiteiplist.pac或proxy.pac 文件后，修改代理服务器的 ip 地址和代理类型。然后将浏览器的代理设置中指向 whitelist.pac或whiteiplist.pac。
 
 	var wall_proxy = 'PROXY www.abc.com:443;'; 
@@ -28,7 +28,7 @@
 
 对于不需要翻墙，但也需要代理的网站，可自行修改`nowall_proxy`，方式与`wall_proxy`相同。
 
-###方法二：  
+### 方法二：  
 设置你的动态代理地址为：[http://proxy.breakwa11.ga/?proxy=SOCKS5_127.0.0.1:1080](http://proxy.breakwa11.ga/?proxy=SOCKS5_127.0.0.1:1080)  
 如果你所在的地区使用IP匹配不合适，那么还可以使用这个地址：[http://proxy.breakwa11.ga/?style=noip&proxy=SOCKS5_127.0.0.1:1080](http://proxy.breakwa11.ga/?style=noip&proxy=SOCKS5_127.0.0.1:1080)  
 注意proxy参数可修改为你自己本地的代理配置，这样即可下载一个适合你本地配置的pac文件。  
