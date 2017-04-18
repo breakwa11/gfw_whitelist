@@ -3521,6 +3521,7 @@ ek6.com
 ekaidian.com
 elanw.com
 eldawa.com
+ele.me
 ele001.com
 elecfans.com
 elecinfo.com
@@ -4790,6 +4791,7 @@ ieche.com
 iecity.com
 iecworld.com
 iedu.sg
+ieee.org
 iefang.com
 iezhan.com
 ifeng.com
@@ -5664,6 +5666,7 @@ link-future.com
 linkhx.com
 linkwan.com
 linuxdiyf.com
+linuxlearn.net
 linxi.net
 linyiren.com
 lipu.net
@@ -6157,6 +6160,7 @@ nbwater.com
 nbyouth.com
 nbzhaopin.net
 nc2sc.com
+ncar.cc
 ncdiy.com
 ncmgcc.com
 ncxww.com
@@ -7999,6 +8003,7 @@ vista123.com
 vivijk.com
 vjia.com
 vlongbiz.com
+vnet.link
 vmall.com
 vmovier.com
 vobao.com

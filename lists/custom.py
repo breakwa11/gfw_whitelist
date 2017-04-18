@@ -3,5 +3,7 @@
 
 def getlist():
     liststr = """
+lab309.tech
+ytcz.net
 """
     return set(liststr.splitlines(False))

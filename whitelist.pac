@@ -126,6 +126,7 @@ var white_domains = {"am":{
 "mzsky":1,
 "n21":1,
 "nandagang":1,
+"ncar":1,
 "pingyin":1,
 "pinjie":1,
 "pp":1,
@@ -1559,6 +1560,8 @@ var white_domains = {"am":{
 "abchina":1,
 "ablesky":1,
 "accgame":1,
+"acfun":1,
+"acgvideo":1,
 "aci-wh":1,
 "acs86":1,
 "acshoes":1,
@@ -3014,6 +3017,7 @@ var white_domains = {"am":{
 "dospy":1,
 "dostor":1,
 "douban":1,
+"doubanio":1,
 "douguo":1,
 "douluodalu123":1,
 "douxie":1,
@@ -5772,7 +5776,6 @@ var white_domains = {"am":{
 "ptbus":1,
 "ptdao":1,
 "ptjy":1,
-"ptlogin2.qq":1,
 "ptotour":1,
 "ptpcp":1,
 "puahome":1,
@@ -6455,6 +6458,7 @@ var white_domains = {"am":{
 "spjobhr":1,
 "spjxcn":1,
 "sportscn":1,
+"springer":1,
 "springtour":1,
 "spsb114":1,
 "spzs":1,
@@ -8296,6 +8300,7 @@ var white_domains = {"am":{
 "cli":1,
 "iapps":1,
 "iyy":1,
+"tower":1,
 "yixin":1
 },"info":{
 "gmold":1,
@@ -8319,10 +8324,13 @@ var white_domains = {"am":{
 "iz":1,
 "qzone":1,
 "ulinix":1
+},"link":{
+"vnet":1
 },"me":{
 "21me":1,
 "bole":1,
 "dzj":1,
+"ele":1,
 "kyhs":1,
 "nanxi":1,
 "shijue":1,
@@ -8866,6 +8874,7 @@ var white_domains = {"am":{
 "li63":1,
 "lingw":1,
 "lingyuan":1,
+"linuxlearn":1,
 "linxi":1,
 "lipu":1,
 "liuxue51":1,
@@ -9198,6 +9207,7 @@ var white_domains = {"am":{
 "yongyao":1,
 "youxi5":1,
 "yoyone":1,
+"ytcz":1,
 "yx618":1,
 "yxjy":1,
 "yxol":1,
@@ -9407,6 +9417,7 @@ var white_domains = {"am":{
 "hykaoyan":1,
 "hynews":1,
 "hzgh":1,
+"ieee":1,
 "infx":1,
 "it-home":1,
 "jiaj":1,
@@ -9551,6 +9562,8 @@ var white_domains = {"am":{
 "shengqian":1,
 "soutudi":1,
 "wangxiao":1
+},"tech":{
+"lab309":1
 },"tm":{
 "stone":1
 },"tv":{
@@ -9571,6 +9584,7 @@ var white_domains = {"am":{
 "9555":1,
 "9928":1,
 "9998":1,
+"acfun":1,
 "acg":1,
 "bilibili":1,
 "caoxian":1,

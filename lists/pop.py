@@ -102,8 +102,10 @@ sinahk.net
 sinajs.com
 snyu.com
 staticsdo.com
+springer.com
 tanx.com
 tdimg.com
+tower.im
 tremormedia.com
 v2ex.com
 vizu.com
