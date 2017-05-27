@@ -21,6 +21,7 @@ var white_domains = {"am":{
 "dahuoji":1,
 "diandongche":1,
 "diaoding":1,
+"cpsh":1,
 "fishings":1,
 "hanjie":1,
 "intil":1,
