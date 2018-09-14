@@ -13526,6 +13526,7 @@ function getProxyFromIP(strIp) {
 	return auto_proxy;
 }
 function isInDomains(domain_dict, host) {
+	host = (host || '').match(/(https?:\/\/)?([^\/]+).*/)[2] || '';
 	var suffix;
 	var pos1 = host.lastIndexOf('.');
 
